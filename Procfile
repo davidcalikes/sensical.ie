@@ -1,1 +1,1 @@
-web: gunicorn sensical.wsgi
+web: gunicorn sensical-ireland.wsgi
