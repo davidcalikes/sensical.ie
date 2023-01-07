@@ -15,3 +15,11 @@ body {
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
 }
+
+/* **** MEDIA QUERIES **** */
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
