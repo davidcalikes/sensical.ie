@@ -42,7 +42,7 @@
   
   <body>
     <header class="container-fluid fixed-top">
-        <div class="row">
+        <div id="main-nav" class="row bg-white">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" title="Sensical.ie">
                   <img src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673008567/sensical/sensical_nav_logo_ddgje1.png" alt="Sensical.ie" height="100" width="auto">
@@ -95,7 +95,7 @@
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                        €0.00
                                     {% endif %}
                                 </p>
                             </div>

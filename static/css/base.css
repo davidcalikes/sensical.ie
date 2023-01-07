@@ -11,6 +11,7 @@ body {
 }
 
 #home-bg {
+    margin-top: 120px;
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
 }
