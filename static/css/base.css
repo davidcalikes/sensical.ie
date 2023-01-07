@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673096163/sensical/sensical_hero_placeholder_ikko9v.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 200px);
+    color: rgb(5, 54, 96);
+    font-family: 'Assistant';
+}
