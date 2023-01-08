@@ -1,19 +1,57 @@
-html {
-    height: 100%;
-}
-
+/* **** Site-wide style rules **** */
 
 body {
-    background-image: url(https://res.cloudinary.com/djck2eqxo/image/upload/v1673111832/sensical/swirl_esqvbj.webp), linear-gradient(to right, #0b3fec, #ffffff, #0b3fec);
-    height: calc(100vh - 200px);
+    background-color: #0c2d6c;
+    min-height: 100vh;
     color: rgb(255, 255, 255);
     font-family: 'Assistant';
 }
 
-#home-bg {
+a {
+    color: #0c2d6c;
+}
+
+/* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: large;
+}
+
+.section-rule {
+    width: 60%;
+    border-color: white;
+}
+
+/* **** Landing Page **** */
+
+#hero-text {
+    font-family: 'Puritan';
+    letter-spacing: 2px;
+    font-size: 8vw;
+    margin-top: 4rem;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+#home-hero {
     margin-top: 120px;
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
+    height: 60vh;
+}
+
+.home-bg {
+    background-color:  #0c2d6c;
+    height: 60vh;
+}
+
+.service-button {
+    width: 100px;
+    height: fit-content;
+    background-color: white
 }
 
 /* **** MEDIA QUERIES **** */

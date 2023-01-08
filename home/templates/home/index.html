@@ -7,24 +7,105 @@
         <div class="col"></div>
     </div>
 </div>
-{% endblock %}
+{% endblock page_header %}
 
 {% block content %}
-<div id="home-bg" class="container h-100" >
-    <div class="row h-100">
+<div id="home-hero" class="container">
+    <div class="row">
         <div class="col-12 my-auto">
-            <h1 class="display-4 text-center text-black">
+            <h1 id="hero-text" class="display-4 text-center">
                 We Make Sense!
             </h1>
-            <div class="my-5">
-                <h4 class="text-center">
-                    <a href="#" class="btn btn-lg btn-light rounded-1 text-center text-uppercase py-3">Shop</a>
-
-                </h4>
-                <h4 class="text-center">
-                    <a href="#" class="btn btn-lg btn-light rounded-1 text center text-uppercase py-3">Hire</a>
-                </h4>
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <div class="my-5">
+                        <h4 class="text-right">
+                            <a href="#" class="btn btn-lg service-button rounded-1 text-center text-uppercase py-3">Shop</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-6 my-auto">
+                    <div class="my-5">
+                        <h4 class="text-left" >
+                            <a href="#" class="btn btn-lg service-button rounded-1 text-center text-uppercase py-3">Hire</a>
+                        </h4>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<hr class="section-rule my-5">
+
+<div class="container home-bg">
+    <div class="row">
+        <div class="col-12 my-auto">
+            <section> 
+                <div class="row">
+                    <div class=" col-12 text-center">
+                        <h2 class="mb-4 text-center">Products & Services</h2>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673196102/sensical/card_image_hire_vkr6do.png" alt="Card image cap for hire card">
+                                    <div class="row">
+                                        <div class=" col-12 text-center">
+                                            <h3 class="text-dark">Hire</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-subtitle mb-2 text-muted">Book a Sensical sensory session!</h4>
+                                        <p class="card-text"> Hire our industry standard sensory equipment at your convenience.</p>
+                                    </div>
+                                    <div class="card-buttons">
+                                        <a href="{% url 'account_login' %}" class="passport-options">Book Now!</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673196325/sensical/card_image_shop_btaa1h.png" alt="Card image cap for store card">
+                                    <div class="row">
+                                        <div class=" col-12 text-center">
+                                            <h3 class="text-dark">Store</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-subtitle mb-2 text-muted">Buy quality sensory items from a source you can trust.</h4>
+                                        <p class="card-text">Browse our collection of quality, affordable sensory technology.</p>
+                                    </div>
+                                    <div class="card-buttons">
+                                        <a href="{% url 'account_login' %}" class="passport-options">Shop Now!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673197088/sensical/sensical_logo_png_gdcdmy.png" alt="Card image cap for about card">
+                                    <div class="row">
+                                        <div class=" col-12 text-center">
+                                            <h3 class="text-dark">Company Info</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-subtitle mb-2 text-muted">What is Sensical?</h4>
+                                        <p class="card-text">Learn about our products and services.</p>
+                                    </div>
+                                    <div class="card-buttons">
+                                        <a href="{% url 'home' %}" class="passport-options">Learn More!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            
         </div>
     </div>
 </div>
