@@ -26,6 +26,14 @@ a {
     border-color: white;
 }
 
+.primary-bg {
+    background-color: #0c2d6c;
+}
+
+.secondary-bg {
+    background-color: #1fb9dd;
+}
+
 
 /* **** Nav Elements **** */
 
@@ -34,8 +42,43 @@ a {
     margin-left: 20px;
 }
 
+#mobile-nav-logo {
+    height: 65px;
+    padding-bottom: 4px;
+}
+
+#mobile-nav-xs {
+    height: 50px;
+    padding-bottom: 4px;
+    display: none;
+}
+
 .navbar {
     padding: 0;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #1fb9dd;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+    width: 50px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+}
+
+.banner-font {
+    font-size: large;
+    color: #0c2d6c;
 }
 
 /* **** Landing Page **** */
@@ -49,7 +92,7 @@ a {
 }
 
 #home-hero {
-    margin-top: 164px;
+    margin-top: 170px;
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
     height: 60vh;
@@ -67,10 +110,69 @@ a {
     background-color: white
 }
 
+.card {
+    min-height: 500px;
+}
+
+.card-subtitle {
+    font-size: small;
+    font-weight: bolder
+}
+
+.card-body {
+    max-height: 100px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
 /* **** MEDIA QUERIES **** */
 
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
+    }
+
+@media screen and (max-width: 991px) {
+    #home-hero {
+        margin-top: 180px;
+    }
+    .card-img-top{
+        height: 400px;
+        object-fit: scale-down;
+    }
+    }
+
+@media screen and (max-width: 500px) {
+    #mobile-nav-logo {
+        height: 55px;
+    }
+    #mobile-nav-logo {
+        margin: 5px;
+    }
+    }
+
+@media screen and (max-width: 430px) {
+    #mobile-nav-logo {
+        height: 45px;
+        margin: 10px;
+    }
+    .nav-link{
+        padding: 3px;
+    }
+    }
+
+@media screen and (max-width: 350px) {
+    #mobile-nav-logo {
+        display: none;
+    }
+
+    #mobile-nav-xs {
+        height: 70px;
+        padding-top: 4px;
+        display: block;
+    }
+    }

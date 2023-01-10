@@ -44,7 +44,7 @@
   <body>
     <header class="container-fluid fixed-top">
         <div id="top-nav" class="row bg-white pt-lg-1 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" title="Sensical.ie">
                   <img id="nav-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673008567/sensical/sensical_nav_logo_ddgje1.png" alt="Sensical.ie" height="100" width="auto">
                   <span class="sr-only">Sensical.ie</span>
@@ -122,19 +122,18 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg w-100 ">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="row primary-bg">
+            <nav class="navbar pl-2 navbar-expand-lg w-100">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
-
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over €50!</h4>                
+            <div class="col secondary-bg text-white">
+                <h4 class="banner-font pt-1 my-1">Free nationwide delivery <i class="fa-solid fa-flip-horizontal fa-truck icon"></i> on orders over €50!</h4>                
             </div>            
         </div>
     </header>
