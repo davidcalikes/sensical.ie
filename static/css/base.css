@@ -69,7 +69,7 @@ nav a:hover {
     border: 1px solid white;
     width: 50px;
     height: 40px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .navbar-toggler-icon {
@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 #home-hero {
-    margin-top: 170px;
+    margin-top: 180px;
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
     height: 60vh;
@@ -146,6 +146,12 @@ nav a:hover {
     }
     }
 
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+    }
+
 @media screen and (max-width: 500px) {
     #mobile-nav-logo {
         height: 55px;
@@ -153,6 +159,11 @@ nav a:hover {
     #mobile-nav-logo {
         margin: 5px;
     }
+    .navbar-toggler {
+        border: none;
+        width: 45px;
+        height: 40px;
+        margin-left: 0px;
     }
 
 @media screen and (max-width: 430px) {
@@ -176,3 +187,4 @@ nav a:hover {
         display: block;
     }
     }
+}
