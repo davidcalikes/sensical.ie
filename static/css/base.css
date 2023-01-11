@@ -101,7 +101,6 @@ nav a:hover {
 
 .home-bg {
     background-color:  #0c2d6c;
-    height: 60vh;
 }
 
 .service-button {
@@ -126,6 +125,35 @@ nav a:hover {
 .card-img-top {
     height: 250px;
     object-fit: cover;
+}
+
+/* **** Footer **** */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    background-color: #1fb9dd;
+    padding: 2rem;
+}
+
+.footer-container {
+    margin-top: 1.5rem;
+    height: 90px;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: white;
+    background-color: #1fb9dd;
+    border: solid 2px white;
+}
+
+.footer-info-box {
+    background-color: white;
+    color: #0c2d6c;
+    width: 260px;
+    border-radius: 4px;
+    padding: 0.5rem;
+    border: 2px solid #0c2d6c;
 }
 
 /* **** MEDIA QUERIES **** */
