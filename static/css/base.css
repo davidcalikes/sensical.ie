@@ -137,16 +137,6 @@ footer {
     padding: 2rem;
 }
 
-.footer-container {
-    margin-top: 1.5rem;
-    height: 90px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: white;
-    background-color: #1fb9dd;
-    border: solid 2px white;
-}
-
 .footer-info-box {
     background-color: white;
     color: #0c2d6c;
@@ -154,6 +144,14 @@ footer {
     border-radius: 4px;
     padding: 0.5rem;
     border: 2px solid #0c2d6c;
+}
+
+/* **** Products Page **** */
+
+.products-bg {
+    margin-top: 180px;
+    background-size: cover;
+    height: 60vh;
 }
 
 /* **** MEDIA QUERIES **** */
