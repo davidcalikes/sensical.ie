@@ -62,4 +62,4 @@ class Product(models.Model):
         "Product Image", default='placeholder')
 
     def __str__(self):
-        return self
+        return self.name
