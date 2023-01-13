@@ -109,9 +109,11 @@ nav a:hover {
     background-color: white
 }
 
-.card {
+.home-card {
     min-height: 500px;
 }
+
+
 
 .card-subtitle {
     font-size: small;
@@ -151,7 +153,11 @@ footer {
 .products-bg {
     margin-top: 180px;
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
+}
+
+.products-bg .card {
+    color: #0c2d6c;
 }
 
 /* **** MEDIA QUERIES **** */

@@ -4,8 +4,36 @@
 {% block content %}
 <div class="products-bg container-fluid">
     <div class="row">
-        <div class="col-12">
-            {{ products }}
+        <div class="col text-center mt-4">
+            <h2>All Products</h2>
+            <hr class="section-rule my-5">
+        </div>
+    </div>
+    <div class="row">
+        <div class="container col-12">
+            <div class="row mb-2"></div>
+            <div class="row">
+                {% for product in products %}
+                <div class="col-3">
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-center" ><strong>{{ product.name }}</strong></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-center">€{{ product.price }}</p>
+                                    <small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
