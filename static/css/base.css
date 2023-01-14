@@ -34,6 +34,10 @@ a {
     background-color: #1fb9dd;
 }
 
+.dark-text {
+    color: #0c2d6c;
+}
+
 
 /* **** Nav Elements **** */
 
@@ -113,7 +117,28 @@ nav a:hover {
     min-height: 500px;
 }
 
+.card-buttons {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
+.sensical-button {
+    margin-top: 1rem;
+    font-size: 12px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #0c2d6c;
+    background-color: #1fb9dd;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
 
 .card-subtitle {
     font-size: small;
@@ -151,13 +176,17 @@ footer {
 /* **** Products Page **** */
 
 .products-bg {
-    margin-top: 180px;
+    margin-top: 158px;
     background-size: cover;
     height: 100vh;
 }
 
 .products-bg .card {
     color: #0c2d6c;
+}
+
+.product-card-footer {
+    background: #1fb9dd;
 }
 
 /* **** MEDIA QUERIES **** */
@@ -172,8 +201,13 @@ footer {
     #home-hero {
         margin-top: 180px;
     }
+
+    .home-card {
+        width: 80%;
+        margin-left: 10%;
+    }
     .card-img-top{
-        height: 400px;
+        height: 80%;
         object-fit: scale-down;
     }
     }
@@ -197,6 +231,10 @@ footer {
         height: 40px;
         margin-left: 0px;
     }
+    .home-card {
+        width: 90%;
+        margin-left: 5%;
+    }
 
 @media screen and (max-width: 430px) {
     #mobile-nav-logo {
@@ -205,6 +243,16 @@ footer {
     }
     .nav-link{
         padding: 3px;
+    }
+
+    .home-card {
+    width: 100%;
+    margin-left: 0;
+    }
+
+    #home-hero {
+        height: 300px;
+        margin-top: 210px;
     }
     }
 
