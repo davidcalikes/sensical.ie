@@ -2,38 +2,46 @@
 {% load static %}
 
 {% block content %}
-<div class="products-bg container-fluid">
+<div class="products-bg container">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2>All Products</h2>
-            <hr class="section-rule my-3">
+            <h2 class="mb-4 text-center">All Products</h2>
         </div>
     </div>
+
     <div class="row">
-        <div class="container">
-            <div class="row">
-                {% for product in products %}
-                <div class="col-12 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="text-center" ><strong>{{ product.name }}</strong></p>
-                        </div>
-                        <a href="">
-                            <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        <div class="card-footer product-card-footer text-center">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-center">€{{ product.price }}</p>
-                                    <small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                </div>
-                            </div>
-                        </div>
+        {% for product in products %}
+        <div class="col-lg-4 col-md-6">
+            <div class="card home-card mb-4">
+                <a href="">
+                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                <div class="row mt-2">
+                    <div class=" col-12 text-center">
+                        <h3 class="dark-text title-col" >{{ product.name }}</h3>
                     </div>
                 </div>
-                {% endfor %}
+                <div class="card-body">
+                    <h4 class="text-center">€{{ product.price }}</h4>
+                </div>
+                <div class="row button-row text-center"> 
+                    <div class="col-6 text-center">
+                        <div  class="text-center products-button">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                <div class="col-6 text-center">
+                    <div  class="text-center products-button">
+                        <a href="#">Item Details</a>
+                    </div>
+                </div>
+                </div>
+                <div class="card-buttons">
+                    <a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock content %}

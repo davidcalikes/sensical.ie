@@ -36,6 +36,7 @@ a {
 
 .dark-text {
     color: #0c2d6c;
+    padding: 0.5rem;
 }
 
 
@@ -100,7 +101,6 @@ nav a:hover {
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
     height: 60vh;
-    border-radius: 0.25rem;
 }
 
 .home-bg {
@@ -115,6 +115,8 @@ nav a:hover {
 
 .home-card {
     min-height: 500px;
+    border-radius: 0;
+    border: 0;
 }
 
 .card-buttons {
@@ -125,19 +127,21 @@ nav a:hover {
 
 .sensical-button {
     margin-top: 1rem;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0.5rem 2rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #0c2d6c;
-    background-color: #1fb9dd;
+    color: white;
+    background-color: #0c2d6c;
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-    transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+}
+
+.sensical-button:hover {
+    background-color: #1fb9dd;
+    text-decoration: none;
 }
 
 .card-subtitle {
@@ -146,12 +150,20 @@ nav a:hover {
 }
 
 .card-body {
-    max-height: 100px;
+    min-height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-text {
+    color: #0c2d6c;
+    font-size: larger;
 }
 
 .card-img-top {
     height: 250px;
     object-fit: cover;
+    border: solid 1px white;
 }
 
 /* **** Footer **** */
@@ -168,7 +180,6 @@ footer {
     background-color: white;
     color: #0c2d6c;
     width: 260px;
-    border-radius: 4px;
     padding: 0.5rem;
     border: 2px solid #0c2d6c;
 }
@@ -178,15 +189,46 @@ footer {
 .products-bg {
     margin-top: 158px;
     background-size: cover;
-    height: 100vh;
 }
 
 .products-bg .card {
     color: #0c2d6c;
+    border-radius: 0;
+    border: 0;
 }
 
-.product-card-footer {
-    background: #1fb9dd;
+.title-col {
+    min-height: 100px;
+}
+
+.button-row {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+
+.products-button {
+    padding: 0.5rem;
+    background-color: #0c2d6c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.products-button a {
+    width: 90px;
+    margin-top: 1rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0c2d6c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-price-bg {
+    margin-left: 5%;
 }
 
 /* **** MEDIA QUERIES **** */
@@ -206,7 +248,7 @@ footer {
         width: 80%;
         margin-left: 10%;
     }
-    .card-img-top{
+    .home-card-img{
         height: 80%;
         object-fit: scale-down;
     }
@@ -244,12 +286,14 @@ footer {
     .nav-link{
         padding: 3px;
     }
-
     .home-card {
     width: 100%;
     margin-left: 0;
     }
-
+    .products-bg {
+    margin-top: 200px;
+    background-size: cover;
+    }
     #home-hero {
         height: 300px;
         margin-top: 210px;
