@@ -17,11 +17,19 @@
             </a>
         </div>
         <div class="col-6">
-            <h5> {{ product.description }} </h5>
-            <h3> {{ product.sku }} </h3>
-            <h3> {{ product.in_stock }} </h3>
-            <h3> {{ product.price }} </h3>
-            <h3> {{ product.rating }} </h3>
+            <h3>Price: €{{ product.price }} </h3>
+            {% if product.in_stock %}
+            <small>In Stock</small>
+            {% else %}
+            <small>Out of Stock</small>
+            {% endif %}
+
+            <hr>
+
+            <p> {{ product.description }} <p>
+            <small>SKU: {{ product.sku }} </small>
+            <br>
+            <small> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
         </div>
     </div>
 </div>
