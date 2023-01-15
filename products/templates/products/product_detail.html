@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="products-bg container">
+    
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="mb-4 text-center">{{ product.name }}</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-16">
+            <a href="{{ product.image.url }}" target="_blank">
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            </a>
+        </div>
+        <div class="col-6">
+            <h5> {{ product.description }} </h5>
+            <h3> {{ product.sku }} </h3>
+            <h3> {{ product.in_stock }} </h3>
+            <h3> {{ product.price }} </h3>
+            <h3> {{ product.rating }} </h3>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+<hr class="section-rule my-5">
