@@ -60,6 +60,7 @@ a {
 
 .navbar {
     padding: 0;
+    width: 96%;
 }
 
 nav a {
@@ -240,6 +241,10 @@ footer {
     }
 
 @media screen and (max-width: 991px) {
+    .navbar {
+        width: 100%;
+    }
+
     #home-hero {
         margin-top: 180px;
     }

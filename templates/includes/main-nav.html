@@ -11,9 +11,9 @@
                 Tactile Items
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="tactile-items-link">
-                <a href="" class="dropdown-item">Sensory Toys</a>
-                <a href="" class="dropdown-item">Consumables</a>
-                <a href="" class="dropdown-item">All Tactile Items</a>
+                <a href="{% url 'products' %}?category=sensory_toys" class="dropdown-item">Sensory Toys</a>
+                <a href="{% url 'products' %}?category=bubbles" class="dropdown-item">Bubbles</a>
+                <a href="{% url 'products' %}?category=sensory_toys,bubbles" class="dropdown-item">All Tactile Items</a>
             </div>
         </li>
 
@@ -22,10 +22,10 @@
                 Audio
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="audio-link">
-                <a href="" class="dropdown-item">Bluetooth Speakers</a>
-                <a href="" class="dropdown-item">Portable Media Players</a>
-                <a href="" class="dropdown-item">Headphones</a>
-                <a href="" class="dropdown-item">All Audio</a>
+                <a href="{% url 'products' %}?category=bluetooth_speakers" class="dropdown-item">Bluetooth Speakers</a>
+                <a href="{% url 'products' %}?category=portable_media_players" class="dropdown-item">Portable Media Players</a>
+                <a href="{% url 'products' %}?category=headphones" class="dropdown-item">Headphones</a>
+                <a href="{% url 'products' %}?category=bluetooth_speakers,portable_media_players,headphones" class="dropdown-item">All Audio</a>
             </div>
         </li>
 
@@ -34,10 +34,10 @@
                 Lighting
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="lighting-link">
-                <a href="" class="dropdown-item">Spinners and Torches</a>
-                <a href="" class="dropdown-item">Led Fixtures</a>
-                <a href="" class="dropdown-item">Bubble-Tubes</a>
-                <a href="" class="dropdown-item">All Lighting</a>
+                <a href="{% url 'products' %}?category=spinners_and_torches" class="dropdown-item">Spinners and Torches</a>
+                <a href="{% url 'products' %}?category=led_fixtures" class="dropdown-item">LED Fixtures</a>
+                <a href="{% url 'products' %}?category=bubble_tubes" class="dropdown-item">Bubble-Tubes</a>
+                <a href="{% url 'products' %}?category=spinners_and_torches,led_fixtures,bubble_tubes" class="dropdown-item">All Lighting</a>
             </div>
         </li>
 
@@ -48,20 +48,18 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link mr-3 ml-3" href="#" id="about-link">
-                About Us
-            </a>
-        </li>
-
-        <li class="nav-item dropdown">
             <a class="nav-link mr-3 ml-3 dropdown-toggle" href="#" id="offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <strong>Special Offers!</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="offers-link">
-                <a href="" class="dropdown-item">Packages</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=packages" class="dropdown-item">Packages</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
             </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-3 ml-3" href="#" id="about-link">About Us
+            </a>
         </li>
     </ul>
 </div>

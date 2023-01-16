@@ -24,6 +24,6 @@ class ProductAdmin(admin.ModelAdmin):
         'for_sensory_needs',
         'sku', 'price', 'rating')
     search_fields = (
-        'category','name', 
+        'category', 'name',
         'for_sensory_needs',
         'price', 'rating',)
