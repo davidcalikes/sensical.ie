@@ -14,8 +14,10 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "Please type what you are looking for...")
-                return redirect(reverse('products'))
+                messages.error(
+                    request, "Please type what you are looking for...")
+                return redirect(
+                    reverse('products'))
 
     queries = Q(name__icontains=query) | Q(description__icontains=query)
     products = products.filter(queries)
