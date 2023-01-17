@@ -10,6 +10,26 @@
     </div>
 
     <div class="row">
+        <div>
+            <div>
+                <select>
+                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by</option>
+                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Ascending</option>
+                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price Descending</option>
+                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name</option>
+                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Availability</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12">
+            <p class="mt-4 text-center">
+                {{ products|length }} Products{% if search_term %} found for
+                "{{ search_term }}"{% endif %}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
         {% for product in products %}
         <div class="col-lg-4 col-md-6">
             <div class="card home-card mb-4">
