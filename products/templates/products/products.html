@@ -23,11 +23,11 @@
         <div class="col-12">
             <p class="mt-4">
             {% if products|length|stringformat:'s' == '1' %}
-            {{ products|length }} Product{% if search_term %} found for "{{ search_term }}"{% endif %}
+            {{ products|length }} product{% if search_term %} found for "{{ search_term }}"{% endif %}
             {% endif %}
 
             {% if products|length|stringformat:'s' != '1' %}
-            {{ products|length }} Products{% if search_term %} found for "{{ search_term }}"{% endif %}
+            {{ products|length }} products{% if search_term %} found for "{{ search_term }}"{% endif %}
             {% endif %}
             </p>
         </div>
@@ -55,10 +55,10 @@
                 <div class="card-body">
                     <h4 class="text-center">€{{ product.price }}</h4>
                     {% if product.in_stock %}
-                    <p class="text-center availability"">In Stock</p>
+                    <p class="text-center availability"">In Stock <i class="fa-solid fa-circle-check text-success"></i> </p>
                     {% endif %}
                     {% if product.in_stock == False %}
-                    <p class="text-center availability">Out Of Stock</p>
+                    <p class="text-center availability">Out Of Stock <i class="fa-solid fa-circle-xmark text-danger"></i></p>
                     {% endif %}
                 </div>
                 
@@ -83,3 +83,29 @@
     </div>
 </div>
 {% endblock content %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
+{% endblock %}
