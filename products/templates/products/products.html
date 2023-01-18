@@ -12,26 +12,37 @@
     <div class="row">
         <div>
             <div>
-                <select>
-                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by</option>
-                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Ascending</option>
-                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price Descending</option>
-                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name</option>
-                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Availability</option>
+                <select id="sort-selector" class="{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                    <option value='reset' {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by..</option>
+                    <option value='name_asc' {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                    <option value='price_asc' {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Ascending</option>
+                    <option value='price_desc' {% if current_sorting == 'price_desc' %}selected{% endif %}>Price Descending</option>
                 </select>
             </div>
         </div>
         <div class="col-12">
-            <p class="mt-4 text-center">
-                {{ products|length }} Products{% if search_term %} found for
-                "{{ search_term }}"{% endif %}
+            <p class="mt-4">
+            {% if products|length|stringformat:'s' == '1' %}
+            {{ products|length }} Product{% if search_term %} found for "{{ search_term }}"{% endif %}
+            {% endif %}
+
+            {% if products|length|stringformat:'s' != '1' %}
+            {{ products|length }} Products{% if search_term %} found for "{{ search_term }}"{% endif %}
+            {% endif %}
             </p>
         </div>
     </div>
 
     <div class="row">
+        <div class="col mt-3">
+            <input type="checkbox" id="hide-no-stock">
+            <label for="hide-no-stock">Available Products Only</label>           
+        </div>
+    </div>
+    
+    <div class="row">
         {% for product in products %}
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 for-stock">
             <div class="card home-card mb-4">
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -43,7 +54,14 @@
                 </div>
                 <div class="card-body">
                     <h4 class="text-center">€{{ product.price }}</h4>
+                    {% if product.in_stock %}
+                    <p class="text-center availability"">In Stock</p>
+                    {% endif %}
+                    {% if product.in_stock == False %}
+                    <p class="text-center availability">Out Of Stock</p>
+                    {% endif %}
                 </div>
+                
                 <div class="row button-row text-center"> 
                     <div class="col-6 text-center">
                         <div  class="text-center products-button">
@@ -65,5 +83,3 @@
     </div>
 </div>
 {% endblock content %}
-
-<hr class="section-rule my-5">
