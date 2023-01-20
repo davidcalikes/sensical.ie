@@ -42,7 +42,11 @@
     
     <div class="row">
         {% for product in products %}
-        <div class="col-lg-4 col-md-6 for-stock">
+        {% if product.in_stock %}
+        <div class="col-lg-4 col-md-6 in-stock">
+        {% else %}
+        <div class="col-lg-4 col-md-6 out-of-stock">
+        {% endif %}
             <div class="card home-card mb-4">
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -55,10 +59,12 @@
                 <div class="card-body">
                     <h4 class="text-center">€{{ product.price }}</h4>
                     {% if product.in_stock %}
-                    <p class="text-center availability"">In Stock <i class="fa-solid fa-circle-check text-success"></i> </p>
+                    <p class="text-center availability">In Stock <i class="fa-solid fa-circle-check text-success"></i>
+                    </p>
                     {% endif %}
                     {% if product.in_stock == False %}
-                    <p class="text-center availability">Out Of Stock <i class="fa-solid fa-circle-xmark text-danger"></i></p>
+                    <p class="text-center availability">Out Of Stock <i
+                            class="fa-solid fa-circle-xmark text-danger"></i></p>
                     {% endif %}
                 </div>
                 
@@ -86,7 +92,25 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
+
+    <script>
+        const stockFunction = document.getElementsByClassName("out-of-stock")
+        const hideNoStock = document.querySelector('#hide-no-stock');
+        hideNoStock.addEventListener('change', function(e){
+        if(hideNoStock.checked){
+            for (let i=0;i<stockFunction.length;i+=1){
+            stockFunction[i].style.display = 'none';{
+            }
+        }
+        } else {
+            for (let i=0;i<stockFunction.length;i+=1){
+            stockFunction[i].style.display = 'block';
+            }
+        }    
+        })
+    </script>
+
+    <script>
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);
@@ -107,5 +131,6 @@
             window.location.replace(currentUrl);
         }
     })
-</script>
+    </script>
+
 {% endblock %}

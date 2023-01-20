@@ -202,6 +202,10 @@ footer {
     min-height: 100px;
 }
 
+#hidden-stock-status {
+    display: none;
+}
+
 .button-row {
     width: 90%;
     margin-left: 5%;
