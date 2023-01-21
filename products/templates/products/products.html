@@ -94,15 +94,18 @@
 {{ block.super }}
 
     <script>
+        
         const stockFunction = document.getElementsByClassName("out-of-stock")
         const hideNoStock = document.querySelector('#hide-no-stock');
         hideNoStock.addEventListener('change', function(e){
         if(hideNoStock.checked){
+            localStorage.setItem("checkbox", true);
             for (let i=0;i<stockFunction.length;i+=1){
             stockFunction[i].style.display = 'none';{
             }
         }
         } else {
+            localStorage.setItem("checkbox", false);
             for (let i=0;i<stockFunction.length;i+=1){
             stockFunction[i].style.display = 'block';
             }
