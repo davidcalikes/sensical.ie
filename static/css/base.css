@@ -2,7 +2,6 @@
 
 body {
     background-color: #0c2d6c;
-    min-height: 100vh;
     color: rgb(255, 255, 255);
     font-family: 'Assistant';
 }
@@ -259,9 +258,10 @@ footer {
 
 /* **** Shopping Basket **** */
 
-.test-text {
-    margin-top: 180px;
-    font-size: 200px;
+.basket-bg {
+    margin-top: 158px;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 /* **** MEDIA QUERIES **** */

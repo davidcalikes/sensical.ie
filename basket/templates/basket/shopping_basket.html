@@ -2,7 +2,35 @@
 {% load static %}
 
 {% block content %}
-<H1 class="test-text" >This is the basket page</H1>
+<div class="basket-bg container">
+    
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2>My Basket</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col mt-4">
+            {% if basket_items %}
+            <div class="table-responsive"></div>
+            {% else %}
+            <div class="col text-center">
+                Oops!
+                Looks like you haven't added anything to your basket. <br>
+                Click below to continue browsing our quality, affordable range.
+            </div>
+            {% endif %}
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="col text-center mt-4">
+            <h3> *** placeholder back to products div ***</h3> 
+        </div>
+    </div>    
+
+</div>
 
 
 {% endblock content %}
