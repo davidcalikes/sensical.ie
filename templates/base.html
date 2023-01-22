@@ -134,11 +134,19 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col-12 secondary-bg text-white">
-                <h4 class="banner-font pt-1 my-1">Free nationwide delivery <i class="fa-solid fa-flip-horizontal fa-truck icon"></i> on orders over €50!</h4>                
-            </div>            
-        </div>
+        <div id="delivery-banner" class="row secondary-bg text-center">
+            <div class="col-12">
+                <div id="delivery-slider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item text-center secondary-bg active">
+                            <h4 class="banner-font"> <i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Free nationwide delivery on orders over €50!</h4>
+                        </div>
+                        <div class="carousel-item text-center secondary-bg">
+                            <h4 class="banner-font">Shop | Hire | Enquire </h4>
+                        </div>            
+                    </div>            
+                </div>
+            </div>
     </header>
 
     {% if messages %}

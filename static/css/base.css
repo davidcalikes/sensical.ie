@@ -31,7 +31,8 @@ a {
 }
 
 .secondary-bg {
-    background-color: #1fb9dd;
+    background-color: #75e6ff;
+    height: 36px;
 }
 
 .dark-text {
@@ -68,8 +69,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #1fb9dd;
-}
+    color: #75e6ff; 
+}                             
 
 .navbar-toggler {
     border: 1px solid white;
@@ -82,9 +83,16 @@ nav a:hover {
     width: 100%;
 }
 
+.carousel-item.active {
+    display: block;
+}
+
+
 .banner-font {
-    font-size: large;
+    font-size: 16px;
     color: #0c2d6c;
+    font-style: italic;
+    padding-top: 8px;
 }
 
 /* **** Landing Page **** */
@@ -101,7 +109,6 @@ nav a:hover {
     margin-top: 180px;
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
-    height: 60vh;
 }
 
 .home-bg {
@@ -141,7 +148,7 @@ nav a:hover {
 }
 
 .sensical-button:hover {
-    background-color: #1fb9dd;
+    background-color: #75e6ff;
     text-decoration: none;
 }
 
@@ -173,7 +180,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    background-color: #1fb9dd;
+    background-color: #75e6ff;
     padding: 2rem;
 }
 
@@ -183,6 +190,10 @@ footer {
     width: 260px;
     padding: 0.5rem;
     border: 2px solid #0c2d6c;
+}
+
+.footer-info-box i {
+    padding: 4px;
 }
 
 /* **** Products Page **** */
