@@ -94,7 +94,17 @@
 {{ block.super }}
 
     <script>
-        
+        function availabilityToggleState(){
+            const stockFunction = document.getElementsByClassName("out-of-stock")
+            const hideNoStock = document.querySelector('#hide-no-stock');
+            let toggleIs = localStorage.getItem("checkbox");
+            console.log(toggleIs)
+            if(toggleIs == "true"){
+                hideNoStock.click();
+                console.log("toggle click has fired")
+                }
+            }
+
         const stockFunction = document.getElementsByClassName("out-of-stock")
         const hideNoStock = document.querySelector('#hide-no-stock');
         hideNoStock.addEventListener('change', function(e){
