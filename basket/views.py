@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def shopping_basket(request):
+    """ A view to return basket page """
+
+    return render(request, 'basket/shopping_basket.html')

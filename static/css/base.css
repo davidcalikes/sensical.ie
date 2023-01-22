@@ -257,6 +257,12 @@ footer {
     margin-left: 5%;
 }
 
+/* **** Shopping Basket **** */
+
+.test-text {
+    font-size: 300px;
+}
+
 /* **** MEDIA QUERIES **** */
 
 @media (min-width: 1200px) {
