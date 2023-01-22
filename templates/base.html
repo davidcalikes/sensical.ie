@@ -134,6 +134,7 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
+    {% if "products" in request.path %}
         <div id="delivery-banner" class="row secondary-bg text-center">
             <div class="col-12">
                 <div id="delivery-slider" class="carousel slide" data-ride="carousel">
@@ -147,6 +148,12 @@
                     </div>            
                 </div>
             </div>
+        </div>
+    {% else %}
+    <div class="row nav-footer">
+        
+    </div>
+    {% endif %}
     </header>
 
     {% if messages %}

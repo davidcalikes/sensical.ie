@@ -24,6 +24,8 @@ a {
 .section-rule {
     width: 60%;
     border-color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .primary-bg {
@@ -39,7 +41,6 @@ a {
     color: #0c2d6c;
     padding: 0.5rem;
 }
-
 
 /* **** Nav Elements **** */
 
@@ -83,6 +84,11 @@ nav a:hover {
     width: 100%;
 }
 
+.nav-footer {
+    background-color: #75e6ff;
+    height: 2px;
+}
+
 .carousel-item.active {
     display: block;
 }
@@ -106,7 +112,7 @@ nav a:hover {
 }
 
 #home-hero {
-    margin-top: 180px;
+    margin-top: 160px;
     background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
     background-size: cover;
 }
@@ -261,7 +267,11 @@ footer {
     }
 
     #home-hero {
-        margin-top: 180px;
+        margin-top: 154px;
+    }
+
+    .nav-footer {
+        display: none;
     }
 
     .home-card {
@@ -274,10 +284,21 @@ footer {
     }
     }
 
+@media screen and (max-width: 767px) {
+    #home-hero {
+        margin-top: 150px;
+    }
+    }
+    
+
 @media screen and (max-width: 600px) {
     .container {
         width: 80%;
     }
+    #home-hero {
+        margin-top: 140px;
+    }
+
     }
 
 @media screen and (max-width: 500px) {
@@ -297,6 +318,7 @@ footer {
         width: 90%;
         margin-left: 5%;
     }
+    }
 
 @media screen and (max-width: 430px) {
     #mobile-nav-logo {
@@ -314,10 +336,6 @@ footer {
     margin-top: 200px;
     background-size: cover;
     }
-    #home-hero {
-        height: 300px;
-        margin-top: 210px;
-    }
     }
 
 @media screen and (max-width: 350px) {
@@ -331,4 +349,3 @@ footer {
         display: block;
     }
     }
-}
