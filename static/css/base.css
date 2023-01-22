@@ -260,7 +260,8 @@ footer {
 /* **** Shopping Basket **** */
 
 .test-text {
-    font-size: 300px;
+    margin-top: 180px;
+    font-size: 200px;
 }
 
 /* **** MEDIA QUERIES **** */

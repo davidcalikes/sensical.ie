@@ -134,7 +134,7 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-    {% if "products" in request.path %}
+    {% if "products" in request.path or "basket" in request.path %}
         <div id="delivery-banner" class="row secondary-bg text-center">
             <div class="col-12">
                 <div id="delivery-slider" class="carousel slide" data-ride="carousel">
