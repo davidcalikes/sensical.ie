@@ -48,7 +48,13 @@
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="{% url 'shopping_basket' %}">
         <div class="text-center">
-            <div><i class="fas fa-shopping-basket fa-lg"></i></div>
+            <div>
+                <i class="fas fa-shopping-basket fa-lg"></i>
+                {% if item_count %}
+                <span class='item-counter'>{{ item_count }}</span>
+                {% endif %}
+            </div>
+            
         </div>
     </a>
 </li>
