@@ -74,7 +74,19 @@ nav a {
 
 nav a:hover {
     color: #75e6ff; 
-}                             
+}
+
+.item-counter {
+    background: #be0202;
+    color: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin: 0;
+    font-size: 11px;
+    position: absolute;
+    transform: translateY(-50%);
+}
 
 .navbar-toggler {
     border: 1px solid white;
