@@ -159,6 +159,7 @@ nav a:hover {
 .sensical-button:hover {
     background-color: #75e6ff;
     text-decoration: none;
+    color: #0c2d6c;
 }
 
 .card-subtitle {
@@ -246,10 +247,22 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
     color: white;
-    background-color: #0c2d6c;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.products-button:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
+}
+
+.products-button a:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
 }
 
 .card-price-bg {
