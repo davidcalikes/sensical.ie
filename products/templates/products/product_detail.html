@@ -31,7 +31,7 @@
             <br>
             <small> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
 
-            <form class="form" action="#" method="POST">
+            <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
                     <div class="col-12">
