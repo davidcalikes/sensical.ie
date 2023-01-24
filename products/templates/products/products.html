@@ -60,12 +60,14 @@
                 <div class="card-body">
                     <h4 class="text-center">€{{ product.price }}</h4>
                     {% if product.in_stock %}
-                    <p class="text-center availability">In Stock <i class="fa-solid fa-circle-check text-success"></i>
+                    <p class="text-center availability">In Stock 
+                    <i class="fa-solid fa-circle-check text-success"></i>
                     </p>
                     {% endif %}
                     {% if product.in_stock == False %}
-                    <p class="text-center availability">Out Of Stock <i
-                            class="fa-solid fa-circle-xmark text-danger"></i></p>
+                    <p class="text-center availability">Out Of Stock 
+                        <i class="fa-solid fa-circle-xmark text-danger"></i>
+                    </p>
                     {% endif %}
                 </div>
                 

@@ -10,6 +10,10 @@ a {
     color: #0c2d6c;
 }
 
+.fa-input { 
+    font-family: Assistant, FontAwesome; 
+}
+
 /* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
 .icon {
     align-items: center;
@@ -223,7 +227,7 @@ footer {
     padding: 4px;
 }
 
-/* **** Products Page **** */
+/* **** Products Pages **** */
 
 .products-bg {
     margin-top: 158px;
@@ -244,6 +248,11 @@ footer {
     display: none;
 }
 
+.product-rule {
+    border-color: white;
+    width: 70%;
+}
+
 .button-row {
     width: 90%;
     margin-left: 5%;
@@ -253,7 +262,7 @@ footer {
 .products-button {
     padding: 0.5rem;
     background-color: #0c2d6c;
-    border: none;
+    border: solid 1px #0c2d6c;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -285,6 +294,14 @@ footer {
 
 .card-price-bg {
     margin-left: 5%;
+}
+
+.product-detail-img-container {
+}
+
+.product-detail-img {
+    width: 70%;
+    object-fit: cover;
 }
 
 /* **** Shopping Basket **** */

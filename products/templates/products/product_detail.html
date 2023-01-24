@@ -11,20 +11,24 @@
     </div>
     
     <div class="row">
-        <div class="col-16">
-            <a href="{{ product.image.url }}" target="_blank">
-                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <div class="col-sm-12 col-md-6 text-center">
+            <div class="product-detail-image-container">
+                <a href="{{ product.image.url }}" target="_blank">
+                    <img class="product-detail-img" src="{{ product.image.url }}" alt="{{ product.name }}">
             </a>
+            </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
             <h3>Price: €{{ product.price }} </h3>
             {% if product.in_stock %}
-            <small>In Stock</small>
+            <small>In Stock <i class="fa-solid fa-circle-check text-success"></i></small>
             {% else %}
-            <small>Out of Stock</small>
+            <small>Out of Stock <i class="fa-solid fa-circle-xmark text-danger"></i></small>
             {% endif %}
 
-            <hr>
+            <div class="center-row">
+                <hr class="product-rule">
+            </div>
 
             <p> {{ product.description }} <p>
             <small>SKU: {{ product.sku }} </small>
@@ -45,12 +49,12 @@
 
                     <div class="col-12">
                         <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
-                            <span class="icon">
-                                <i class="fa-regular fa-circle-left"></i>
-                            </span>
+                            <span class="icon"><i class="fa-regular fa-circle-left"></i></span>
                             <span class="text-uppercase">Find More Products</span>
                         </a>
-                        <input type="submit" class="sensical-button text-center rounded-0 text-uppercase mt-2" value="Add To Basket">
+                    </div>
+                    <div class="col-12">
+                        <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
