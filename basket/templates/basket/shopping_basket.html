@@ -5,32 +5,91 @@
 <div class="basket-bg container">
     
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2>My Basket</h2>
+        <div class="col-12 text-center text-sm-left mt-3">
+            <h1>My Basket</h1>
         </div>
     </div>
     
     <div class="row">
-        <div class="col mt-4">
-            {% if basket_items %}
-            <div class="table-responsive"> {{ basket_items }}</div>
-            {% else %}
-            <div class="col text-center">
-                Oops!
-                Looks like you haven't added anything to your basket. <br>
-                Click below to continue browsing our quality, affordable range.
-            </div>
-            {% endif %}
+        <div class="col-12">
+            <p class="mb-0 item-count-header">{{ item_count }} items in basket</p>
         </div>
     </div>
-        
+
     <div class="row">
-        <div class="col text-center mt-4">
-            <button class="sensical-button"><i class="fa-regular fa-circle-left"></i> back to shopping</button> 
+        <div class="col-sm-12 col-md-8 my-3">
+            <div class="row mb-4">
+                {% if basket_items %}
+                    {% for item in basket_items %}
+                        <div class="col-sm-12 col-md-4">
+                            <div class="basket-image-container">
+                                <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-8 center-row">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="mb-2">{{ item.product.name }}</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="mb-2">€{{ item.product.price }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="col text-center">
+                        Oops!
+                        Looks like you haven't added anything to your basket. <br>
+                        Click below to continue browsing our quality, affordable range.
+                    </div>
+                {% endif %}
+            </div>
         </div>
-    </div>    
 
+        <div class="col-sm-12 col-md-4 text-center mt-4">
+            <div class="basket-checkout text-center mb-4">
+                <button class="basket-button"><i class="fa-regular fa-circle-left"></i> back to shopping</button>
+            </div>
+            <div class="basket-checkout text-center mt-2 mb-5">
+                <h5 class="checkout-heading">BASKET SUMMARY</h5>
+            </div>
+            <div class="row">
+                <div class="col text-left">
+                    <p><strong>Total Items:</strong></p>
+                </div>
+                <div class="col text-right">
+                    <span>{{ item_count }}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-left">
+                    <p><strong>Sub-total:</strong></p>
+                </div>
+                <div class="col text-right">
+                    <span>€{{ grand_total }}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-left">
+                    <p><strong>Delivery:</strong></p>
+                </div>
+                <div class="col text-right">
+                    <span>€{{ delivery|floatformat:2 }}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-left">
+                    <p><strong>Total:</strong></p>
+                </div>
+                <div class="col text-right">
+                    <span>{{ total|floatformat:2 }}</span>
+                </div>
+            </div>
+            <div class="basket-checkout text-center my-2">
+                <button class="basket-button"><i class="fa-solid fa-lock"></i> Secure Checkout</button>
+            </div>
+        </div>
+    </div>  
 </div>
-
-
 {% endblock content %}

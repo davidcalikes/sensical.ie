@@ -159,9 +159,8 @@ a.nav-link {
 }
 
 .sensical-button {
-    margin-top: 1rem;
     font-size: 14px;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: white;
@@ -170,6 +169,7 @@ a.nav-link {
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+    border: solid 1px #0c2d6c;
 }
 
 .sensical-button:hover {
@@ -293,6 +293,65 @@ footer {
     margin-top: 158px;
     background-size: cover;
     min-height: 100vh;
+}
+
+.item-count-header {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.basket-items {
+    color: #0c2d6c;
+    width: 90%;
+    border: 1px solid#75e6ff;
+    background-color: #fff;
+}
+
+.basket-button {
+    font-size: 14px;
+    width: 100%;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #fff;
+    background-color:#0c2d6c ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #fff;
+}
+
+.basket-button:hover {
+    background-color: #75e6ff ;
+    text-decoration: none;
+    color: #0c2d6c;
+    border: solid 1px #fff;
+}
+
+.basket-image-container{
+    width: 150px;
+    height: 150px;
+}
+
+.basket-img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.basket-checkout {
+    width: 100%;
+}
+
+.basket-item-details {
+    display: block;
+}
+
+.checkout-heading {
+    color: #0c2d6c;
+    background-color: #75e6ff;
 }
 
 /* **** MEDIA QUERIES **** */
