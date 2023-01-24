@@ -152,7 +152,6 @@ a.nav-link {
 
 .home-card {
     min-height: 500px;
-    border-radius: 0;
     border: 0;
 }
 
@@ -170,7 +169,6 @@ a.nav-link {
     color: white;
     background-color: #0c2d6c;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     outline: none;
     border: solid 1px #0c2d6c;
@@ -232,11 +230,11 @@ footer {
 .products-bg {
     margin-top: 158px;
     background-size: cover;
+    height: 100vh;
 }
 
 .products-bg .card {
     color: #0c2d6c;
-    border-radius: 0;
     border: 0;
 }
 
@@ -263,7 +261,6 @@ footer {
     padding: 0.5rem;
     background-color: #0c2d6c;
     border: solid 1px #0c2d6c;
-    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -274,7 +271,6 @@ footer {
     text-transform: uppercase;
     color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -294,9 +290,6 @@ footer {
 
 .card-price-bg {
     margin-left: 5%;
-}
-
-.product-detail-img-container {
 }
 
 .product-detail-img {
@@ -335,7 +328,6 @@ footer {
     color: #fff;
     background-color:#0c2d6c ;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     outline: none;
     border: solid 1px #fff;
@@ -369,6 +361,13 @@ footer {
 .checkout-heading {
     color: #0c2d6c;
     background-color: #75e6ff;
+}
+
+.checkout-row {
+    color: #0c2d6c;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
 }
 
 /* **** MEDIA QUERIES **** */

@@ -48,21 +48,21 @@
         </div>
 
         <div class="col-sm-12 col-md-4 text-center mt-4">
-            <div class="basket-checkout text-center mb-4">
+            <div class="basket-checkout text-center mb-2">
                 <button class="basket-button"><i class="fa-regular fa-circle-left"></i> back to shopping</button>
             </div>
-            <div class="basket-checkout text-center mt-2 mb-5">
-                <h5 class="checkout-heading">BASKET SUMMARY</h5>
+            <div class="basket-checkout text-center my-2">
+                <h5 class="checkout-heading py-2">BASKET SUMMARY</h5>
             </div>
-            <div class="row">
+            <div class="row checkout-row pt-4 mt-2">
                 <div class="col text-left">
-                    <p><strong>Total Items:</strong></p>
+                    <p><strong>Items:</strong></p>
                 </div>
                 <div class="col text-right">
                     <span>{{ item_count }}</span>
                 </div>
             </div>
-            <div class="row">
+            <div class="row checkout-row">
                 <div class="col text-left">
                     <p><strong>Sub-total:</strong></p>
                 </div>
@@ -70,7 +70,7 @@
                     <span>€{{ grand_total }}</span>
                 </div>
             </div>
-            <div class="row">
+            <div class="row checkout-row">
                 <div class="col text-left">
                     <p><strong>Delivery:</strong></p>
                 </div>
@@ -78,7 +78,7 @@
                     <span>€{{ delivery|floatformat:2 }}</span>
                 </div>
             </div>
-            <div class="row">
+            <div class="row checkout-row">
                 <div class="col text-left">
                     <p><strong>Total:</strong></p>
                 </div>
