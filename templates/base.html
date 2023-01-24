@@ -165,9 +165,15 @@
                                 <h4 class="banner-font"> <i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Free
                                     nationwide delivery on orders over €{{ free_delivery_threshold }}!</h4>
                             </div>
+                            {% if free_delivery_delta == 0 %}
                             <div class="carousel-item text-center secondary-bg">
-                                <h4 class="banner-font">Shop | Hire | Enquire </h4>
+                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Congratulations... You qualify for free delivery!!!</h4>
                             </div>
+                            {% else %}
+                            <div class="carousel-item text-center secondary-bg">
+                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Spend just <strong>€{{ free_delivery_delta }} more to qualify for free delivery!</strong></h4>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
