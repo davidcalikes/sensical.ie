@@ -185,6 +185,19 @@
             {% endif %}
         </header>
 
+         <!-- Bootstrap Messages: Code used is from Code Institute's Fullstack Frameworks Walkthrough Project-->
+         <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissible fade show message-container" id="msg" role="alert">
+                        {{ message | safe }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
         {% block page_header %}
         {% endblock page_header %}
 
@@ -195,6 +208,15 @@
 
         {% block postloadjs %}
         {% endblock postloadjs %}
+
+        <!-- Script to close bootstrap messages automatically: Code used is from Code Institute's Fullstack Frameworks Walkthrough Project-->
+        <script>
+            setTimeout(function () {
+                let messages = document.getElementById('msg');
+                let alert = new bootstrap.Alert(messages);
+                alert.close();
+            }, 3000);
+        </script>
         
     </body>
 
