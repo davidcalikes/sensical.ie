@@ -14,6 +14,10 @@ a {
     font-family: Assistant, FontAwesome; 
 }
 
+.message-container {
+    margin-top: 280px;
+}
+
 /* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
 .icon {
     align-items: center;

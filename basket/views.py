@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from products.models import Product
 
 
 def shopping_basket(request):
@@ -13,8 +15,23 @@ def add_to_basket(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
+    product = get_object_or_404(Product, pk=item_id)
 
     if item_id in list(basket.keys()):
+        if basket[item_id] + quantity > 10:
+            messages.error(
+                request,
+                "Customers are restricted to a maximum of 10 items per transaction",
+            )
+        else:
+            basket[item_id] += quantity
+            messages.success(
+                request,
+                f"{ basket[item_id] } \
+                     { product.name }'s added to basket",
+            )
+
+    elif item_id in list(basket.keys()):
         basket[item_id] += quantity
     else:
         basket[item_id] = quantity
