@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.http import HttpResponse
 from products.models import Product
 
 
@@ -41,7 +42,7 @@ def add_to_basket(request, item_id):
 
 
 def update_basket(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
+    """Update and save changes to the shopping basket"""
 
     quantity = int(request.POST.get('quantity'))
     basket = request.session.get('basket', {})
@@ -52,4 +53,25 @@ def update_basket(request, item_id):
         basket.pop(item_id)
 
     request.session['basket'] = basket
+    return redirect(reverse('shopping_basket'))
+
+
+def remove_item(request, item_id):
+    """
+    Adjust the quantity of the specified product to the specified
+    amount
+
+    url for this function should be <str:id> not <int:id>
+    - otherwise you need to add str() method for each dict representation.
+    """
+    basket = request.session.get('basket', {})
+    quantity = basket[item_id] - 10
+
+    if quantity > 0:
+        basket[item_id] = quantity
+    else:
+        basket.pop(item_id)
+    request.session['basket'] = basket
+    if not basket:
+        return redirect(reverse('shopping_basket'))
     return redirect(reverse('shopping_basket'))

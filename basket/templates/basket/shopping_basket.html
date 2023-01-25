@@ -58,13 +58,22 @@
                                             <div class="col-12">
                                                 <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; update basket">
                                             </div>
-                                            <div class="col-12">
-                                                <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-id="{{ item.id }}"><small>Remove</small></a>
-                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <form class="form update-form" method="POST" action="{% url 'remove_item' item.item_id %}">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <div class="input-group-selector">
+                                        <div class="col-12">
+                                            <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf2ed; remove from basket">
+                                        </div>
+                                </form>
+                            </div>   
                         </div>
                     {% endfor %}
                 {% else %}
