@@ -21,19 +21,19 @@
             <div class="row mb-4">
                 {% if basket_items %}
                     {% for item in basket_items %}
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12">
                             <div class="basket-image-container">
                                 <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-8">
+                        <div class="col-sm-12">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-sm-12">
                                     <p class="mb-2">{{ item.product.name }}</p>
                                     <p class="mb-2">€{{ item.product.price }}</p>
                                     <p class="mb-2">{{ item.quantity }}</p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-sm-12">
                                     <form class="form update-form" method="POST" action="{% url 'update_basket' item.item_id %}">
                                         {% csrf_token %}
                                         <div class="form-group">
@@ -55,7 +55,7 @@
                                                     <option>10</option>
                                                 </select>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col-6">
                                                 <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; update basket">
                                             </div>
                                         </div>
@@ -63,15 +63,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-sm-12">
                             <div class="row">
                                 <form class="form update-form" method="POST" action="{% url 'remove_item' item.item_id %}">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <div class="input-group-selector">
-                                        <div class="col-12">
-                                            <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf2ed; remove from basket">
-                                        </div>
+                                            <div class="col-12">
+                                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf2ed; remove from basket">
+                                            </div>
+                                        </div>    
+                                    </div>
                                 </form>
                             </div>   
                         </div>
@@ -129,6 +131,6 @@
                 <button class="basket-button"><i class="fa-solid fa-lock"></i> Secure Checkout</button>
             </div>
         </div>
-    </div>  
+    </div> 
 </div>
 {% endblock content %}

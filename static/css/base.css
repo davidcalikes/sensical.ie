@@ -207,7 +207,17 @@ a.nav-link {
     border: solid 1px white;
 }
 
+/* **** Similar Products Section **** */
+
+.similar-products-container {
+    min-height: 500px;
+}
+
 /* **** Footer **** */
+
+.footer-container-bg {
+    background-color: #75e6ff;
+}
 
 footer {
     display: flex;
@@ -234,7 +244,6 @@ footer {
 .products-bg {
     margin-top: 158px;
     background-size: cover;
-    height: 100vh;
 }
 
 .products-bg .card {
@@ -306,7 +315,6 @@ footer {
 .basket-bg {
     margin-top: 158px;
     background-size: cover;
-    min-height: 100vh;
 }
 
 .item-count-header {
