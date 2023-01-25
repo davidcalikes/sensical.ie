@@ -17,66 +17,62 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-12 col-md-8 my-3">
+        <div class="col-sm-12 col-md-7 mb-3 mr-4">
             <div class="row mb-4">
                 {% if basket_items %}
                     {% for item in basket_items %}
-                        <div class="col-sm-12">
-                            <div class="basket-image-container">
-                                <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p class="mb-2">{{ item.product.name }}</p>
-                                    <p class="mb-2">€{{ item.product.price }}</p>
-                                    <p class="mb-2">{{ item.quantity }}</p>
-                                </div>
-                                <div class="col-sm-12">
-                                    <form class="form update-form" method="POST" action="{% url 'update_basket' item.item_id %}">
-                                        {% csrf_token %}
-                                        <div class="form-group">
-                                            <div class="input-group-selector">
-                                                <select class="form-control custom-select" type="number"
-                                                name="quantity" 
-                                                data-item_id="{{ item.item_id }}"
-                                                id="id_qty_{{ item.item_id }}">
-                                                    <option value="{{ item.quantity }}" selected hidden>{{ item.quantity }}</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6">
-                                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; update basket">
-                                            </div>
-                                        </div>
-                                    </form>
+                    <div class="container-fluid basket-item-container mb-3">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-3">
+                                <div class="basket-image-container">
+                                    <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <form class="form update-form" method="POST" action="{% url 'remove_item' item.item_id %}">
-                                    {% csrf_token %}
-                                    <div class="form-group">
-                                        <div class="input-group-selector">
-                                            <div class="col-12">
-                                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf2ed; remove from basket">
-                                            </div>
-                                        </div>    
+                            <div class="col-sm-12 col-lg-9">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <h5 class="mb-2">{{ item.product.name }}</h5>
+                                        <p class="mb-2">€{{ item.product.price }}</p>
+                                        <p class="mb-2">Qty: {{ item.quantity }}</p>
                                     </div>
-                                </form>
-                            </div>   
+                                    <div class="col-sm-12 col-lg-8">
+                                        <form class="form update-form" method="POST" action="{% url 'update_basket' item.item_id %}">
+                                            {% csrf_token %}
+                                            <div>
+                                                <div class="input-group-selector">
+                                                    <select class="form-control custom-select" type="number"
+                                                    name="quantity" 
+                                                    data-item_id="{{ item.item_id }}"
+                                                    id="id_qty_{{ item.item_id }}">
+                                                        <option value="{{ item.quantity }}" selected hidden>{{ item.quantity }}</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                    </select>
+                                                </div>
+                                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase" type="submit" value="&#xf291; update basket">
+                                            </div>
+                                        </form>
+                                        <form class="form update-form" method="POST" action="{% url 'remove_item' item.item_id %}">
+                                            {% csrf_token %}
+                                            <div>
+                                                <div class="input-group-selector">
+                                                    <input class="fa-input sensical-button text-center rounded-0 text-uppercase" type="submit" value="&#xf2ed; remove from basket">
+                                                </div>    
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     {% endfor %}
                 {% else %}
                     <div class="col text-center">
@@ -88,7 +84,7 @@
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-4 text-center mt-4">
+        <div class="col-sm-12 col-md-4 text-center">
             <div class="basket-checkout text-center mb-2">
                 <button class="basket-button"><i class="fa-regular fa-circle-left"></i> back to shopping</button>
             </div>

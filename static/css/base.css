@@ -312,9 +312,14 @@ footer {
 
 /* **** Shopping Basket **** */
 
+.input-group-selector {
+    width:74%;
+}
+
 .basket-bg {
     margin-top: 158px;
     background-size: cover;
+    min-height: 80vh;
 }
 
 .item-count-header {
@@ -322,11 +327,9 @@ footer {
     line-height: 34px;
 }
 
-.basket-items {
-    color: #0c2d6c;
-    width: 90%;
-    border: 1px solid#75e6ff;
-    background-color: #fff;
+.basket-item-container {
+    border: 1px solid #fff;
+    padding: 1rem;
 }
 
 .basket-button {
@@ -364,10 +367,6 @@ footer {
 
 .basket-checkout {
     width: 100%;
-}
-
-.basket-item-details {
-    display: block;
 }
 
 .checkout-heading {
