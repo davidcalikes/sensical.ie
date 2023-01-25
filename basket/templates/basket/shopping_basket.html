@@ -34,15 +34,15 @@
                                     <p class="mb-2">{{ item.quantity }}</p>
                                 </div>
                                 <div class="col-6">
-                                    <form class="form update-form" method="POST" action="#">
+                                    <form class="form update-form" method="POST" action="{% url 'update_basket' item.item_id %}">
                                         {% csrf_token %}
-                                        <div class="form-group w-50">
+                                        <div class="form-group">
                                             <div class="input-group-selector">
                                                 <select class="form-control custom-select" type="number"
                                                 name="quantity" 
                                                 data-item_id="{{ item.item_id }}"
                                                 id="id_qty_{{ item.item_id }}">
-                                                    <option value="{{ item.quantity }}" selected disabled hidden>{{ item.quantity }}</option>
+                                                    <option value="{{ item.quantity }}" selected hidden>{{ item.quantity }}</option>
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -57,6 +57,9 @@
                                             </div>
                                             <div class="col-12">
                                                 <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; update basket">
+                                            </div>
+                                            <div class="col-12">
+                                                <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-id="{{ item.id }}"><small>Remove</small></a>
                                             </div>
                                         </div>
                                     </form>
@@ -120,8 +123,3 @@
     </div>  
 </div>
 {% endblock content %}
-
-{% block postloadjs %}
-{{ block.super }}
-{% include "products/includes/qty_selector_script.html" %}
-{% endblock postloadjs %}
