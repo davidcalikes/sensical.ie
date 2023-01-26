@@ -330,6 +330,10 @@ footer {
 
 /* **** Shopping Basket **** */
 
+.custom-select {
+    margin-bottom: 1rem;
+}
+
 .input-group-selector {
     width:74%;
 }
