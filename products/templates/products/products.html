@@ -44,17 +44,17 @@
     <div class="row">
         {% for product in products %}
         {% if product.in_stock %}
-        <div class="col-lg-4 col-md-6 in-stock">
+        <div class="col-xl-3 col-lg-4 col-sm-12 in-stock">
         {% else %}
-        <div class="col-lg-4 col-md-6 out-of-stock">
+        <div class="col-xl-3 col-lg-4 out-of-stock">
         {% endif %}
             <div class="card home-card mb-4">
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 <div class="row mt-2">
-                    <div class=" col-12 text-center">
-                        <h3 class="dark-text title-col" >{{ product.name }}</h3>
+                    <div class=" col-12 text-left">
+                        <h5 class="dark-text title-col text-center" >{{ product.name }}</h5>
                     </div>
                 </div>
                 <div class="card-body">
@@ -72,18 +72,18 @@
                 </div>
                 
                 <div class="row button-row text-center"> 
-                    <div class="col-6 text-center">
+                    <div class="col-12 text-center">
                         <div  class="text-center products-button">
                             <a href="#">Add to cart</a>
                         </div>
                     </div>
-                <div class="col-6 text-center">
+                <div class="col-12 text-center">
                     <div  class="text-center products-button">
                         <a href="#">Item Details</a>
                     </div>
                 </div>
                 </div>
-                <div class="card-buttons">
+                <div class="rating-container">
                     <a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>
                 </div>
             </div>

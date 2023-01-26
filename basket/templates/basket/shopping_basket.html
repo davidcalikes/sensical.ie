@@ -16,8 +16,8 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-12 col-md-7 mb-3 mr-4">
+    <div class="row center-row">
+        <div class="col-sm-12 col-md-7 mb-3 mr-5">
             <div class="row mb-4">
                 {% if basket_items %}
                     {% for item in basket_items %}
@@ -28,7 +28,7 @@
                                     <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-9">
+                            <div class="col-sm-12 col-lg-9 basket-item-details">
                                 <div class="row">
                                     <div class="col-sm-12 col-lg-4">
                                         <h5 class="mb-2">{{ item.product.name }}</h5>
