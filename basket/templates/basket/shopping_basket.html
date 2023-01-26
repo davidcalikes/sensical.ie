@@ -40,6 +40,7 @@
                                             {% csrf_token %}
                                             <div>
                                                 <div class="input-group-selector">
+                                                    <label><small>Quantity:</small></label>
                                                     <select class="form-control custom-select" type="number"
                                                     name="quantity" 
                                                     data-item_id="{{ item.item_id }}"
@@ -86,7 +87,7 @@
 
         <div class="col-sm-12 col-md-4 text-center">
             <div class="basket-checkout text-center mb-2">
-                <button class="basket-button"><i class="fa-regular fa-circle-left"></i> back to shopping</button>
+                <button class="basket-back-button basket-button"><i class="fa-regular fa-circle-left"></i> back to shopping</button>
             </div>
             <div class="basket-checkout text-center my-2">
                 <h5 class="checkout-heading py-2">BASKET SUMMARY</h5>

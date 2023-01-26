@@ -48,7 +48,6 @@ a {
     color: #0c2d6c;
     padding: 0.5rem;
     font-weight: bolder;
-    background-color: #ffadef;
 }
 
 .center-row {
@@ -243,6 +242,18 @@ footer {
 
 /* **** Products Pages **** */
 
+.products-sort-selector {
+    width: 180px;
+}
+
+.count-align {
+    align-items: end;
+}
+
+.products-query-strap {
+    display: block;
+}
+
 .card {
     border-radius: 0;
 }
@@ -257,8 +268,14 @@ footer {
     border: 0;
 }
 
-.title-col {
+.title-col-no-stock {
     min-height: 40px;
+    background-color: #ffadef;
+}
+
+.title-col-in-stock {
+    min-height: 40px;
+    background-color: #6ef4ce;
 }
 
 #hidden-stock-status {
@@ -376,10 +393,18 @@ footer {
     border: solid 1px #fff;
 }
 
-.basket-button:hover {
-    background-color: #75e6ff ;
+
+.basket-back-button:hover {
+    background-color: #75e6ff !important; ;
     text-decoration: none;
     color: #0c2d6c;
+    border: solid 1px #fff;
+}
+
+.basket-button:hover {
+    background-color: #6ef4ce; 
+    text-decoration: none;
+    color:#0c2d6c;
     border: solid 1px #fff;
 }
 
