@@ -13,10 +13,10 @@ def shopping_basket(request):
 def add_to_basket(request, item_id):
     """ Add a quantity of a sensory product to the shopping basket """
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
-    product = get_object_or_404(Product, pk=item_id)
 
     if item_id in list(basket.keys()):
         if basket[item_id] + quantity > 10:
@@ -31,11 +31,13 @@ def add_to_basket(request, item_id):
                 f"{ basket[item_id] } \
                      { product.name }'s added to basket",
             )
-
-    elif item_id in list(basket.keys()):
-        basket[item_id] += quantity
     else:
         basket[item_id] = quantity
+        messages.success(
+                request,
+                f"{ basket[item_id] } \
+                     { product.name }'s added to basket",
+            )
 
     request.session['basket'] = basket
     return redirect(redirect_url)
@@ -44,13 +46,24 @@ def add_to_basket(request, item_id):
 def update_basket(request, item_id):
     """Update and save changes to the shopping basket"""
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     basket = request.session.get('basket', {})
 
     if quantity > 0:
         basket[item_id] = quantity
+        messages.success(
+                request,
+                f"There are now { basket[item_id] } \
+                     { product.name }'s in your basket",
+        )
     else:
         basket.pop(item_id)
+        messages.success(
+                request,
+                f"Could not add { basket[item_id] } \
+                     { product.name }'s to your basket",
+        )
 
     request.session['basket'] = basket
     return redirect(reverse('shopping_basket'))
@@ -58,12 +71,9 @@ def update_basket(request, item_id):
 
 def remove_item(request, item_id):
     """
-    Adjust the quantity of the specified product to the specified
-    amount
-
-    url for this function should be <str:id> not <int:id>
-    - otherwise you need to add str() method for each dict representation.
+    Remove entire quantity of a given product.
     """
+    product = get_object_or_404(Product, pk=item_id)
     basket = request.session.get('basket', {})
     quantity = basket[item_id] - 10
 
@@ -71,6 +81,10 @@ def remove_item(request, item_id):
         basket[item_id] = quantity
     else:
         basket.pop(item_id)
+        messages.success(
+                request,
+                f"All { product.name }'s removed from your basket",
+        )
     request.session['basket'] = basket
     if not basket:
         return redirect(reverse('shopping_basket'))

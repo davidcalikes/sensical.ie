@@ -393,7 +393,6 @@ footer {
     border: solid 1px #fff;
 }
 
-
 .basket-back-button:hover {
     background-color: #75e6ff !important; ;
     text-decoration: none;
@@ -434,6 +433,20 @@ footer {
     background-color: #fff;
     width: 100%;
     margin: 0;
+}
+
+/* **** Messages **** */
+
+.sensical-messages {
+    position: fixed;
+    top: 36px;
+    right: 20px;
+    z-index: 999999;
+}
+
+.sensical-toast {
+    background-color: #0c2d6c;
+    overflow: visible;
 }
 
 /* **** MEDIA QUERIES **** */

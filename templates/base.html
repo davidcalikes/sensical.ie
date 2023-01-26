@@ -188,18 +188,24 @@
             {% endif %}
         </header>
 
-         <!-- Bootstrap Messages: Code used is from Code Institute's Fullstack Frameworks Walkthrough Project-->
-         <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    {% for message in messages %}
-                    <div class="alert {{ message.tags }} alert-dismissible fade show message-container" id="msg" role="alert">
-                        {{ message | safe }}
-                    </div>
+            {% if messages %}
+                <div class="sensical-messages">
+                {% for message in messages %}
+                    {% with message.level as level %}
+                        {% if level == 40 %} 
+                            {% include 'includes/toasts/toast_error.html' %}
+                        {% elif level == 30 %} 
+                            {% include 'includes/toasts/toast_warning.html' %}
+                        {% elif level == 25 %} 
+                            {% include 'includes/toasts/toast_success.html' %}
+                        {% else %}
+                            {% include 'includes/toasts/toast_info.html' %}
+                        {% endif %}
+                    {% endwith %}
                     {% endfor %}
                 </div>
-            </div>
-        </div>
+            {% endif %}
+                
 
         {% block page_header %}
         {% endblock page_header %}
@@ -210,16 +216,11 @@
         {% include 'includes/footer.html'%}
 
         {% block postloadjs %}
+        <script>
+            $('.toast').toast('show');
+        </script>
         {% endblock postloadjs %}
 
-        <!-- Script to close bootstrap messages automatically: Code used is from Code Institute's Fullstack Frameworks Walkthrough Project-->
-        <script>
-            setTimeout(function () {
-                let messages = document.getElementById('msg');
-                let alert = new bootstrap.Alert(messages);
-                alert.close();
-            }, 3000);
-        </script>
         
     </body>
 
