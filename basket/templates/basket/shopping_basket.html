@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load basket_tools %}
 
 {% block content %}
 <div class="basket-bg container">
@@ -32,7 +33,7 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-lg-4">
                                         <h5 class="mb-2">{{ item.product.name }}</h5>
-                                        <p class="mb-2">€{{ item.product.price }}</p>
+                                        <p class="mb-2">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                         <p class="mb-2">Qty: {{ item.quantity }}</p>
                                     </div>
                                     <div class="col-sm-12 col-lg-8">
@@ -105,7 +106,7 @@
                     <p><strong>Sub-total:</strong></p>
                 </div>
                 <div class="col text-right">
-                    <span>€{{ grand_total|floatformat:2 }}</span>
+                    <span>€{{ total|floatformat:2 }}</span>
                 </div>
             </div>
             <div class="row checkout-row">
@@ -121,7 +122,7 @@
                     <p><strong>Total:</strong></p>
                 </div>
                 <div class="col text-right">
-                    <span>{{ total|floatformat:2 }}</span>
+                    <span>{{ grand_total|floatformat:2 }}</span>
                 </div>
             </div>
             <div class="basket-checkout text-center my-2">
