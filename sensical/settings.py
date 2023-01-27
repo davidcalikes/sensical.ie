@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
     'home',
     'products',
     'basket',
@@ -65,6 +66,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'sensical.urls'
 
+CRISPY_TEMPLATEPACK = "bootstrap4"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -81,6 +84,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'basket.contexts.basket_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
