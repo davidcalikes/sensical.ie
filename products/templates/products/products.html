@@ -41,13 +41,14 @@
         {% if product.in_stock %}
         <div class="col-xl-3 col-lg-4 col-sm-12 in-stock">
         {% else %}
-        <div class="col-xl-3 col-lg-4 out-of-stock">
+        <div class="col-xl-3 col-lg-4 col-sm-12 out-of-stock">
         {% endif %}
-            <div class="card home-card mb-4">
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+            <div class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
-                <div class="row mt-2">
+                <div class="row">
                     {% if product.in_stock %}
                     <div class=" col-12 text-left">
                         <h5 class="dark-text title-col-in-stock text-center" >{{ product.name }}</h5>
