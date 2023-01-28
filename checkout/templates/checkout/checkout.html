@@ -15,6 +15,9 @@
 
             {% for item in basket_items %}
                     <div class="row">
+                        <div class="col-12 mb-4">
+                            <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
+                        </div>
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
@@ -35,7 +38,6 @@
         </div>
     
         <div class="col-6 text-center mb-5">
-            <p class="mb-0 item-count-header">{{ item_count }} items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
@@ -95,5 +97,11 @@
         </div>
     </div>
 </div>
-
 {% endblock content %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+{% endblock postloadjs %}
