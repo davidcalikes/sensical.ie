@@ -47,11 +47,13 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'crispy_forms',
+    'django_countries',
     'home',
     'products',
     'basket',
     'checkout',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -66,7 +68,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'sensical.urls'
 
-CRISPY_TEMPLATEPACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 TEMPLATES = [
     {

@@ -10,7 +10,7 @@
 <div class="basket-bg container">
     
     <div class="row">
-        <div class="col-12 text-center mt-3">
+        <div class="col-6 text-left mt-3">
             <h1>Checkout</h1> 
 
             {% for item in basket_items %}
@@ -24,23 +24,22 @@
                         </div>
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                            <p class="my-0 small">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            
                         </div>
                     </div>
                 {% endfor %}
         </div>
-    </div>
     
-    <div class="row">
-        <div class="col-12 text-center mb-5">
+        <div class="col-6 text-center mb-5">
             <p class="mb-0 item-count-header">{{ item_count }} items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small">Details</legend>
+                    <legend class="fieldset-label small">Your Details</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
@@ -66,7 +65,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="px-3">
-                    <legend class="fieldset-label small">Payment</legend>
+                    <legend class="fieldset-label small">Payment Details</legend>
                     <div class="mb-3" id="card-element"></div>
 
                     <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
@@ -94,12 +93,7 @@
                 </div>
             </form>
         </div>
-        </div>
     </div>
-
-    <div class="row center-row">
-        <div class="col-sm-12 col-md-6">
-            <p>Please Fill Out The Form!</p>
-        </div>
+</div>
 
 {% endblock content %}

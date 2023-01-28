@@ -18,6 +18,10 @@ a {
     margin-top: 280px;
 }
 
+.auth-container {
+    margin-top: 300px;
+}
+
 /* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
 .icon {
     align-items: center;
