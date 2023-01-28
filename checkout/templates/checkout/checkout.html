@@ -68,19 +68,21 @@
                 </fieldset>
                 <fieldset class="px-3">
                     <legend class="fieldset-label small">Payment Details</legend>
-                    <div class="mb-3" id="card-element"></div>
+                    <div class="mb-3" id="card-element">
+
+                    </div>
 
                     <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                 </fieldset>
 
-                <div class="submit-button text-right mt-5 mb-2">                    
-                    <a href="{% url 'shopping_basket' %}" class="#">
+                <div class="submit-button text-right  mt-5 mb-2">                    
+                    <a href="{% url 'shopping_basket' %}" class="text-light">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="font-weight-bold">Adjust Basket</span>
                     </a>
-                    <button id="submit-button" class="#">
+                    <button id="submit-button" class="sensical-button">
                         <span class="font-weight-bold">Submit Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
