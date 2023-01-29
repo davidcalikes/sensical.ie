@@ -459,7 +459,7 @@ footer {
     position: fixed;
     top: 36px;
     right: 20px;
-    z-index: 999999;
+    z-index: 9991;
 }
 
 .sensical-toast {
