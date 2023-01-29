@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="basket-bg container">
+    
+    <div class="row">
+        <div class="col-6 text-left mt-3">
+            <h1>Order Complete!</h1>
+            <p> Please find your complete order details below.
+            </p>
+            <p> A confimation email has been sent to {{ order.email }}
+            </p>
+
+            {% for item in basket_items %}
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="col-2 mb-1">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                {% if item.product.image %}
+                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% endif %}
+                            </a>
+                        </div>
+                        <div class="col-7">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            
+                        </div>
+                    </div>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
