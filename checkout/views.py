@@ -41,27 +41,28 @@ def checkout(request):
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
             'country': request.POST['country'],
-            'eircode': request.POST['eircode'],
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
+            'eircode': request.POST['eircode'],
         }
 
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_basket = json.dumps(basket)
             order.save()
-            for item_id, item_data in basket.items():
+            for item_id, quantity in basket.items():
                 try:
                     product = Product.objects.get(id=item_id)
                     order_line_item = OrderLineItem(
                         order=order,
                         product=product,
-                        quantity=item_data,
-                        )
+                        quantity=quantity,
+                    )
                     order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
@@ -91,8 +92,6 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY
         )
-
-    print(intent)
 
     order_form = OrderForm()
 

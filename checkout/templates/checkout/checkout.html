@@ -76,13 +76,10 @@
                 </fieldset>
                 <fieldset class="px-3">
                     <legend class="fieldset-label small">Payment Details</legend>
-                    <div class="mb-3" id="card-element">
-
-                    </div>
-
-                    <div class="mb-3 text-danger" id="card-errors" role="alert">
-                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
-                    </div>
+                    <div class="mb-3" id="card-element"></div>
+        
+                    <input type="text" value="{{ client_secret }}" name="client_secret">
+                    
                 </fieldset>
 
                 <div class="submit-button text-right  mt-5 mb-2">                    

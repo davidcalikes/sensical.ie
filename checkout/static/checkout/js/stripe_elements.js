@@ -57,12 +57,12 @@ form.addEventListener('submit', function(ev) {
     let saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
     let csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
-    let postData = {
+    const postData = {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save_info': saveInfo,
     };
-    var url = '/checkout/cache_checkout_data/';
+    let url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
@@ -89,14 +89,14 @@ form.addEventListener('submit', function(ev) {
                     line2: $.trim(form.street_address2.value),
                     city: $.trim(form.town_or_city.value),
                     country: $.trim(form.country.value),
-                    postal_code: $.trim(form.postcode.value),
+                    postal_code: $.trim(form.eircode.value),
                     state: $.trim(form.county.value),
                 }
             },
         }).then(function(result) {
             if (result.error) {
-                var errorDiv = document.getElementById('card-errors');
-                var html = `
+                let errorDiv = document.getElementById('card-errors');
+                let html = `
                     <span class="icon" role="alert">
                     <i class="fas fa-times"></i>
                     </span>
