@@ -9,6 +9,7 @@ def all_products(request):
     """ A view that displays all products."""
 
     products = Product.objects.all()
+    available_items = Product.objects.all().values('in_stock')
     query = None
     categories = None
     sort = None
@@ -49,14 +50,15 @@ def all_products(request):
                 queries)
 
     current_sorting = f'{sort}_{direction}'
+    available_items = Product.objects.filter(in_stock=True)
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'available_items': available_items,
     }
-
     return render(request, 'products/products.html', context)
 
 

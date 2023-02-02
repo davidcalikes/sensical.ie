@@ -32,6 +32,10 @@
                 {% if products|length|stringformat:'s' != '1' %}
                 {{ products|length }} Products{% if search_term %} found for "{{ search_term }}"{% endif %}
                 {% endif %}
+
+                {% if 'category' not in request.get_full_path %}
+                &nbsp;({{ available_items|length }} in stock)
+                {% endif %}
             </p>
         </div>
     </div>
