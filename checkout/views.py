@@ -113,7 +113,7 @@ def checkout(request):
                     'county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
-                print("user not exist2")
+                print("user not exist1")
                 order_form = OrderForm()
         else:
             print("user not exist2")

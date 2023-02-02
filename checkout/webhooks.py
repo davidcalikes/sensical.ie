@@ -52,5 +52,5 @@ def webhook(request):
 
     # Call the event handler with the event
     response = event_handler(event)
-    print('event called')
+
     return response
