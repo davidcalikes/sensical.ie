@@ -91,7 +91,9 @@
                 </div>
                 </div>
                 <div class="rating-container">
-                    <a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>
+                    <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>edit</small></a>&nbsp;
+                    &nbsp;<a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>&nbsp;
+                    &nbsp;<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>delete</small></a>
                 </div>
             </div>
         </div>
