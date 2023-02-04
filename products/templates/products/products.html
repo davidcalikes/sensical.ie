@@ -84,12 +84,13 @@
                             <a href="#">Add to Basket</a>
                         </div>
                     </div>
-                <div class="col-12 text-center">
-                    <div  class="text-center products-button">
-                        <a href="#">Item Details</a>
+                    <div class="col-12 text-center">
+                        <div  class="text-center products-button">
+                            <a href="#">Item Details</a>
+                        </div>
                     </div>
                 </div>
-                </div>
+                <a href="{% url 'user_wishlist' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-heart-circle-plus"></i>Add to Wishlist</small></a>&nbsp;
                 <div class="rating-container">
                     <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>edit</small></a>&nbsp;
                     &nbsp;<a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>&nbsp;

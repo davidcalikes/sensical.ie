@@ -1,6 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
-
+from django.contrib.auth.models import User
 
 class Category(models.Model):
     """
@@ -40,6 +40,8 @@ class Product(models.Model):
         max_length=1024, null=True, blank=True)
     image = CloudinaryField(
         "Product Image", default='placeholder')
+    users_wishlist = models.ManyToManyField(
+        User, related_name='user_wishlist', blank=True)
 
     def __str__(self):
         return self.name

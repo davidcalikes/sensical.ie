@@ -22,7 +22,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name', 'category',
         'for_sensory_needs',
-        'sku', 'price', 'rating')
+        'sku', 'price', 'rating',)
     search_fields = (
         'category', 'name',
         'for_sensory_needs',
