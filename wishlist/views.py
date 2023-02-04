@@ -7,10 +7,11 @@ from products.models import Product
 from django.contrib.auth.models import User
 
 
-# def add_to_wishlist(request):
-#     """ A view to return wishlist page """
+def user_wish_list(request):
+    """ A view to return wishlist page """
+    products = Product.objects.filter(users_wishlist=request.user)
 
-#     return render(request, 'wishlist/wishlist.html')
+    return render(request, 'wishlist/wishlist.html', {"users_wishlist": products})
 
 
 def add_to_wishlist(request, id):

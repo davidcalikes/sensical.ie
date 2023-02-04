@@ -1,5 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
 
+{% block content %}
 
-<h1>hello view</h1>
+<div class="auth-container container">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo-font mb-4">My Wishlist</h2>
+            {% if users_wishlist %}
+                {% for product in users_wishlist %}
+                    <h2>{{ product.name }}</h2>
+                    <h2>€{{ product.price }}</h2>
+                    {% if product.in_stock %}
+                    <h2>In Stock</h2>
+                    {% else %}
+                    <h2>Out Of Stock</h2>
+                    {% endif %}
+                    <a class="text-light" type="button" href="{% url 'add_to_wishlist' product.id %}">Remove from Wishlist</a> 
+                {% endfor %}
+            {% else %}
+            <h2>
+                No products in wishlist.
+            </h2>
+            {% endif %}
+        </div>
+    </div>
+</div>
 
+{% endblock %}
     
