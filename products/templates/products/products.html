@@ -82,9 +82,15 @@
                         </div>
                         <div class="col-6 card-body text-center">
                             {% if user.is_authenticated %}
-                            <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
-                            <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
-                            <small>Add to Wishlist</small></a>&nbsp;
+                                    {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %} 
+                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
+                                        <h4><i class="fa-solid fa-trash-can"></i></h4>
+                                        <small>Remove from wishlist</small></a>&nbsp;
+                                    {% else %}
+                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
+                                    <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
+                                    <small>Add to Wishlist</small></a>&nbsp;
+                                    {% endif %}
                             {% else %}
                             <a href="{% url 'account_login' %}" class="text-center">
                             <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
