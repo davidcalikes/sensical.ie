@@ -80,21 +80,40 @@
                 
                 <div class="row button-row text-center"> 
                     <div class="col-12 text-center">
-                        <div  class="text-center products-button">
-                            <a href="#">Add to Basket</a>
+                        <div  class="text-center">
+                            <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="col-12 d-none">
+                                <p class="mt-2"><strong>Quantity:</strong></p>
+                                <div class="form-group w-50">
+                                    <div class="input-group-selector">
+                                        <select class="form-control custom-select"
+                                        name="quantity">
+                                            <option>1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input class="fa-input products-button text-center text-uppercase mt-2" min="1" max="1" type="submit" value="&#xf291; Add To Basket">
+                            </div>
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
+                    </form>
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <div  class="text-center products-button">
-                            <a href="#">Item Details</a>
+                        <div>
+                            <a class="text-center products-button d-block" href="{% url 'product_detail' product.id %}"><i class="fa-solid fa-circle-info"></i> Item Details</a>
                         </div>
                     </div>
                 </div>
-                <a href="{% url 'add_to_wishlist' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-heart-circle-plus"></i>Add to Wishlist</small></a>&nbsp;
+                <a href="{% url 'add_to_wishlist' product.id %}" class="text-center"><small><i class="fa-solid fa-heart-circle-plus"></i> Add to Wishlist</small></a>&nbsp;
                 <div class="rating-container">
-                    <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>edit</small></a>&nbsp;
+                    <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>edit</small></a>&nbsp;
                     &nbsp;<a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>&nbsp;
-                    &nbsp;<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>delete</small></a>
+                    &nbsp;<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-trash-can"></i>delete</small></a>
                 </div>
             </div>
         </div>

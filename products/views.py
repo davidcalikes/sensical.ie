@@ -87,7 +87,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -123,6 +123,12 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Delete a product from the store """
     product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted!')
+    basket = request.session.get('basket', {})
+    if basket:
+        messages.error(request, """There are items in you basket!
+                                Please remove all basket items before
+                                editing the product inventory.""")
+    else:
+        product.delete()
+        messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
