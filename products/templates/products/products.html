@@ -43,9 +43,9 @@
     <div class="row">
         {% for product in products %}
         {% if product.in_stock %}
-        <div class="col-xl-3 col-lg-4 col-sm-12 in-stock">
+        <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 in-stock">
         {% else %}
-        <div class="col-xl-3 col-lg-4 col-sm-12 out-of-stock">
+        <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 out-of-stock">
         {% endif %}
                 <a href="{% url 'product_detail' product.id %}">
             <div class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
@@ -81,7 +81,7 @@
                             {% endif %}
                         </div>
                         <div class="col-6 card-body text-center">
-                            {% if user is authenticated %}
+                            {% if user.is_authenticated %}
                             <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
                             <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
                             <small>Add to Wishlist</small></a>&nbsp;

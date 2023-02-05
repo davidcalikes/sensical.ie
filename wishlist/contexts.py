@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def get_wishlist_status(request):
+
     products = 0
     if request.user.is_authenticated:
         products = Product.objects.filter(users_wishlist=request.user)
