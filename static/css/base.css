@@ -596,6 +596,10 @@ footer {
     .nav-link{
         padding: 3px;
     }
+    .service-button{
+        font-size: medium;
+        width: 80px;
+    }
     .home-card {
     width: 100%;
     margin-left: 0;

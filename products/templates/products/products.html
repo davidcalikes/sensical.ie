@@ -81,9 +81,15 @@
                             {% endif %}
                         </div>
                         <div class="col-6 card-body text-center">
+                            {% if user is authenticated %}
                             <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
                             <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
                             <small>Add to Wishlist</small></a>&nbsp;
+                            {% else %}
+                            <a href="{% url 'account_login' %}" class="text-center">
+                            <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
+                            <small>Add to Wishlist</small></a>&nbsp;
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -113,7 +119,7 @@
                             {% else %}
                             <div class="col-12 text-center">
                                 <div>
-                                    <a class="text-center products-button products-button-no-stock d-block" href="#"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp Out Of Stock</a>
+                                    <a class="text-center products-button products-button-no-stock d-block mt-2" href="#"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp Out Of Stock</a>
                                 </div>
                             </div>
                             {% endif %}
@@ -127,11 +133,19 @@
                         </div>
                     </div>
                 </div>
+                {% if request.user.is_superuser %}
                 <div class="rating-container">
                     <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>&nbspedit</small></a>&nbsp;
                     &nbsp<small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
                 </div>
+                {% else %}
+                <div class="rating-container">
+                    
+                <small><i class="fas fa-star mr-1 pb-4"></i>{{ product.rating }} / 5</small>
+                    
+                </div>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
