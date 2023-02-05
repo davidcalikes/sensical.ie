@@ -500,7 +500,6 @@ footer {
 
 .wishlist-container {
     margin-top: 170px;
-    padding-left: 2rem;
     min-height: 100vh;
 }
 
@@ -509,6 +508,17 @@ footer {
     padding: 1rem;
     width: 80%;
 }
+
+.wishlist-img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.wishlist-align {
+    text-align: left;
+}
+
+
 
 /* **** Messages **** */
 
@@ -566,6 +576,25 @@ footer {
     .basket-image-container {
         padding-left: 13%;
     }
+
+    .wishlist-item-container {
+        width: 70%;
+    }
+
+    .wishlist-image-container{
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    .wishlist-img {
+        min-width: 280px;
+        object-fit: cover;
+    }
+    .wishlist-align {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
     }
 
 @media screen and (max-width: 767px) {
@@ -590,6 +619,7 @@ footer {
     .detail-form-selector {
         width: 50%;
         margin-left: 25%;
+    }
     }
     
     
@@ -625,6 +655,9 @@ footer {
         width: 90%;
         margin-left: 5%;
     }
+    .wishlist-item-container {
+        width: 90%;
+    }
     }
 
 @media screen and (max-width: 430px) {
@@ -658,5 +691,9 @@ footer {
         height: 70px;
         padding-top: 4px;
         display: block;
+    }
+    .wishlist-img {
+        min-width: 240px;
+        object-fit: cover;
     }
     }

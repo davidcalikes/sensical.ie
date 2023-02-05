@@ -6,26 +6,37 @@
 <div class="wishlist-container">
     <div class="row">
         <div class="col text-center">
-            <h2 class="logo-font mb-4">My Wishlist</h2>
+            <h2 class="logo-font mb-4">My Wishlist <i class="fa-solid fa-heart"></i></h2>
             {% if users_wishlist %}
                 {% for product in users_wishlist %}
-                <div class="container-fluid wishlist-item-container mb-3">
+                <div class="wishlist-item-container container-fluid mb-3">
                     <div class="row">
-                        <div class="col-sm-12 col-lg-3">
-                            <div class="basket-image-container">
-                                <img class="basket-img" src="{{ product.image.url }}" alt="product image">
+                        <div class="col-sm-12 col-lg-3 d-flex align-items-center ">
+                            <div class="wishlist-image-container">
+                                <img class="wishlist-img" src="{{ product.image.url }}" alt="product image">
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-3 text-left">
-                            <h4>{{ product.name }}</h4>
-                            <h5>€{{ product.price }}</h5>
-                            {% if product.in_stock %}
-                            <small>In Stock</small>
-                            {% else %}
-                            <small>Out Of Stock</small>
-                            {% endif %}
+                        <div class="col-sm-12 col-lg-3 wishlist-align d-flex align-items-center">
+                            <div class="col-12">
+                                <div class="col-12 ml-1 mb-1">
+                                    <h4>{{ product.name }}</h4>
+                                </div>
+                                <div class="col-12 ml-1 mb-1">
+                                    <h5>€{{ product.price }}</h5>
+                                </div><div class="col-12 ml-1 mb-1">
+                                {% if product.in_stock %}
+                                <small class="text-center availability">In Stock 
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    </small>
+                                {% else %}
+                                <small class="text-center availability">Out Of Stock 
+                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                </small>
+                                {% endif %}
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-lg-6 text-left">
+                        <div class="col-sm-12 col-lg-6 wishlist-align pl-4 d-flex align-items-center">
                             
                             <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                                 {% csrf_token %}
