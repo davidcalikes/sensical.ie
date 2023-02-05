@@ -9,9 +9,8 @@ from django.contrib.auth.models import User
 
 def user_wish_list(request):
     """ A view to return wishlist page """
-    products = Product.objects.filter(users_wishlist=request.user)
 
-    return render(request, 'wishlist/wishlist.html', {"users_wishlist": products})
+    return render(request, 'wishlist/wishlist.html')
 
 
 def add_to_wishlist(request, id):
@@ -22,4 +21,10 @@ def add_to_wishlist(request, id):
     else:
         product.users_wishlist.add(request.user)
         print("product added to wishlist")
-    return HttpResponseRedirect(request.META["HTTP_REFERER"])
+
+    return HttpResponseRedirect(request.META["HTTP_REFERER"],)
+
+
+def move_to_basket(request, id):
+    product = get_object_or_404(Product, id=id)
+    user = product.users_wishlist.filter(id=request.user.id)
