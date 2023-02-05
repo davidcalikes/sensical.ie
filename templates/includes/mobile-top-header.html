@@ -1,15 +1,18 @@
 <li class="list-inline-item dropdown">
     <a class="nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <div><i class="fa-solid fa-heart icon"></i></div>
+            {% if users_wishlist %}
+            <div><i class="fa-solid fa-heart icon fa-beat-fade" style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;" ></i></div>
+            {% else %}
+            <div><i class="fa-solid fa-heart icon "></i></div>
+            {% endif %}
             <p class="sr-only">My Wishlist</p>
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-wishlist">
         {% if request.user.is_authenticated %}
-            <a href="#" class="dropdown-item">Manage Wishlist</a>
-            <a href="{% url 'user_wishlist' %}" class="dropdown-item">Logout</a>
-        {% else %}
+            <a href="{% url 'user_wishlist' %}" class="dropdown-item">Manage Wishlist</a>
+        {% else %}  
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
         {% endif %}

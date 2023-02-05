@@ -23,7 +23,7 @@
             <input type="checkbox" id="hide-no-stock">
             <label class="mb-3" for="hide-no-stock">Available Products Only</label>
         </div>
-        <div class="col-sm-12 col-md-6 d-flex justify-content-end count-align">
+        <div class="col-sm-12 col-md-6 d-flex count-align">
             <p>
                 {% if products|length|stringformat:'s' == '1' %}
                 {{ products|length }} Product{% if search_term %} found for "{{ search_term }}"{% endif %}
@@ -52,30 +52,40 @@
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
-                <div class="row">
-                    {% if product.in_stock %}
-                    <div class=" col-12 text-left">
-                        <h5 class="dark-text title-col-in-stock text-center" >{{ product.name }}</h5>
+                
+                    <div class="row">
+                        {% if product.in_stock %}
+                        <div class=" col-12 text-left">
+                            <h5 class="dark-text title-col-in-stock text-center" >{{ product.name }}</h5>
+                        </div>
+                        {% endif %}
+                        {% if product.in_stock == False %}
+                        <div class=" col-12 text-left">
+                            <h5 class="dark-text title-col-no-stock text-center" >{{ product.name }}</h5>
+                        </div>
+                        {% endif %}
                     </div>
-                    {% endif %}
-                    {% if product.in_stock == False %}
-                    <div class=" col-12 text-left">
-                        <h5 class="dark-text title-col-no-stock text-center" >{{ product.name }}</h5>
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-6 card-body text-center" >{% if product.in_stock %}
+                            <h4 class="text-center">€{{ product.price }}</h4>
+                            <small class="text-center availability">In Stock 
+                            <i class="fa-solid fa-circle-check text-success"></i>
+                            </small>
+                            {% endif %}
+                            {% if product.in_stock == False %}
+                            <h4 class="text-center">€{{ product.price }}</h4>
+                            <small class="text-center availability">Out Of Stock 
+                                <i class="fa-solid fa-circle-xmark text-danger"></i>
+                            </small>
+                            {% endif %}
+                        </div>
+                        <div class="col-6 card-body text-center">
+                            <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
+                            <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
+                            <small>Add to Wishlist</small></a>&nbsp;
+                        </div>
                     </div>
-                    {% endif %}
-                </div>
-                <div class="card-body">
-                    <h4 class="text-center">€{{ product.price }}</h4>
-                    {% if product.in_stock %}
-                    <p class="text-center availability">In Stock 
-                    <i class="fa-solid fa-circle-check text-success"></i>
-                    </p>
-                    {% endif %}
-                    {% if product.in_stock == False %}
-                    <p class="text-center availability">Out Of Stock 
-                        <i class="fa-solid fa-circle-xmark text-danger"></i>
-                    </p>
-                    {% endif %}
                 </div>
                 
                 <div class="row button-row text-center"> 
@@ -95,10 +105,18 @@
                                     </div>
                                 </div>
                             </div>
+                            {% if product.in_stock %}
                             <div class="col-12">
                                 <input class="fa-input products-button text-center text-uppercase mt-2" min="1" max="1" type="submit" value="&#xf291; Add To Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% else %}
+                            <div class="col-12 text-center">
+                                <div>
+                                    <a class="text-center products-button products-button-no-stock d-block" href="#"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp Out Of Stock</a>
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
                     </form>
                         </div>
@@ -109,11 +127,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="{% url 'add_to_wishlist' product.id %}" class="text-center"><small><i class="fa-solid fa-heart-circle-plus"></i> Add to Wishlist</small></a>&nbsp;
                 <div class="rating-container">
-                    <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>edit</small></a>&nbsp;
-                    &nbsp;<a href="{% url 'account_login' %}" class="text-center pb-4"><small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></a>&nbsp;
-                    &nbsp;<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-trash-can"></i>delete</small></a>
+                    <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>&nbspedit</small></a>&nbsp;
+                    &nbsp<small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
                 </div>
             </div>
         </div>
