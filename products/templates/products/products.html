@@ -84,7 +84,7 @@
                             {% if user.is_authenticated %}
                                     {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %} 
                                     <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
-                                        <h4><i class="fa-solid fa-trash-can"></i></h4>
+                                        <h4><i class="fa-solid fa-heart-circle-minus"></i></h4>
                                         <small>Remove from wishlist</small></a>&nbsp;
                                     {% else %}
                                     <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">

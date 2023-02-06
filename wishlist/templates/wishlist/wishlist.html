@@ -9,7 +9,7 @@
             <h2 class="logo-font mb-4">My Wishlist <i class="fa-solid fa-heart"></i></h2>
             {% if users_wishlist %}
                 {% for product in users_wishlist %}
-                <div class="wishlist-item-container container-fluid mb-3">
+                <div class="wishlist-item-container container-fluid">
                     <div class="row">
                         <div class="col-sm-12 col-lg-3 d-flex align-items-center ">
                             <div class="wishlist-image-container">
@@ -38,6 +38,7 @@
                         </div>
                         <div class="col-sm-12 col-lg-6 wishlist-align pl-4 d-flex align-items-center">
                             
+                            
                             <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                                 {% csrf_token %}
                                 <div class="form-row">
@@ -59,10 +60,12 @@
                                             <span class="text-uppercase">Find More Products</span>
                                         </a>
                                     </div>
+                                    {% if product.in_stock %}
                                     <div class="col-12 ml-1 mb-1">
                                         <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" min="1" max="1" type="submit" value="&#xf291; Add To Basket">
                                     </div>
                                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    {% endif %}
                                     <div class="col-12  mb-1">
                                         <a class="sensical-button" type="button" href="{% url 'add_to_wishlist' product.id %}">
                                             <span class="icon"><i class="fa-solid fa-trash"></i></span>
