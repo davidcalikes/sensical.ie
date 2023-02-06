@@ -18,15 +18,17 @@
     </div>
 
     <div class="row center-row">
-        <div class="col-sm-12 col-md-7 mb-3 mr-5">
+        <div class="col-sm-12 col-md-7 mb-3 basket-col">
             <div class="row mb-4">
                 {% if basket_items %}
                     {% for item in basket_items %}
-                    <div class="container-fluid basket-item-container mb-3">
+                    <div class="container-fluid basket-item-container mb-5">
                         <div class="row">
                             <div class="col-sm-12 col-lg-3">
-                                <div class="basket-image-container">
-                                    <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
+                                <div class="text-center">
+                                    <div class="basket-image-container">
+                                        <img class="basket-img" src="{{ item.product.image.url }}" alt="product image">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-lg-9 basket-item-details">
