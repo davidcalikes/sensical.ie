@@ -252,6 +252,7 @@ a.nav-link {
     padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
+    min-height: 94px;
 }
 
 .card-text {
@@ -260,7 +261,7 @@ a.nav-link {
 }
 
 .card-img-top {
-    height: 250px;
+    height: 230px;
     object-fit: cover;
     border-bottom: solid 4px #6ef4ce;
 }

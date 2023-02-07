@@ -8,14 +8,39 @@
     <hr class="message-rule" >
     <div class="d-flex m-2 p-2">
         <div>
-        {{ message }}
+        <h6>{{ message }}</h6>
         </div>
     </div>
 
     {% for message in messages %}
         {% if 'wishlist'  in message|stringformat:'s' %}
+        <div class="text-left pl-3 mb-2"> 
+            <p>Current Wishlist</p>
+        </div>
+        {% for item in users_wishlist %}
 
-        <h2>this is now a thing!</h2>
+        <div class="message-item sensical-toast px-2 rounded-0">
+            <div class="row">
+                <div class="col-3">
+                    <img class="w-100" src="{{ item.image.url }}">
+                </div>
+                <div class="col-9">
+                    <p class="my-0"><strong>{{ item.name }}</strong></p>
+                    <p class="my-0 small">Price per item: {{ item.product.price }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="sensical-toast rounded-0 text-light mt-4">
+            <a href="{% url 'user_wishlist' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
+                <span class="icon">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <span class="text-uppercase sensical-text">View Wishlist</span>
+            </a>
+        </div>
+
+        
 
         {% else %}
         {% if grand_total and not on_profile_page %}
