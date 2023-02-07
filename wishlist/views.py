@@ -17,10 +17,10 @@ def add_to_wishlist(request, id):
     product = get_object_or_404(Product, id=id)
     if product.users_wishlist.filter(id=request.user.id).exists():
         product.users_wishlist.remove(request.user)
-        print("product removed from wishlist")
+        messages.success(request, 'Removed from wishlist!')
     else:
         product.users_wishlist.add(request.user)
-        print("product added to wishlist")
+        messages.success(request, 'Added to wishlist!')
 
     return HttpResponseRedirect(request.META["HTTP_REFERER"],)
 

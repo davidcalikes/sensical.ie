@@ -20,6 +20,10 @@ a {
     min-height: 100vh;
 }
 
+.sensical-text {
+    color: #0c2d6c;
+}
+
 /* Messages */
 
 .message-container {
@@ -33,11 +37,23 @@ a {
 }
 
 .message-item {
-    margin-left: 0.5rem;
     border: 1px solid white;
     padding: 0.5rem;
-    width: 95%;
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 0.5rem;
+}
+
+.sensical-messages {
+    position: fixed;
+    top: 36px;
+    right: 20px;
+    z-index: 9991;
+}
+
+.sensical-toast {
+    background-color: #0c2d6c;
+    overflow: visible;
 }
 
 /* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
@@ -537,22 +553,6 @@ footer {
 
 .wishlist-align {
     text-align: left;
-}
-
-
-
-/* **** Messages **** */
-
-.sensical-messages {
-    position: fixed;
-    top: 36px;
-    right: 20px;
-    z-index: 9991;
-}
-
-.sensical-toast {
-    background-color: #0c2d6c;
-    overflow: visible;
 }
 
 /* **** MEDIA QUERIES **** */
