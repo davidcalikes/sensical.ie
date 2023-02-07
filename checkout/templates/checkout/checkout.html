@@ -21,6 +21,13 @@
         <div class="col-6 text-left mt-3">
             <h1>Checkout</h1> 
 
+            <div class="col-12 mt-1">
+                <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                    <span class="icon"><i class="fa-regular fa-circle-left"></i></span>
+                    <span class="text-uppercase">Cancel and return to Products</span>
+                </a>
+            </div>
+
             {% for item in basket_items %}
                     <div class="row">
                         <div class="col-12 mb-4">

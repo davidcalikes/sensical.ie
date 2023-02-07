@@ -14,16 +14,31 @@ a {
     font-family: Assistant, FontAwesome; 
 }
 
-.message-container {
-    margin-top: 280px;
-}
-
 .auth-container {
     margin-top: 170px;
     padding-left: 3rem;
     min-height: 100vh;
 }
 
+/* Messages */
+
+.message-container {
+    margin-top: 280px;
+}
+
+.message-rule {
+    width: 80%;
+    border-color: #75e6ff;
+    margin-bottom: 30px;
+}
+
+.message-item {
+    margin-left: 0.5rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    width: 95%;
+    margin-bottom: 0.5rem;
+}
 
 /* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
 .icon {
