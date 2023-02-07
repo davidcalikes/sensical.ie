@@ -28,13 +28,13 @@
     </div>
     {% endfor %}
     <div>
-        <div class="row">
-            <div class="col sensical-toast rounded-0 text-light">
+        <div>
+            <div class="sensical-toast rounded-0 text-light">
                 <strong><p class="m-2">
                     Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
                     <span class="float-right">€{{ total|floatformat:2 }}</span>
                 </p></strong>
-                <a href="{% url 'checkout' %}" class="btn btn-light btn-block rounded-0">
+                <a href="{% url 'checkout' %}" class="btn btn-light btn-block rounded-0 w-100">
                     <span class="icon">
                         <i class="fas fa-lock"></i>
                     </span>
@@ -43,6 +43,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
 </div>
 
-{% endif %}
+

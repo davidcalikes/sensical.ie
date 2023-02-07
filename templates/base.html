@@ -193,8 +193,8 @@
             {% endif %}
         </header>
 
-            {% if messages %}
-                <div class="sensical-messages">
+        {% if messages %}
+            <div class="sensical-messages">
                 {% for message in messages %}
                     {% with message.level as level %}
                         {% if level == 40 %} 
@@ -207,13 +207,9 @@
                             {% include 'includes/toasts/toast_info.html' %}
                         {% endif %}
                     {% endwith %}
-                    {% endfor %}
-                </div>
-            {% endif %}
-                
-
-        {% block page_header %}
-        {% endblock page_header %}
+                {% endfor %}
+            </div>
+        {% endif %}
 
         {% block content %}
         {% endblock content %}
@@ -226,7 +222,6 @@
         </script>
         {% endblock postloadjs %}
 
-        
     </body>
 
 </html>
