@@ -7,45 +7,30 @@
 
 {% block content %}
 
-<div class="auth-container">
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <div class="auth-container text-center">
+      <h1 class="mt-4 text-center"><i class="fa-solid fa-circle-exclamation"></i></h1>
 
 
-<h1>{% trans "Sign In" %}</h1>
+      <h1>{% trans "Sign In" %}</h1>
 
-{% get_providers as socialaccount_providers %}
+        <div class="login-or">{% trans 'or' %}</div>
 
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+        <p>{% blocktrans %}If you have not created an account yet, then please
+        <a class="text-light font-italic" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 
-<div class="socialaccount_ballot">
-
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
-
-  <div class="login-or">{% trans 'or' %}</div>
-
-</div>
-
-{% include "socialaccount/snippets/login_extra.html" %}
-
-{% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-{% endif %}
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
-
+      <form class="login text-center" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <a class="button text-light secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        <button class="primaryAction sensical-button" type="submit"><i class="fa-solid fa-right-to-bracket"></i> {% trans "Sign In" %}</button>
+      </form>
+    </div>
+  </div>
 </div>
 
 {% endblock %}
