@@ -17,8 +17,8 @@ a {
 
 .auth-container {
     margin-top: 180px;
-    padding-left: 3rem;
     min-height: 100vh;
+    width: 60%;
 }
 
 .sensical-text {
