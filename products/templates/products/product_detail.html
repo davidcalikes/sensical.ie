@@ -31,7 +31,9 @@
                     <small>SKU: {{ product.sku }} </small>
                     <br>
                     <small> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
-
+                    
+                    {% if product.in_stock %}
+                    
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
@@ -58,16 +60,27 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            {% endif %}
+
+                            <div class="col-12 mb-2">
                                 <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
                                     <span class="icon"><i class="fa-regular fa-circle-left"></i></span>
                                     <span class="text-uppercase">Find More Products</span>
                                 </a>
                             </div>
-                            <div class="col-12">
+                            {% if product.in_stock %}
+                            <div class="col-12 mt-2 mb-2">
                                 <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" min="1" max="10" type="submit" value="&#xf291; Add To Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% else %}
+                            <div class="col-12 mt-2">
+                                <a href="#" class="sensical-button text-center rounded-0 mt-2">
+                                    <span class="icon"><i class="fa-regular fa-circle-xmark"></i></i></span>
+                                    <span class="text-uppercase">Out of stock</span>
+                                </a>
+                            </div>
+                            {% endif %}
                         </div>
                     </form>
                 </div>
