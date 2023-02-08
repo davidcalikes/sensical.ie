@@ -1,18 +1,15 @@
 .StripeElement,
-.stripe-style-input {
+.StripeElement, .stripe-style-input {
   height: 44px;
   padding: 10px 12px;
-  background-color: white;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
-  -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
   border-radius: 0;
 }
+
 
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  box-shadow: 0 2px 3px 0 #75e6ff;
 }
 
 .StripeElement--webkit-autofill {
@@ -31,7 +28,7 @@
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 1px solid #000;
+    background-color: white;
 }
 
 #loading-overlay {
@@ -51,4 +48,8 @@
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+.panel-title {
+  border: 1px solid white;
 }

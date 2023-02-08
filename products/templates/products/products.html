@@ -6,7 +6,13 @@
 <div class="products-bg container">
     <div class="row">
         <div class="col text-center mt-3">
+            {% if current_categories %}
+                {% for category in current_categories %}
+                <h2 class="mb-4 text-left">{{ category.friendly_name }}</h2>
+                {% endfor %}
+            {% else %}
             <h2 class="mb-4 text-left">All Products</h2>
+            {% endif %}
         </div>
     </div>
 
@@ -28,9 +34,15 @@
                 {% if products|length|stringformat:'s' == '1' %}
                 {{ products|length }} Product{% if search_term %} found for "{{ search_term }}"{% endif %}
                 {% endif %}
+                
     
                 {% if products|length|stringformat:'s' != '1' %}
                 {{ products|length }} Products{% if search_term %} found for "{{ search_term }}"{% endif %}
+                {% endif %}
+                {% if current_categories %}
+                {% for category in current_categories %}
+                in {{ category.friendly_name }}
+                {% endfor %}
                 {% endif %}
 
                 {% if 'category' not in request.get_full_path %}
