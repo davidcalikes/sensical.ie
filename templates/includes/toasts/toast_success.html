@@ -1,4 +1,4 @@
-<div class="toast sensical-toast rounded-0" role="alert" data-autohide="false">
+<div class="toast toast-shadow sensical-toast rounded-0" role="alert" data-autohide="false">
     <button type="button" class="my-2 close mr-2 text-light" data-dismiss="toast" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
@@ -31,7 +31,7 @@
             </div>
         </div>
         {% endfor %}
-        <div class="sensical-toast rounded-0 text-light mt-4">
+        <div class="rounded-0 text-light mt-4">
             <a href="{% url 'user_wishlist' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
                 <span class="icon">
                     <i class="fa-solid fa-heart"></i>
@@ -61,7 +61,7 @@
         {% endfor %}
         <div>
             <div>
-                <div class="sensical-toast px-2 my-4 rounded-0 text-light">
+                <div class="px-2 my-4 rounded-0 text-light">
                     <strong><p class="m-2">
                         Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
                         <span class="float-right">€{{ total|floatformat:2 }}</span>

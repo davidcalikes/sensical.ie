@@ -25,6 +25,7 @@ a {
     color: #0c2d6c;
 }
 
+
 /* Messages */
 
 .message-container {
@@ -55,6 +56,11 @@ a {
 .sensical-toast {
     background-color: #0c2d6c;
     overflow: visible;
+    border: solid 1px white;
+}
+
+.toast-shadow {
+    filter: drop-shadow(-3px 3px 15px #0c2d6c);
 }
 
 /* **** Default Icon rules from Code Institute's 'Boutique Ado' code-along project/Bulma **** */
