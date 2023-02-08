@@ -6,6 +6,7 @@ body {
 
 /* **** Site-wide style rules **** */
 
+
 a {
     color: #0c2d6c;
 }
@@ -15,7 +16,7 @@ a {
 }
 
 .auth-container {
-    margin-top: 170px;
+    margin-top: 180px;
     padding-left: 3rem;
     min-height: 100vh;
 }

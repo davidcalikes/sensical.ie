@@ -4,8 +4,8 @@
 
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
+    {% if user.is_authenticated %}
+    <div class="container auth-auth-container">
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
@@ -28,4 +28,11 @@
             </div>            
         </div>
     </div>
+    {% else %}
+    <div class="container auth-container">
+    <h1 class="mt-4 text-center"><i class="fa-solid fa-circle-exclamation"></i></h1>
+    <h3 class="text-center" >You are unauthorised to view this page.</h3>
+    <h3 class="text-center" >Please <a class="text-light font-italic" href="{% url 'account_login' %}">login</a> to visit the product management page.</h3>
+    </div>
+    {% endif %}
 {% endblock %}

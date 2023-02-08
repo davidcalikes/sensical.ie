@@ -61,6 +61,7 @@
         {% endif %}
         <header class="container-fluid fixed-top">
             <div id="top-nav" class="row bg-white pt-lg-1 d-none d-lg-flex">
+                
                 <div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" title="Sensical.ie">
                         <img id="nav-logo"
@@ -69,7 +70,7 @@
                         <span class="sr-only">Sensical.ie</span>
                     </a>
                 </div>
-
+            
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="{% url 'products' %}">
                         <div class="input-group w-100">
