@@ -79,6 +79,7 @@ def add_product(request):
     """ Add a product to the store """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
+        form.fields['user_wishlist'].disabled = True
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product!',)
