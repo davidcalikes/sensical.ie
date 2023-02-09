@@ -52,3 +52,29 @@
 .panel-title {
   border: 1px solid white;
 }
+
+.email-conf {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.email-rule {
+  width: 90%;
+  border-color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .email-conf {
+    width: 70%;
+    margin-left: 15%;
+  }
+  }
+
+@media screen and (max-width: 600px) {
+  .email-conf {
+    width: 100%;
+    margin-left: 0;
+  }
+  }

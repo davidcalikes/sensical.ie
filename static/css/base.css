@@ -637,6 +637,10 @@ footer {
         padding-left: 1rem;
         text-align: center;
     }
+    .email-conf {
+        width: 70%;
+        margin-left: 15%;
+      }
     }
 
 @media screen and (max-width: 767px) {
@@ -667,8 +671,6 @@ footer {
     }
     }
     
-    
-
 @media screen and (max-width: 600px) {
     .container {
         width: 80%;
