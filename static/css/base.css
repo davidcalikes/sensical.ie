@@ -741,6 +741,9 @@ footer {
         min-width: 10px;
         max-width: 250px;
     }
+    .auth-container {
+        width: 80%;
+    }
 
 @media screen and (max-width: 350px) {
     #mobile-nav-logo {
