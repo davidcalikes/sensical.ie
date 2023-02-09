@@ -6,7 +6,7 @@
         <h5>SUCCESS!</h5>
     </div>
     <hr class="message-rule" >
-    <div class="d-flex m-2 p-2">
+    <div class="d-flex m-2 p-2 d-flex justify-content-center">
         <div>
         <h6>{{ message }}</h6>
         </div>
@@ -15,11 +15,12 @@
     {% for message in messages %}
         {% if 'wishlist'  in message|stringformat:'s' %}
         <div class="text-left pl-3 mb-2"> 
-            <p>Current Wishlist</p>
+            <p>Current Wishlist:</p>
         </div>
+        <div class="toast-scroll-contain">
         {% for item in users_wishlist %}
 
-        <div class="message-item sensical-toast px-2 rounded-0">
+        <div class="message-item px-2 rounded-0">
             <div class="row">
                 <div class="col-3">
                     <img class="w-100" src="{{ item.image.url }}">
@@ -31,6 +32,7 @@
             </div>
         </div>
         {% endfor %}
+        </div>
         <div class="rounded-0 text-light mt-4">
             <a href="{% url 'user_wishlist' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
                 <span class="icon">
@@ -39,14 +41,13 @@
                 <span class="text-uppercase sensical-text">View Wishlist</span>
             </a>
         </div>
-
         
-
         {% else %}
         {% if grand_total and not on_profile_page %}
         <p class="py-1 px-2 m-2">Your Basket ({{ item_count }})</p>
+        <div class="toast-scroll-contain">
         {% for item in basket_items %}
-        <div class="message-item sensical-toast px-2 rounded-0">
+        <div class="message-item px-2 rounded-0">
             <div class="row">
                 <div class="col-3">
                     <img class="w-100" src="{{ item.product.image.url }}">
@@ -59,6 +60,7 @@
             </div>
         </div>
         {% endfor %}
+        </div>
         <div>
             <div>
                 <div class="px-2 my-4 rounded-0 text-light">
@@ -67,7 +69,7 @@
                         <span class="float-right">€{{ total|floatformat:2 }}</span>
                     </p></strong>
                 </div>
-                <div class="sensical-toast rounded-0 text-light">
+                <div class="rounded-0 text-light">
                     <a href="{% url 'checkout' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
                         <span class="icon">
                             <i class="fas fa-lock"></i>
