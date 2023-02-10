@@ -17,6 +17,35 @@
 </div>
 <div class="basket-bg container">
     <div class="row">
+        <div class="col-6 text-left mt-3">
+            <h1>Checkout</h1>
+
+            <div class="col-12 mb-4">
+                <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
+            </div>
+
+            {% for item in basket_items %}
+                    <div class="row">
+                        
+                        <div class="col-2 mb-1">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                {% if item.product.image %}
+                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% endif %}
+                            </a>
+                        </div>
+                        <div class="col-7">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                            <p class="my-0 small">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            
+                        </div>
+                    </div>
+                {% endfor %}   
+        </div>
+
         <div class="col-6 text-center mb-5">
             <div class="panel-group" id="checkout-accordian">
                 <div class="panel panel-primary">
@@ -53,48 +82,18 @@
                                         {% endif %}
                                     </div>
                                 </fieldset>
-                                <fieldset class="px-3">
-                                    <legend class="fieldset-label small">Payment Details</legend>
-                                    <div class="mb-3" id="card-element"></div>
-                        
-                                    <input type="hidden" value="{{ client_secret }}" name="client_secret">
-                                    
-                                </fieldset>
+                                
                             </form>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="col-6 text-left mt-3">
-            <h1>Checkout</h1>
-
-            <div class="col-12 mb-4">
-                <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
-            </div>
-
-            {% for item in basket_items %}
-                    <div class="row">
-                        
-                        <div class="col-2 mb-1">
-                            <a href="{% url 'product_detail' item.product.id %}">
-                                {% if item.product.image %}
-                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
-                                {% endif %}
-                            </a>
-                        </div>
-                        <div class="col-7">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
-                            <p class="my-0 small">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                        </div>
-                        <div class="col-3 text-right">
-                            
-                        </div>
-                    </div>
-                {% endfor %}
+                <fieldset class="px-3">
+                    <legend class="fieldset-label small d-none">Payment Details</legend>
+                    <div class="mb-3" id="card-element"></div>
+        
+                    <input form="payment-form" type="hidden" value="{{ client_secret }}" name="client_secret">
+                </fieldset>
 
                 <div class="col-12 mt-1">
                     <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
@@ -104,7 +103,7 @@
                 </div>
     
                 <div class="submit-button text-right  mt-5 mb-2">                    
-                    <button id="submit-button" class="sensical-button">
+                    <button form="payment-form" id="submit-button" class="sensical-button">
                         <span class="font-weight-bold">Submit Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
@@ -117,9 +116,9 @@
                         <span>Your credit/debit card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
-        </div>
-    
-        
+                            
+            </div>
+        </div>    
     </div>
 </div>
 {% endblock content %}
