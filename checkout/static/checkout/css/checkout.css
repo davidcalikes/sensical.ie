@@ -65,6 +65,11 @@
   margin-bottom: 30px;
 }
 
+.payment-strip {
+  border: 1px solid;
+  padding-top: 1rem;
+}
+
 
 
 @media screen and (max-width: 991px) {

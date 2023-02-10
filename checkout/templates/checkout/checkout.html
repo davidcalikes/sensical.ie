@@ -15,38 +15,43 @@
         </span>
     </h1>
 </div>
+
 <div class="basket-bg container">
     <div class="row">
-        <div class="col-6 text-left mt-3">
-            <h1>Checkout</h1>
-
-            <div class="col-12 mb-4">
-                <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in <i class="fas fa-shopping-basket icon" aria-hidden="true"></i></p>
-            </div>
-
+        <div class="col-12 text-center">
+            <h1>Checkout <i class="fa-solid fa-sm fa-credit-card"></i></h1>
+        </div>
+        <div class="col-12 text-center mb-4">
+            <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in basket.</p>
+        </div>
+        <div class="col-12 col-lg-6 text-center mt-3">
             {% for item in basket_items %}
-                    <div class="row">
+                <div class="container-fluid basket-item-container"> 
+                <div class="row">
                         
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
-                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                <div class="basket-image-container">
+                                    <img class="basket-img" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                </div>
                                 {% endif %}
                             </a>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 basket-item-details">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            
+                        </div>
+                        <div class="col-3 text-right basket-item-details">
                             <p class="my-0 small">Qty: {{ item.quantity }}</p>
                             <p class="my-0 small">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
-                        <div class="col-3 text-right">
-                            
-                        </div>
                     </div>
-                {% endfor %}   
-        </div>
+                </div>
+                </div>
+                {% endfor %} 
 
-        <div class="col-6 text-center mb-5">
+        <div class="col-12 col-lg-6 text-center my-3">
             <div class="panel-group" id="checkout-accordian">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -88,28 +93,27 @@
                             </div>
                         </div>
                     </div>
-                <fieldset class="px-3">
-                    <legend class="fieldset-label small d-none">Payment Details</legend>
+                    <p>Enter your card details and press 'Submit Order' to complete your order...</p>
+                <fieldset class="payment-strip px-3">
+                    <legend class="fieldset-label d-none small">Card Details</legend>
                     <div class="mb-3" id="card-element"></div>
         
                     <input form="payment-form" type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
-                <div class="col-12 mt-1">
+                <div class="text-right mt-1">
+                    <button form="payment-form" id="submit-button" class="sensical-button">
+                        <span><i class="fas fa-lock"></i> Submit Order</span>                    
+                    </button>
+                </div>
+                <div class="text-right mt-1">
                     <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
                         <span class="icon"><i class="fa-regular fa-circle-left"></i></span>
-                        <span class="text-uppercase">Cancel and return to Products</span>
+                        <span class="text-uppercase">Cancel Order</span>
                     </a>
                 </div>
-    
-                <div class="submit-button text-right  mt-5 mb-2">                    
-                    <button form="payment-form" id="submit-button" class="sensical-button">
-                        <span class="font-weight-bold">Submit Order</span>
-                        <span class="icon">
-                            <i class="fas fa-lock"></i>
-                        </span>
-                    </button>
-                    <p class="small text-danger my-0">
+                <div class="text-right my-3">                    
+                    <p class="small text-danger mr-2">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
