@@ -97,13 +97,21 @@
 
 .checkout-img {
   width: 100px;
+  height: 100px;
   object-fit: cover;
+}
+
+.payment-container {
+  margin-left: 4rem;
 }
 
 @media screen and (max-width: 991px) {
   .email-conf {
     width: 70%;
     margin-left: 15%;
+  }
+  .payment-container {
+    margin-left: 0;
   }
   }
 
