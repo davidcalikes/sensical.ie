@@ -2,7 +2,10 @@
     <button type="button" class="my-2 close mr-2 text-light" data-dismiss="toast" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
-    <div class="d-flex justify-content-center my-2">
+    <div class="d-flex justify-content-center mt-2">
+        <h4><i class="ml-3 fa-regular fa-circle-check text-success"></i></h4>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
         <h5>SUCCESS!</h5>
     </div>
     <hr class="message-rule" >
@@ -43,43 +46,45 @@
         </div>
         
         {% else %}
-        {% if grand_total and not on_profile_page %}
-        <p class="py-1 px-2 m-2">Your Basket ({{ item_count }})</p>
-        <div class="toast-scroll-contain">
-        {% for item in basket_items %}
-        <div class="message-item px-2 rounded-0">
-            <div class="row">
-                <div class="col-3">
-                    <img class="w-100" src="{{ item.product.image.url }}">
+        
+            {% if grand_total and not on_profile_page %}
+            <p class="py-1 px-2 m-2">Your Basket ({{ item_count }})</p>
+            <div class="toast-scroll-contain">
+                {% for item in basket_items %}
+                <div class="message-item px-2 rounded-0">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="w-100" src="{{ item.product.image.url }}">
+                        </div>
+                        <div class="col-9">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                            <p class="my-0 small">Price per item: {{ item.product.price }}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-9">
-                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                    <p class="my-0 small">Qty: {{ item.quantity }}</p>
-                    <p class="my-0 small">Price per item: {{ item.product.price }}</p>
-                </div>
+                {% endfor %}
             </div>
-        </div>
-        {% endfor %}
-        </div>
-        <div>
             <div>
-                <div class="px-2 my-4 rounded-0 text-light">
-                    <strong><p class="m-2">
-                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
-                        <span class="float-right">€{{ total|floatformat:2 }}</span>
-                    </p></strong>
-                </div>
-                <div class="rounded-0 text-light">
-                    <a href="{% url 'checkout' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
-                        <span class="icon">
-                            <i class="fas fa-lock"></i>
-                        </span>
-                        <span class="text-uppercase sensical-text">Secure Checkout</span>
-                    </a>
+                <div>
+                    <div class="px-2 my-4 rounded-0 text-light">
+                        <strong><p class="m-2">
+                            Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
+                            <span class="float-right">€{{ total|floatformat:2 }}</span>
+                        </p></strong>
+                    </div>
+                    <div class="rounded-0 text-light">
+                        <a href="{% url 'checkout' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
+                            <span class="icon">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                            <span class="text-uppercase sensical-text">Secure Checkout</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        {% endif %}
+            {% endif %}
+
         {% endif %}
     {% endfor %}
 </div>
