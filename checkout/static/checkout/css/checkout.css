@@ -49,6 +49,13 @@
     height: 100%;
 }
 
+.panel-title:hover {
+  color: #0c2d6c;
+  border: 1px solid #75e6ff;
+  cursor: pointer;
+  background-color: #75e6ff;
+}
+
 .panel-title {
   border: 1px solid white;
 }
@@ -70,12 +77,39 @@
   padding-top: 1rem;
 }
 
+.checkout-item-container {
+  border: 1px solid #fff;
+  padding: 0.5rem;
+}
 
+.checkout-item-details {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-image-container {
+  width: 100px;
+  height: 100px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+
+}
+
+.checkout-img {
+  width: 100px;
+  object-fit: cover;
+}
 
 @media screen and (max-width: 991px) {
   .email-conf {
     width: 70%;
     margin-left: 15%;
+  }
+  }
+
+@media screen and (max-width: 767px) {
+  .checkout-item-details {
+    display: block;
   }
   }
 

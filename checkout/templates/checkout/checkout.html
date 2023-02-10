@@ -22,29 +22,33 @@
             <h1>Checkout <i class="fa-solid fa-sm fa-credit-card"></i></h1>
         </div>
         <div class="col-12 text-center mb-4">
-            <p class="mb-0 item-count-header">Order Summary: {{ item_count }} total items in basket.</p>
+            <p class="mb-0 item-count-header">Order Summary: {{ item_count }} items totalling €{{ grand_total|floatformat:2 }} (includes delivery)
         </div>
         <div class="col-12 col-lg-6 text-center mt-3">
             {% for item in basket_items %}
-                <div class="container-fluid basket-item-container"> 
+                <div class="container-fluid checkout-item-container"> 
                 <div class="row">
                         
-                        <div class="col-2 mb-1">
+                        <div class="col-12 col-md-4 mb-1 d-flex justify-content-center">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
-                                <div class="basket-image-container">
-                                    <img class="basket-img" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                <div class="checkout-image-container">
+                                    <img class="checkout-img" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                                 </div>
                                 {% endif %}
                             </a>
                         </div>
-                        <div class="col-7 basket-item-details">
+                        <div class="col-12 col-md-4 text-center checkout-item-details">
+                            <div>
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            </div>
                             
                         </div>
-                        <div class="col-3 text-right basket-item-details">
-                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
-                            <p class="my-0 small">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <div class="col-12 col-md-4 text-center checkout-item-details">
+                            <div>
+                                <p class="my-1  small">Qty: {{ item.quantity }}</p>
+                                <p class="my-1 small">Price: €{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +59,7 @@
             <div class="panel-group" id="checkout-accordian">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span><i class="fa-regular fa-circle-down"></i></span></p>
+                        <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span> <i class="fa-regular fa-circle-down text-right"></i></span> </p>
                     </div>
                     <div class="panel-collapse collapse" id="panel-1">
                         <div class="panel-body">
@@ -87,14 +91,12 @@
                                         {% endif %}
                                     </div>
                                 </fieldset>
-                                
                             </form>
-
                             </div>
                         </div>
                     </div>
                     <p>Enter your card details and press 'Submit Order' to complete your order...</p>
-                <fieldset class="payment-strip px-3">
+                <fieldset class="payment-strip mb-4 px-3">
                     <legend class="fieldset-label d-none small">Card Details</legend>
                     <div class="mb-3" id="card-element"></div>
         
