@@ -1,0 +1,5 @@
+
+.panel-heading:hover {
+    cursor: pointer;
+    color: aqua;
+}
