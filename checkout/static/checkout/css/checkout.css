@@ -58,6 +58,8 @@
 
 .panel-title {
   border: 1px solid white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .email-conf {
