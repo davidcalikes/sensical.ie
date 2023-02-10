@@ -45,10 +45,10 @@
                             </div>
                             
                         </div>
-                        <div class="col-12 col-md-4 text-center checkout-item-details">
+                        <div class="col-12 col-md-4 text-center checkout-item-details mb-4">
                             <div>
-                                <p class="my-1  small">Qty: {{ item.quantity }}</p>
-                                <p class="my-1 small">Price: €{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                <p class="my-1">Qty: {{ item.quantity }}</p>
+                                <p class="my-1">Price: €{{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </div>
                         </div>
                     </div>
