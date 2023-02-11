@@ -37,16 +37,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(23, 162, 184, .85);
+    background: rgba(117, 230, 255, .85);
     z-index: 9999;
 }
 
 .loading-spinner {
+  color: #0c2d6c;
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
 }
 
 .panel-title:hover {
