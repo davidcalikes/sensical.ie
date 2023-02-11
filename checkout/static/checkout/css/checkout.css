@@ -37,8 +37,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(117, 230, 255, .85);
+    background: rgba(117, 230, 255, .93);
     z-index: 9999;
+}
+
+.spinner {
+    border-radius: 50%;
+    background-color:#0c2d6c;
+    width: 20%;
+    border: white solid 2px;
+    margin-bottom: 2rem;
 }
 
 .loading-spinner {
