@@ -116,6 +116,12 @@
   margin-left: 4rem;
 }
 
+.checkout-card-icons {
+  justify-content: end;
+  display: flex;
+  font-size: xx-large;
+}
+
 @media screen and (max-width: 991px) {
   .email-conf {
     width: 70%;
@@ -124,6 +130,9 @@
   .payment-container {
     margin-left: 0;
   }
+  .checkout-card-icons {
+    justify-content: center;
+}
   }
 
 @media screen and (max-width: 767px) {
@@ -162,6 +171,9 @@
     border: 1px solid #fff;
     padding: 0.5rem;
     width: 100%;
+  }
+  .checkout-card-icons {
+    font-size: large;
   }
   }
   }
