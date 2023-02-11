@@ -49,7 +49,7 @@
     {% block extra_js %}
     {% endblock extra_js %}
 
-    <title>Sensical.ie {% block extra_title %}{% endblock extra_title %} </title>
+    <title>Sensical.ie {% block extra_title %}{% endblock extra_title %}</title>
 
 </head>
 {% if "products" in request.path %}
@@ -65,7 +65,7 @@
                 <div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" title="Sensical.ie">
                         <img id="nav-logo"
-                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673008567/sensical/sensical_nav_logo_ddgje1.png"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676116386/Screen_Shot_2023-02-11_at_11.52.23_d8a0n2.png"
                             alt="Sensical.ie" height="100" width="auto">
                         <span class="sr-only">Sensical.ie</span>
                     </a>
@@ -171,16 +171,16 @@
                     <div id="delivery-slider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item text-center secondary-bg active">
-                                <h4 class="banner-font"> <i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Free
+                                <h4 class="banner-font"><i class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> Free
                                     nationwide delivery on orders over €{{ free_delivery_threshold }}!</h4>
                             </div>
                             {% if free_delivery_delta == 0 %}
                             <div class="carousel-item text-center secondary-bg">
-                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Congratulations... You qualify for free delivery!!!</h4>
+                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i> Congratulations... You qualify for free delivery!!!</h4>
                             </div>
                             {% else %}
                             <div class="carousel-item text-center secondary-bg">
-                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck icon"></i> Spend just <strong>€{{ free_delivery_delta }} more to qualify for free delivery!</strong></h4>
+                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i> Spend just <strong>€{{ free_delivery_delta }} more to qualify for free delivery!</strong></h4>
                             </div>
                             {% endif %}
                         </div>

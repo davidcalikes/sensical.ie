@@ -6,7 +6,6 @@ body {
 
 /* **** Site-wide style rules **** */
 
-
 a {
     color: #0c2d6c;
 }
@@ -110,7 +109,6 @@ a {
 
 #nav-logo {
     height: 76px;
-    margin-left: 20px;
 }
 
 #mobile-nav-logo {
@@ -179,6 +177,15 @@ a.nav-link {
     color: #0c2d6c;
     font-style: italic;
     padding-top: 8px;
+}
+
+.banner-icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: large;
 }
 
 /* **** Landing Page **** */
@@ -746,13 +753,27 @@ footer {
     .auth-container {
         width: 80%;
     }
-}
+    }
+
+@media screen and (max-width: 363px) {
+    .banner-font {
+        margin-top: 0.2rem;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .banner-icon {
+        font-size: small;
+    }
+    }
 
 @media screen and (max-width: 350px) {
     #mobile-nav-logo {
         display: none;
     }
-
+    .banner-font {
+        font-size: 12px;
+        font-weight: bold;
+    }
     #mobile-nav-xs {
         height: 70px;
         padding-top: 4px;
