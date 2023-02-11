@@ -29,7 +29,7 @@
             <h2>Checkout</h2>
         </div>
         <div class="col-12 text-center mb-4">
-            <p class="mb-0 item-count-header">Order Summary: {{ item_count }} items totalling €{{ grand_total|floatformat:2 }} (includes delivery)
+            <p class="mb-0 item-count-header mt-2">Order Summary: {{ item_count }} items totalling €{{ grand_total|floatformat:2 }} (includes delivery)
         </div>
     </div>
     <div class="row mt-4">
@@ -112,12 +112,12 @@
                         <input form="payment-form" type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="text-center text-lg-right mt-1">
+                    <div class="text-center text-lg-right my-2">
                         <button form="payment-form" id="submit-button" class="sensical-button">
                             <span><i class="fas fa-lock"></i> Submit Order</span>                    
                         </button>
                     </div>
-                    <div class="text-center text-lg-right mt-1">
+                    <div class="text-center text-lg-right my-2">
                         <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
                             <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
                             <span class="text-uppercase">Back to Basket</span>
@@ -139,7 +139,7 @@
                     </div>
                     <div>
                         <a href="#">
-                            <p class="text-light mt-4 small">Terms & Conditions</p>
+                            <p class="text-light mt-4 small text-center text-lg-right">Terms & Conditions</p>
                         </a>
                     </div>
                                 
