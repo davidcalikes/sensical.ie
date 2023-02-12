@@ -1,1 +1,39 @@
-<h1>This is the about page... well done!</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock %}
+
+{% block extra_title %} - About Us{% endblock %}
+
+{% block content %}
+<div id="about-hero" class="about-container">
+    <div class="row">
+        <div class="col-12 my-auto text-center">
+            <img src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676212372/sensical_logo_png_gy5xnw.png" alt="About page hero image">
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <div class="my-5">
+                        <h4 class="text-right">
+                            <a href="{% url 'products' %}" class="btn btn-lg service-button text-uppercase py-3">Shop</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-6 my-auto">
+                    <div class="my-5">
+                        <h4 class="text-left" >
+                            <a href="#" class="btn btn-lg service-button text-uppercase py-3">Hire</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="section-rule">
+
+{% include 'includes/home_cards.html'%}
+
+{% endblock content %}

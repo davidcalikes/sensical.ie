@@ -1,0 +1,12 @@
+.about-container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about-hero {
+    margin-top: 160px;
+    background-size: cover;
+}
