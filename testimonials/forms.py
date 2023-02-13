@@ -9,8 +9,8 @@ class testimonialForm(forms.ModelForm):
     """
     class Meta:
         """
-        Form has all required fields from EnrolledPupil model
+        Form has all required fields from clientTestimonial model
         """
-        model = clientTestimonial()
+        model = clientTestimonial
         fields = ('name', 'testimonial',
                   'photo_url', 'image')
