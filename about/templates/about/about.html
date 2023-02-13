@@ -70,18 +70,81 @@
     <h2 class="col-12 text-center mb-4" >Testimonials</h2>
 </div>
 
-<div class="row">
-    <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
-        {% for testimonial in testimonials %}
-            <div>
-                <h1>{{ testimonial.name }}</h1>
-                <p>{{ testimonial.testimonial }}</p>
-                <img src="{{ testimonial.photo_url }}" alt="">
+<div id="testimonialsCarousel" class="row secondary-bg text-center">
+    <div class="col-12">
+        <div id="testimonials-slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item text-center secondary-bg active">
+                    {% for testimonial in testimonials %}
+                    <div>
+                        <h3>1{{ testimonial.name }}</h3>
+                        <p>{{ testimonial.testimonial }}</p>
+                        <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                        <a href="#">View More Testimonials...</a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="carousel-item text-center secondary-bg">
+                    {% for testimonial in testimonials %}
+                    <div>
+                        <h3>2{{ testimonial.name }}</h3>
+                        <p>{{ testimonial.testimonial }}</p>
+                        <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                        <a href="#">View More Testimonials...</a>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-        {% endfor %}
         </div>
     </div>
 </div>
 </div>
 
 {% endblock content %}
+
+<!-- <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-inicators">
+        <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class=".carousel-item active">
+            <div class="container carousel-container">
+                {% for testimonial in testimonials %}
+                <div>
+                    <h3>{{ testimonial.name }}</h3>
+                    <p>{{ testimonial.testimonial }}</p>
+                    <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                    <a href="#">View More Testimonials...</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class=".carousel-item">
+            <div class="container carousel-container">
+                {% for testimonial in testimonials %}
+                <div>
+                    <h3>{{ testimonial.name }}</h3>
+                    <p>{{ testimonial.testimonial }}</p>
+                    <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                    <a href="#">View More Testimonials...</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="row">
+    <div class="col-12 col-lg-6 my-4 text-center">
+        {% for testimonial in testimonials %}
+            <div>
+                <h3>{{ testimonial.name }}</h3>
+                <p>{{ testimonial.testimonial }}</p>
+                <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                <a href="#">View More Testimonials...</a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div> -->

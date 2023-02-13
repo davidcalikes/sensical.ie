@@ -1,0 +1,21 @@
+.testimonials-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.testimonial-body {
+    min-height: 100px;
+}
+
+.testimonial-img-container{
+    width: 100%;
+}
+
+.testimonials-img {
+    width: 450px;
+}
+

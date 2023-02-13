@@ -61,3 +61,18 @@ class UpdateTestimonial(generic.edit.UpdateView):
         messages.add_message(self.request, messages.ERROR,
                              "Invalid form input... See errors below")
         return self.render_to_response(self.get_context_data(form=form))
+
+
+class DeleteTestimonial(generic.DeleteView):
+    """
+    Superuser can delete an existing testimonial
+    """
+    model = clientTestimonial
+    form_class = testimonialForm
+    template_name = 'testimonials/testimonial_form.html'
+    success_url = reverse_lazy('testimonials')
+    success_message = "Testimonial deleted successfully!"
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeleteTestimonial, self).delete(request, *args, **kwargs)
