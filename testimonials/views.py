@@ -28,7 +28,7 @@ class AddTestimonial(generic.CreateView):
     """
     model = clientTestimonial
     form_class = testimonialForm
-    template_name = 'testimonials/add_testimonial.html'
+    template_name = 'testimonials/testimonial_form.html'
     success_url = reverse_lazy('testimonials')
     success_message = "Testimonial added successfully!"
 
@@ -38,6 +38,23 @@ class AddTestimonial(generic.CreateView):
         """
         form.instance.created_by = self.request.user
         return super(AddTestimonial, self).form_valid(form)
+
+    def form_invalid(self, form):
+        """If the form is invalid, render the invalid form."""
+        messages.add_message(self.request, messages.ERROR,
+                             "Invalid form input... See errors below")
+        return self.render_to_response(self.get_context_data(form=form))
+
+
+class UpdateTestimonial(generic.edit.UpdateView):
+    """
+    Superuser can update enrolled an existing testimonial
+    """
+    model = clientTestimonial
+    form_class = testimonialForm
+    template_name = 'testimonials/testimonial_form.html'
+    success_url = reverse_lazy('testimonials')
+    success_message = "Testimonial updated successfully!"
 
     def form_invalid(self, form):
         """If the form is invalid, render the invalid form."""

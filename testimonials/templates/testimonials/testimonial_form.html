@@ -9,19 +9,19 @@
         <div class="row">
             <div class="col-12 mt-4">
                 <h1 class="text-center"><i class="fa-solid fa-list-check"></i></h1>
-                <h2 class="logo-font mb-4 text-center ">Add Testimonial</h2>
+                <h2 class="logo-font mb-4 text-center ">Add/Update Testimonial</h2>
                 <hr class="section-rule">
             </div>
         </div>
 
         <div class="row">
             <div class="col-12">
-                <form method="POST" action="{% url 'add_testimonial' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
                         <a class="sensical-button" href="{% url 'testimonials' %}">Cancel</a>
-                        <button class="sensical-button" type="submit">Add Testimonial</button>
+                        <input class="sensical-button" type="submit" value="Submit">
                     </div>
                 </form>
             </div>            
