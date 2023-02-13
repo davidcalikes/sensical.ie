@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock %}
+
+{% block extra_title %} - Testimonials{% endblock %}
+
+{% block content %}
+<div id="about-hero" class="about-container">
+    <div>
+        <h2 class="col-12 text-center mb-4" >Testimonials</h2>
+    </div>
+    
+    <div class="row">
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            {% for testimonial in testimonials %}
+                <div>
+                    <h1>{{ testimonial.name }}</h1>
+                    <p>{{ testimonial.testimonial }}</p>
+                    <img src="{{ testimonial.photo_url }}" alt="">
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="section-rule">
+
+{% endblock content %}
