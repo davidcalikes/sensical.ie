@@ -70,81 +70,53 @@
     <h2 class="col-12 text-center mb-4" >Testimonials</h2>
 </div>
 
-<div id="testimonialsCarousel" class="row secondary-bg text-center">
+<div id="testimonialsCarousel" class="row text-center">
     <div class="col-12">
+        <ol class="carousel-indicators">
+            <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+            <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+        </ol>
         <div id="testimonials-slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item text-center secondary-bg active">
+                <div class="carousel-item text-center active">
                     {% for testimonial in testimonials %}
-                    <div>
-                        <h3>1{{ testimonial.name }}</h3>
-                        <p>{{ testimonial.testimonial }}</p>
-                        <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                        <a href="#">View More Testimonials...</a>
-                    </div>
-                    {% endfor %}
+                        {% if forloop.first %}
+                        <div class="carousel-body">
+                            <h3>{{ testimonial.name }}</h3>
+                            <p>{{ testimonial.testimonial }}</p>
+                            <img class="carousel-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                            <a class="text-light" href="#">View More Testimonials...</a>
+                        </div>
+                        {% else %}
                 </div>
-                <div class="carousel-item text-center secondary-bg">
-                    {% for testimonial in testimonials %}
-                    <div>
-                        <h3>2{{ testimonial.name }}</h3>
-                        <p>{{ testimonial.testimonial }}</p>
-                        <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                        <a href="#">View More Testimonials...</a>
-                    </div>
+                <div class="carousel-item text-center">
+                        <div class="carousel-body">
+                            <h3>{{ testimonial.name }}</h3>
+                            <p>{{ testimonial.testimonial }}</p>
+                            <img class="carousel-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                            <a class="text-light" href="#">View More Testimonials...</a>
+                        </div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                </span>
+                <span class="sr-only">
+                    Previous
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                </span>
+                <span class="sr-only">
+                    next
+                </span>
+            </a>
         </div>
     </div>
-</div>
 </div>
 
 {% endblock content %}
-
-<!-- <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-inicators">
-        <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class=".carousel-item active">
-            <div class="container carousel-container">
-                {% for testimonial in testimonials %}
-                <div>
-                    <h3>{{ testimonial.name }}</h3>
-                    <p>{{ testimonial.testimonial }}</p>
-                    <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                    <a href="#">View More Testimonials...</a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class=".carousel-item">
-            <div class="container carousel-container">
-                {% for testimonial in testimonials %}
-                <div>
-                    <h3>{{ testimonial.name }}</h3>
-                    <p>{{ testimonial.testimonial }}</p>
-                    <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                    <a href="#">View More Testimonials...</a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="row">
-    <div class="col-12 col-lg-6 my-4 text-center">
-        {% for testimonial in testimonials %}
-            <div>
-                <h3>{{ testimonial.name }}</h3>
-                <p>{{ testimonial.testimonial }}</p>
-                <img class="about-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                <a href="#">View More Testimonials...</a>
-            </div>
-        {% endfor %}
-        </div>
-    </div>
-</div> -->

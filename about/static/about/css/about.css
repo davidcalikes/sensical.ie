@@ -55,16 +55,18 @@
 }
 
 .carousel-item {
-    height: 32rem;
-    background: #777;
-    color: white;
-    position: relative;
+    height: max-content;
 }
 
 .carousel-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 70px;
+    height: 400px;
+}
+
+.carousel-body {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.carousel-img {
+    width: 100%;
 }

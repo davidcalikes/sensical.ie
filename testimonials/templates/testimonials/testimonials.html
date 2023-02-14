@@ -15,18 +15,19 @@
     
     <div class="row">
         {% for testimonial in testimonials %}
-        <div class="col-12 col-lg-6 my-4 text-center">
-            <div>
-                <h4>{{ testimonial.name }}</h4>
-                <div class="testimonial-body">
-                    <p>{{ testimonial.testimonial }}</p>
+            {% if forloop.first %}
+            <div class="col-12 col-lg-6 my-4 text-center">
+                <div>
+                    <h4>{{ testimonial.name }}</h4>
+                    <div class="testimonial-body">
+                        <p>{{ testimonial.testimonial }}</p>
+                    </div>
+                    <div class="testimonial-img-container">
+                        <img class="testimonials-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
+                    </div>
                 </div>
-                <div class="testimonial-img-container">
-                    <img class="testimonials-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                </div>
-                
             </div>
-        </div>
+            {% endif %}
         {% endfor %}
     </div>
 </div>
