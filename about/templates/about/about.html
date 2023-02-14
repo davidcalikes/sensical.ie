@@ -12,6 +12,8 @@
     <div>
         <h2 class="col-12 text-center mb-4" >About Us</h2>
     </div>
+
+    <hr class="message-rule">
     
     <div class="row">
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center video-box">
@@ -64,57 +66,56 @@
     </div>
 </div>
 
-<hr class="section-rule">
-
 <div>
-    <h2 class="col-12 text-center mb-4" >Testimonials</h2>
+    <h2 class="col-12 text-center my-4">Testimonials</h2>
 </div>
 
-<div id="testimonialsCarousel" class="row text-center">
-    <div class="col-12">
-        <ol class="carousel-indicators">
-            <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
-            <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
-        </ol>
-        <div id="testimonials-slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item text-center active">
-                    {% for testimonial in testimonials %}
-                        {% if forloop.first %}
-                        <div class="carousel-body">
-                            <h3>{{ testimonial.name }}</h3>
-                            <p>{{ testimonial.testimonial }}</p>
-                            <img class="carousel-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                            <a class="text-light" href="#">View More Testimonials...</a>
-                        </div>
-                        {% else %}
+<hr class="message-rule">
+
+<div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+    </ol>
+    <div id="testimonials-slider" ">
+        <div class="carousel-inner">
+            {% for testimonial in testimonials %}
+            {% if forloop.first %}
+                <div class="carousel-item carousel-item-text text-center active">                    
+                    <img class="d-block carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg" alt="First Slide">
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
+                        <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
+                        
+                    </div>
                 </div>
-                <div class="carousel-item text-center">
-                        <div class="carousel-body">
-                            <h3>{{ testimonial.name }}</h3>
-                            <p>{{ testimonial.testimonial }}</p>
-                            <img class="carousel-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                            <a class="text-light" href="#">View More Testimonials...</a>
-                        </div>
-                        {% endif %}
-                    {% endfor %}
+            {% else %}
+                <div class="carousel-item carousel-item-text text-center">
+                    <img class="d-block carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676412887/sensical/pexels-anthony-_-794495_k3us9t.jpg" alt="First Slide">                   
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="my-4 testimonial-heading" >{{ testimonial.name }}</h3>
+                        <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
+                    </div>
                 </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true">
+            {% endif %}
+            {% endfor %}
+            <a class="carousel-control-prev " href="#testimonialsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon sensical-text " aria-hidden="true">
                 </span>
                 <span class="sr-only">
                     Previous
                 </span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true">
                 </span>
                 <span class="sr-only">
-                    next
+                    Next
                 </span>
             </a>
+            </div>
+            <a class="text-light text-center" href="#">View All Testimonials...</a> 
         </div>
     </div>
 </div>

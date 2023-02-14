@@ -125,6 +125,7 @@ a {
 .navbar {
     padding: 0;
     width: 96%;
+    margin-left: 2%;
 }
 
 nav a {
