@@ -60,10 +60,6 @@
     padding: 0;
 }
 
-.img-fluid {
-    opacity: 60%;
-    filter: blur(4px);
-}
 
 .carousel-caption {
     bottom: 100px;
@@ -73,6 +69,8 @@
 .carousel-item-img {
     opacity: 60%;
     filter: blur(4px);
+    max-width: 100%;
+    height: auto;
 }
 
 .carousel-item-text {
@@ -109,7 +107,7 @@
 }
 
 .testimonial-text {
-    font-size: 25px;
+    font-size: 3vw;
     min-height: 150px;
     letter-spacing: 0.5px;
     font-style: oblique;
@@ -132,15 +130,15 @@
     bottom: 16px;
 }
 
+@media screen and (max-width: 767px) {
+    .carousel-item-img {
+       height: 100%;
+}
+.testimonial-heading {
+    font-size: 6vw;
+}
 
-
-/* .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
-   .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
-
-.carousel .carousel-indicators li {background-color: gray;}
-.carousel .carousel-indicators li.active {background-color: black;} */
+.testimonial-text {
+    font-size: 4vw;
+}
+}

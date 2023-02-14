@@ -83,7 +83,7 @@
             {% for testimonial in testimonials %}
             {% if forloop.first %}
                 <div class="carousel-item carousel-item-text text-center active">                    
-                    <img class="d-block carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg" alt="First Slide">
+                    <img class="d-block img-fluid carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg" alt="First Slide">
                     <div class="carousel-caption d-md-block">
                         <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
                         <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
@@ -92,7 +92,7 @@
                 </div>
             {% else %}
                 <div class="carousel-item carousel-item-text text-center">
-                    <img class="d-block carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676412887/sensical/pexels-anthony-_-794495_k3us9t.jpg" alt="First Slide">                   
+                    <img class="d-block carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676417286/sensical/pexels-amar-preciado-10196786_myqnmd.jpg" alt="Second Slide">                   
                     <div class="carousel-caption d-md-block">
                         <h3 class="my-4 testimonial-heading" >{{ testimonial.name }}</h3>
                         <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
@@ -114,10 +114,15 @@
                     Next
                 </span>
             </a>
-            </div>
-            <a class="text-light text-center" href="#">View All Testimonials...</a> 
         </div>
     </div>
 </div>
+        
+    <div class="row">
+        <div class="col-12 mt-4 text-center">
+            <a class="sensical-button" href="{% url 'testimonials' %}">View All Testimonials...</a> 
+        </div>
+    </div>
+
 
 {% endblock content %}
