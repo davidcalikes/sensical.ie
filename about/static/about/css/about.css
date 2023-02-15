@@ -28,6 +28,11 @@
     min-height: 430px;
 }
 
+.media-width {
+    width: 90%;
+    margin-left: 5%;
+}
+
 .video-box {
     background-color: white;
     padding: 1rem;
@@ -69,7 +74,7 @@
 .carousel-item-img {
     opacity: 60%;
     filter: blur(4px);
-    max-width: 100%;
+    max-width: 1400px;
     height: auto;
 }
 

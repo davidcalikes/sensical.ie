@@ -16,13 +16,15 @@
     <hr class="message-rule">
     
     <div class="row">
-        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center video-box">
-            <div class="video-container">
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jom2VcYoUN0?autoplay=1&mute=1&texttrack=on"
-                    title="YouTube video player" frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width video-box">
+                <div class="video-container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jom2VcYoUN0?autoplay=1&mute=1&texttrack=on"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
         <div class="col-12 col-lg-6 my-4 text-center">
@@ -43,16 +45,20 @@
                 <hr class="about-logo-rule">
                 <p>Our new e-commerce webstore will allow our existing customer base, as well as new service users to purchase supplementary products
                 which can be used to enhance the users experience in any existing sensory space, or alongside our Mobile Sensory Environments service.</p>
-                <p>But dont just take our word for it, examine our videos</p>
+                <p>Keep reading below to find out about hiring our equipment </p>
             </div>
         </div>
-        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center video-box">
-            <img class="about-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676231178/sensical/webstore_screen_uf4g48.png" alt="A screenshot of the sensical.ie webstore">
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width video-box">
+                <img class="about-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676231178/sensical/webstore_screen_uf4g48.png" alt="A screenshot of the sensical.ie webstore">
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center video-box">
-            <img class="about-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676237556/sensical/Screen_Shot_2023-02-12_at_21.32.15_jzntm3.png" alt="An image of sensory equpiment">
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width video-box">
+                <img class="about-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676237556/sensical/Screen_Shot_2023-02-12_at_21.32.15_jzntm3.png" alt="An image of sensory equpiment">
+            </div>
         </div>
         <div class="col-12 col-lg-6 my-4 text-center">
             <div class="about-text">
@@ -60,7 +66,7 @@
                 <hr class="about-logo-rule">
                 <p>Our new e-commerce webstore will allow our existing customer base, as well as new service users to purchase supplementary products
                 which can be used to enhance the users experience in any existing sensory space, or alongside our Mobile Sensory Environments service.</p>
-                <p>But dont just take our word for it, examine our videos</p>
+                <p>But don't just take our word for it. Read the testimonials of some of our satisfied customers below. </p>
             </div>
         </div>
     </div>
@@ -78,21 +84,28 @@
         <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
         <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
     </ol>
-    <div id="testimonials-slider" ">
+    <div id="testimonials-slider">
         <div class="carousel-inner">
             {% for testimonial in testimonials %}
-            {% if forloop.first %}
+            {% if testimonial.id == 1 %}
                 <div class="carousel-item carousel-item-text text-center active">                    
-                    <img class="d-block img-fluid carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg" alt="First Slide">
+                    <img class="img-fluid carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg" alt="First Slide">
                     <div class="carousel-caption d-md-block">
                         <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
                         <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
-                        
                     </div>
                 </div>
-            {% else %}
+            {% elif testimonial.id == 2 %}
                 <div class="carousel-item carousel-item-text text-center">
-                    <img class="d-block carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676417286/sensical/pexels-amar-preciado-10196786_myqnmd.jpg" alt="Second Slide">                   
+                    <img class="carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676417286/sensical/pexels-amar-preciado-10196786_myqnmd.jpg" alt="Second Slide">                   
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="my-4 testimonial-heading" >{{ testimonial.name }}</h3>
+                        <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
+                    </div>
+                </div>
+            {% elif testimonial.id == 7 %}
+                <div class="carousel-item carousel-item-text text-center">
+                    <img class="carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676412887/sensical/pexels-anthony-_-794495_k3us9t.jpg" alt="Second Slide">                   
                     <div class="carousel-caption d-md-block">
                         <h3 class="my-4 testimonial-heading" >{{ testimonial.name }}</h3>
                         <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
