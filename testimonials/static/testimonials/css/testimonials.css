@@ -7,14 +7,25 @@
     margin-left: auto;
 }
 
-.testimonial-body {
-    min-height: 100px;
-}
-
-.testimonial-img-container{
+.testimonial-text {
     width: 100%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 430px;
 }
 
-.testimonials-img {
-    width: 450px;
+.testimonial-logo-rule {
+    width: 60%;
+    border-color: white;
+    margin-bottom: 30px;
+}
+
+.media-width {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.video-box {
+    background-color: white;
+    padding: 1rem;
 }

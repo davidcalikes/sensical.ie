@@ -9,29 +9,63 @@
 
 {% block content %}
 <div class="testimonials-container">
-    <div>
-        <h2 class="col-12 text-center mb-4">Client Testimonials</h2>
+        
+    <div class="text-center">
+        <i class="fa-solid fa-comments icon"></i>
+        <h2 class="col-12 text-center mb-4">All Testimonials</h2>
     </div>
+
+    <hr class="message-rule">
     
+    {% for testimonial in all_testimonials_list %}
     <div class="row">
-        {% for testimonial in testimonials %}
-            {% if forloop.first %}
-            <div class="col-12 col-lg-6 my-4 text-center">
-                <div>
-                    <h4>{{ testimonial.name }}</h4>
-                    <div class="testimonial-body">
-                        <p>{{ testimonial.testimonial }}</p>
-                    </div>
-                    <div class="testimonial-img-container">
-                        <img class="testimonials-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial">
-                    </div>
-                </div>
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="col-12 col-lg-6 my-4 text-center">
+            <div class="testimonial-text">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <h3>{{ testimonial.name }}</h3>
+                <hr class="about-logo-rule">
+                <p>{{ testimonial.testimonial }}</p>
+                <p>Keep reading below to find out about hiring our equipment </p>
             </div>
-            {% endif %}
-        {% endfor %}
+        </div>
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width video-box">
+                <img class="w-50" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width video-box">
+                <img class="w-50" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 my-4 text-center">
+            <div class="testimonial-text">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <h3>{{ testimonial.name }}</h3>
+                <hr class="about-logo-rule">
+                <p>{{ testimonial.testimonial }}</p>
+                <p>Keep reading below to find out about hiring our equipment </p>
+            </div>
+        </div>
+        {% if user.is_superuser %}
+                <div>
+                    <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
+                    <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                </div>
+        {% endif %}
+        {% endif %}
     </div>
+        {% endfor %}
+        <div class="row">
+            <div class="col-12 mt-4 text-center">
+                <a class="sensical-button" href="{% url 'about' %}">Back to about page</a> 
+            </div>
+        </div>
 </div>
 
-<hr class="section-rule">
+
+<hr class="message-rule">
 
 {% endblock content %}

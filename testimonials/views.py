@@ -15,9 +15,13 @@ class AllTestimonials(TemplateView):
 
     def get_context_data(self, **kwargs):
         testimonials = clientTestimonial.objects.all()
+        all_testimonials_list = []
+        for testimonial in testimonials:
+            all_testimonials_list.append(testimonial)
 
         context = super().get_context_data(**kwargs)
         context["testimonials"] = testimonials
+        context["all_testimonials_list"] = all_testimonials_list
 
         return context
 

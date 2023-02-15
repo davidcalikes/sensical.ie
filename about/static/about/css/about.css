@@ -9,6 +9,7 @@
 #about-hero {
     margin-top: 160px;
     background-size: cover;
+    margin-bottom: 6rem;
 }
 
 .about-logo {
@@ -69,12 +70,14 @@
 .carousel-caption {
     bottom: 100px;
     background-color: rgba(001,001,001,0.1);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .carousel-item-img {
     opacity: 60%;
     filter: blur(4px);
-    max-width: 1400px;
+    max-width: 1800px;
     height: auto;
 }
 
@@ -107,12 +110,12 @@
     font-weight: revert;
     font-family: 'Assistant';
     font-style: oblique;
-    font-size: 4vw;
+    font-size: 3vw;
     filter: drop-shadow(2px 2px 1px black);
 }
 
 .testimonial-text {
-    font-size: 3vw;
+    font-size: 2vw;
     min-height: 150px;
     letter-spacing: 0.5px;
     font-style: oblique;
