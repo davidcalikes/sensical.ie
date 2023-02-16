@@ -20,41 +20,54 @@
     {% for testimonial in all_testimonials_list %}
     <div class="row">
         {% if forloop.counter|divisibleby:2 %}
-        <div class="col-12 col-lg-6 my-4 text-center">
-            <div class="testimonial-text">
-                <i class="fa-solid fa-basket-shopping"></i>
+        <div class="col-12 col-lg-8 order-2 order-md-2 order-lg-1 my-4 text-center">
+            <div class="testimonial-text mr-2">
+                <i class="fa-solid fa-comment icon"></i>
                 <h3>{{ testimonial.name }}</h3>
                 <hr class="about-logo-rule">
-                <p>{{ testimonial.testimonial }}</p>
-                <p>Keep reading below to find out about hiring our equipment </p>
-            </div>
-        </div>
-        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
-            <div class="media-width video-box">
-                <img class="w-50" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
-            </div>
-        </div>
-        {% else %}
-        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
-            <div class="media-width video-box">
-                <img class="w-50" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
-            </div>
-        </div>
-        <div class="col-12 col-lg-6 my-4 text-center">
-            <div class="testimonial-text">
-                <i class="fa-solid fa-basket-shopping"></i>
-                <h3>{{ testimonial.name }}</h3>
-                <hr class="about-logo-rule">
-                <p>{{ testimonial.testimonial }}</p>
-                <p>Keep reading below to find out about hiring our equipment </p>
-            </div>
-        </div>
-        {% if user.is_superuser %}
-                <div>
-                    <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
-                    <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                <p class="mb-4">"{{ testimonial.testimonial }}"</p>
+                {% if user.is_superuser %}
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
+                    </div>
+                    <div class="col-12 my-2">
+                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                    </div>
                 </div>
-        {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
+            <div class="media-width">
+                <img class="testimonial-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
+            </div>
+        </div>
+        
+        {% else %}
+        <div class="col-12 col-lg-4 my-4 text-center d-flex align-items-center">
+            <div class="media-width">
+                <img class="testimonial-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
+            </div>
+        </div>
+        <div class="col-12 col-lg-8 my-4 text-center">
+            <div class="testimonial-text ml-2">
+                <i class="fa-solid fa-comment icon"></i>
+                <h3>{{ testimonial.name }}</h3>
+                <hr class="about-logo-rule">
+                <p class="mb-4">"{{ testimonial.testimonial }}"</p>
+                {% if user.is_superuser %}
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
+                    </div>
+                    <div class="col-12 my-2">
+                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
         {% endif %}
     </div>
         {% endfor %}
@@ -64,7 +77,6 @@
             </div>
         </div>
 </div>
-
 
 <hr class="message-rule">
 
