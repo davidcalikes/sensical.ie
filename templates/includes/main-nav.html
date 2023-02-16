@@ -1,5 +1,12 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-3 ml-3" href="{% url 'home' %}" id="home-link"> 
+                Home
+            </a>
+        </li>
+
         <li class="nav-item dropdown">
             <a class="nav-link mr-3 ml-3" href="{% url 'products' %}" id="all-products-link">
                 All Products
@@ -13,7 +20,8 @@
             <div class="dropdown-menu border-0" aria-labelledby="tactile-items-link">
                 <a href="{% url 'products' %}?category=sensory_toys" class="dropdown-item">Sensory Toys</a>
                 <a href="{% url 'products' %}?category=bubbles" class="dropdown-item">Bubbles</a>
-                <a href="{% url 'products' %}?category=sensory_toys,bubbles" class="dropdown-item">All Tactile Items</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a> <!-- Include Weighted Blankets, Ear Defenders and Blackout Blinds -->
+                <a href="{% url 'products' %}?category=sensory_toys,bubbles,accesories" class="dropdown-item">All Tactile Items</a>
             </div>
         </li>
 
@@ -42,8 +50,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link mr-3 ml-3" href="#" id="accessories-link"> <!-- Include Weighted Blankets, Ear Defenders and Blackout Blinds -->
-                Accessories
+            <a class="nav-link mr-3 ml-3" href="#" id="hire-link"> 
+                Hire
             </a>
         </li>
 
