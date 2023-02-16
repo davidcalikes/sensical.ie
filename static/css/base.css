@@ -301,7 +301,7 @@ a.nav-link {
 /* **** Upper Footer **** */
 
 .upper-footer {
-    background-color: #305983;
+    background-color: #0c2d6c;
     color: white;
     margin-top: 6rem;
 }
@@ -310,7 +310,9 @@ a.nav-link {
 /* **** Footer **** */
 
 .footer-container-bg {
-    background-color: #305983;
+    background-color: #0c2d6c;
+    text-align: center;
+    /* max-width: 1800px; */
 }
 
 footer {
@@ -321,12 +323,42 @@ footer {
     padding: 2rem;
 }
 
+.footer-row {
+    width: 90%;
+    margin-left: 5%;
+}
+
 .footer-info-box {
     background-color: white;
     color: #0c2d6c;
     width: 260px;
     padding: 0.5rem;
     border: 2px solid #0c2d6c;
+}
+
+.footer-inv-logo {
+    width: 220px;
+    margin-left: 0.8rem;
+}
+
+.footer-contact-text {
+    padding: 2rem;
+    padding-top: 0.5rem;
+}
+
+.footer-contact-text p {
+    margin-bottom: 0;
+}
+
+.footer-socials {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.footer-social-icon {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: x-large;
 }
 
 .footer-info-box i {
@@ -595,6 +627,8 @@ footer {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 500px;
+    height: fit-content;
+    align-items: center;
 }
 
 #mc_embed_signup input {
