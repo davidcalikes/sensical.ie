@@ -89,15 +89,16 @@
                     </div>
                     <div class="container">
                     <div class="row">
-                        <div class="col-6 card-body text-center" >{% if product.in_stock %}
-                            <h4 class="text-center">€{{ product.price }}</h4>
-                            <small class="text-center availability">In Stock 
+                        <div class="col-6 card-body text-center">
+                            {% if product.in_stock %}
+                            <h4 class="text-center text-light">€{{ product.price }}</h4>
+                            <small class="text-center text-light availability">In Stock 
                             <i class="fa-solid fa-circle-check text-success"></i>
                             </small>
                             {% endif %}
                             {% if product.in_stock == False %}
-                            <h4 class="text-center">€{{ product.price }}</h4>
-                            <small class="text-center availability">Out Of Stock 
+                            <h4 class="text-center text-light">€{{ product.price }}</h4>
+                            <small class="text-center text-light availability">Out Of Stock 
                                 <i class="fa-solid fa-circle-xmark text-danger"></i>
                             </small>
                             {% endif %}
@@ -105,18 +106,18 @@
                         <div class="col-6 card-body text-center">
                             {% if user.is_authenticated %}
                                     {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %} 
-                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
+                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center text-light">
                                         <h4><i class="fa-solid fa-heart-circle-minus"></i></h4>
                                         <small>Remove from wishlist</small></a>&nbsp;
                                     {% else %}
-                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center">
+                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center text-light">
                                     <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
-                                    <small>Add to Wishlist</small></a>&nbsp;
+                                    <small class="text-light">Add to Wishlist</small></a>&nbsp;
                                     {% endif %}
                             {% else %}
-                            <a href="{% url 'account_login' %}" class="text-center">
+                            <a href="{% url 'account_login' %}" class="text-center text-light">
                             <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
-                            <small>Add to Wishlist</small></a>&nbsp;
+                            <small class="text-light">Add to Wishlist</small></a>&nbsp;
                             {% endif %}
                         </div>
                     </div>
@@ -163,14 +164,14 @@
                 </div>
                 {% if request.user.is_superuser %}
                 <div class="rating-container">
-                    <a href="{% url 'edit_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>&nbspedit</small></a>&nbsp;
-                    &nbsp<small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center pb-4"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
+                    <a href="{% url 'edit_product' product.id %}" class="text-center text-light pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>&nbspedit</small></a>&nbsp;
+                    &nbsp<small class="text-light"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center text-light pb-4"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
                 </div>
                 {% else %}
                 <div class="rating-container">
                     
-                <small><i class="fas fa-star mr-1 pb-4"></i>{{ product.rating }} / 5</small>
+                <small class="text-light" ><i class="fas fa-star mr-1 pb-4"></i>{{ product.rating }} / 5</small>
                     
                 </div>
                 {% endif %}

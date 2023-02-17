@@ -457,6 +457,7 @@ a.nav-link {
     border: solid 1px #0c2d6c;
     margin-bottom: 0.5rem;
     cursor: pointer;
+    border: solid 1px white;
     font-size: 14px;
     width: 100%;
     text-transform: uppercase;
