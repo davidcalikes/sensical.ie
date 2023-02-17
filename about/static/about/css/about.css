@@ -29,6 +29,21 @@
     min-height: 430px;
 }
 
+.about-socials {
+    background-color: #75e6ff;
+    padding: 1rem;
+    margin-bottom: 6rem;
+}
+
+.about-social-icon {
+    font-size: x-large;
+    padding: 1rem;
+}
+
+.contacts-logo {
+    border-radius: 50%;
+}
+
 .media-width {
     width: 90%;
     margin-left: 5%;

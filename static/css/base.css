@@ -82,8 +82,8 @@ a {
 .section-rule {
     width: 60%;
     border-color: white;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .primary-bg {
@@ -338,11 +338,11 @@ footer {
 
 .footer-inv-logo {
     width: 220px;
-    margin-left: 0.8rem;
 }
 
 .footer-contact-text {
     padding: 2rem;
+    padding-left: 0.5rem;
     padding-top: 0.5rem;
 }
 
@@ -353,12 +353,28 @@ footer {
 .footer-socials {
     padding: 2rem;
     padding-top: 0;
+    padding-left: 0.5rem;
+   
+}
+
+.footer-social-icon:hover {
+    color: #75e6ff;
 }
 
 .footer-social-icon {
     color: #fff;
     margin-right: 1rem;
     font-size: x-large;
+}
+
+.footer-info-text {
+    margin-top: 2rem;
+}
+
+.footer-disclaimer {
+    width: 75%;
+    margin-left: 25%;
+    font-weight: bold;
 }
 
 .footer-info-box i {
@@ -704,7 +720,27 @@ footer {
     .email-conf {
         width: 70%;
         margin-left: 15%;
-      }
+    }
+    .footer-inv-logo {
+        width: 220px;
+        margin-left: 2rem;
+    }
+    .footer-contact-text {
+        padding: 2rem;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+    }
+    
+    .footer-socials {
+        padding: 0;
+        padding-top: 0;
+        padding-left: 0;
+       
+    }
+    .footer-disclaimer {
+        width: 100%;
+        margin-left: 0;
+    }
     }
 
 @media screen and (max-width: 767px) {
