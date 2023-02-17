@@ -292,12 +292,6 @@ a.nav-link {
     border-bottom: solid 4px #ffadef;
 }
 
-/* **** Similar Products Section **** */
-
-.similar-products-container {
-    min-height: 500px;
-}
-
 /* **** Footer **** */
 
 .upper-footer {
@@ -526,6 +520,7 @@ a.nav-link {
 .custom-select {
     margin-bottom: 1rem;
     width: 90%;
+    border-radius: 0;
 }
 
 .basket-bg {

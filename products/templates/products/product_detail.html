@@ -22,17 +22,17 @@
         </div>
             <div class="col-sm-12 col-md-6 detail-container ">
                 <div>
-                    <h3>Price: €{{ product.price }} </h3>
+                    <h3 class="pl-2">Price: €{{ product.price }} </h3>
                     {% if product.in_stock %}
-                    <small>In Stock <i class="fa-solid fa-circle-check text-success mb-4"></i></small>
+                    <small class="pl-2">In Stock <i class="fa-solid fa-circle-check text-success mb-4"></i></small>
                     {% else %}
-                    <small>Out of Stock <i class="fa-solid fa-circle-xmark text-danger mb-4"></i></small>
+                    <small class="pl-2">Out of Stock <i class="fa-solid fa-circle-xmark text-danger mb-4"></i></small>
                     {% endif %}
 
-                    <p> {{ product.description }} <p>
-                    <small>SKU: {{ product.sku }} </small>
+                    <p class="pl-2"> {{ product.description }} <p>
+                    <small class="pl-2">SKU: {{ product.sku }} </small>
                     <br>
-                    <small> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
+                    <small class="pl-2"> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
                     
                     {% if product.in_stock %}
                     
@@ -40,10 +40,10 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
-                                <p class="mt-2"><strong>Quantity:</strong></p>
+                                <p class="mt-2 pl-2"><strong>Quantity:</strong></p>
                                 <div class="text-center">
                                     <div class="form-group detail-form-selector">
-                                        <div class="input-group-selector">
+                                        <div class="input-group-selector rounded-0 text-lg-left">
                                             <select class="form-control custom-select"
                                             name="quantity">
                                                 <option>1</option>
@@ -91,7 +91,4 @@
     </div>
 </div>
 
-<div class="similar-products-container">
-
-</div>
 {% endblock content %}
