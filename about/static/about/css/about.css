@@ -36,12 +36,15 @@
 }
 
 .about-social-icon {
-    font-size: x-large;
-    padding: 1rem;
+    font-size: xxx-large;
+    padding: 2rem;
 }
 
 .contacts-logo {
     border-radius: 50%;
+    width: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .media-width {
@@ -160,8 +163,27 @@
 .testimonial-heading {
     font-size: 6vw;
 }
+.about-socials {
+    background-color: #75e6ff;
+    padding: 0;
+    margin-bottom: 6rem;
+}
+.about-social-icon {
+    font-size: xx-large;
+    padding: 1rem;
+}
+.contacts-logo {
+    margin: 1rem;
+    border-radius: 50%;
+    width: 14%;
+}
 
 .testimonial-text {
     font-size: 4vw;
+}
+@media screen and (max-width: 350px) {
+.contacts-logo {
+    display: none;
+}
 }
 }

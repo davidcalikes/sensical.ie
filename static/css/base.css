@@ -298,16 +298,14 @@ a.nav-link {
     min-height: 500px;
 }
 
-/* **** Upper Footer **** */
+/* **** Footer **** */
 
 .upper-footer {
-    background-color: #0c2d6c;
+    background-color: #0a265c;
     color: white;
+    border-top: 2px solid #75e6ff;
     margin-top: 6rem;
 }
-
-
-/* **** Footer **** */
 
 .footer-container-bg {
     background-color: #0c2d6c;
@@ -315,17 +313,16 @@ a.nav-link {
     /* max-width: 1800px; */
 }
 
-footer {
+.lower-footer {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
     background-color: #75e6ff;
     padding: 2rem;
 }
 
 .footer-row {
-    width: 90%;
-    margin-left: 5%;
+    width: 94%;
+    margin-left: 3%;
 }
 
 .footer-info-box {
@@ -337,7 +334,7 @@ footer {
 }
 
 .footer-inv-logo {
-    width: 220px;
+    width: 180px;
 }
 
 .footer-contact-text {
@@ -368,12 +365,15 @@ footer {
 }
 
 .footer-info-text {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    padding-right: 0.5rem;
+}
+
+.footer-irish-logo {
+    width: 200px;
 }
 
 .footer-disclaimer {
-    width: 75%;
-    margin-left: 25%;
     font-weight: bold;
 }
 
@@ -722,8 +722,7 @@ footer {
         margin-left: 15%;
     }
     .footer-inv-logo {
-        width: 220px;
-        margin-left: 2rem;
+        margin-left: 0;
     }
     .footer-contact-text {
         padding: 2rem;
