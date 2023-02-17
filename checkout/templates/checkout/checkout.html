@@ -62,14 +62,13 @@
                 </div>
                 {% endfor %}
         </div>
-
             <div class="col-12 col-lg-5 payment-container text-center my-3">
                 <div class="panel-group" id="checkout-accordian">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span> <i class="ml-3 fa-solid fa-circle-arrow-down text-right"></i></i></span> </p>
+                            <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span><i class="ml-3 fa-solid fa-circle-arrow-down text-right"></i></i></span> </p>
                         </div>
-                        <div class="panel-collapse collapse" id="panel-1">
+                        <div class="panel-collapse collapse show" id="panel-1">
                             <div class="panel-body">
                                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                                     {% csrf_token %}
