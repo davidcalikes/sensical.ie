@@ -141,12 +141,6 @@
     filter: drop-shadow(1px 2px 1px black);
 }
 
-.testimonial-quotemarks {
-    font-size: 25px;
-    font-style: oblique;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .testimonials-section {
     background-color: #fff;
     padding: 2rem;
@@ -154,6 +148,10 @@
 
 .carousel-indicators {
     bottom: 16px;
+}
+
+.test-link {
+    margin-top: 4rem;
 }
 
 @media screen and (max-width: 767px) {

@@ -14,6 +14,11 @@
     min-height: 350px;
 }
 
+.testimonial {
+    width: 70%;
+    margin-left: 15%;
+}
+
 .testimonial-logo-rule {
     width: 60%;
     border-color: white;
