@@ -31,18 +31,20 @@
 
 .about-socials {
     background-color: #75e6ff;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 6rem;
 }
 
 .about-social-icon {
     font-size: xxx-large;
-    padding: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .contacts-logo {
     border-radius: 50%;
-    width: 10%;
+    width: 84px;
     margin-left: 2rem;
     margin-right: 2rem;
 }

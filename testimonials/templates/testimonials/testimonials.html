@@ -15,7 +15,7 @@
     </div>
 
     <hr class="message-rule">
-    
+    {% if all_testimonials_list %}
     {% for testimonial in all_testimonials_list %}
     <div class="row">
         {% if forloop.counter|divisibleby:2 %}
@@ -70,6 +70,9 @@
         {% endif %}
     </div>
         {% endfor %}
+        {% else %}
+        <h4 class="text-center">There are currently no testimonials to display</h4>
+        {% endif %}
         <div class="row">
             <div class="col-12 mt-4 text-center">
                 <a class="sensical-button" href="{% url 'about' %}">Back to about page</a> 
