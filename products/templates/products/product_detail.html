@@ -71,18 +71,38 @@
                                 </a>
                             </div>
                             {% if product.in_stock %}
-                            <div class="col-12 mt-2 mb-2">
+                            <div class="col-12 my-2">
                                 <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" min="1" max="10" type="submit" value="&#xf291; Add To Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% else %}
-                            <div class="col-12 mt-2">
+                            <div class="col-12 my-2">
                                 <a href="#" class="sensical-button text-center rounded-0 mt-2">
                                     <span class="icon"><i class="fa-regular fa-circle-xmark"></i></i></span>
                                     <span class="text-uppercase">Out of stock</span>
                                 </a>
                             </div>
                             {% endif %}
+                            <div class="col-12 mt-2">
+                                {% if user.is_authenticated %}
+                                        {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %} 
+                                        <a href="{% url 'add_to_wishlist' product.id %}" class="sensical-button text-center rounded-0 mt-2">
+                                            <span class="icon"><i class="fa-solid fa-heart-circle-minus"></i></span>
+                                            <span class="text-uppercase">Remove from Wishlist</span>
+                                        </a>
+                                        {% else %}
+                                        <a href="{% url 'add_to_wishlist' product.id %}" class="sensical-button text-center rounded-0 mt-2">
+                                            <span class="icon"><i class="fa-solid fa-heart-circle-plus"></i></span>
+                                            <span class="text-uppercase">Add To Wishlist</span>
+                                        </a>
+                                        {% endif %}
+                                {% else %}
+                                <a href="{% url 'account_login' %}" class="sensical-button text-center rounded-0 mt-2">
+                                    <span class="icon"><i class="fa-solid fa-heart-circle-plus"></i></span>
+                                    <span class="text-uppercase">Add To Wishlist</span>
+                                </a>
+                                {% endif %}
+                            </div>
                         </div>
                     </form>
                 </div>
