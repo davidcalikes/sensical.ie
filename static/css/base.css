@@ -805,6 +805,9 @@ a.nav-link {
     .auth-container {
         margin-top: 150px;
     }
+    .wishlist-container {
+        margin-top: 150px;
+    }
     }
 
 @media screen and (max-width: 500px) {
