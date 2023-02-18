@@ -802,6 +802,9 @@ a.nav-link {
     #home-hero {
         margin-top: 140px;
     }
+    .auth-container {
+        margin-top: 150px;
+    }
     }
 
 @media screen and (max-width: 500px) {
