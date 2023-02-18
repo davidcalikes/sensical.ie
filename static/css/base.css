@@ -881,6 +881,9 @@ a.nav-link {
     .auth-container {
         width: 80%;
     }
+    .wishlist-img {
+        min-width: 240px;
+    }
     }
 
 @media screen and (max-width: 363px) {
@@ -908,7 +911,7 @@ a.nav-link {
         display: block;
     }
     .wishlist-img {
-        min-width: 240px;
+        min-width: 210px;
         object-fit: cover;
     }
     }
