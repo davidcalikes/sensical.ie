@@ -14,7 +14,7 @@
         <div class="col-12 text-center mt-3">
             <h1><i class="fa-solid fa-circle-check"></i></h1>
             <h2>Order Complete!</h2>
-            <p> A confimation email has been sent to {{ order.email }}
+            <p> A confirmation email has been sent to {{ order.email }}
             </p>
         </div>
         <div class="col-12 text-center mt-3">
@@ -186,11 +186,20 @@
             </div>
         </div>
     </div>
+    {% if user.is_authenticated %}
     <div class="col-12 text-center my-4">
         <a href="{% url 'profile' %}" class="sensical-button text-center rounded-0 mt-2">
             <span class="icon"><i class="fa-regular fa-circle-left"></i></span>
             <span class="text-uppercase">Return to Profile</span>
         </a>
     </div>
+    {% else %}
+    <div class="col-12 text-center my-4">
+        <a href="{% url 'home' %}" class="sensical-button text-center rounded-0 mt-2">
+            <span class="icon"><i class="fa-regular fa-circle-left"></i></span>
+            <span class="text-uppercase">Home</span>
+        </a>
+    </div>
+    {% endif %}
 </div>
 {% endblock content %}
