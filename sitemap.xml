@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/basket/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=sensory_toys</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=bubbles</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=accessories</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=sensory_toys,bubbles,accesories</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=bluetooth_speakers</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=portable_media_players</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=headphones</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=bluetooth_speakers,portable_media_players,headphones</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=spinners_and_torches</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=led_fixtures</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=bubble_tubes</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=spinners_and_torches,led_fixtures,bubble_tubes</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/hire/hire</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=packages</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/about/about/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/testimonials/testimonials/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/9/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/18/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/19/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/20/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/11/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sensical-ireland.herokuapp.com/products/10/</loc>
+  <lastmod>2023-02-18T11:54:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
