@@ -29,6 +29,10 @@
     min-height: 430px;
 }
 
+.main-about-blurb {
+    margin-top: 1.5rem;
+}
+
 .about-socials {
     background-color: #75e6ff;
     padding: 0.5rem;
@@ -50,13 +54,17 @@
 }
 
 .media-width {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    background-color: white;
 }
 
 .video-box {
-    background-color: white;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+.mobile-video-box {
+    padding: 0.5rem;
+    display: none;
 }
 
 .video-container {
@@ -177,13 +185,36 @@
     border-radius: 50%;
     width: 14%;
 }
-
 .testimonial-text {
     font-size: 4vw;
 }
+}
+
+@media screen and (max-width: 500px) {
+.about-container {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 430px) {
+.main-about-blurb {
+    margin-top: 60%;
+}
+.video-box {
+    padding: 0.5rem;
+    display: none;
+}
+.mobile-video-box {
+    padding: 0rem;
+    display: block;
+    width: 106%;
+    position: absolute;
+    right: -18px;
+}
+}
+
 @media screen and (max-width: 350px) {
 .contacts-logo {
     display: none;
-}
 }
 }
