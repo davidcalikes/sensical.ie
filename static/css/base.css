@@ -644,6 +644,17 @@ a.nav-link {
     text-align: left;
 }
 
+/* **** Hire Page **** */
+
+.hire-container {
+    margin-top: 170px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* **** MAIL CHIMP **** */
 
 #mc_embed_signup {
