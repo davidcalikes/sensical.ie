@@ -166,7 +166,7 @@
                 <div class="rating-container">
                     <a href="{% url 'edit_product' product.id %}" class="text-center text-light pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>&nbspedit</small></a>&nbsp;
                     &nbsp<small class="text-light"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center text-light pb-4"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
+                    &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center text-light pb-4" onclick="return confirm('Are you sure you want to delete this product?');"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
                 </div>
                 {% else %}
                 <div class="rating-container">
