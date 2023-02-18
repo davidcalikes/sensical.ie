@@ -409,7 +409,7 @@ a.nav-link {
 }
 
 .products-bg {
-    margin-top: 170px;
+    margin-top: 180px;
     background-size: cover;
 }
 
@@ -500,10 +500,15 @@ a.nav-link {
     margin-left: 5%;
 }
 
+.product-detail-bg {
+    margin-top: 150px;
+    background-size: cover;
+}
+
 .product-detail-img-container {
     width: 100%;
     text-align: right;
-    min-height: 280px;
+    min-height: 230px;
     min-width: 280px;
 }
 
@@ -853,8 +858,12 @@ a.nav-link {
         width: 80px;
     }
     .products-bg {
-    margin-top: 200px;
+    margin-top: 180px;
     background-size: cover;
+    }
+    .product-detail-bg {
+        margin-top: 150px;
+        background-size: cover;
     }
     .basket-img {
         min-width: 206px;
