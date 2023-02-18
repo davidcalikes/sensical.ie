@@ -681,6 +681,10 @@ a.nav-link {
         display: none;
     }
 
+    .navbar-nav {
+        border-bottom: 2px solid #75e6ff;
+    }
+
     .home-card {
         width: 80%;
         margin-left: 10%;
