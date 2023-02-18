@@ -30,15 +30,33 @@
                     {% endif %}
 
                     <p class="pl-2"> {{ product.description }} <p>
-                    <small class="pl-2">SKU: {{ product.sku }} </small>
-                    <br>
+                        {% if 'ADHD' in product.for_sensory_needs|stringformat:'s' %}
+                        <i class="icon pl-2 fa-solid fa-eye"></i>&nbsp
+                        {% endif %}
+                        {% if 'ASD' in product.for_sensory_needs|stringformat:'s' %}
+                        <i class="icon pl-2 fa-solid fa-rainbow"></i>&nbsp
+                        {% endif %}
+                        {% if 'TOUCH' in product.for_sensory_needs|stringformat:'s' or 'TACTILE' in product.for_sensory_needs|stringformat:'s' %}
+                        <i class=" icon pl-2 fa-solid fa-hands"></i>&nbsp
+                        {% endif %}
+                        {% if 'SOUND' in product.for_sensory_needs|stringformat:'s' %}
+                        <i class="icon pl-2 fa-solid fa-headphones"></i>&nbsp
+                        {% endif %}
+                        {% if 'RELAX' in product.for_sensory_needs|stringformat:'s' %}
+                        <i class="icon pl-2 fa-solid fa-moon"></i>&nbsp
+                        {% endif %}
+                        {% if 'LIGHT' in product.for_sensory_needs|stringformat:'s' %}
+                        <i class="icon pl-2 fa-regular fa-lightbulb"></i>&nbsp
+                        {% endif %}
+                    <p class="mb-0"><small class="pl-2">SKU: {{ product.sku }} </small></p>
                     <small class="pl-2"> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
                     
-                    {% if product.in_stock %}
+                    
                     
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                            {% if product.in_stock %}
                             <div class="col-12">
                                 <p class="mt-2 pl-2"><strong>Quantity:</strong></p>
                                 <div class="text-center">
@@ -61,10 +79,10 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                    {% endif %}
 
-                            {% endif %}
-
-                            <div class="col-12 mb-2">
+                            <div class="col-12 mt-4 mb-2">
                                 <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
                                     <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
                                     <span class="text-uppercase">Find More Products</span>
