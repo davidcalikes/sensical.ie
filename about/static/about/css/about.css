@@ -207,9 +207,9 @@
 .mobile-video-box {
     padding: 0rem;
     display: block;
-    width: 106%;
+    width: 100%;
     position: absolute;
-    right: -18px;
+    right: 0px;
 }
 }
 
