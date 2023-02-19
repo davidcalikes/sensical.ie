@@ -195,7 +195,6 @@
     width: 90%;
 }
 }
-
 @media screen and (max-width: 430px) {
 .main-about-blurb {
     margin-top: 60%;
@@ -207,12 +206,15 @@
 .mobile-video-box {
     padding: 0rem;
     display: flex;
-    width: 100%;
+    width: 110%;
     position: absolute;
-    right: 0px;
+    right: -18px;
+    z-index: 9999;
+}
+#about-hero {
+    position: relative;
 }
 }
-
 @media screen and (max-width: 350px) {
 .contacts-logo {
     display: none;
