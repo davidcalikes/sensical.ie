@@ -708,6 +708,10 @@ a.nav-link {
         border-bottom: 2px solid #75e6ff;
     }
 
+    .lower-nav-border {
+        border-bottom: 2px solid #0c2d6c !important;
+    }
+
     .home-card {
         width: 80%;
         margin-left: 10%;

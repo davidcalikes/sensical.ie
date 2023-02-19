@@ -1,6 +1,5 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-
+    <ul class="navbar-nav {% if 'products' in request.path or 'basket' in request.path %} lower-nav-border {% endif %}  w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="nav-link mr-3 ml-3" href="{% url 'home' %}" id="home-link"> 
                 Home
