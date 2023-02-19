@@ -206,7 +206,7 @@
 }
 .mobile-video-box {
     padding: 0rem;
-    display: block;
+    display: flex;
     width: 100%;
     position: absolute;
     right: 0px;
