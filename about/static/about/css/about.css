@@ -12,6 +12,14 @@
     margin-bottom: 6rem;
 }
 
+.replace-about-heading {
+    display: none;
+}
+
+.replace-about-rule {
+    display: none;
+}
+
 .about-logo {
     width: 82%;
 }
@@ -199,20 +207,34 @@
 .main-about-blurb {
     margin-top: 60%;
 }
+.replace-about-heading {
+    display: block;
+    margin-top: 160px;
+}
+.replace-about-rule {
+    display: block;
+}
 .video-box {
     padding: 0.5rem;
     display: none;
 }
 .mobile-video-box {
     padding: 0rem;
-    display: flex;
-    width: 110%;
-    position: absolute;
-    right: -18px;
-    z-index: 9999;
+    display: block;
+    width: 100%;
+}
+
+.main-about-heading {
+    display: none;
+}
+.main-about-rule {
+    display: none;
+}
+.main-about-blurb {
+    margin-top: 0;
 }
 #about-hero {
-    position: relative;
+    margin-top: 0;
 }
 }
 @media screen and (max-width: 350px) {
