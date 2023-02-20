@@ -14,19 +14,27 @@ Established in 2018, the business, which operates as a business-to-client sole-t
 
 Sensical.ie is the online promotional and business hub for Sensical Mult-Sensory Solutions, allowing users to make bookings for the service via a linked Facebook business page.
 
+<br>
+
+## Background Information
+
+I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole tradership. Throughout the rest of this project's documentation including the README, AGILE and TESTING.md files, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a software developer and as the owner-operator of the Sensical enterprise.
+
+'Sensical MSE' was borne out of the real world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of disability care-provision in Ireland.
+
+<br>
+
 # Planning & Research
 
 ## Prior Business Model
 
-### Background Information:
 
-I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole tradership. Throughout the rest of the project documentation, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a Developer and as the owner-operator of the Sensical enterprise.
-
-'Sensical MSE' was borne out of the real world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of care-provision in Ireland.
 
 <br>
 
-### Primary Target Audience
+### Primary Target Audience:
+
+<br>
 
 Having witnessed first hand the scale and impact of sweeping [deinstitutionalisation](https://en.wikipedia.org/wiki/Deinstitutionalisation) reforms within Irish state-run healthcare facilities, the business owner noticed an opportunity to provide patients and service users with affordable, sensory experiences.
 
@@ -180,22 +188,57 @@ Goals:
 * To enjoy my spare time.
 
 Pain Point/Concerns:
-* I love mu Mum, She understands me more than anyone but she seldom has time to take me to the beach or swimming anymore.
-* I love my Dad but I feel like there's no relaxing space for me when mum is on nights and I stay over at his house.
+* I love my Mum, She understands me more than anyone but she never has time to take me to the beach or swimming anymore.
+* I love my Dad but I feel like there's no relaxing space for me when Mum is on nights and I stay over at his house.
 * I wish I could take my water basin with me when I visit the sensory room at the solas centre but I'm not allowed.
 * I love listening to the sea in sea shells I find at the beach but mum says they're too dirty to bring home.
 
-Examining the empathetic excercise above it seems that Emma could stand to benefit from some therapeutic multi-sensory activities. 
+Likes/Dislikes
+
+* I love water, the sea and the ocean. It helps me relax just thinking about it.
+
+* I dislike loud noises and have a phobia of spiders.
+
 
 Sensical Multi-Sensory Solutions could, hypothetically, provide Emma with a relaxing, yet stimulating underwater-themed sensory experience whether she stays with her Mum or Dad. When liasing with hiring customers, the business owner will conduct a thorough interview and determine which elements of their technical inventory would be best suited to create the perfect sensory environment.
 
 It is at this stage however, that this particular customer and her parents could be directed towards the Sensical.ie Webstore. Emma likes to listen to the sound of the ocean but Mum is worried about hygeine? Well the Webstore currently have an 'Ocean Drum' in stock. An 'Ocean Drum' is a traditional percussion instrument that replicates the sound of the ocean in the palm of your hand... and it has a wipe-clean hygenic surface.
 
-Should the Kearns family purchase such an item, plus say perhaps a bubble-tube lighting fixture and a heavy duty blackout blind, then not only will the Webstore generate revenue in the short term, but the Hire service will no longer have to load those item the next visit during setup time saving the customer time and providing better value for money. (Less time filling and emptying bubble tubes means more time enjoying the Sensory Environment)
+Should the Kearns family purchase such an item, plus say perhaps a bubble-tube lighting fixture and a heavy duty blackout blind, then not only will the Webstore generate revenue in the short term, but the Hire service will no longer have to load those items the next visit during setup, saving the customer time and providing better value for money. (Less time filling and emptying bubble tubes means more time enjoying the Sensory Environment)
 
-When developing real-world business relationships like this, it will inform the business owners descisions when purchasing future products to sell in the Webstore. A business strategy with its own, in-built market research.
+When developing real-world business relationships like this, it will inform the business owners descisions when purchasing future products to sell in the Webstore. A business plan with its own in-built market research strategy.
 </details>
 <br>
+
+## Project Problem Statement
+
+I developed the following problem statement to refer to during development.
+
+"To help facilitate the provision of sensory services and products via the most synergetic approach possible, for the mutual benefit of both the customer and business".
+
+I'm aware that problem statements like this shouldn't really incorporate the wellbeing of the business, but I have decided to include it here due to the simple fact that it is the only business of it's kind in Ireland and the experiences and benefits it can offer to its service users and customers depends entirely on its commercial success. 
+
+<br>
+
+## Planning Summary & Approach
+
+* A Secure, Full Stack, e-Commerce web application will be created.
+
+* The Webstore will be intuitive and promote standard e-Commerce business practices to promote purchases and return visits. (Three-click rule, wishlist, user profile etc)
+
+* The Webstore will only sell products that are supplementary to the 'Multi Sensory Environments'(equipment hire) business within the umbrella of Sensical Multi-Sensory Services.
+
+* The Site will also include links, information and media about the 'equipment hire' business.
+
+* Any products and information featured will be displayed to the user logically and informed by planning and research.
+
+* The app will be created following the principles of user experience design.
+
+* The app will be simple to use and provide visual feedback for all users.
+
+* The app will contain links to relevant external websites and contain metadata keywords to improve Search Engine Optimisation.
+
+
 
 
 
