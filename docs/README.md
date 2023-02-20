@@ -18,6 +18,8 @@ Sensical.ie is the online promotional and business hub for Sensical Mult-Sensory
 
 ## Prior Business Model
 
+### Primary Target Audience
+
 I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole tradership. Throughout the rest of the project documentation, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a Developer and as the owner-operator of the Sensical enterprise.
 
 'Sensical MSE' was borne out of the real world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of care-provision in Ireland.
@@ -62,6 +64,11 @@ Benefits of the service include:
 
 * No huge outlay or lengthy contract. Just pay as you go.
 
+
+### Secondary Target Audience
+
+The original business was also aimed at customers who needed sensory services in their own private residences. The service proved popular with parents and children with autistic spectrum disorder and learning disabilites. Another way customers utilised the service was block-booking sensory equipment for private residential birthday parties, where one or more of the attendees could avail of a relaxing space should they become overstimulated. 
+
 <br>
 
 <img src="../docs/readme_images/business2.png">_Prior business model._
@@ -71,9 +78,9 @@ Benefits of the service include:
 
 There are of course drawbacks to any business plan and Sensical is no different.
 
-Firstly, the business model is, in essence, part of what many dub 'the gig economy'. This means that the business will not produce revenue unless it is consistently finding new customers and providing the service on a daily basis.
+Firstly, the business model is, in essence, part of what many dub 'the gig economy'. This means that the business will not produce revenue unless it is consistently finding new customers and providing the service on a regular basis.
 
-Initially, this was not an immediate problem, as the business owner was higly motivated, technically minded and had a huge wealth of knowledge and transferable skills from years working as a successful solo musician.
+Initially, this was not an immediate problem, as the business owner was higly motivated, technically minded and had a huge wealth of knowledge and transferable skills from many years working as a successful touring musician.
 
 Unfortunately, like every other small enterprise, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidlines, and the closure of schools and day centers, the project ground to a halt in 2020.
 
@@ -85,14 +92,20 @@ I have outlined in the sections below the owner's new vision for the re-imagined
 
 ## New Business Model
 
+<br>
+
+<img src="../docs/readme_images/business3.png">_New business model._
+
+<br>
+
 <details>
 
 <summary>
 Updated Business Strategy</summary><br>
 
-Adopting the principles of [concentric diversification](https://www.monash.edu/business/marketing/marketing-dictionary/c/concentric-diversification#:~:text=a%20growth%20strategy%20in%20which,customers%3B%20also%20called%20convergent%20diversification.), the business owner decided to expand the scope of the Sensical enterprise to include an online store offering a range of affordable multi-sensory products that would appeal to it's established customer base as well as its general target audience.
+Adopting the principles of [concentric diversification](https://www.monash.edu/business/marketing/marketing-dictionary/c/concentric-diversification#:~:text=a%20growth%20strategy%20in%20which,customers%3B%20also%20called%20convergent%20diversification.), the business owner decided to expand the scope of the Sensical enterprise to include an online Webstore offering a range of affordable multi-sensory products that would appeal to it's established customer base as well as a more general target audience.
 
-Growing the business in this way will provide Sensical Multi-Sensory Solutions with a crucial, additional revenue stream that will help the business stay profitable should any losses occur on the "Mobile Sensory Environments Hire" side of the business. 
+Growing the business in this way will provide the newly rebranded 'Sensical Multi-Sensory Solutions' with a crucial, additional revenue stream that will help the business stay profitable should any losses occur on the "Mobile Sensory Environments Hire" side of the business. 
 
 Such loss can occur when:
 
@@ -126,6 +139,8 @@ The Webstore should encourage users to create and account in order to make retur
 
 The Webstore should be easy to navigate and offer the user the ability to see products from specific categories, subcategories and availability.
 
+The Website (outwith the Webstore) should also include information about the Equipment Hire side of the business, and provide links to the already established Facebook Business Page to encourage purchasing customers to also make a booking. This would increas the sites rating on popular search engines like Google and Bing by underlining the legitimacy of the site, its content and subject matter. See below for how the business owner hopes the Webstore will synergise with the hire business and help maximise profitability.
+
 </details>
 <br>
 
@@ -134,8 +149,48 @@ The Webstore should be easy to navigate and offer the user the ability to see pr
 <summary>
 Synergetic Approach</summary><br>
 
+Whilst diversification for it's own sake may prove enough of a reason for the introduction of the e-Commerce Webstore, there are other benefits that may also be advantageous. To demonstrate how this might work I have created the following persona:
+ 
+Persona Name: 
+* Emma Kearns.
+
+Age:
+* 14.
+
+Job/Role: 
+* School Pupil
+
+Status:
+* Minor.
+
+Other Information:
+* Highly Functioning Autistic School Pupil.
+* Loves water, marine life and the sea side.
+* Struggles with concentration due to anxiety.
+* Both parents are separated.
+* Lives with Mum and stays sometimes with Dad.
+
+Goals:
+* To eleviate anxiety/stress
+* To relax enough to think and perform tasks
+* To enjoy my spare time.
+
+Pain Point/Concerns:
+* I love mu Mum, She understands me more than anyone but she seldom has time to take me to the beach or swimming anymore.
+* I love my Dad but I feel like there's no relaxing space for me when mum is on nights and I stay over at his house.
+* I wish I could take my water basin with me when I visit the sensory room at the solas centre but I'm not allowed.
+* I love listening to the sea in sea shells I find at the beach but mum says they're too dirty to bring home.
 
 
+Examining the empathetic excercise above it seems that Emma could stand to benefit from some therapeutic multi-sensory activities. 
+
+Sensical Multi-Sensory Solutions could, hypothetically, provide Emma with a relaxing, yet stimulating underwater-themed sensory experience whether she stays with her Mum or Dad. When liasing with hiring customers, the business owner will conduct a thorough interview and determine which elements of their technical inventory would be best suited to create the perfect sensory environment.
+
+It is at this stage however, that this particular customer and her parents could be directed towards the Sensical.ie Webstore. Emma likes to listen to the sound of the ocean but Mum is worried about hygeine? Well the Webstore currently have an 'Ocean Drum' in stock. An 'Ocean Drum' is a traditional percussion instrument that replicates the sound of the ocean in the palm of your hand... and it has a wipe-clean hygenic surface.
+
+Should the Kearns family purchase such an item, plus say perhaps a bubble-tube lighting fixture and a heavy duty blackout blind, then not only will the Webstore generate revenue in the short term, but the Hire service will no longer have to load those item the next visit during setup time saving the customer time and providing better value for money. (Less time filling and emptying bubble tubes means more time enjoying the Sensory Environment)
+
+When developing real-world business relationships like this, it will inform the business owners descisions when purchasing future products to sell in the Webstore. A business strategy with its own, in-built market research.
 </details>
 <br>
 
