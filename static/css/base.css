@@ -309,7 +309,7 @@ a.nav-link {
 /* **** Footer **** */
 
 .upper-footer {
-    background-color: #0a265c;
+    background-color: #081D46;
     color: white;
     border-top: 2px solid #75e6ff;
     margin-top: 6rem;
@@ -379,6 +379,24 @@ a.nav-link {
 
 .footer-irish-logo {
     width: 200px;
+    margin-top: 1rem;
+}
+
+.iwa-logo {
+    width: 100px;
+}
+
+.hse-logo {
+    width: 50px;
+}
+
+.autism-logo {
+    width: 150px;
+    background-color: white;
+}
+
+.adhd-logo {
+    width: 100px;
 }
 
 .footer-disclaimer {
@@ -867,6 +885,9 @@ a.nav-link {
     .service-button{
         font-size: medium;
         width: 80px;
+    }
+    .home-container {
+        width: 90%;
     }
     .products-bg {
     margin-top: 180px;
