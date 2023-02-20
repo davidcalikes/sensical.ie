@@ -12,22 +12,6 @@ Where this is not possible, Sensical Multi-Sensory Solutions can provide a pop-u
 
 Established in 2018, the business, which operates as a business-to-client sole-tradership, was, like most small enterprises, severely impacted by the global COVID-19 pandemic.
 
-Adopting the principles of [concentric diversification](https://www.monash.edu/business/marketing/marketing-dictionary/c/concentric-diversification#:~:text=a%20growth%20strategy%20in%20which,customers%3B%20also%20called%20convergent%20diversification.), the business owner decided to expand the scope of the Sensical enterprise to include an online store offering a range of affordable multi-sensory products that would appeal to it's established customer base as well as its general target audience.
-
-Growing the business in this way will provide Sensical Multi-Sensory Solutions with a crucial, additional revenue stream that will help the business stay profitable should any losses occur on the "Mobile Sensory Environments Hire" side of the business. 
-
-Such loss can occur when:
-
-* There are 'lock-down' situations in private residential/ residential care settings such as localised outbreaks, epidemics or pandemics.
-
-* The Mobile Sensory Environment Hire service is fully booked.
-
-* The Mobile Sensory Hire Equipment is under repair.
-
-In an attempt to protect the business against the prospect of future 'lock-downs' by providing an additional revenue stream, the business owner decided to expand the scope of Sensical Multi-Sensory Solutions buy offering users the opportunity to purchase a wide range of selected sensory items from a new e-commerce webstore.
-
-The purpose of selling good quality, carefully selected, supplementary, products is to provide hygenic, affordable enhancements to a customers multi-sensory experience, without the risk of making our 'Mobile Sensory Environments' equipment hire service redundant.
-
 Sensical.ie is the online promotional and business hub for Sensical Mult-Sensory Solutions, allowing users to make bookings for the service via a linked Facebook business page.
 
 # Planning & Research
@@ -91,20 +75,69 @@ Firstly, the business model is, in essence, part of what many dub 'the gig econo
 
 Initially, this was not an immediate problem, as the business owner was higly motivated, technically minded and had a huge wealth of knowledge and transferable skills from years working as a successful solo musician.
 
-Unfortunately, like almost every other service-based startup, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidlines, and the closure of schools and day centers, the project ground to a halt in 2020.
+Unfortunately, like every other small enterprise, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidlines, and the closure of schools and day centers, the project ground to a halt in 2020.
 
 As with many other startup owners during Covid, the year 2020 proved to be a time of reflection and creative restructuring for the owner operator of Sensical Mobile Sensory Environments.
 
 I have outlined in the sections below the owner's new vision for the re-imagined company, and the role they hope this e-commerce website will have in making the new business comercially successful.
 
+<br>
 
-
+## New Business Model
 
 <details>
 
 <summary>
 Updated Business Strategy</summary><br>
 
+Adopting the principles of [concentric diversification](https://www.monash.edu/business/marketing/marketing-dictionary/c/concentric-diversification#:~:text=a%20growth%20strategy%20in%20which,customers%3B%20also%20called%20convergent%20diversification.), the business owner decided to expand the scope of the Sensical enterprise to include an online store offering a range of affordable multi-sensory products that would appeal to it's established customer base as well as its general target audience.
 
+Growing the business in this way will provide Sensical Multi-Sensory Solutions with a crucial, additional revenue stream that will help the business stay profitable should any losses occur on the "Mobile Sensory Environments Hire" side of the business. 
 
+Such loss can occur when:
+
+* There are 'lock-down' situations in private residential/residential care settings such as localised outbreaks, epidemics or pandemics.
+
+* The Mobile Sensory Environment Hire service is fully booked.
+
+* The Mobile Sensory Hire Equipment is under repair.
+
+The purpose of selling good quality, carefully selected, supplementary, products is to provide hygenic, affordable enhancements to a customers multi-sensory experience, without the risk of making our 'Mobile Sensory Environments' equipment hire service redundant.
+
+</details>
 <br>
+
+<details>
+
+<summary>
+e-Commerce Strategy</summary><br>
+
+As referenced above, the business owner does not want the 'Equipment Hire' side of the business to suffer as a result of sales from the e-Commerce store. 
+
+In order to mitigate against this, the Sensical.ie Webstore will only stock supplimentary products that can enhance a customers enjoyment during a sensory session, but can in no way recreate the unique sensory experience of a custom Mobile Sensory Environment, when used in isolation.
+
+As [this article](https://www.ctvnews.ca/health/coronavirus/parents-are-not-ok-after-3-years-of-covid-and-a-brutal-winter-of-children-s-respiratory-illness-1.6231476) from January 2023 demonstrates, many parents and care providers are still wary of COVID (and other respiratory ilnesses) community spread.
+
+The Sensical.ie Webstore will allow customers to purchase their own sensory items, musical instruments, accessories and more, ensuring peace of mind that all items are sanitary. This also significantly reduces the hire services maintainence and cleaning budget.
+
+The site should make it as simple as possible for the user to identify products they wish to purchase, identify their availability, suitablity, and aspect and also seemlessly complete payment of products they have added to their shopping basket via a checkout feature.
+
+The Webstore should encourage users to create and account in order to make return visits even easier, by storing delivery information and a wishlist of possible future purchases to their user profile.
+
+The Webstore should be easy to navigate and offer the user the ability to see products from specific categories, subcategories and availability.
+
+</details>
+<br>
+
+<details>
+
+<summary>
+Synergetic Approach</summary><br>
+
+
+
+</details>
+<br>
+
+
+
