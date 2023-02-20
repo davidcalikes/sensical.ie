@@ -18,15 +18,19 @@ Sensical.ie is the online promotional and business hub for Sensical Mult-Sensory
 
 ## Prior Business Model
 
-### Primary Target Audience
+### Background Information:
 
 I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole tradership. Throughout the rest of the project documentation, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a Developer and as the owner-operator of the Sensical enterprise.
 
 'Sensical MSE' was borne out of the real world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of care-provision in Ireland.
 
-Having witnessed first hand the scale and impact of sweeping [deinstitutionalisation](https://en.wikipedia.org/wiki/Deinstitutionalisation) reforms within Irish State-run healthcare facilities, the business owner noticed an opportunity to provide patients and service users with affordable, sensory experiences.
+<br>
 
-Whilst agreeing that the rights and dignity of residential service users should always be paramount,there are [many issues](https://journals.sagepub.com/doi/full/10.1177/1468017318793620) that arise when deinstitutionalisation occurs.
+### Primary Target Audience
+
+Having witnessed first hand the scale and impact of sweeping [deinstitutionalisation](https://en.wikipedia.org/wiki/Deinstitutionalisation) reforms within Irish state-run healthcare facilities, the business owner noticed an opportunity to provide patients and service users with affordable, sensory experiences.
+
+Whilst agreeing that the rights and dignity of residential service users should always be paramount, there are [many issues](https://journals.sagepub.com/doi/full/10.1177/1468017318793620) that arise when deinstitutionalisation occurs.
 
 <img src="../docs/readme_images/business1.png">
 
@@ -180,7 +184,6 @@ Pain Point/Concerns:
 * I love my Dad but I feel like there's no relaxing space for me when mum is on nights and I stay over at his house.
 * I wish I could take my water basin with me when I visit the sensory room at the solas centre but I'm not allowed.
 * I love listening to the sea in sea shells I find at the beach but mum says they're too dirty to bring home.
-
 
 Examining the empathetic excercise above it seems that Emma could stand to benefit from some therapeutic multi-sensory activities. 
 
