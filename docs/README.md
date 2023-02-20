@@ -76,14 +76,29 @@ Benefits of the service include:
 
 * No travel or dedicated space required. Sensical systems are set up within minutes.
 
-* No huge outlay or lengthy contract. Just pay as you go. 
+* No huge outlay or lengthy contract. Just pay as you go.
 
+<br>
+
+<img src="../docs/readme_images/business2.png">_Prior business model._
+ <br>
 
 ## Drawbacks
 
 There are of course drawbacks to any business plan and Sensical is no different.
 
-Firstly, the business model is, in essence, part of what many dub 'the gig economy'. This means that the business will not produce revenue unless it is consistently finding new customers and providing the service on a daily basis.  
+Firstly, the business model is, in essence, part of what many dub 'the gig economy'. This means that the business will not produce revenue unless it is consistently finding new customers and providing the service on a daily basis.
+
+Initially, this was not an immediate problem, as the business owner was higly motivated, technically minded and had a huge wealth of knowledge and transferable skills from years working as a successful solo musician.
+
+Unfortunately, like almost every other service-based startup, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidlines, and the closure of schools and day centers, the project ground to a halt in 2020.
+
+As with many other startup owners during Covid, the year 2020 proved to be a time of reflection and creative restructuring for the owner operator of Sensical Mobile Sensory Environments.
+
+I have outlined in the sections below the owner's new vision for the re-imagined company, and the role they hope this e-commerce website will have in making the new business comercially successful.
+
+
+
 
 <details>
 
