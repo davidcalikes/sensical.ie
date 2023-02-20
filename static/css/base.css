@@ -788,11 +788,15 @@ a.nav-link {
         padding-left: 2rem;
         padding-top: 0.5rem;
     }
+
+    .footer-info-text {
+        padding-right: 0;
+    }
     
     .footer-socials {
         padding: 0;
         padding-top: 0;
-        padding-left: 0;
+        padding-left: 1rem;
        
     }
     .footer-disclaimer {
