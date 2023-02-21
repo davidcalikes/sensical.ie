@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Add Package{% endblock %}
+
+{% block content %}
+    {% if user.is_superuser %}
+    <div class="container auth-container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h1 class="text-center"><i class="fa-solid fa-list-check"></i></h1>
+                <h2 class="mb-4 text-center ">Add/Update Package</h2>
+                <hr class="section-rule">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a class="sensical-button" href="{% url 'testimonials' %}">Cancel</a>
+                        <input class="sensical-button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+    {% else %}
+    <div class="container auth-container">
+    <h1 class="mt-4 text-center"><i class="fa-solid fa-circle-exclamation"></i></h1>
+    <h3 class="text-center" >You are unauthorised to view this page.</h3>
+    <h3 class="text-center" >Please <a class="text-light font-italic" href="{% url 'account_login' %}">login</a> to manage packages.</h3>
+    </div>
+    {% endif %}
+{% endblock %}

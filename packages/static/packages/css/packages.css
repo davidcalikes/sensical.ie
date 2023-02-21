@@ -1,0 +1,47 @@
+.packages-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.packages-text {
+    width: 90%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 350px;
+}
+
+.packages {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.packages-logo-rule {
+    width: 60%;
+    border-color: white;
+    margin-bottom: 30px;
+}
+
+.media-width {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.packages-img {
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white;
+}
+
+@media screen and (max-width: 991px) {
+    .testimonial-text {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
