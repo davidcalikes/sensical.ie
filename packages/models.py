@@ -6,6 +6,10 @@ class Packages(models.Model):
     """
     Model class for the packages app
     """
+
+    class Meta:
+        verbose_name_plural = 'Packages'
+
     package_name = models.CharField(max_length=256)
     equipment = models.TextField(blank=True, null=True)
     duration = models.TextField(blank=True, null=True)
@@ -15,7 +19,8 @@ class Packages(models.Model):
     image_url = models.URLField(max_length=1024, blank=True, null=True)
     image = CloudinaryField(
         "Package Image", default='placeholder')
-    discount_voucher = models.DecimalField(max_digits=2, decimal_places=1)
+    discount_voucher = models.DecimalField(max_digits=3, decimal_places=1)
+    price = models.DecimalField(max_digits=8, decimal_places=2, blank=True,  null=True)
 
     def __str__(self):
-        return self.name
+        return self.package_name

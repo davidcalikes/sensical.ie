@@ -15,7 +15,7 @@
     </div>
     {% if user.is_superuser %}
     <div class="col-12 text-center my-2">
-        <a class="sensical-button" href="{% url 'add_package' %}"><i class="fa-solid fa-comment-medical"></i> Add Package</a>
+        <a class="sensical-button" href="{% url 'add_package' %}"><i class="fa-solid fa-box-open"></i> Add Package</a>
     </div>
     {% endif %}
     <hr class="message-rule">
@@ -25,10 +25,12 @@
         {% if forloop.counter|divisibleby:2 %}
         <div class="col-12 col-lg-8 order-2 order-md-2 order-lg-1 my-4 text-center">
             <div class="packages-text mr-2">
-                <i class="fa-solid fa-comment icon"></i>
-                <h3>{{ packages.name }}</h3>
+                <i class="fa-solid fa-box-open"></i>
+                <h3>{{ package.package_name }}</h3>
                 <hr class="about-logo-rule">
-                <p class="mb-4 package">"{{ package.package }}"</p>
+                <p class="mb-4 package">{{ package.equpiment }}</p>
+                <p class="mb-4 package">{{ package.duration }}</p>
+                <p class="mb-4 package">{{ package.price }}</p>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
@@ -43,22 +45,25 @@
         </div>
         <div class="col-12 col-lg-4 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
             <div class="media-width">
-                <img class="packages-img" src="{{ package.photo_url }}" alt="An image of a hire package">
+                <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
             </div>
         </div>
         
         {% else %}
         <div class="col-12 col-lg-4 my-4 text-center d-flex align-items-center">
             <div class="media-width">
-                <img class="packages-img" src="{{ package.photo_url }}" alt="An image of a hire package">
+                <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
             </div>
         </div>
         <div class="col-12 col-lg-8 my-4 text-center">
             <div class="package-text ml-2">
-                <i class="fa-solid fa-comment icon"></i>
-                <h3>{{ package.name }}</h3>
+                <i class="fa-solid fa-cake-candles"></i>
+                <h3>{{ package.package_name }}</h3>
                 <hr class="about-logo-rule">
-                <p class="mb-4 package">"{{ package.package }}"</p>
+                <p class="mb-4 package">{{ package.equipment }}</p>
+                <p class="mb-4 package">Package Duration: {{ package.duration }}</p>
+                <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
+                <p class="mb-4 package">{{ package.sensory_items_type}}</p>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">

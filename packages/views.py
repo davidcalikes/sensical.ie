@@ -30,7 +30,7 @@ class AddPackage(generic.CreateView):
     """
     Superuser can add a package
     """
-    model = Packages()
+    model = Packages
     form_class = PackageForm
     template_name = 'packages/packages_form.html'
     success_url = reverse_lazy('packages')
@@ -54,8 +54,8 @@ class UpdatePackage(generic.edit.UpdateView):
     """
     Superuser can update enrolled an existing package
     """
-    model = Packages()
-    form_class = PackageForm()
+    model = Packages
+    form_class = PackageForm
     template_name = 'packages/packages_form.html'
     success_url = reverse_lazy('packages')
     success_message = "Package updated successfully!"
@@ -71,8 +71,8 @@ class DeletePackage(generic.DeleteView):
     """
     Superuser can delete an existing package
     """
-    model = Packages()
-    form_class = PackageForm()
+    model = Packages
+    form_class = PackageForm
     template_name = 'packages/packages_form.html'
     success_url = reverse_lazy('packages')
     success_message = "Package deleted successfully!"

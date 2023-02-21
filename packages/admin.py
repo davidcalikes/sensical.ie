@@ -7,8 +7,8 @@ class PackagesAdmin(admin.ModelAdmin):
     list_display = ('package_name', 'equipment',
                     'duration', 'sensory_items_included',
                     'sensory_items_type', 'image_url',
-                    'image', 'discount_voucher',)
+                    'image', 'discount_voucher', 'price')
     search_fields = ('package_name', 'equipment',
                      'duration', 'sensory_items_included',
                      'sensory_items_type', 'image_url',
-                     'image', 'discount_voucher',)
+                     'image', 'discount_voucher', 'price')
