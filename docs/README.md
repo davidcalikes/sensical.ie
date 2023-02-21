@@ -58,7 +58,7 @@ This is achieved by the following.
 
 * Bringing the Sensory Equipment to the service user at their point of need.
 
-* Setting up the space by safely blacking- out natural light and implimenting an custom-built, industry standard, sensory lighting system.
+* Setting up the space by safely blacking-out natural light and implimenting a custom-built, industry standard, sensory lighting system.
 
 * Applying relaxing sensory sounds and fragrances to suit the clients needs.
 
@@ -216,15 +216,124 @@ I developed the following problem statement to refer to during development.
 
 "To help facilitate the provision of sensory services and products via the most synergetic approach possible, for the mutual benefit of both the customer and business".
 
-I'm aware that problem statements like this shouldn't really incorporate the wellbeing of the business, but I have decided to include it here due to the simple fact that it is the only business of it's kind in Ireland and the experiences and benefits it can offer to its service users and customers depends entirely on its commercial success. 
+I'm aware that problem statements like this shouldn't really incorporate the wellbeing of the business, but I have decided to include it here due to the simple fact that it is the only business of it's kind in Ireland and the experiences and benefits it can offer to its service users and customers depends entirely on its commercial success.
+
+
+## User Experience Design
+
+### Target Audience
+
+Sensical.ie is aimed at providing existing service-users of Sensical Multi-Sensory Solutions and new customers with the ability to purchase supplimentary sensory items to enhance the customers enjoyment of any sensory environment. The website is specifically aimed at users who have recently moved from residential care homes to comunity houses where there is a deficit of therapy provision due to the lack of centralised resources.
+<br>
+
+### Target Audience summary
+
+* Users who with disabilities who live in community housing and have no access to 
+holistic therapies. 
+
+* Users who are relatives of people with disabilities who live in community housing and have no access to holistic therapies.
+
+* Users who are parents of children with autistic spectrum disorder or intellectiual disabilities.
+
+* Private residential users who wish to use Sensical Multi-Sensory Solutions equpiment hire services for a special event or party.
+
+* Users who are existing customers of Sensical Multi-Sensory Solutions equipment hire service.
+
+* Users who wish to purchase products annonymously.
+
+* Users who wish to learn more about Sensical Multi-Sensory Solutions.
+
+<br>
+
+## User Stories
+
+#### __General User Stories__:
+
+* As a General User, I want to navigate through the site easily and intuitively, regardless of the screen size of my device, in order to access the sites features and information.
+
+* As a General User, I want to access a simple, logical, overview of the site helping me to understand its purpose and features without the need for registration.
+
+* As a General User, I want the site to be easy to read, consistent in design, and pleasing to the eye, so I can enjoy a positive user experience.
+
+* As a General User I would like to be given visual feedback to help me navigate through the site.
+
+<br>
+
+#### __Purchasing Customer User Stories__:
+
+* As a Purchasing Customer User, I want to see a selection of products I might want to purchase.
+
+* As a Purchasing Customer User, I want detailed information about individual products that will inform my purchase.
+
+* As a Purchasing Customer User, I want to easily search through lists and categorise products in order to find product I might like to purchase.
+
+* As a Purchasing Customer User, I want the ability to filter search results that display only those items that are available to purchase immediately.
+
+* As a Purchasing Customer, I want to view products and make purchases using mobile, tablet or desktop devices.
+
+* As a Purchasing Customer, I want to view my shopping basket items on the checkout page prior to payment, and add or remove items from the checkout page.
+
+* As a Purchasing Customer User, I want to create a user account so I can make and manage my purchases and view a list of previous purchases.
+
+* As a Purchasing Customer User, I want to verify my user account via social media so I can log register my account more easily.
+
+* As a Purchasing Customer User, I want to verify my account by email in order to improve the security of my account and receive feedback that the registration process was successful.
+
+* As a Purchasing Customer user, I want my payment to be handled safely and securely in order to protect my personal information.
+
+* As a Purchasing Customer User, I want to access a virtual shopping basket so I review items before I purchase them.
+
+* As a Purchasing Customer User, I want to add items to a virtual shopping basket.
+
+* As a Purchasing Customer User, I want the ability to remove items from my virtual shopping basket.
+
+<br>
+
+#### __Hiring Customer User Stories__: 
+
+* As a Hiring Customer User, I want to easily access the hiring section of the site.
+
+* As a Hiring Customer User, I want to access an external booking page so I can enquire about a booking.
+
+* As a Hiring Customer User, I want to access information about the 'Mobile Sensory Environments Service.
+
+<br>
+
+#### __User Stories Site Owner__:
+
+* As a Site Owner, I want to provide the user with the ability to access the Facebook business page to enquire about hiring our Mobile Sensory Equipment.
+
+* As a Site Owner, I want to upload a items for sale via the site’s online store.
+
+* As a Site owner I want to upload testimonials that relay positive customer experiences that will encourage future customers.
+
+* As a Site owner I want to promote my site via social media and Search engine optimisation. 
+
+<br>
+
+## Objectives of Sensical.ie
+
+<br>
+
+* To make Sensical.ie a viable solution to an existing problem.
+
+* To make the purpose of the app obvious to the user.
+
+* To provide users with an enjoyable, intuitive and easy to use interface.
+
+* To provide users with a positive user experience, underwritten by feelings of familiarity, confidence and security.
+
+* To provide a positive user experience whilst protecting user data.
 
 <br>
 
 ## Planning Summary & Approach
 
+<br>
+
 * A Secure, Full Stack, e-Commerce web application will be created.
 
-* The Webstore will be intuitive and promote standard e-Commerce business practices to promote purchases and return visits. (Three-click rule, wishlist, user profile etc)
+* The Webstore will be intuitively designed and use standard e-Commerce business practices to promote uninhibited purchases and multiple return visits. (Three-click rule, wishlist, user profiles etc.)
 
 * The Webstore will only sell products that are supplementary to the 'Multi Sensory Environments'(equipment hire) business within the umbrella of Sensical Multi-Sensory Services.
 
@@ -237,6 +346,8 @@ I'm aware that problem statements like this shouldn't really incorporate the wel
 * The app will be simple to use and provide visual feedback for all users.
 
 * The app will contain links to relevant external websites and contain metadata keywords to improve Search Engine Optimisation.
+
+
 
 
 
