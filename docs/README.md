@@ -167,7 +167,7 @@ Persona Name:
 * Emma Kearns.
 
 Age:
-* 14.
+* 14
 
 Job/Role: 
 * School Pupil
@@ -218,6 +218,7 @@ I developed the following problem statement to refer to during development.
 
 I'm aware that problem statements like this shouldn't really incorporate the wellbeing of the business, but I have decided to include it here due to the simple fact that it is the only business of it's kind in Ireland and the experiences and benefits it can offer to its service users and customers depends entirely on its commercial success.
 
+<br>
 
 ## User Experience Design
 
@@ -346,6 +347,10 @@ holistic therapies.
 * The app will be simple to use and provide visual feedback for all users.
 
 * The app will contain links to relevant external websites and contain metadata keywords to improve Search Engine Optimisation.
+
+## Database Schema
+
+<img src="../docs/readme_images/business4.png">_Sensical.ie Database Schema._
 
 
 
