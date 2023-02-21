@@ -14,7 +14,7 @@ class CurrentPackages(TemplateView):
     template_name = "packages/packages.html"
 
     def get_context_data(self, **kwargs):
-        packages = Packages().objects.all()
+        packages = Packages.objects.all()
         all_packages_list = []
         for package in packages:
             all_packages_list.append(package)

@@ -9,6 +9,6 @@ class PackagesAdmin(admin.ModelAdmin):
                     'sensory_items_type', 'image_url',
                     'image', 'discount_voucher',)
     search_fields = ('package_name', 'equipment',
-                     'duration', 'peripherals_included',
-                     'peripherals_type', 'image_url',
+                     'duration', 'sensory_items_included',
+                     'sensory_items_type', 'image_url',
                      'image', 'discount_voucher',)
