@@ -365,6 +365,14 @@ The Product Wishlist Data is also stored in this model. I stored this data point
 The Client Testimonial & Packages Models are for administrative users(site owner) only and facilitate the creation and maintainance of content Testimonial and Packages within the site. 
 
 
+## Data Flow 
+
+<img src="../docs/readme_images/business5.png"> _Sensical.ie Data Flow._
+
+
+The above example is a simplistic overview of how the website works. The ability for visiting/unregistered users to make purchases is important so the flow is unrestricted in that respect. The storage of delivery information and purchase history to a registered users profile however should encourage future visits and make the checkout process even simpler. The wishlist functionality will also encourage future transactions, affording users the chance to save desired out of stock items for a later date. The site owners will benefit from the ability to promote the Equipment Hire side of the business by adding and editing heartfelt testimonials and tempting package deals.
+
+
 
 
 
