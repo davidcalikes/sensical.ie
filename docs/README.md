@@ -348,9 +348,21 @@ holistic therapies.
 
 * The app will contain links to relevant external websites and contain metadata keywords to improve Search Engine Optimisation.
 
+<br>
+
 ## Database Schema
 
-<img src="../docs/readme_images/business4.png">_Sensical.ie Database Schema._
+<img src="../docs/readme_images/business4.png"> _Sensical.ie Database Schema._
+
+The above image shows the Data Schema for the Sensical.ie project and the relationships between the models.
+
+The e-Commerce store has 4 main models, 2 product related and 2 purchase related.
+
+A unique feature of the product model is the for_sensory_needs data point, where the site owner can add prescriptive phrases that will result in the displaying of informative text icons in the DOM. (Rainbow for Autism ect)
+
+The Product Wishlist Data is also stored in this model. I stored this data point here as it seemed the simplest and less verbose way of coding the wishlist functionality. 
+
+The Client Testimonial & Packages Models are for administrative users(site owner) only and facilitate the creation and maintainance of content Testimonial and Packages within the site. 
 
 
 
