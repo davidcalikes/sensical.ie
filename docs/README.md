@@ -2,17 +2,23 @@
 
 ## Overview
 
-Sensical.ie is a full stack, eCommerce, web application offering affordable, multi-sensory products & solutions to a growing and diverse target audience.
+Sensical.ie is a full stack, e-Commerce, web application offering affordable, multi-sensory products & solutions to a growing and diverse target audience.
 
-<img src="../docs/readme_images/README_placeholder.png">
+<img src="../docs/readme_images/mockup.png">
+
+<br>
 
 When it comes to creating multi-sensory environments, a custom built, dedicated multi sensory space is always the optimal solution. 
 
 Where this is not possible, Sensical Multi-Sensory Solutions can provide a pop-up style multi-sensory experience at an affordable price.
 
-Established in 2018, the business, which operates as a business-to-client sole-tradership, was, like most small enterprises, severely impacted by the global COVID-19 pandemic.
+Originally called Sensical 'Mobile Sensory Environments', the business was established in 2018, operating as a business-to-client sole-tradership. Like most small enterprises the project was severely impacted by the global COVID-19 pandemic.
 
-Sensical.ie is the online promotional and business hub for Sensical Mult-Sensory Solutions, allowing users to make bookings for the service via a linked Facebook business page.
+In an attempt to protect the venture from future existential threats, the business owner developed a new growth-through-diversification strategy for the enterprise.
+
+The Sensical.ie, e-Commerce Webstore offers, affordable, high quality, sensory products that enhance the sensory experience of sensory therapy service users, either alongside or abstract from the 'Mobile Sensory Environments' (Equipment Hire) branch of the business.
+
+Utilising the Django Full Stack Web Framework, Bootstrap and Stripe API for secure payments, the Sensical.ie Webstore offers it's customers an effortless, logical and rewarding user experience.
 
 <br>
 
