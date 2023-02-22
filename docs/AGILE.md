@@ -3,7 +3,7 @@
 
 ## Overview
 
-The Agile planning methodology was used during the development of Sensical.ie. GitHub Projects, Boards, Milestones and Issues were utilised to Organise the development into Sprints, Kanban Boards, Epics, and User Stories respectively.
+The Agile planning methodology was used during the development of Sensical.ie. GitHub Projects, Boards, Milestones and Issues were utilised to organise the development into Sprints, Kanban Boards, Epics, and User Stories respectively.
 
 <img src="../docs/agile_images/agile_placeholder.png">
 
@@ -33,7 +33,7 @@ So the Epics I created were designed using a linear approach and organised in or
 In essence, using the Agile tool when working alone on a project of this size is far more beneficial than not, regardless of its real-world, practical use.
 One of the absolutely essential benefits of creating Epics, User Stories and boards is the ability to focus soley on one particualar area of the project code at a time. During the last project however, I was too rigid in my approach to adding and removing user stories as the project started to develop.
 
-During this project, I was much more forthright in my actions and pushed many items from each cycle to the project backlog and added user stories to add value to the project as I went along. I felt like this was a true reflection of the Agile approach.
+During this project, I was much more forthright in my actions and pushed many items from each cycle to the project backlog and added user stories to add value to the project as I went along. I felt like this was a truer reflection of the Agile approach.
 
 <br>
 
@@ -42,7 +42,7 @@ During this project, I was much more forthright in my actions and pushed many it
 
 <img src="../docs/agile_images/agile2.png">
 
-When utilising MoSCow prioritisation I felt I had a good mix of 'Must Have', 'Could Have', 'Should Have' and 'Wont Have This Time' cards. I re-organised many of the 'Should Have' priority cards by creating time and space to address the project backlog in the final development cycle.
+When utilising MoSCow prioritisation I felt I had a good mix of 'Must Have', 'Should Have', 'Could Have' and 'Wont Have This Time' cards. I re-organised many of the 'Could Have' priority cards by creating time and space to address the project backlog in the final development cycle.
 
 <br>
 
@@ -66,7 +66,7 @@ This Epic contains the initial development tasks including setting up the dev en
 
 2. [Sensical Epic 2: Add Login/registration functionality utilising Django AllAuth](https://github.com/davidcalikes/sensical.ie/milestone/2)
 
-This Epic helps users to login/register to use the app and recieve benifits, such as the ability to save their purchase history and delivery details and also access the user wishlist feature. 
+This Epic helps users to login/register to use the app and recieve benefits, such as the ability to save their purchase history and delivery details and also access the user wishlist feature. 
 
 <img src="../docs/agile_images/agile4.png">
 
@@ -182,7 +182,7 @@ Learning from my last encounter with the Agile process I attributed significant 
 
 Development time -- 3 days.
 
-Sprint one was relatively straight forward as mentioned befor, I used time attributed to this cycle plan outside of the development environment. 
+Sprint one was relatively straight forward as mentioned befor, I used time attributed to this cycle to plan outside of the development environment. 
 
 <br>
 
@@ -207,7 +207,7 @@ Sprint 2 focused on adding Django Allauth user authentication functionality.
 
 Development time -- 2 days.
 
-The Second sprint was completed ahead of schedule and I found that my relative lack of experience in using both Django and Agile had caused me to create sprints with less work units than required. I think this was a reaction to my last project using Django where I tended to add to many user stories and tasks to each sprint. I compensated here by increasing the level of work units in sprint three.
+The Second sprint was completed quickly and I found that my relative lack of experience in using both Django and Agile had caused me to create sprints with less work units than required. I think this was a reaction to my last project using Django where I tended to add too many user stories and tasks to each sprint. I compensated here by increasing the level of work units in sprint three.
 
 <br>
 

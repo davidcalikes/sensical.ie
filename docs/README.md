@@ -379,6 +379,14 @@ The Client Testimonial & Packages Models are for administrative users(site owner
 
 The above example is a simplistic overview of how the website works. The ability for visiting/unregistered users to make purchases is important so the flow is unrestricted in that respect. The storage of delivery information and purchase history to a registered users profile however should encourage future visits and make the checkout process even simpler. The wishlist functionality will also encourage future transactions, affording users the chance to save desired out of stock items for a later date. The site owners will benefit from the ability to promote the Equipment Hire side of the business by adding and editing heartfelt testimonials and tempting package deals.
 
+<br>
+
+# Agile
+
+Sensical.ie was developed using the Agile Development Methodology. A detailed overview of the Agile process is availiable [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/AGILE.md)
+
+<br>
+
 
 
 

@@ -28,9 +28,12 @@
                 <i class="fa-solid fa-box-open"></i>
                 <h3>{{ package.package_name }}</h3>
                 <hr class="about-logo-rule">
-                <p class="mb-4 package">{{ package.equpiment }}</p>
-                <p class="mb-4 package">{{ package.duration }}</p>
-                <p class="mb-4 package">{{ package.price }}</p>
+                <h5>EQUIPMENT PROVIDED</h5>
+                <p class="mb-4 package">{{ package.equipment }}</p>
+                <p class="mb-4 package">Package Duration: {{ package.duration }}</p>
+                <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
+                <h5>SENSORY ITEMS PROVIDED</h5>
+                <p class="mb-4 package">{{ package.sensory_items_type}}</p>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
@@ -56,13 +59,15 @@
             </div>
         </div>
         <div class="col-12 col-lg-8 my-4 text-center">
-            <div class="package-text ml-2">
-                <i class="fa-solid fa-cake-candles"></i>
+            <div class="packages-text ml-2">
+                <i class="fa-solid fa-box-open"></i>
                 <h3>{{ package.package_name }}</h3>
                 <hr class="about-logo-rule">
+                <h5>EQUIPMENT PROVIDED</h5>
                 <p class="mb-4 package">{{ package.equipment }}</p>
                 <p class="mb-4 package">Package Duration: {{ package.duration }}</p>
                 <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
+                <h5>SENSORY ITEMS PROVIDED</h5>
                 <p class="mb-4 package">{{ package.sensory_items_type}}</p>
                 {% if user.is_superuser %}
                 <div class="row">
