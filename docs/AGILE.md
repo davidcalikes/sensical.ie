@@ -58,61 +58,48 @@ The Eight Epics were:
 
 1. [Sensical Epic 1: Setup Development environment, install packages, dependencies and early deployment.](https://github.com/davidcalikes/sensical.ie/milestone/1)
 
-Developer tasks include setting up dev environment, installing packages, setting up the skeleton project, and Early deployment to Heroku.
+This Epic contains the initial development tasks including setting up the dev environment, installing packages, setting up the skeleton project, and Early deployment to Heroku.
 
-<img src="../docs/agile_images/agile_epic1.png">
-
-<br>
-
-2. [Create Signup/Login Feature](https://github.com/davidcalikes/mypse.ie/milestone/2?closed=1)
-
-Create functionality for users to securely log in and out of the app.
-
-User stories include: "Create Superuser", "Implement Allauth Adapter" and "Login and redirect users"
-
-<img src="../docs/agile_images/agile_epic2.png">
+<img src="../docs/agile_images/agile3.png">
 
 <br>
 
-3. [Create, View, Update and Delete Pupil Records](https://github.com/davidcalikes/mypse.ie/milestone/4?closed=1)
+2. [Sensical Epic 2: Add Login/registration functionality utilising Django AllAuth](https://github.com/davidcalikes/sensical.ie/milestone/2)
 
-For security purposes, in order for passports to be created, pupils must have a pupil record that contains their unique Pupil ID.
+This Epic helps users to login/register to use the app and recieve benifits, such as the ability to save their purchase history and delivery details and also access the user wishlist feature. 
 
-User stories include: "View List of Pupil Records", "Create Enrolled Pupil Record view and template" and "Style and format the delete pupil record confirmation page"
-
-<img src="../docs/agile_images/agile_epic3.png">
+<img src="../docs/agile_images/agile4.png">
 
 <br>
 
-4. [Create, View, Update and Delete Pupil Passports](https://github.com/davidcalikes/mypse.ie/milestone/3?closed=1)
+3. [Epic 3: Create general site structure and navigation elements referencing planning stage wireframes.](https://github.com/davidcalikes/sensical.ie/milestone/3)
 
-Authenticated users have the ability to create passports for SEN pupils. 
+The user stories associated with Epic 3 create the skeleton of the site that will allow most users to navigate through its contents. Add placeholder styles and content.
 
-Only users with the role of pupil or parent are authorised to create passport documents. Passports can only be created for users in possession of a school-issued Pupil ID, which will be required before any information is collected to improve UX. Users can only create one passport at a time. If a passport already exists for a pupil, users cannot create a new passport without deleting the old one first.
-
-User stories include: "Create Passport", "Create Passport List" and "Add Passport Form Customisation"
-
-<img src="../docs/agile_images/agile_epic4.png">
+<img src="../docs/agile_images/agile5.png">
 
 <br>
 
-5. [Create Passport views with Restricted Functionality](https://github.com/davidcalikes/mypse.ie/milestone/6?closed=1)
+4. [Epic 4: Create Site Admin Functionality allowing site owner to CRUD products for sale.](https://github.com/davidcalikes/sensical.ie/milestone/5)
 
-Create restricted access views where pupils only have access to one passport(their own) and teachers can only view passports assigned to them.
+This Epic focuses on providing the site owner with the ability to upload and edit products for sale on the e-Commerce Webstore.
 
-User stories include: "Create a list of pupils assigned to a teacher" and "Create a Passport as a Pupil"
-
-<img src="../docs/agile_images/agile_epic5.png">
+<img src="../docs/agile_images/agile6.png">
 
 <br>
 
-6. [Add Media, Style and Tertiary Features To Enhance User Experience](https://github.com/davidcalikes/mypse.ie/milestone/5?closed=1)
+5. [Epic 5: Implement organisation of items and provide user search functionality.](https://github.com/davidcalikes/sensical.ie/milestone/7)
 
-Adding features to the site including the about page. Index page information, background images, custom fonts, styling and formatting.
+This Epic provides the users with search functionality and product categorisation features. Making it easier for users to find products they might like to purchase.
 
-User stories include: "Style and format base template to improve user experience" and Style and format passport page layout to improve user experience"
+<img src="../docs/agile_images/agile7.png">
 
-<img src="../docs/agile_images/agile_epic6.png">
+<br>
+
+6. [Epic 6: Add Shopping Basket and toast messages functionality.](https://github.com/davidcalikes/sensical.ie/milestone/6)
+
+The user stories and work units associated with Epic 6 Focus on helping users add items to a virtual shopping basket and providing visual feedback in the form of toast messages.
+<img src="../docs/agile_images/agile8.png">
 
 <br>
 
