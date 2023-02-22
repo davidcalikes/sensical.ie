@@ -75,7 +75,7 @@
                         <a class="sensical-button" href="{% url 'update_package' package.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Package</a>
                     </div>
                     <div class="col-12 my-2">
-                        <a class="sensical-button" href="{% url 'delete_package' package.id %}" onclick="return confirm('Are you sure you want to delete this package?');"><i class="fa-solid fa-trash"></i> Delete Package</a>
+                        <a class="sensical-button" href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete Package</a>
                     </div>
                 </div>
                 {% endif %}

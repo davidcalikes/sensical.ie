@@ -24,6 +24,18 @@ a {
     color: #0c2d6c;
 }
 
+.warning-logo {
+    width: 10%;
+}
+
+.warning-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Messages */
 

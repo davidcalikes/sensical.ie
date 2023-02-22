@@ -2,6 +2,7 @@ from django.views.generic.base import TemplateView
 from django.views import generic
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 
 from .models import Packages
@@ -26,7 +27,7 @@ class CurrentPackages(TemplateView):
         return context
 
 
-class AddPackage(generic.CreateView):
+class AddPackage(SuccessMessageMixin, generic.CreateView):
     """
     Superuser can add a package
     """
@@ -50,7 +51,7 @@ class AddPackage(generic.CreateView):
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class UpdatePackage(generic.edit.UpdateView):
+class UpdatePackage(SuccessMessageMixin, generic.edit.UpdateView):
     """
     Superuser can update enrolled an existing package
     """
@@ -67,13 +68,12 @@ class UpdatePackage(generic.edit.UpdateView):
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class DeletePackage(generic.DeleteView):
+class DeletePackage(SuccessMessageMixin, generic.DeleteView):
     """
     Superuser can delete an existing package
     """
     model = Packages
     form_class = PackageForm
-    template_name = 'packages/packages_form.html'
     success_url = reverse_lazy('packages')
     success_message = "Package deleted successfully!"
 

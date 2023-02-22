@@ -2,6 +2,7 @@ from django.views.generic.base import TemplateView
 from django.views import generic
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 
 from .models import clientTestimonial
@@ -26,7 +27,7 @@ class AllTestimonials(TemplateView):
         return context
 
 
-class AddTestimonial(generic.CreateView):
+class AddTestimonial(SuccessMessageMixin, generic.CreateView):
     """
     Superuser can add a testimonial
     """
@@ -50,7 +51,7 @@ class AddTestimonial(generic.CreateView):
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class UpdateTestimonial(generic.edit.UpdateView):
+class UpdateTestimonial(SuccessMessageMixin, generic.edit.UpdateView):
     """
     Superuser can update enrolled an existing testimonial
     """
@@ -67,13 +68,12 @@ class UpdateTestimonial(generic.edit.UpdateView):
         return self.render_to_response(self.get_context_data(form=form))
 
 
-class DeleteTestimonial(generic.DeleteView):
+class DeleteTestimonial(SuccessMessageMixin, generic.DeleteView):
     """
     Superuser can delete an existing testimonial
     """
     model = clientTestimonial
     form_class = testimonialForm
-    template_name = 'testimonials/testimonial_form.html'
     success_url = reverse_lazy('testimonials')
     success_message = "Testimonial deleted successfully!"
 

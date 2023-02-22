@@ -27,7 +27,7 @@
             <div class="testimonial-text mr-2">
                 <i class="fa-solid fa-comment icon"></i>
                 <h3>{{ testimonial.name }}</h3>
-                <hr class="about-logo-rule">
+                <hr class="message-rule">
                 <p class="mb-4 testimonial">"{{ testimonial.testimonial }}"</p>
                 {% if user.is_superuser %}
                 <div class="row">
@@ -57,7 +57,7 @@
             <div class="testimonial-text ml-2">
                 <i class="fa-solid fa-comment icon"></i>
                 <h3>{{ testimonial.name }}</h3>
-                <hr class="about-logo-rule">
+                <hr class="message-rule">
                 <p class="mb-4 testimonial">"{{ testimonial.testimonial }}"</p>
                 {% if user.is_superuser %}
                 <div class="row">
@@ -65,7 +65,7 @@
                         <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
                     </div>
                     <div class="col-12 my-2">
-                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}" onclick="return confirm('Are you sure you want to delete this testimonial?');"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
                     </div>
                 </div>
                 {% endif %}

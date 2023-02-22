@@ -44,7 +44,10 @@
                 <span class="text-uppercase sensical-text">View Wishlist</span>
             </a>
         </div>
+        {% elif 'Package' in message|stringformat:'s' or 'Testimonial'  in message|stringformat:'s' %}
         
+        <p class="text-center">...</p>
+
         {% else %}
         
             {% if grand_total and not on_profile_page %}
