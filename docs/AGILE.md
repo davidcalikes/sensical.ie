@@ -54,7 +54,7 @@ Eight Epics in total were created for reference during the agile process and use
 
 <br>
 
-The Eight Epics were:
+The Eight Epics Created:
 
 1. [Sensical Epic 1: Setup Development environment, install packages, dependencies and early deployment.](https://github.com/davidcalikes/sensical.ie/milestone/1)
 
@@ -100,6 +100,20 @@ This Epic provides the users with search functionality and product categorisatio
 
 The user stories and work units associated with Epic 6 Focus on helping users add items to a virtual shopping basket and providing visual feedback in the form of toast messages.
 <img src="../docs/agile_images/agile8.png">
+
+<br>
+
+6. [Epic 7: Create Checkout and payment functionality utilising stripe.](https://github.com/davidcalikes/sensical.ie/milestone/8)
+
+By far the most time-consuming and complex series of user stories where derived from Epic 7 and largely focused on adding payment functionality with Stripe.
+<img src="../docs/agile_images/agile9.png">
+
+<br>
+
+6. [Epic 8: Tertiary features and backlogged bugs/issues. Finalise styling and formatting.](https://github.com/davidcalikes/sensical.ie/milestone/4)
+
+Epic 8 implimented the tiertiary features of the application like hire packages and testimonials. There was also a significant project backlog of incomplete issues from earlier user stories that were addressed here.
+<img src="../docs/agile_images/agile10.png">
 
 <br>
 
