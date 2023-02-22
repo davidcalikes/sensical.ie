@@ -435,10 +435,8 @@ The following issues were marked as 'wont have' and moved to the 'Future Feature
 
 ## Agile Summary
 
-The resulting minimum viable product, of the first iteration of Sensical.ie would not have been possible without the myriad benefits of Agile. These include, the rapid development of a marketable MVP, the simple prioritisation and implementation of features, focus on individual tasks and the continuous feeling of improvement and delivery of tangible progress moving through the tasks.
+Using Agile, I effectively managed the development of the of Sensical.ie Webstore, resulting in an efficient and sylish minimum viable product. Using simple organisation and prioritisation techniques, I could easily focus and was rewarded with a continuous feeling of improvement and tangible progress moving through the tasks.
 
-* Given how much I have learned about creating Kanban boards, Issues etc, I think I will be more confident in my ability moving forward to predict the time it will take to complete each unit of work. This is especially applicable for future Django projects as my skill with the framework has grown significantly.
-
-* Prioritisation is another area I feel I have a much better understanding of. With an app like Sensical.ie it was very difficult to prioritise say accessibility features over security and payment features.
+* As mentioned above, my ability to better predict the time it will take to complete tasks is something I will continue to improve as I continue my studies as a Junior Developer.
 
 Return to main [README](https://github.com/davidcalikes/sensical.ie/blob/main/docs/README.md) document.
