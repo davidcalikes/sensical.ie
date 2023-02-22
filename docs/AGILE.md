@@ -163,7 +163,7 @@ Although I had a little experience working with the Agile methodology and Django
 
 ### [Sensical.ie Sprint 1 -- Overview](https://github.com/users/davidcalikes/projects/12/views/1)
 
-Learning from my last encounter with the Agile process I attributed significant amounnt of time just to get my development environment set up and th proper packages installed. This Sprint was very short and I included parts of project planning and creating the referance wireframes during this cycle.
+Learning from my last encounter with the Agile process I attributed significant amount of time just to get my development environment set up and th proper packages installed. This Sprint was very short and I included parts of project planning and creating the referance wireframes during this cycle.
 
 <br>
 
@@ -198,8 +198,6 @@ Sprint 2 focused on adding Django Allauth user authentication functionality.
 * [Install Django Allauth](https://github.com/davidcalikes/sensical.ie/issues/4)
 
 * [Add authentication and Email backends for Email account verification](https://github.com/davidcalikes/sensical.ie/issues/5)
-
-* [User Story: Add Passport Form customisation #23](https://github.com/davidcalikes/mypse.ie/issues/23)
 
 * [Developer Task: Import allauth templates for customisation](https://github.com/davidcalikes/sensical.ie/issues/7)
 
@@ -244,66 +242,203 @@ The third sprint was completed on schedule and again I found following each issu
 
 <br>
 
-### [MyPSE.ie Sprint 4 -- Overview](https://github.com/users/davidcalikes/projects/10/views/1)
+### [Sensical.ie Sprint 4 -- Overview](https://github.com/users/davidcalikes/projects/16)
 
-Sprint 4 focused on the tertiary features of the application and contained the most 'should have' and 'could have' priority issues. Multiple bugs and errors were also added to this sprint during development.
-
-<br>
-
-### User Stories and Bugs Completed During Sprint 4
+Sprint 4 focused on developing the products app functionality which creates stores and displays products for sale in the e-Commerce Webstore. 
 
 <br>
 
-* [User Story: Create About page #21](https://github.com/davidcalikes/mypse.ie/issues/21)
-
-* [User Story: Style and format passport page layout to improve user experience #43](https://github.com/davidcalikes/mypse.ie/issues/43)
-
-* [User Story: Provide additional feedback after user actions #44](https://github.com/davidcalikes/mypse.ie/issues/43)
-
-* [Bug: Add code to prohibit access to restricted pages by way of direct URL #45](https://github.com/davidcalikes/mypse.ie/issues/45)
-
-* [Bug: Users can change pupil id after id check #46](https://github.com/davidcalikes/mypse.ie/issues/46)
-
-* [Bug: Referer code no longer blocking users from navigating direct to passport form from url #47](https://github.com/davidcalikes/mypse.ie/issues/47)
-
-* [User Story: Page Titles & Favicon #48](https://github.com/davidcalikes/mypse.ie/issues/48)
-
-* [Bug: Loading modal firing on click and covering incorrect id alert!#50](https://github.com/davidcalikes/mypse.ie/issues/50)
-
-* [User Story: Pagination of lists #49](https://github.com/davidcalikes/mypse.ie/issues/50)
+### User Stories Completed During Sprint 4
 
 <br>
 
-### User Stories Not Completed
+* [Start new 'Products' app in Sensical project and add to installed apps in settings file.](https://github.com/davidcalikes/sensical.ie/issues/15)
 
-The following issues were marked as 'wont have' and moved to the 'Future Features' column on the Sprint 4 Kanban board.
+* [User Story: Create Product and Category Models for Products app.](https://github.com/davidcalikes/sensical.ie/issues/16)
 
-* [User Story: Create Print function for passports #22](https://github.com/davidcalikes/mypse.ie/issues/50)
+* [User Story: Create Products Management feature for site owner with full CRUD functionality.](https://github.com/davidcalikes/sensical.ie/issues/18)
 
-* [User Story: Automatically delete passports for pupils no longer in school #15](https://github.com/davidcalikes/mypse.ie/issues/50)
+* [User Story: Maximise responsivity in products template.](https://github.com/davidcalikes/sensical.ie/issues/21)
 
-<img src="../docs/agile_images/agile_us3.png">_Agile Issues_
+* [User Story: Refine Products Template to properly display items to the user.](https://github.com/davidcalikes/sensical.ie/issues/19)
+
+* [User Story: Create MVT for Product Detail Page.](https://github.com/davidcalikes/sensical.ie/issues/20)
 
 <br>
 
 
 ### Sprint 4 Evaluation
 
+Development time -- 6 days.
+
+The fourth sprint was again very close to optimal and appeared to contain the ideal amount of work units for this part of the project.
+
+
+### [Sensical.ie Sprint 5 -- Overview](https://github.com/users/davidcalikes/projects/19)
+
+The user stories in this sprint created the search and sort functionality that allows users to find products more easily.
+
+<br>
+
+### Developer Tasks and User Stories Completed During Sprint 5
+<br>
+
+* [User Story: Add Search and Categorisation features.](https://github.com/davidcalikes/sensical.ie/issues/23)
+
+* [User Story: Add sorting by price and name functionality.](https://github.com/davidcalikes/sensical.ie/issues/24)
+
+* [User Story: Add "Availability' toggle to products page.](https://github.com/davidcalikes/sensical.ie/issues/25)
+
+* [Bug! Availability checkbox state not stored across products categories!](https://github.com/davidcalikes/sensical.ie/issues/26)
+
+<br>
+
+### Sprint 5 Evaluation
+
+Development time -- 5 days.
+
+Sprint five was proved more difficult than I anticipated and adding a javascript availabilty toggle during the development was probably not a good idea although I feel the project overall does benefit from this feature.
+
+<br>
+
+### [Sensical.ie Sprint 6 -- Overview](https://github.com/users/davidcalikes/projects/18/views/1)
+
+Sprint 6 was about creating the shopping basket funtionality and adding toast messages for user feedback.
+
+<br>
+
+### User Stories Completed During Sprint 6
+<br>
+
+* [Start shopping basket app and add to installed apps](https://github.com/davidcalikes/sensical.ie/issues/27)
+
+* [Add contexts file to basket app.](https://github.com/davidcalikes/sensical.ie/issues/29)
+
+* [User Story: Add shopping basket view, template and urls.](https://github.com/davidcalikes/sensical.ie/issues/28)
+
+* [User Story: Add quantities of products/items and display sum total of items to user.](https://github.com/davidcalikes/sensical.ie/issues/30)
+
+* [User Story: Add alert overlay that shows number of items in basket.](https://github.com/davidcalikes/sensical.ie/issues/32)
+
+* [User Story: Refine basket template to display basket items summary.](https://github.com/davidcalikes/sensical.ie/issues/31)
+
+* [User Story: Add messaging toasts framework to provide interactive user feedback.](https://github.com/davidcalikes/sensical.ie/issues/33)
+
+<br>
+
+### Sprint 6 Evaluation
+
+Development time -- 7 days.
+
+This sprint took much more time as the code base began to grow significantly and the relationships between models became more complex. The number of work units in this sprint seemed to be optimal.
+
+<br>
+
+### [Sensical.ie Sprint 7 -- Overview](https://github.com/users/davidcalikes/projects/21)
+
+Sprint 7 was the most important cycle of all of the 8 sprints. This cycle contained the core functionality of any e-Commerce Webstore by implimenting secure payments via an Payment Processing API. (Stripe)
+
+<br>
+
+### User Stories Completed During Sprint 7
+<br>
+
+* [Create Checkout App.](https://github.com/davidcalikes/sensical.ie/issues/34)
+
+* [User Story: Create Checkout page Models and CrispyForms Order form](https://github.com/davidcalikes/sensical.ie/issues/35)
+
+* [User Story: Register Checkout models in Django Admin](https://github.com/davidcalikes/sensical.ie/issues/36)
+
+* [User Story: Add Views and templates for checkout app.](https://github.com/davidcalikes/sensical.ie/issues/37)
+
+* [Developer Task: Install stripe.](https://github.com/davidcalikes/sensical.ie/issues/38)
+
+* [User Story: Add card element for user to input payment card details.](https://github.com/davidcalikes/sensical.ie/issues/39)
+
+* [User Story: Complete implimentation of Stripe API](https://github.com/davidcalikes/sensical.ie/issues/41)
+
+* [User Story: Add Stripe Core functionality](https://github.com/davidcalikes/sensical.ie/issues/40)
+
+* [Create profile app to save order data.](https://github.com/davidcalikes/sensical.ie/issues/43)
+
+* [User Story: Add MVC shell and URLS to 'profiles' app.](https://github.com/davidcalikes/sensical.ie/issues/44)
+
+* [User Story: Add form, order history and structure content to User Profile template.](https://github.com/davidcalikes/sensical.ie/issues/42)
+
+<br>
+
+### Sprint 7 Evaluation
+
 Development time -- 11 days.
 
-The final sprint of the Agile process was far less organised and ran far beyond the week-long time-frame I had originally set.  I allowed myself some flexibilty during this Sprint as this was my first attempt at using the methodology and I had made excellent progress during the initial three cycles. I feel the problem with sprint three was that some of the user story's were not fully defined and left too much to the subjectivity of the developer. For example the two 'must have' user stories 21 and 43 were not specific enough with respect to unit tasks. This is something I will be conscious of moving forward when utilising the Agile approach in future projects. 
+The integration of the Stripe payments API with this project made Sprint 7 the most challenging and time consuming part of developing the Sensical.ie site. I was pleased to complete the work units associated with this cycle in what I consider to be a respectable amount of time. I certainly benefited from the encouragement and guidance of Richard Wells, with whom I have developed a solid Junior Developer - Senior Developer working relationship.  
+
+<br>
+
+### [Sensical.ie Sprint 8 -- Overview](https://github.com/users/davidcalikes/projects/15)
+
+The final Sprint of the Project cleared the project management board of outstanding backlogged user stories and added tiertiary features that to the site that were not associated with the core e-commerce functionality such as Client Testimonials and Hire Packages
+
+<br>
+
+### User Stories Completed During Sprint 8
+
+<br>
+
+* [User Story: Create about page](https://github.com/davidcalikes/sensical.ie/issues/49)
+
+* [User Story: Add User Wishlist Feature](https://github.com/davidcalikes/sensical.ie/issues/47)
+
+* [Create wish-list app](https://github.com/davidcalikes/sensical.ie/issues/48)
+
+* [Start Hire app and add to installed apps](https://github.com/davidcalikes/sensical.ie/issues/52)
+
+* [User Story: Implement hire feature functionality](https://github.com/davidcalikes/sensical.ie/issues/53)
+
+* [Create Testimonials app and add to installed apps.](https://github.com/davidcalikes/sensical.ie/issues/51)
+
+* [User Story: Create Testimonials Feature.](https://github.com/davidcalikes/sensical.ie/issues/50)
+
+* [User Story: Add wish-list, In-stock, checkout and sensory links to product template cards.](https://github.com/davidcalikes/sensical.ie/issues/22)
+
+* [User Story: Add product form for Site owner user.](https://github.com/davidcalikes/sensical.ie/issues/45)
+
+* [Bug! Cache error preventing page load if store owner deletes item and an instance is in the basket.](https://github.com/davidcalikes/sensical.ie/issues/46)
+
+* [Start a Django app called 'packages' and add to installed apps in settings](https://github.com/davidcalikes/sensical.ie/issues/54)
+
+* [User Story: Create MVC for Packages app, wire up URLS and add form functionality.](https://github.com/davidcalikes/sensical.ie/issues/55)
+
+<br>
+
+
+### Sprint 8 Evaluation
+
+Development time -- 14 days.
+
+The final sprint was probably too long and contained too many user stories. These issues were smaller and less complex than the more complex coding of the e-Commerce related sprints but when combined with the project backlog of outstanding bugs and unfinished user stories.
+
+I was aware of this as I progressed through the development and I will certainly aim to create a more even spread of work units to avoid a similar situation in future projects.
+
+
+### User Stories Not Completed
+
+The following issues were marked as 'wont have' and moved to the 'Future Features' column on the Sprint 8 Kanban board.
+
+* [User Story: Add Social Media Account Verification Functionality](https://github.com/davidcalikes/sensical.ie/issues/6)
+
+
+<img src="../docs/agile_images/us3.png">_Agile Issues_
+
+<br>
 
 
 ## Agile Summary
 
-The resulting minimum viable product, of the first iteration of MyPSE.ie would not have been possible without the myriad benefits of Agile. These include, the rapid development of a marketable MVP, the simple prioritisation and implementation of features, focus on individual tasks and the continuous feeling of improvement and delivery of tangible progress moving through the tasks.
-
-From the perspective of a junior developer there are key aspects of Agile I will pay closer attention to in forthcomimg projects. 
-
-* I will use Agile much earlier in development and make the process even more prominent during the planning stages while developing Epics and User Stories. This was difficult to implement as a solo developer, as I had to wear different 'hats' (Client, Owner, Developer(s) user(s) etc.).
+The resulting minimum viable product, of the first iteration of Sensical.ie would not have been possible without the myriad benefits of Agile. These include, the rapid development of a marketable MVP, the simple prioritisation and implementation of features, focus on individual tasks and the continuous feeling of improvement and delivery of tangible progress moving through the tasks.
 
 * Given how much I have learned about creating Kanban boards, Issues etc, I think I will be more confident in my ability moving forward to predict the time it will take to complete each unit of work. This is especially applicable for future Django projects as my skill with the framework has grown significantly.
 
-* Prioritisation is another area I feel I have a much better understanding of. With an app like MyPSE.ie it was very difficult to prioritise say accessibility features over security features. If pupil's could not use the app to create a passport in the first place then the security features would be redundant yet to create an app where a vulnerable users information is insecure would make the app unsafe for use. I aim to improve my ability prioritising issues in these cases as I continue my coding journey.
+* Prioritisation is another area I feel I have a much better understanding of. With an app like Sensical.ie it was very difficult to prioritise say accessibility features over security and payment features.
 
-Return to main [README](https://github.com/davidcalikes/mypse.ie#agile) document.
+Return to main [README](https://github.com/davidcalikes/sensical.ie/blob/main/docs/README.md) document.
