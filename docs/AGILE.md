@@ -123,11 +123,11 @@ Epic 8 implimented the tiertiary features of the application like hire packages 
 
 The User Stories created for reference within the Agile framework were derived from both the Epics created and also the empathetic User Stories I created as a result of planning research during the 'User Experience Design' phase of the project. I used GitHub Issues to create cards for Agile User Stories, Development Tasks, and Bugs.
 
-The structure of a MyPSE.ie Agile User Story can be seen below.
+The structure of a Sensical.ie Agile User Story can be seen below.
 
-<img src="../docs/agile_images/agile_us1.png">_Agile User Story_
+<img src="../docs/agile_images/us1.png"> _Agile User Story_
 
-As evidenced above, the title of Each Agile User Story Issue can be more accurately thought of as a descriptive overview of the tasks within the Issue. The actual User Story this issue will address is written at the top part of each Issue Card.
+As evidenced above, the title of Each Agile User Story Issue can be more accurately thought of as a descriptive overview of the tasks within the Issue. The actual UX design User Story or Multiple Stories this issue will address is written at the top part of each Issue Card.
 
 Each Issue Card contains:
 
@@ -147,13 +147,11 @@ Each Issue Card contains:
 
 <br>
 
-I made a few errors when creating some of the user stories and had to remove some issues during development due to overlap. As I mentioned before this was down to my lack of experience working with Agile. I do feel however that my knowledge of how to implement the methodology and my understanding of its manifold benefits greatly increased during the development of MyPSE.ie.
+The final amount of issues created totalled 55, of which 24 had the 'Developer Tasks' label, 18 had the 'Must Have' user story label 14 were labelled 'Should Have' 4 were tagged 'Could Have' and one was re-badged to a 'Won't have'. 5 were labelled as 'bugs' that I added during development. Some issues were given more than one label.
 
-The final amount of issues created totalled 44, of which 29  Agile user stories were created, 5 were bugs that I added during development and the remainder (7) were added as Developer Tasks.
+<img src="../docs/agile_images/us2.png">_Agile Issues_
 
-<img src="../docs/agile_images/agile_us2.png">_Agile Issues_
-
-The full list of issues for the project is available [here](https://github.com/davidcalikes/mypse.ie/issues?q=is%3Aissue+is%3Aclosed)
+The full list of issues for the project is available [here](https://github.com/davidcalikes/sensical.ie/issues?q=is%3Aissue+is%3Aclosed)
 
 <br>
 
@@ -161,132 +159,88 @@ The full list of issues for the project is available [here](https://github.com/d
 
 ### Sprints Duration
 
-Due to my inexperience with the Agile methodology and Django as a framework, I had few reference points that could inform my decision making when it came to allowing sufficient time for each sprint, whilst setting a realistic, achievable deadlines. 
+Although I had a little experience working with the Agile methodology and Django as a framework from my previous project, I still felt I had few reference points that could inform my decision making when it came to allowing sufficient time for each sprint, whilst setting a realistic, achievable deadlines. Tackling unfamiliar API's like Stripe and Mailchimp meant that timeboxing for this project was always going to be more fluid than it would be for a more experienced developer or development team. 
 
-### [MyPSE.ie Sprint 1 -- Overview](https://github.com/users/davidcalikes/projects/7)
+### [Sensical.ie Sprint 1 -- Overview](https://github.com/users/davidcalikes/projects/12/views/1)
 
-I thought the best way forward as I began to become more comfortable working with Django was to base the timeframe given to the last three sprints on how long it took me to complete Sprint 1. As mentioned before, I had already set up part of the development environment before creating the first Kanban board so I had to factor this, as well as the fact that I was familiar with some elements of Django Account Authorisation due to the course content of the Code Institute's 'I think therfore I blog' walkthrough project.
+Learning from my last encounter with the Agile process I attributed significant amounnt of time just to get my development environment set up and th proper packages installed. This Sprint was very short and I included parts of project planning and creating the referance wireframes during this cycle.
 
 <br>
 
 ### Developer Tasks and User Stories Completed During Sprint 1
 <br>
 
-* [Developer Task: Setup Django in Development Environment #1](https://github.com/davidcalikes/mypse.ie/issues/1)
+* [Install Django and Gunicorn HTTP Server](https://github.com/davidcalikes/sensical.ie/issues/1)
 
-* [Developer Task: Setup Skeleton Project and Start apps #2](https://github.com/davidcalikes/mypse.ie/issues/2)
+* [Install Cloudinary storage and add requirements.txt file](https://github.com/davidcalikes/sensical.ie/issues/2)
 
-* [Developer Task: Fix issue with S****_KEY variable #3](https://github.com/davidcalikes/mypse.ie/issues/3)
-
-* [Developer Task: Deploy to Heroku #4](https://github.com/davidcalikes/mypse.ie/issues/4)
-
-* [User Story: Create Landing Page & Base Template #5](https://github.com/davidcalikes/mypse.ie/issues/5)
-
-* [User Story: Style landing page to improve user experience #6](https://github.com/davidcalikes/mypse.ie/issues/6)
-
-* [Developer Task: Create Superuser#7](https://github.com/davidcalikes/mypse.ie/issues/7)
-
-* [Developer Task: Add Dependencies for custom user model #8](https://github.com/davidcalikes/mypse.ie/issues/8)
-
-* [Developer Task: Implement Allauth Account adapter #9](https://github.com/davidcalikes/mypse.ie/issues/9)
-
-* [User Story: Custom User Signup #10](https://github.com/davidcalikes/mypse.ie/issues/10)
-
-* [User Story: Login and redirect users #11](https://github.com/davidcalikes/mypse.ie/issues/11)
-
-* [User Story: Create Pupil Records #16](https://github.com/davidcalikes/mypse.ie/issues/16)
-
-* [Developer Task: Records and Passports Forms Dependencies #17](https://github.com/davidcalikes/mypse.ie/issues/17)
-
-* [User Story: View List of Pupil Records #18](https://github.com/davidcalikes/mypse.ie/issues/18)
-
-* [User Story: Provide Update and delete functionality to Pupil Records #19](https://github.com/davidcalikes/mypse.ie/issues/19)
-
-* [User Story: Style and format delete confirmation page #20](https://github.com/davidcalikes/mypse.ie/issues/20)
-
-* [User Story: Style and format base template to improve user experience #35](https://github.com/davidcalikes/mypse.ie/issues/35)
-
-* [User Story: Redirect 'school' user to list page direct from login #36](https://github.com/davidcalikes/mypse.ie/issues/36)
-
-* [User Story: Create Enrolled Pupil Record view and template #37](https://github.com/davidcalikes/mypse.ie/issues/37)
+* [Start Django Project and create Heroku App](https://github.com/davidcalikes/sensical.ie/issues/3)
 
 <br>
 
 ### Sprint 1 Evaluation
 
-Development time -- 8 days.
+Development time -- 3 days.
 
-The obvious  first conclusion reached here is that sprint 1 had far too many issues. A project with the scope of MyPSE.ie should have had at least one more sprint focusing on development tasks and initialising the project. 
-
-Another observation I made was during the initial development. As the sole developer of this project, I felt I had to remain conscious of including all aspects of the development project during each sprint in order to replicate the true synergetic nature of an agile development.
-
-I used the time it took to complete the issues from sprint one to make a general time rule of 1 week per sprint for the remainder of the project.
+Sprint one was relatively straight forward as mentioned befor, I used time attributed to this cycle plan outside of the development environment. 
 
 <br>
 
-### [MyPSE.ie Sprint 2 -- Overview](https://github.com/users/davidcalikes/projects/8/views/1)
+### [Sensical.ie Sprint 2 -- Overview](https://github.com/users/davidcalikes/projects/13)
 
-Sprint 2 focused on the creation of the passport functionality. Each user story explicitly laid out tasks and assessment criteria. The Second sprint benefitted from the newly set time parameters inherited from Sprint 1.  I also felt more confident moving the items across the columns of the Kanban board and could feel the benefits of the methodology as my understanding grew.  
+Sprint 2 focused on adding Django Allauth user authentication functionality. 
 
 <br>
 
 ### User Stories Completed During Sprint 2
 <br>
 
-* [User Story: Restrict ability to create passport unless authorised #12](https://github.com/davidcalikes/mypse.ie/issues/12)
+* [Install Django Allauth](https://github.com/davidcalikes/sensical.ie/issues/4)
 
-* [User Story: Restrict access to Pupil Passports #13](https://github.com/davidcalikes/mypse.ie/issues/13)
+* [Add authentication and Email backends for Email account verification](https://github.com/davidcalikes/sensical.ie/issues/5)
 
 * [User Story: Add Passport Form customisation #23](https://github.com/davidcalikes/mypse.ie/issues/23)
 
-* [User Story: Create Passport #31](https://github.com/davidcalikes/mypse.ie/issues/31)
-
-* [User Story: Create Passport List #33](https://github.com/davidcalikes/mypse.ie/issues/33)
-
-* [User Story: Create Passport Edit Feature #38](https://github.com/davidcalikes/mypse.ie/issues/38)
-
-* [User Story: Add Pupil Passport #39](https://github.com/davidcalikes/mypse.ie/issues/39)
-
-* [User Story: Delete passport #40](https://github.com/davidcalikes/mypse.ie/issues/40)
-
-* [User Story: Return to passports list page from other areas of the site #41](https://github.com/davidcalikes/mypse.ie/issues/41)
+* [Developer Task: Import allauth templates for customisation](https://github.com/davidcalikes/sensical.ie/issues/7)
 
 <br>
 
 ### Sprint 2 Evaluation
 
-Development time -- 6 days.
+Development time -- 2 days.
 
-The Second sprint was completed ahead of schedule and I found that following each issue in turn to be extremely productive. Focusing on the passport functionality of the application, the core model, views and templates came together with little difficulty as I became more proficient using the Django and Bootstrap frameworks.
-
-<br>
-
-### [MyPSE.ie Sprint 3 -- Overview](https://github.com/users/davidcalikes/projects/9/views/1)
-
-Sprint 3 focused on providing teacher access to created passports. Each user story explicitly laid out tasks and assessment criteria. Similar to sprint 2, the third sprint benefitted from the newly set time parameters inherited from Sprint 1.  
+The Second sprint was completed ahead of schedule and I found that my relative lack of experience in using both Django and Agile had caused me to create sprints with less work units than required. I think this was a reaction to my last project using Django where I tended to add to many user stories and tasks to each sprint. I compensated here by increasing the level of work units in sprint three.
 
 <br>
 
-### User Stories and Bugs Completed During Sprint 3
+### [Sensical.ie Sprint 3 -- Overview](https://github.com/users/davidcalikes/projects/14/views/1)
+
+Sprint 3 focused on creating the skeleton structure for the front-end of the application. 
+
 <br>
 
-* [User Story: Create list of students assigned to Teacher #27](https://github.com/davidcalikes/mypse.ie/issues/27)
+### User Stories Completed During Sprint 3
+<br>
 
-* [BUG! : Unacceptable risk of unauthorised access #42](https://github.com/davidcalikes/mypse.ie/issues/42)
+* [Developer Task: Create Home App for Landing page](https://github.com/davidcalikes/sensical.ie/issues/11)
 
-* [User Story: Allow teacher to view passports #26](https://github.com/davidcalikes/mypse.ie/issues/26)
+* [User Story: Add base template and header content.](https://github.com/davidcalikes/sensical.ie/issues/8)
 
-* [User Story: Create Passport as a pupil #25](https://github.com/davidcalikes/mypse.ie/issues/25)
+* [User Story: Add fontawesome Icons and create default Icon style rules.](https://github.com/davidcalikes/sensical.ie/issues/9)
 
-* [User Story: View passport as a pupil #24](https://github.com/davidcalikes/mypse.ie/issues/24)
+* [Bug! Content overlapping in smaller screen widths](https://github.com/davidcalikes/sensical.ie/issues/12)
+
+* [User Story: Add main navigation bar to base template.](https://github.com/davidcalikes/sensical.ie/issues/13)
+
+* [User Story: Add footer with developer links.](https://github.com/davidcalikes/sensical.ie/issues/14)
 
 <br>
 
 ### Sprint 3 Evaluation
 
-Development time -- 6 days.
+Development time -- 5 days.
 
-The third sprint was completed on schedule and again I found following each issue in turn to be extremely productive. This sprint focused on restricting aspects of passport functionality to certain user types. The first bugs started to appear at this point during the project and I began to add the errors and issues to the Kanban board that took more than a few hours to correct. What was helpful using the Agile methodology here was the habit of referring to the end user at the beginning of every unit of work. This allowed for a much more robust program and caught logic errors such as in issue 42. I think that the solving the logic error during this sprint proved my sprint time estimations to be close to optimal. 
+The third sprint was completed on schedule and again I found following each issue in turn to be extremely productive. This sprint focused on the creating the basic site structure and implimenting all of the main navigation functionality. I feel the amount of user stories and tasks in this sprint was close to optimal for a project of this scope.
 
 <br>
 
