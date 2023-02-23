@@ -148,7 +148,7 @@
                             {% else %}
                             <div class="col-12 text-center">
                                 <div>
-                                    <button class="text-center products-button products-button-no-stock d-block mt-2" href="#" disabled><i class="fa-solid fa-triangle-exclamation"></i>&nbsp Out Of Stock</button>
+                                    <div class="text-center products-button products-button-no-stock d-block mt-2"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp Out Of Stock</div>
                                 </div>
                             </div>
                             {% endif %}
@@ -182,6 +182,10 @@
         <h5 class="pl-3 mt-4">No Products are currently available in this category. Please choose a different category above or return to <a class="text-light" href="{% url 'products' %}"><u>All Products</u></a></h5> 
         {% endif %}
     </div>
+</div>
+
+<div class="col-12 text-center my-3">
+    <a class="sensical-button" href="{% url 'add_product' %}"><i class="fa-solid fa-circle-plus"></i> Add Product</a>
 </div>
 {% endblock content %}
 
