@@ -18,7 +18,13 @@ def add_to_basket(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
 
-    if item_id in list(basket.keys()):
+    if quantity > 10:
+        quantity = 10
+
+    elif quantity < 1:
+        quantity = 1
+
+    elif item_id in list(basket.keys()):
         if basket[item_id] + quantity > 10:
             messages.error(
                 request,
@@ -49,6 +55,11 @@ def update_basket(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     basket = request.session.get('basket', {})
+
+    if quantity > 10:
+        quantity = 10
+    elif quantity < 1:
+        quantity = 1
 
     if quantity > 0:
         basket[item_id] = quantity
