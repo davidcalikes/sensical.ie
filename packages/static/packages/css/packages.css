@@ -32,17 +32,19 @@
 .packages-img {
     width: 100%;
     padding: 0.5rem;
-    max-width: 400px;
-    max-height: 400px;
     background-color: white;
 }
 
-
 .equip, .items {
-    background-color: white;
-    color: #0c2d6c;
     padding: 0.5rem;
     margin-top: 1rem;
+    text-align: left;
+    width: 82%;
+    margin-left: 15%;
+}
+
+.package{
+    text-align: left;
 }
 
 .package-list {

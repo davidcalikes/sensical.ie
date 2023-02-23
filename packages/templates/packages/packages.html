@@ -35,14 +35,17 @@
                       <li>{{ sentence }}</li>
                     {% endfor %}
                 </ul>
-                <p class="mb-4 package">Session Duration: {{ package.duration }}</p>
-                <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
                 <h5>SENSORY ITEMS PROVIDED</h5>
                 <ul class="items">
                     {% for item in package.sensory_items_type|split:"|" %}
                       <li>{{ item }}</li>
                     {% endfor %}
                 </ul>
+                <div class="col-12 text-center">
+                <p class="mb-4">Session Duration: {{ package.duration }}</p>
+                <h4 class="mb-4">Price: €{{ package.price }}</h4>
+                </div>
+                
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
@@ -60,9 +63,9 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
-            <div class="media-width">
-                <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
-            </div>
+            
+            <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
+            
         </div>
         
         {% else %}
@@ -84,14 +87,16 @@
                     {% endfor %}
                 </ul>
 
-                <p class="mb-4 package">Session Duration: {{ package.duration }}</p>
-                <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
                 <h5>SENSORY ITEMS PROVIDED</h5>
                 <ul class="items">
                     {% for item in package.sensory_items_type|split:"|" %}
                       <li>{{ item }}</li>
                     {% endfor %}
                 </ul>
+                <div class="col-12 text-center">
+                    <p class="mb-4">Session Duration: {{ package.duration }}</p>
+                    <h4 class="mb-4">Price: €{{ package.price }}</h4>
+                 </div>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
@@ -100,6 +105,10 @@
                     <div class="col-12 my-2">
                         <a class="sensical-button" href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete Package</a>
                     </div>
+                </div>
+                {% else %}
+                <div class="col-12 text-center my-3">
+                    <a class="sensical-button" href="https://www.facebook.com/sensicalMSE"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                 </div>
                 {% endif %}
             </div>
