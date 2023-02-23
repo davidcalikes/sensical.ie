@@ -23,7 +23,6 @@ class CurrentPackages(TemplateView):
         context = super().get_context_data(**kwargs)
         context["packages"] = packages
         context["all_packages_list"] = all_packages_list
-
         return context
 
 

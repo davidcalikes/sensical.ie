@@ -8,7 +8,7 @@
 }
 
 .packages-text {
-    width: 90%;
+    width: 100%;
     border: solid 1px white;
     padding: 2rem;
     min-height: 350px;
@@ -26,8 +26,7 @@
 }
 
 .media-width {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
 }
 
 .packages-img {
@@ -36,6 +35,18 @@
     max-width: 400px;
     max-height: 400px;
     background-color: white;
+}
+
+
+.equip, .items {
+    background-color: white;
+    color: #0c2d6c;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.package-list {
+    list-style-type: disc;
 }
 
 @media screen and (max-width: 991px) {

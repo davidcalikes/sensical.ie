@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load package_filters %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'packages/css/packages.css' %}">
@@ -23,17 +24,25 @@
     {% for package in all_packages_list %}
     <div class="row">
         {% if forloop.counter|divisibleby:2 %}
-        <div class="col-12 col-lg-8 order-2 order-md-2 order-lg-1 my-4 text-center">
-            <div class="packages-text mr-2">
+        <div class="col-12 col-lg-6 order-2 order-md-2 order-lg-1 my-4 text-center">
+            <div class="packages-text">
                 <i class="fa-solid fa-box-open"></i>
                 <h3>{{ package.package_name }}</h3>
                 <hr class="message-rule">
                 <h5>EQUIPMENT PROVIDED</h5>
-                <p class="mb-4 package">{{ package.equipment }}</p>
-                <p class="mb-4 package">Package Duration: {{ package.duration }}</p>
+                <ul class="equip" >
+                    {% for sentence in package.equipment|split:"|" %}
+                      <li>{{ sentence }}</li>
+                    {% endfor %}
+                </ul>
+                <p class="mb-4 package">Session Duration: {{ package.duration }}</p>
                 <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
                 <h5>SENSORY ITEMS PROVIDED</h5>
-                <p class="mb-4 package">{{ package.sensory_items_type}}</p>
+                <ul class="items">
+                    {% for item in package.sensory_items_type|split:"|" %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
@@ -43,32 +52,46 @@
                         <a class="sensical-button" href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete Package</a>
                     </div>
                 </div>
+                {% else %}
+                <div class="col-12 text-center my-3">
+                    <a class="sensical-button" href="https://www.facebook.com/sensicalMSE"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
+                </div>
                 {% endif %}
             </div>
         </div>
-        <div class="col-12 col-lg-4 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
+        <div class="col-12 col-lg-6 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
             <div class="media-width">
                 <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
             </div>
         </div>
         
         {% else %}
-        <div class="col-12 col-lg-4 my-4 text-center d-flex align-items-center">
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width">
                 <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
             </div>
         </div>
-        <div class="col-12 col-lg-8 my-4 text-center">
-            <div class="packages-text ml-2">
+        <div class="col-12 col-lg-6 my-4 text-center">
+            <div class="packages-text">
                 <i class="fa-solid fa-box-open"></i>
                 <h3>{{ package.package_name }}</h3>
                 <hr class="message-rule">
                 <h5>EQUIPMENT PROVIDED</h5>
-                <p class="mb-4 package">{{ package.equipment }}</p>
-                <p class="mb-4 package">Package Duration: {{ package.duration }}</p>
+                
+                <ul class="equip">
+                    {% for sentence in package.equipment|split:"|" %}
+                      <li>{{ sentence }}</li>
+                    {% endfor %}
+                </ul>
+
+                <p class="mb-4 package">Session Duration: {{ package.duration }}</p>
                 <h4 class="mb-4 package">Price: €{{ package.price }}</h4>
                 <h5>SENSORY ITEMS PROVIDED</h5>
-                <p class="mb-4 package">{{ package.sensory_items_type}}</p>
+                <ul class="items">
+                    {% for item in package.sensory_items_type|split:"|" %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">

@@ -694,8 +694,17 @@ a.nav-link {
     width: 100%;
     max-width: 350px;
     border: 2px solid white;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.hire-text {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.hire-text a {
+    text-decoration: underline;
 }
 /* **** MAIL CHIMP **** */
 
