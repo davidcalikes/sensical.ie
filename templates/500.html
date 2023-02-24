@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Displays 500 error content -->
+
+<div class="warning-container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <img class="error.img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677272450/errorkid_ecrw7v.jpg" alt="Page Not Found!">
+        </div>
+        <div class="col-12 mt-3 text-center">
+            <h2>ERROR - 500: Internal Server Error</h2>
+        </div>
+        <div class="col-12 text-center">
+            <p>
+                Sometimes, life just isn't sensical!
+                <br>
+                Click the link provided to return 
+                <a class="sensical-button" href="{% url 'home' %}">Home</a>
+            </p>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}

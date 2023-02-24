@@ -28,6 +28,12 @@ a {
     width: 10%;
 }
 
+.error-img {
+    width: 50%;
+    padding: 0.5rem;
+    background-color: white;
+}
+
 .warning-container {
     margin-top: 160px;
     width: 80%;
@@ -35,6 +41,12 @@ a {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.error-logo {
+    width: 50%;
+    padding: 0.5rem;
+    background-color: white;
 }
 
 /* Messages */

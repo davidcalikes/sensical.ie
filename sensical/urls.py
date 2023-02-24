@@ -31,3 +31,6 @@ urlpatterns = [
     path('hire/', include('hire.urls')),
     path('packages/', include('packages.urls')),
 ]
+
+handler404 = "sensical.views.page_not_found_view"
+handler500 = "sensical.views.error_view"
