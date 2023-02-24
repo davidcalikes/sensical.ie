@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse_lazy
 from cloudinary.models import CloudinaryField
 
 
@@ -24,3 +25,14 @@ class Packages(models.Model):
 
     def __str__(self):
         return self.package_name
+
+
+class CustomPackage(models.Model):
+    """ Model for Contact """
+
+    name = models.CharField(max_length=100, null=False, blank=False)
+    email = models.EmailField(max_length=100, null=False, blank=False)
+    package_requirements = models.TextField(max_length=600, default='')
+
+    def __str__(self):
+        return self.name

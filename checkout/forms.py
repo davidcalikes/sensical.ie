@@ -1,8 +1,11 @@
 from django import forms
 from .models import Order
+from django_countries.fields import CountryField
+from django_countries import countries
 
 
 class OrderForm(forms.ModelForm):
+
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',

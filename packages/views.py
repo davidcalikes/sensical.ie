@@ -1,12 +1,13 @@
-from django.views.generic.base import TemplateView
+from django.views.generic.base import TemplateView, View
 from django.views import generic
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Packages
-from .forms import PackageForm
+from .forms import PackageForm, CustomPackageForm
 
 
 class CurrentPackages(TemplateView):
@@ -79,3 +80,20 @@ class DeletePackage(SuccessMessageMixin, generic.DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeletePackage, self).delete(request, *args, **kwargs)
+
+
+def PackageRequest(request):
+    if request.method == 'POST':
+        form = CustomPackageForm(request.POST)
+        if form.is_valid():
+            custom_package = form.save(commit=False)
+            if request.user.is_authenticated:
+                custom_package.email = request.user.email
+            custom_package.save()
+            return render(request, 'packages/package_request_success.html')
+    else:
+        if request.user.is_authenticated:
+            form = CustomPackageForm(initial={'email': request.user.email})
+        else:
+            form = CustomPackageForm()
+    return render(request, 'packages/package_request_form.html', {'form': form})

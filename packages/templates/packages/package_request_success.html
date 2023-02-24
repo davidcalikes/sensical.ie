@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Add Package{% endblock %}
+
+{% block content %}
+    <div class="container auth-container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h1 class="text-center"><i class="fa-solid fa-list-check"></i></h1>
+                <h2 class="mb-4 text-center ">Success!</h2>
+                <hr class="section-rule">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1><i class="fa-solid fa-box-open"></i></h1>
+                <h3>Your Package Request Has Been recieved!</h3>
+                <h4>We will contact you shortly with a quote for your requirements</h4>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <a class="sensical-button" href="{% url 'packages' %}">Return to Packages</a>
+            </div>          
+        </div>
+    </div>
+{% endblock %}

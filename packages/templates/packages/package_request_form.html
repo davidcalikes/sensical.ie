@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Request Custom Package{% endblock %}
+
+{% block content %}
+    <div class="container auth-container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h1 class="text-center"><i class="fa-solid fa-list-check"></i></h1>
+                <h2 class="mb-4 text-center ">Request Custom Package</h2>
+                <hr class="section-rule">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" class="form mb-2">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a class="sensical-button" href="{% url 'packages' %}">Cancel</a>
+                        <input class="sensical-button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}
