@@ -81,10 +81,14 @@
                     </div>
                     {% endfor %}
                 {% else %}
-                    <div class="col text-center">
-                        Oops!
-                        Looks like you haven't added anything to your basket. <br>
-                        Click below to continue browsing our quality, affordable range.
+                    <div class="col-12 text-center basket-empty">
+                        <h4>Empty Basket!</h4>
+                        <p>Looks like you haven't added anything to your basket.</p>
+                        <p>Click below to continue browsing our quality, affordable range.</p>
+                        <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                            <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                            <span class="text-uppercase">Find Some Products!</span>
+                        </a>
                     </div>
                 {% endif %}
             </div>

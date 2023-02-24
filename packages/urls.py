@@ -1,5 +1,6 @@
+from . import views
 from django.urls import path
-from .views import CurrentPackages, AddPackage, UpdatePackage, DeletePackage, PackageRequest
+from .views import CurrentPackages, AddPackage, UpdatePackage, DeletePackage, PackageRequest, PackageRequestList
 
 urlpatterns = [
     path("", CurrentPackages.as_view(), name="packages"),
@@ -7,4 +8,6 @@ urlpatterns = [
     path("update/<int:pk>", UpdatePackage.as_view(), name="update_package"),
     path("delete/<int:pk>", DeletePackage.as_view(), name="delete_package"),
     path('request/', PackageRequest, name='request'),
+    path('custom/',
+         views.PackageRequestList.as_view(), name='custom'),
 ]

@@ -610,6 +610,10 @@ a.nav-link {
     align-items: center;
 }
 
+.basket-empty {
+    margin-top: 3rem;
+}
+
 .basket-button {
     font-size: 14px;
     width: 100%;

@@ -7,18 +7,15 @@
 <div class="warning-container">
     <div class="row">
         <div class="col-12 text-center">
-            <img class="error.img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677272450/errorkid_ecrw7v.jpg" alt="Page Not Found!">
+            <img class="error-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677272450/errorkid_ecrw7v.jpg" alt="Page Not Found!">
         </div>
         <div class="col-12 mt-3 text-center">
             <h2>ERROR - 500: Internal Server Error</h2>
         </div>
         <div class="col-12 text-center">
-            <p>
-                Sometimes, life just isn't sensical!
-                <br>
-                Click the link provided to return 
-                <a class="sensical-button" href="{% url 'home' %}">Home</a>
-            </p>
+            <h4 class="my-3">Sometimes, life just isn't sensical!</h4>
+            <p class="mb-4" >Click the link below to return home... </p>
+            <a class="sensical-button  sensical-button-border" href="{% url 'home' %}">Home</a>
         </div>
     </div>
 </div>

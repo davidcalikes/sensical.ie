@@ -6,7 +6,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Packages
+from .models import Packages, CustomPackage
 from .forms import PackageForm, CustomPackageForm
 
 
@@ -97,3 +97,16 @@ def PackageRequest(request):
         else:
             form = CustomPackageForm()
     return render(request, 'packages/package_request_form.html', {'form': form})
+
+
+class PackageRequestList(LoginRequiredMixin, generic.ListView):
+    """
+    Displays any custom package requests.
+    """
+    model = CustomPackage
+    template_name = 'packages/custom_packages.html'
+    context_object_name = 'package_request_list'
+
+    def get_queryset(self):
+        return CustomPackage.objects.all(
+        ).order_by('name')
