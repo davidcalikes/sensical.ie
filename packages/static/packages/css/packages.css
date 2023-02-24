@@ -51,6 +51,12 @@
     list-style-type: disc;
 }
 
+.discount {
+    background-color: #75e6ff;
+    color: #0c2d6c;
+    padding: 0.5rem;
+}
+
 @media screen and (max-width: 991px) {
     .testimonial-text {
         width: 100%;

@@ -44,6 +44,7 @@
                 <div class="col-12 text-center">
                 <p class="mb-4">Session Duration: {{ package.duration }}</p>
                 <h4 class="mb-4">Price: €{{ package.price }}</h4>
+                <p class="discount"><i class="fa-solid fa-tag"></i> {{ package.discount_voucher|floatformat:"0" }}% off your next session with this package</p>
                 </div>
                 
                 {% if user.is_superuser %}
@@ -99,6 +100,7 @@
                 <div class="col-12 text-center">
                     <p class="mb-4">Session Duration: {{ package.duration }}</p>
                     <h4 class="mb-4">Price: €{{ package.price }}</h4>
+                    <p class="discount"><i class="fa-solid fa-tag"></i> {{ package.discount_voucher|floatformat:"0" }}% off your next session with this package</p>
                  </div>
                 {% if user.is_superuser %}
                 <div class="row">
