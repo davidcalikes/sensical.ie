@@ -1,6 +1,6 @@
 from django.views.generic.base import TemplateView, View
 from django.views import generic
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
@@ -101,7 +101,7 @@ def PackageRequest(request):
 
 class PackageRequestList(LoginRequiredMixin, generic.ListView):
     """
-    Displays any custom package requests.
+    Displays any custom package requests to admin user.
     """
     model = CustomPackage
     template_name = 'packages/custom_packages.html'
@@ -110,3 +110,12 @@ class PackageRequestList(LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return CustomPackage.objects.all(
         ).order_by('name')
+
+
+def DeletePackageRequest(request, package_request_id):
+    """Admin User can delete a Package Request """
+    package_request_instance = get_object_or_404(CustomPackage, pk=package_request_id)
+
+    package_request_instance.delete()
+    messages.success(request, 'Package request deleted!')
+    return redirect(reverse('custom'))

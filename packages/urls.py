@@ -10,4 +10,5 @@ urlpatterns = [
     path('request/', PackageRequest, name='request'),
     path('custom/',
          views.PackageRequestList.as_view(), name='custom'),
+    path('custom/delete/<int:package_request_id>/', views.DeletePackageRequest, name='delete_package_request'),
 ]
