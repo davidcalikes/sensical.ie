@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_title %} - Testimonials{% endblock %}
+
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
 {% endblock %}
-
-{% block extra_title %} - Testimonials{% endblock %}
 
 {% block content %}
 <div class="testimonials-container">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="col-12 col-lg-8 my-4 text-center">
-            <div class="testimonial-text ml-2">
+            <div class="testimonial-text left-card">
                 <i class="fa-solid fa-comment icon"></i>
                 <h3>{{ testimonial.name }}</h3>
                 <hr class="message-rule">
