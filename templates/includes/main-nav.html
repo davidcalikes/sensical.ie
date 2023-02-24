@@ -49,18 +49,21 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link mr-3 ml-3" href="{% url 'hire' %}" id="hire-link"> 
-                Hire
-            </a>
-        </li>
-
-        <li class="nav-item dropdown">
             <a class="nav-link mr-3 ml-3 dropdown-toggle" href="#" id="offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <strong>Special Offers!</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="offers-link">
-                <a href="{% url 'packages' %}" class="dropdown-item">Packages</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-3 ml-3 dropdown-toggle" href="#" id="hire-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>Hire</strong>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="hire-link">
+                <a href="{% url 'hire' %}" class="dropdown-item" ">Hire</a>
+                <a href="{% url 'packages' %}" class="dropdown-item">Packages</a>
             </div>
         </li>
 
