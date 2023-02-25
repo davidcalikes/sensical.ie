@@ -8,10 +8,12 @@
     {% block meta %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0 minimum-scale=1.0, user-scalable=yes shrink-to-fit=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0 minimum-scale=1.0, user-scalable=yes shrink-to-fit=no">
     <meta name="description" content="Multi-Sensory Solutions Webstore">
-    <meta name="keywords" content="multi-sensory webstore, multi-sensory hire, multi-sensory products, multi-sensory equipment hire, multi-sensory equipment for sale, autism multi-sensory, special needs multi-sensory, multi-sensory-disorder">
-    
+    <meta name="keywords"
+        content="multi-sensory webstore, multi-sensory hire, multi-sensory products, multi-sensory equipment hire, multi-sensory equipment for sale, autism multi-sensory, special needs multi-sensory, multi-sensory-disorder">
+
     {% endblock meta %}
 
     {% block extra_meta %}
@@ -56,23 +58,29 @@
     <title>Sensical.ie {% block extra_title %}{% endblock extra_title %}</title>
 
 </head>
+
 {% if "products" in request.path %}
+
 <body onload="availabilityToggleState();">
     {% else %}
+
     <body>
         {% endif %}
         <header class="container-fluid fixed-top">
+
+            <!-- Upper Nav -->
+
             <div id="top-nav" class="row bg-white pt-lg-1 d-none d-lg-flex">
-                
+
                 <div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" title="Sensical.ie">
                         <img id="nav-logo"
-                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676116386/Screen_Shot_2023-02-11_at_11.52.23_d8a0n2.png"
+                            src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677326734/sensical/sensical_webp/topnav_logo_uy2ymj.webp"
                             alt="Sensical.ie" height="100" width="auto">
                         <span class="sr-only">Sensical.ie</span>
                     </a>
                 </div>
-            
+
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="{% url 'products' %}">
                         <div class="input-group w-100">
@@ -96,11 +104,13 @@
                                 aria-expanded="false">
                                 <div class="text-center">
                                     {% if users_wishlist %}
-                                    <div><i class="fa-solid fa-heart icon fa-beat-fade" style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;" ></i></div>
+                                    <div><i class="fa-solid fa-heart icon fa-beat-fade"
+                                            style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></i>
+                                    </div>
                                     {% else %}
                                     <div><i class="fa-solid fa-heart icon "></i></div>
                                     {% endif %}
-                                    
+
                                     <p class="my-0">My Wishlist</p>
                                 </div>
                             </a>
@@ -156,6 +166,9 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Main Nav -->
+
             <div class="row primary-bg">
                 <nav class="navbar navbar-expand-lg">
                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
@@ -167,22 +180,29 @@
                     {% include 'includes/main-nav.html' %}
                 </nav>
             </div>
+
+            <!-- Free delivery banner -->
+
             {% if "products" in request.path or "basket" in request.path %}
             <div id="delivery-banner" class="row secondary-bg text-center">
                 <div class="col-12">
                     <div id="delivery-slider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item text-center secondary-bg active">
-                                <h4 class="banner-font"><i class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> Free
+                                <h4 class="banner-font"><i
+                                        class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> Free
                                     nationwide delivery on orders over €{{ free_delivery_threshold }}!</h4>
                             </div>
                             {% if free_delivery_delta == 0 %}
                             <div class="carousel-item text-center secondary-bg">
-                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i> Congratulations... You qualify for free delivery!!!</h4>
+                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i>
+                                    Congratulations... You qualify for free delivery!!!</h4>
                             </div>
                             {% else %}
                             <div class="carousel-item text-center secondary-bg">
-                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i> Spend just <strong>€{{ free_delivery_delta }} more to qualify for free delivery!</strong></h4>
+                                <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i>
+                                    Spend just <strong>€{{ free_delivery_delta }} more to qualify for free
+                                        delivery!</strong></h4>
                             </div>
                             {% endif %}
                         </div>
@@ -196,22 +216,24 @@
             {% endif %}
         </header>
 
+        <!-- Toast Messages -->
+
         {% if messages %}
-            <div class="sensical-messages">
-                {% for message in messages %}
-                    {% with message.level as level %}
-                        {% if level == 40 %} 
-                            {% include 'includes/toasts/toast_error.html' %}
-                        {% elif level == 30 %} 
-                            {% include 'includes/toasts/toast_warning.html' %}
-                        {% elif level == 25 %} 
-                            {% include 'includes/toasts/toast_success.html' %}
-                        {% else %}
-                            {% include 'includes/toasts/toast_info.html' %}
-                        {% endif %}
-                    {% endwith %}
-                {% endfor %}
-            </div>
+        <div class="sensical-messages">
+            {% for message in messages %}
+            {% with message.level as level %}
+            {% if level == 40 %}
+            {% include 'includes/toasts/toast_error.html' %}
+            {% elif level == 30 %}
+            {% include 'includes/toasts/toast_warning.html' %}
+            {% elif level == 25 %}
+            {% include 'includes/toasts/toast_success.html' %}
+            {% else %}
+            {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
+            {% endwith %}
+            {% endfor %}
+        </div>
         {% endif %}
 
         {% block content %}
@@ -219,7 +241,11 @@
 
         <hr class="bottom-rule">
 
+        <!-- Footer -->
+
         {% include 'includes/footer.html'%}
+
+        <!-- Toasts Script-->
 
         {% block postloadjs %}
         <script>
