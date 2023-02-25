@@ -151,6 +151,12 @@ a {
     height: auto;
 }
 
+.logo-container-xs {
+    max-width: 65px;
+    height: auto;
+}
+
+
 #mobile-nav-logo {
     width: 100%;
     height: auto;
@@ -908,13 +914,7 @@ a.nav-link {
         max-width: 170px;
         height: auto;
     }
-    
-    /* #mobile-nav-logo {
-        height: 55px;
-    }
-    #mobile-nav-logo {
-        margin: 5px;
-    } */
+
     .navbar-toggler {
         border: none;
         width: 45px;
@@ -939,10 +939,6 @@ a.nav-link {
         height: auto;
     }
     
-    /* #mobile-nav-logo {
-        height: 45px;
-        margin: 10px;
-    } */
     .nav-link{
         padding: 3px;
     }
@@ -1003,6 +999,8 @@ a.nav-link {
     }
     #mobile-nav-xs {
         display: block;
+        width: 100%;
+        height: auto;
     }
     .wishlist-img {
         min-width: 210px;
