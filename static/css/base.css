@@ -262,8 +262,8 @@ video {
     display: block;
     left: 0%;
     width: 80%;
+    height: 350px;
     margin-left: 10%;
-    height: 42%;
     object-fit: cover;
 }
 
@@ -781,7 +781,7 @@ video {
 
 @media (max-width: 1300px) {
     video {
-        height: 38%;
+        height: 330px;
     }
 
 @media (min-width: 1200px) {
@@ -800,7 +800,7 @@ video {
     }
 
     video {
-        height: 36%;
+        height: 300px;
     }
 
     .nav-footer {
@@ -892,7 +892,7 @@ video {
 
 @media screen and (max-width: 767px) {
     video {
-        height: 34%;
+        height: 260px;
     }
     
     #home-hero {
@@ -925,9 +925,6 @@ video {
 @media screen and (max-width: 600px) {
     .container {
         width: 80%;
-    }
-    video {
-        height: 30%;
     }
     #home-hero {
         margin-top: 140px;
@@ -973,9 +970,6 @@ video {
     .logo-container {
         max-width: 150px;
         height: auto;
-    }
-    video {
-        height: 28%;
     }
     .nav-link{
         padding: 3px;
