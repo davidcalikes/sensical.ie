@@ -304,6 +304,8 @@ holistic therapies.
 
 * As a Hiring Customer User, I want to access information about the 'Mobile Sensory Environments Service.
 
+* As a Hiring Customer user, I want to request custom hiring packages to match my specific needs.
+
 <br>
 
 #### __User Stories Site Owner__:
@@ -316,6 +318,7 @@ holistic therapies.
 
 * As a Site owner I want to promote my site via social media and Search engine optimisation. 
 
+* As a Site Owner, I want to view and remove custom package requests in order to provide a quote for hiring customers and organise them.
 <br>
 
 ## Objectives of Sensical.ie

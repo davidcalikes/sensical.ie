@@ -405,9 +405,11 @@ The final Sprint of the Project cleared the project management board of outstand
 
 * [Bug! Cache error preventing page load if store owner deletes item and an instance is in the basket.](https://github.com/davidcalikes/sensical.ie/issues/46)
 
-* [Start a Django app called 'packages' and add to installed apps in settings](https://github.com/davidcalikes/sensical.ie/issues/54)
+* [Start a Django app called 'packages' and add to installed apps in settings.](https://github.com/davidcalikes/sensical.ie/issues/54)
 
 * [User Story: Create MVC for Packages app, wire up URLS and add form functionality.](https://github.com/davidcalikes/sensical.ie/issues/55)
+
+* [User Story: Create MVC to read/add/delete Custom Package Requests, wire up URLS and add form functionality.](https://github.com/davidcalikes/sensical.ie/issues/56)
 
 <br>
 
