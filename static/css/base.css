@@ -142,6 +142,10 @@ a {
     height: 76px;
 }
 
+.mobile-nav {
+    display: contents;
+}
+
 #mobile-nav-logo {
     height: 65px;
     padding-bottom: 4px;
@@ -339,8 +343,12 @@ a.nav-link {
     margin-top: 6rem;
 }
 
+.related-links a {
+    color: white !important;
+}
+
+
 .footer-container-bg {
-    background-color: #0c2d6c;
     text-align: center;
     /* max-width: 1800px; */
 }

@@ -76,7 +76,7 @@
                     <a href="{% url 'home' %}" title="Sensical.ie">
                         <img id="nav-logo"
                             src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677326734/sensical/sensical_webp/topnav_logo_uy2ymj.webp"
-                            alt="Sensical.ie" height="100" width="auto">
+                            alt="Sensical.ie" height="100">
                         <span class="sr-only">Sensical.ie</span>
                     </a>
                 </div>
@@ -114,7 +114,7 @@
                                     <p class="my-0">My Wishlist</p>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-wishlist">
+                            <div class="dropdown-menu border-0">
                                 {% if request.user.is_authenticated %}
                                 <a href="{% url 'user_wishlist' %}" class="dropdown-item">Manage Wishlist</a>
                                 {% else %}
@@ -255,8 +255,8 @@
 
         <!-- Mailchimp scripts -->
 
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script type='text/javascript'>
+        <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script>
             (function ($) {
                 window.fnames = new Array();
                 window.ftypes = new Array();

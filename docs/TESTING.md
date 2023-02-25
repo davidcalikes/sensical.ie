@@ -8,6 +8,15 @@ I have used dropdown menus for each page to make the documentation more human re
 <summary>
 Home Page Testing</summary><br>
 
+The HTML Templates associated with the home page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* index.html
+* home-cards.html
+* footer.html
+
 Each link of the Home Page was tested and was marked 'pass' when the following expected behaviour was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs. 
@@ -36,14 +45,19 @@ Each link of the Home Page was tested and was marked 'pass' when the following e
 
 Home page validator testing.
 
-The Home page was passed through the W3C HTML Validator and returned no errors
+The Home page was passed through the W3C HTML Validator and returned multiple errors.
 
-<img src="../docs/testing_images/testing_val_1.png"><br>
+<img src="../docs/testing_images/w3_1_errors.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The errors were corrected and now the Validator returns no errors.
+
+<img src="../docs/testing_images/w3_1_home.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 The Home page was passed through the WCAG Color contrast checker and returned no contrast errors.
 
-<img src="../docs/testing_images/testing_val_3.png"><br>
+<img src="../docs/testing_images/home_wcag.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Home Page was passed through Lighthouse and returned the following performance results:
