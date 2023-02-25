@@ -249,14 +249,30 @@ a.nav-link {
     font-family: 'Puritan';
     letter-spacing: 2px;
     font-size: 8vw;
-    margin-top: 4rem;
+    margin-top: 3rem;
     filter: drop-shadow(2px 4px 6px black);
 }
 
 #home-hero {
     margin-top: 160px;
-    background: url('https://res.cloudinary.com/djck2eqxo/image/upload/v1673109670/sensical/Jan-07-2023_16-35-47_vxg7as.gif') no-repeat center center;
-    background-size: cover;
+}
+
+video {
+    position: absolute;
+    display: block;
+    left: 0%;
+    width: 80%;
+    margin-left: 10%;
+    height: 42%;
+    object-fit: cover;
+}
+
+#video-container {
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
 }
 
 .home-bg {
@@ -274,6 +290,10 @@ a.nav-link {
 
 .service-button:hover {
     background-color:#75e6ff;
+}
+
+.cards-bg {
+    background-color: #0c2d6c;
 }
 
 .home-card {
@@ -759,6 +779,11 @@ a.nav-link {
 }
 /* **** MEDIA QUERIES **** */
 
+@media (max-width: 1300px) {
+    video {
+        height: 38%;
+    }
+
 @media (min-width: 1200px) {
     .container {
         max-width: 90%;
@@ -772,6 +797,10 @@ a.nav-link {
 
     #home-hero {
         margin-top: 154px;
+    }
+
+    video {
+        height: 36%;
     }
 
     .nav-footer {
@@ -862,6 +891,10 @@ a.nav-link {
     }
 
 @media screen and (max-width: 767px) {
+    video {
+        height: 34%;
+    }
+    
     #home-hero {
         margin-top: 150px;
     }
@@ -892,6 +925,9 @@ a.nav-link {
 @media screen and (max-width: 600px) {
     .container {
         width: 80%;
+    }
+    video {
+        height: 30%;
     }
     #home-hero {
         margin-top: 140px;
@@ -938,7 +974,9 @@ a.nav-link {
         max-width: 150px;
         height: auto;
     }
-    
+    video {
+        height: 28%;
+    }
     .nav-link{
         padding: 3px;
     }
