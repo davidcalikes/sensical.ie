@@ -62,7 +62,7 @@ _WCAG Validator Testing Screenshot_
 
 The Home Page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/testing_val_4.png"><br>
+<img src="../docs/testing_images/lighthouse_1.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
 <img src="../docs/testing_images/testing_val_5.png"><br>
