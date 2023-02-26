@@ -775,10 +775,14 @@ video {
     margin-bottom: 0.4rem;
 }
 
+.wishlist-heading {
+    font-size: larger;
+}
+
 /* **** Hire Page **** */
 
 .hire-container {
-    margin-top: 150px;
+    margin-top: 180px;
     width: 80%;
     padding-right: 15px;
     padding-left: 15px;

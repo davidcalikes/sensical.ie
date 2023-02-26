@@ -392,17 +392,17 @@ The Checkout page was passed through the W3C HTML Validator and returned just on
 _W3C HTML Validator Testing Screenshot_ 
 
 <br>
-The Shopping Basket page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+The Checkout page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
 <img src="../docs/testing_images/wcag_checkout.png"><br>
 _WCAG Validator Testing Screenshot_
 
-The Shopping Basket page was passed through Lighthouse and returned the following performance results:
+The Checkout page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/lighthouse_8.png"><br>
+<img src="../docs/testing_images/lighthouse_12.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/lighthouse_9.png"><br>
+<img src="../docs/testing_images/lighthouse_13.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
 The Checkout Success page was also tested in W3 and is fully functional.
@@ -412,6 +412,122 @@ _W3C HTML Validator Testing Screenshot_
 
 <img src="../docs/testing_images/auth_checkout.png"><br>
 _Checkout Success Testing Screenshot_ 
+<br>
+</details>
+
+<br>
+
+<details>
+
+<summary>
+Hire Page Testing</summary><br>
+
+The HTML Templates associated with the products page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* hire.html
+* footer.html
+
+The Hire page was tested and was marked 'pass' when the following expected behaviour was produced.
+
+* Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
+
+* Package Offers -- Users can view packages via the Package Offers link.
+
+* Facebook links -- The User can visit the Facebook business page via both links (The links both open in a new tab.)
+
+
+<br>
+
+| Auth Status     | Packages Links | Facebook Links |
+|-----------------|----------------|----------------|
+| Admin           | yes/pass       | yes/pass       |
+| Registered User | yes/pass       | yes/pass       |
+| Anonymous User  | yes/pass       | yes/pass       |
+<br>
+
+Hire Page validator testing.
+
+The Hire page was passed through the W3C HTML Validator and returned no warnings.
+
+<img src="../docs/testing_images/w3_checkout.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<br>
+The Hire page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+
+<img src="../docs/testing_images/wcag_hire.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Hire page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/lighthouse_12.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/lighthouse_13.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+<br>
+</details>
+
+<br>
+
+<details>
+
+<summary>
+Wishlist Page Testing</summary><br>
+
+The HTML Templates associated with the products page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* wishlist.html
+* footer.html
+
+The Wishlist page was tested and was marked 'pass' when the following expected behaviour was produced.
+
+* Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
+
+* Products Link -- Users can return to products page from the Find More Products link.
+
+* Add To Wishlist -- The User can add a product from the wishlist to the shopping basket.
+
+* Remove From Wishlist -- The User can remove a product from the wishlist.
+
+
+<br>
+
+| Auth Status     | Products Links | Add to Basket | Remove From Wishlist |
+|-----------------|----------------|---------------|----------------------|
+| Admin           | yes/pass       | yes/pass      | yes/pass             |
+| Registered User | yes/pass       | yes/pass      | yes/pass             |
+| Anonymous User  | n/a            | n/a           | n/a                  |
+<br>
+
+Wishlist Page validator testing.
+
+The Wishlist page was passed through the W3C HTML Validator and returned just one justifiable warning. (As referenced earlier)
+
+<img src="../docs/testing_images/w3_wishlist.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<br>
+The Wishlist page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+
+<img src="../docs/testing_images/wcag_wishlist.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Wishlist page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/lighthouse_12.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/lighthouse_13.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
 <br>
 </details>
 

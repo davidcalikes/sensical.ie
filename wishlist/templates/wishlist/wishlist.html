@@ -1,29 +1,37 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Wishlist Page -->
+
 {% block extra_title %} - Wishlist{% endblock %}
 
 {% block content %}
 
 <div class="wishlist-container">
+
+    <!-- Page Heading -->
+
     <div class="col text-center">
         <h2 class="logo-font mb-4">My Wishlist <i class="fa-solid fa-heart"></i></h2>
         {% if users_wishlist %}
+
+        <!-- Wishlist Items -->
+
             {% for product in users_wishlist %}
             <div class="wishlist-item-container container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-lg-3 d-flex align-items-center ">
                         <div class="wishlist-image-container">
-                            <img class="wishlist-img" src="{{ product.image.url }}" alt="product image">
+                            <img class="wishlist-img" src="{{ product.image.url }}" alt="{{product.name}}">
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-3 wishlist-align d-flex align-items-center">
                         <div class="col-12">
                             <div class="col-12 ml-1 mb-1">
-                                <h4>{{ product.name }}</h4>
+                                <h3 class="wishlist-heading">{{ product.name }}</h3>
                             </div>
                             <div class="col-12 ml-1 mb-1">
-                                <h5>€{{ product.price }}</h5>
+                                <h4 class="wishlist-heading">€{{ product.price }}</h4>
                             </div><div class="col-12 ml-1 mb-1">
                             {% if product.in_stock %}
                             <small class="text-center availability">In Stock 
@@ -63,12 +71,12 @@
                                 </div>
                                 {% if product.in_stock %}
                                 <div class="col-12 ml-1 mb-1">
-                                    <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" min="1" max="1" type="submit" value="&#xf291; Add To Basket">
+                                    <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 {% endif %}
                                 <div class="col-12  mb-1">
-                                    <a class="sensical-button" type="button" href="{% url 'add_to_wishlist' product.id %}">
+                                    <a class="sensical-button" href="{% url 'add_to_wishlist' product.id %}">
                                         <span class="icon"><i class="fa-solid fa-trash"></i></span>
                                         <span>Remove from Wishlist</span>
                                     </a>
@@ -81,9 +89,12 @@
             </div>
             {% endfor %}
         {% else %}
-        <h2>
+
+        <!-- Wishlist Empty -->
+
+        <h4>
             No products in wishlist.
-        </h2>
+        </h4>
         {% endif %}
     </div>
 </div>
