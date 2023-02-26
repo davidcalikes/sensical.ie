@@ -201,7 +201,7 @@ I researched this warning and as it provides nice feedback for the user, maintai
 <img src="../docs/testing_images/w3_2_errors.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
-The Products page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+The Product Detail page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
 <img src="../docs/testing_images/product_detail_wcag.png"><br>
 _WCAG Validator Testing Screenshot_
@@ -214,7 +214,6 @@ _Desktop Lighthouse Performance Testing Screenshot_
 <img src="../docs/testing_images/lighthouse_7.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-In future versions of the app I hope to significantly improve mobile performance.
 <br>
 </details>
 
@@ -288,18 +287,17 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <details>
 
 <summary>
-Product Management Pages Testing</summary><br>
+Shopping Basket Page Testing</summary><br>
 
 The HTML Templates associated with the products page are:
 
 * base.html
 * main-nav.html
 * mobile-top-header.html
-* add_product.html
-* edit_product.html
+* shopping-basket.html
 * footer.html
 
-Each of the Product Management Form pages were tested and was marked 'pass' when the following expected behaviour was produced.
+The Shopping Basket page was tested and was marked 'pass' when the following expected behaviour was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -322,22 +320,20 @@ Each of the Product Management Form pages were tested and was marked 'pass' when
 | Anonymous User  | no/pass    | n/a             | n/a                   | n/a                | n/a              |
 <br>
 
-Product Management pages validator testing.
+Shopping Basket page validator testing.
 
-The Product Management pages were passed through the W3C HTML Validator and returned no warnings
+The Shopping Basket page was passed through the W3C HTML Validator and returned just one justifiable warning.
 
-<img src="../docs/testing_images/w3_products_management_add.png"><br>
+<img src="../docs/testing_images/w3_shopping_basket.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
-<img src="../docs/testing_images/w3_product_management_edit.png"><br>
-_W3C HTML Validator Testing Screenshot_ 
+<br>
+The Shopping Basket page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
-The Products page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
-
-<img src="../docs/testing_images/wcag_product_management.png"><br>
+<img src="../docs/testing_images/wcag_basket.png"><br>
 _WCAG Validator Testing Screenshot_
 
-The Product Detail Page was passed through Lighthouse and returned the following performance results:
+The Shopping Basket page was passed through Lighthouse and returned the following performance results:
 
 <img src="../docs/testing_images/lighthouse_8.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_

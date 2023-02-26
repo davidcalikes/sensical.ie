@@ -46,7 +46,7 @@
                                             <div>
                                                 <div class="input-group-selector">
                                                     <label><small>Quantity:</small></label>
-                                                    <select class="form-control custom-select" type="number"
+                                                    <select class="form-control custom-select"
                                                     name="quantity" 
                                                     data-item_id="{{ item.item_id }}"
                                                     id="id_qty_{{ item.item_id }}">
@@ -97,7 +97,7 @@
         <div class="col-sm-12 col-md-4 text-center">
             <div class="basket-checkout text-center mb-2">
                 <a href="{% url 'products' %}">
-                <button class="basket-back-button basket-button"><i class="icon fa-solid fa-circle-arrow-left"></i> back to shopping</button>
+                <div class="basket-back-button basket-button"><i class="icon fa-solid fa-circle-arrow-left"></i>back to shopping</div>
                 </a>
             </div>
             <div class="basket-checkout text-center my-2">
@@ -137,7 +137,7 @@
             </div>
             <div class="basket-checkout text-center my-2">
                 <a href="{% url 'checkout' %}">
-                    <button class="basket-button"><i class="fa-solid fa-lock"></i> Secure Checkout</button>
+                    <div class="basket-button"><i class="fa-solid fa-lock"></i>Secure Checkout</div>
                 </a>
             </div>
         </div>

@@ -690,6 +690,7 @@ video {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 2.5px;
     color: #fff;
     background-color:#0c2d6c ;
