@@ -335,13 +335,13 @@ _WCAG Validator Testing Screenshot_
 
 The Shopping Basket page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/lighthouse_8.png"><br>
+<img src="../docs/testing_images/lighthouse_10.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/lighthouse_9.png"><br>
+<img src="../docs/testing_images/lighthouse_11.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-In future versions of the app I hope to significantly improve mobile performance.
+The SEO Score was low here because the basket is included in the robots.txt file.
 <br>
 </details>
 
@@ -385,15 +385,15 @@ The Checkout page was tested and was marked 'pass' when the following expected b
 
 Checkout page validator testing.
 
-The Shopping Basket page was passed through the W3C HTML Validator and returned just one justifiable warning.
+The Checkout page was passed through the W3C HTML Validator and returned just one justifiable warning.
 
-<img src="../docs/testing_images/w3_shopping_basket.png"><br>
+<img src="../docs/testing_images/w3_checkout.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 <br>
 The Shopping Basket page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
-<img src="../docs/testing_images/wcag_basket.png"><br>
+<img src="../docs/testing_images/wcag_checkout.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Shopping Basket page was passed through Lighthouse and returned the following performance results:

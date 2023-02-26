@@ -6,22 +6,28 @@
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+<!-- Checkout Page -->
+
 {% block extra_title %} - Checkout{% endblock %}
 
 {% block content %}
+
+<!-- Payment Overlay and Loading Spinner -->
+
 <div class="overlay"></div>
 <div id="loading-overlay">
     <div class="loading-spinner">
-        <span class="text-center p-3">
+        <div class="text-center p-3">
             <div>
                 <img class="spinner" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676126779/ezgif.com-apng-to-gif_2_qq88g5.gif" alt="">
             </div>
             <H2>Processing Payment... Please Wait!</H2>
-            <h4 class="mt-4 text-center  d-flex justify-content-center align-items-center">Powered by &nbsp <i class="fa-brands fa-2x fa-cc-stripe"></i></h4>
-        </span>
-        
+            <h4 class="mt-4 text-center  d-flex justify-content-center align-items-center">Powered by &nbsp; <i class="fa-brands fa-2x fa-cc-stripe"></i></h4>
+        </div>
     </div>
 </div>
+
+<!-- Heading and Order Summary -->
 
 <div class="basket-bg container">
     <div class="row">
@@ -32,6 +38,9 @@
             <p class="mb-0 item-count-header mt-2">Order Summary: {{ item_count }} items totalling €{{ grand_total|floatformat:2 }} (includes delivery)
         </div>
     </div>
+
+    <!-- Checkout Items -->
+
     <div class="row mt-4">
         <div class="col-12 col-lg-6 text-center mt-3">
             {% for item in basket_items %}
@@ -41,7 +50,7 @@
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
                                 <div class="checkout-image-container">
-                                    <img class="checkout-img" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                    <img class="checkout-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                 </div>
                                 {% endif %}
                             </a>
@@ -62,89 +71,94 @@
                 </div>
                 {% endfor %}
         </div>
-            <div class="col-12 col-lg-5 payment-container text-center my-3">
-                <div class="panel-group" id="checkout-accordian">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span><i class="ml-3 fa-solid fa-circle-arrow-down text-right"></i></i></span> </p>
-                        </div>
-                        <div class="panel-collapse collapse show" id="panel-1">
-                            <div class="panel-body">
-                                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
-                                    {% csrf_token %}
-                                    <fieldset class="rounded px-3 mb-5">
-                                        <legend class="fieldset-label small">Your Details</legend>
-                                        {{ order_form.full_name | as_crispy_field }}
-                                        {{ order_form.email | as_crispy_field }}
-                                    </fieldset>
-                                    <fieldset class="rounded px-3 mb-5">
-                                        <legend class="fieldset-label small">Delivery</legend>
-                                        {{ order_form.phone_number | as_crispy_field }}
-                                        {{ order_form.country | as_crispy_field }}
-                                        {{ order_form.town_or_city | as_crispy_field }}
-                                        {{ order_form.street_address1 | as_crispy_field }}
-                                        {{ order_form.street_address2 | as_crispy_field }}
-                                        {{ order_form.county | as_crispy_field }}
-                                        {{ order_form.eircode | as_crispy_field }}
-                                        <div class="form-check form-check-inline float-right mr-0">
-                                            {% if user.is_authenticated %}
-                                                <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
-                                                <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
-                                            {% else %}
-                                                <label class="form-check-label" for="id-save-info">
-                                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
-                                                </label>
-                                            {% endif %}
-                                        </div>
-                                    </fieldset>
-                                </form>
-                                </div>
+
+        <!-- Payment Form -->
+
+        <div class="col-12 col-lg-5 payment-container text-center my-3">
+            <div class="panel-group" id="checkout-accordian">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span><i class="ml-3 fa-solid fa-circle-arrow-down text-right"></i></span> </p>
+                    </div>
+                    <div class="panel-collapse collapse show" id="panel-1">
+                        <div class="panel-body">
+                            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                                {% csrf_token %}
+                                <fieldset class="rounded px-3 mb-5">
+                                    <legend class="fieldset-label small">Your Details</legend>
+                                    {{ order_form.full_name | as_crispy_field }}
+                                    {{ order_form.email | as_crispy_field }}
+                                </fieldset>
+                                <fieldset class="rounded px-3 mb-5">
+                                    <legend class="fieldset-label small">Delivery</legend>
+                                    {{ order_form.phone_number | as_crispy_field }}
+                                    {{ order_form.country | as_crispy_field }}
+                                    {{ order_form.town_or_city | as_crispy_field }}
+                                    {{ order_form.street_address1 | as_crispy_field }}
+                                    {{ order_form.street_address2 | as_crispy_field }}
+                                    {{ order_form.county | as_crispy_field }}
+                                    {{ order_form.eircode | as_crispy_field }}
+                                    <div class="form-check form-check-inline float-right mr-0">
+                                        {% if user.is_authenticated %}
+                                            <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                                            <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                                        {% else %}
+                                            <label class="form-check-label" for="id-save-info">
+                                                <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                                                <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                            </label>
+                                        {% endif %}
+                                    </div>
+                                </fieldset>
+                            </form>
                             </div>
                         </div>
-                        <p>Enter your card details and press 'Submit Order' to complete your order...</p>
-                    <fieldset class="payment-strip mb-4 px-3">
-                        <legend class="fieldset-label d-none small">Card Details</legend>
-                        <div class="mb-3" id="card-element"></div>
-                        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-            
-                        <input form="payment-form" type="hidden" value="{{ client_secret }}" name="client_secret">
-                    </fieldset>
+                    </div>
+                    <p>Enter your card details and press 'Submit Order' to complete your order...</p>
+                <fieldset class="payment-strip mb-4 px-3">
+                    <legend class="fieldset-label d-none small">Card Details</legend>
+                    <div class="mb-3" id="card-element"></div>
+                    <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+        
+                    <input form="payment-form" type="hidden" value="{{ client_secret }}" name="client_secret">
+                </fieldset>
 
-                    <div class="text-center text-lg-right my-2">
-                        <button form="payment-form" id="submit-button" class="sensical-button">
-                            <span><i class="fas fa-lock"></i> Submit Order</span>                    
-                        </button>
-                    </div>
-                    <div class="text-center text-lg-right my-2">
-                        <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
-                            <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                            <span class="text-uppercase">Back to Basket</span>
-                        </a>
-                    </div>
-                    <div class="text-center text-lg-right my-3">                    
-                        <p class="small text-warning mr-2">
-                            <span class="icon">
-                                <i class="fas fa-exclamation-circle"></i>
-                            </span>
-                            <span>Your credit/debit card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
-                        </p>
-                    </div>
-                    <div class="mt-1 checkout-card-icons">
-                        <i class="fa-brands fa-2x fa-cc-visa mr-1"></i>
-                        <i class="fa-brands fa-2x fa-cc-mastercard mr-1"></i>
-                        <i class="fa-brands fa-2x fa-cc-diners-club mr-1"></i>
-                        <i class="fa-brands fa-2x fa-cc-amex mr-1"></i>
-                    </div>
-                    <div>
-                        <p class="mt-4 small text-center text-lg-right"><a class="text-light" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1676718400/sensical/sensical-terms-and-conditions_axz5zk.pdf" target="_blank">Terms & Conditions</a></p>
-                    </div>
-                                
+                <div class="text-center text-lg-right my-2">
+                    <button form="payment-form" id="submit-button" class="sensical-button">
+                        <span><i class="fas fa-lock"></i> Submit Order</span>                    
+                    </button>
                 </div>
-            </div>    
+                <div class="text-center text-lg-right my-2">
+                    <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                        <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                        <span class="text-uppercase">Back to Basket</span>
+                    </a>
+                </div>
+                <div class="text-center text-lg-right my-3">                    
+                    <p class="small text-warning mr-2">
+                        <span class="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>
+                        <span>Your credit/debit card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
+                    </p>
+                </div>
+                <div class="mt-1 checkout-card-icons">
+                    <i class="fa-brands fa-2x fa-cc-visa mr-1"></i>
+                    <i class="fa-brands fa-2x fa-cc-mastercard mr-1"></i>
+                    <i class="fa-brands fa-2x fa-cc-diners-club mr-1"></i>
+                    <i class="fa-brands fa-2x fa-cc-amex mr-1"></i>
+                </div>
+                <div>
+                    <p class="mt-4 small text-center text-lg-right"><a class="text-light" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1676718400/sensical/sensical-terms-and-conditions_axz5zk.pdf" target="_blank">Terms & Conditions</a></p>
+                </div>
+                            
+            </div>
+        </div>    
     </div>
 </div>
 {% endblock content %}
+
+ <!-- Stripe JS -->
 
 {% block postloadjs %}
     {{ block.super }}
