@@ -2,9 +2,14 @@
 {% load static %}
 {% load basket_tools %}
 
+<!-- Shopping Basket Page -->
+
 {% block extra_title %} - Basket{% endblock %}
 
 {% block content %}
+
+<!-- Heading -->
+
 <div class="basket-bg container">
     
     <div class="row">
@@ -18,6 +23,8 @@
             <p class="mb-0 item-count-header">{{ item_count }} items in basket</p>
         </div>
     </div>
+
+    <!-- Shopping Basket Items -->
 
     <div class="row center-row">
         <div class="col-sm-12 col-md-7 mb-3 basket-col">
@@ -80,6 +87,9 @@
                         </div>
                     </div>
                     {% endfor %}
+
+                <!-- No Items In Basket -->
+
                 {% else %}
                     <div class="col-12 text-center basket-empty">
                         <h3>Empty Basket!</h3>
@@ -94,6 +104,8 @@
             </div>
         </div>
 
+        <!-- Basket Summary and Action Buttons -->
+
         <div class="col-sm-12 col-md-4 text-center">
             <div class="basket-checkout text-center mb-2">
                 <a href="{% url 'products' %}">
@@ -101,7 +113,7 @@
                 </a>
             </div>
             <div class="basket-checkout text-center my-2">
-                <h5 class="checkout-heading py-2">BASKET SUMMARY</h5>
+                <h3 class="checkout-heading py-2">BASKET SUMMARY</h3>
             </div>
             <div class="row checkout-row pt-4 mt-2">
                 <div class="col text-left">

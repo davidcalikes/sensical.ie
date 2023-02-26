@@ -345,5 +345,68 @@ In future versions of the app I hope to significantly improve mobile performance
 <br>
 </details>
 
+<br>
+
+<details>
+
+<summary>
+Checkout Page Testing</summary><br>
+
+The HTML Templates associated with the products page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* checkout.html
+* footer.html
+
+The Shopping Basket page was tested and was marked 'pass' when the following expected behaviour was produced.
+
+* Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
+
+* Update Quantity -- The User can update the quantity of a given product from their basket.
+
+* Remove Product -- The User can remove a given product from their basket.
+
+* Back To Shopping -- The User can return to products page via the back to shopping button.
+
+* Messages -- User is notified when an action is submitted or there are no products in their basket.
+
+* Go to checkout -- User can go to the checkout page via the Secure Checkout button.
+
+<br>
+
+| Auth Status     | Can Access | Form Validation | Is Notified (Success) | Is Notified (Info) | Back to Products |
+|-----------------|------------|-----------------|-----------------------|--------------------|------------------|
+| Admin           | yes/pass   | yes/pass        | yes/pass              | yes/pass           | yes/pass         |
+| Registered User | no/pass    | n/a             | n/a                   | n/a                | n/a              |
+| Anonymous User  | no/pass    | n/a             | n/a                   | n/a                | n/a              |
+<br>
+
+Shopping Basket page validator testing.
+
+The Shopping Basket page was passed through the W3C HTML Validator and returned just one justifiable warning.
+
+<img src="../docs/testing_images/w3_shopping_basket.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<br>
+The Shopping Basket page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+
+<img src="../docs/testing_images/wcag_basket.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Shopping Basket page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/lighthouse_8.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/lighthouse_9.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+In future versions of the app I hope to significantly improve mobile performance.
+<br>
+</details>
+
 
 

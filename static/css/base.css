@@ -737,6 +737,7 @@ video {
 .checkout-heading {
     color: #0c2d6c;
     background-color: #75e6ff;
+    font-size: larger;
 }
 
 .checkout-row {
