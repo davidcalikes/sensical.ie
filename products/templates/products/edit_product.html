@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Add Product Form -->
+
 {% block extra_title %} - Edit Product{% endblock %}
 
 
 {% block content %}
+
+    <!-- User Authentication & Authorisation -->
+
     {% if user.is_superuser %}
+
+    <!-- Form Heading -->
+    
     <div class="container auth-container">
         <div class="row">
             <div class="col-12 mt-4">
@@ -15,6 +23,8 @@
                 <hr class="section-rule">
             </div>
         </div>
+
+        <!-- Product Form -->
 
         <div class="row">
             <div class="col-12">
@@ -30,6 +40,9 @@
         </div>
     </div>
     {% else %}
+
+    <!-- If Not Authorised -->
+
     <div class="container auth-container">
     <h1 class="mt-4 text-center"><i class="fa-solid fa-circle-exclamation"></i></h1>
     <h3 class="text-center" >You are unauthorised to view this page.</h3>

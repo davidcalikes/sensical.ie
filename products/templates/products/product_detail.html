@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Product Detail Page -->
+
 {% block extra_title %} - {{ product.name }}{% endblock %}
 
 {% block content %}
+
+<!-- Product Details -->
+
 <div class="product-detail-bg container">
-    
+
     <div class="row">
         <div class="col text-center mt-5">
             <h2 class="mb-4 text-center">{{ product.name }}</h2>
@@ -14,25 +19,26 @@
 
     <input type="checkbox" class="hide-toggle" id="hide-no-stock">
     <label class="mb-3 hide-toggle" for="hide-no-stock">Available Products Only</label>
-    
+
     <div class="row mt-4">
         <div class="col-sm-12 col-md-6">
             <div class="product-detail-img-container">
                 <a href="{{ product.image.url }}" target="_blank">
-                    <img class="{% if product.in_stock %} product-detail-img {% else %} product-detail-img product-detail-img-no-stock {% endif %}" src="{{ product.image.url }}" alt="{{ product.name }}">
-            </a>
+                    <img class="{% if product.in_stock %} product-detail-img {% else %} product-detail-img product-detail-img-no-stock {% endif %}"
+                        src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
             </div>
         </div>
-            <div class="col-sm-12 col-md-6 detail-container ">
-                <div>
-                    <h3 class="pl-2">Price: €{{ product.price }} </h3>
-                    {% if product.in_stock %}
-                    <small class="pl-2">In Stock <i class="fa-solid fa-circle-check text-success mb-4"></i></small>
-                    {% else %}
-                    <small class="pl-2">Out of Stock <i class="fa-solid fa-circle-xmark text-danger mb-4"></i></small>
-                    {% endif %}
+        <div class="col-sm-12 col-md-6 detail-container ">
+            <div>
+                <h3 class="pl-2">Price: €{{ product.price }} </h3>
+                {% if product.in_stock %}
+                <small class="pl-2">In Stock <i class="fa-solid fa-circle-check text-success mb-4"></i></small>
+                {% else %}
+                <small class="pl-2">Out of Stock <i class="fa-solid fa-circle-xmark text-danger mb-4"></i></small>
+                {% endif %}
 
-                    <p class="pl-2"> {{ product.description }} <p>
+                <p class="pl-2"> {{ product.description }} <p>
                         {% if 'ADHD' in product.for_sensory_needs|stringformat:'s' %}
                         <i class="icon pl-2 fa-solid fa-eye"></i>&nbsp;
                         {% endif %}
@@ -51,85 +57,89 @@
                         {% if 'LIGHT' in product.for_sensory_needs|stringformat:'s' %}
                         <i class="icon pl-2 fa-regular fa-lightbulb"></i>&nbsp;
                         {% endif %}
-                    <p class="mb-0"><small class="pl-2">SKU: {{ product.sku }} </small></p>
-                    <small class="pl-2"> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
-                    
-                    
-                    
-                    <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            {% if product.in_stock %}
-                            <div class="col-12">
-                                <p class="mt-2 pl-2"><strong>Quantity:</strong></p>
-                                <div class="text-center">
-                                    <div class="form-group detail-form-selector">
-                                        <div class="input-group-selector rounded-0 text-lg-left">
-                                            <select class="form-control custom-select"
-                                            name="quantity">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                                <option>7</option>
-                                                <option>8</option>
-                                                <option>9</option>
-                                                <option>10</option>
-                                            </select>
+                        <p class="mb-0"><small class="pl-2">SKU: {{ product.sku }} </small></p>
+                        <small class="pl-2"> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }}
+                            /5</small>
+
+                        <!-- Quantity Selector -->
+
+                        <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                {% if product.in_stock %}
+                                <div class="col-12">
+                                    <p class="mt-2 pl-2"><strong>Quantity:</strong></p>
+                                    <div class="text-center">
+                                        <div class="form-group detail-form-selector">
+                                            <div class="input-group-selector rounded-0 text-lg-left">
+                                                <select class="form-control custom-select" name="quantity">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                    {% endif %}
 
-                            <div class="col-12 mt-4 mb-2">
-                                <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
-                                    <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                                    <span class="text-uppercase">Find More Products</span>
-                                </a>
-                            </div>
-                            {% if product.in_stock %}
-                            <div class="col-12 my-2">
-                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
-                            </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            {% else %}
-                            <div class="col-12 my-2">
-                                <a href="#" class="sensical-button text-center rounded-0 mt-2">
-                                    <span class="icon"><i class="fa-regular fa-circle-xmark"></i></i></span>
-                                    <span class="text-uppercase">Out of stock</span>
-                                </a>
-                            </div>
-                            {% endif %}
-                            <div class="col-12 mt-2">
-                                {% if user.is_authenticated %}
-                                        {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %} 
-                                        <a href="{% url 'add_to_wishlist' product.id %}" class="sensical-button text-center rounded-0 mt-2">
-                                            <span class="icon"><i class="fa-solid fa-heart-circle-minus"></i></span>
-                                            <span class="text-uppercase">Remove from Wishlist</span>
-                                        </a>
-                                        {% else %}
-                                        <a href="{% url 'add_to_wishlist' product.id %}" class="sensical-button text-center rounded-0 mt-2">
-                                            <span class="icon"><i class="fa-solid fa-heart-circle-plus"></i></span>
-                                            <span class="text-uppercase">Add To Wishlist</span>
-                                        </a>
-                                        {% endif %}
-                                {% else %}
-                                <a href="{% url 'account_login' %}" class="sensical-button text-center rounded-0 mt-2">
-                                    <span class="icon"><i class="fa-solid fa-heart-circle-plus"></i></span>
-                                    <span class="text-uppercase">Add To Wishlist</span>
-                                </a>
                                 {% endif %}
+
+                                <div class="col-12 mt-4 mb-2">
+                                    <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                                        <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                                        <span class="text-uppercase">Find More Products</span>
+                                    </a>
+                                </div>
+                                {% if product.in_stock %}
+                                <div class="col-12 my-2">
+                                    <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2"
+                                        type="submit" value="&#xf291; Add To Basket">
+                                </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                {% else %}
+                                <div class="col-12 my-2">
+                                    <a href="#" class="sensical-button text-center rounded-0 mt-2">
+                                        <span class="icon"><i class="fa-regular fa-circle-xmark"></i></i></span>
+                                        <span class="text-uppercase">Out of stock</span>
+                                    </a>
+                                </div>
+                                {% endif %}
+                                <div class="col-12 mt-2">
+                                    {% if user.is_authenticated %}
+                                    {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %}
+                                    <a href="{% url 'add_to_wishlist' product.id %}"
+                                        class="sensical-button text-center rounded-0 mt-2">
+                                        <span class="icon"><i class="fa-solid fa-heart-circle-minus"></i></span>
+                                        <span class="text-uppercase">Remove from Wishlist</span>
+                                    </a>
+                                    {% else %}
+                                    <a href="{% url 'add_to_wishlist' product.id %}"
+                                        class="sensical-button text-center rounded-0 mt-2">
+                                        <span class="icon"><i class="fa-solid fa-heart-circle-plus"></i></span>
+                                        <span class="text-uppercase">Add To Wishlist</span>
+                                    </a>
+                                    {% endif %}
+                                    {% else %}
+                                    <a href="{% url 'account_login' %}"
+                                        class="sensical-button text-center rounded-0 mt-2">
+                                        <span class="icon"><i class="fa-solid fa-heart-circle-plus"></i></span>
+                                        <span class="text-uppercase">Add To Wishlist</span>
+                                    </a>
+                                    {% endif %}
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
+                        </form>
             </div>
         </div>
     </div>
+</div>
 
 <!-- Script for Availability Toggle Selector -->
 
