@@ -139,7 +139,7 @@ a {
 /* **** Nav Elements **** */
 
 #nav-logo {
-    width: 56%;
+    width: 50%;
     height: auto;
 }
 
@@ -409,8 +409,9 @@ video {
 }
 
 .footer-inv-logo {
-    width: 70%;
+    width: 60%;
     height: auto;
+    margin-top: 1.5rem;
 }
 
 .footer-contact-text {
@@ -797,10 +798,6 @@ video {
     border-radius: 0;
 }
 
-.chimp-logo {
-    width: 100%;
-    height: auto;
-}
 /* **** MEDIA QUERIES **** */
 
 @media (max-width: 1300px) {
@@ -896,6 +893,8 @@ video {
     }
     .footer-inv-logo {
         margin-left: 0;
+        margin-top: 1rem;
+        width: 25%;
     }
     .footer-contact-text {
         padding: 2rem;
@@ -1003,6 +1002,12 @@ video {
     .basket-item-container {
         width: 90%;
     }
+    .footer-inv-logo {
+        width: 40%;
+    }
+    footer i {
+        font-size: larger;
+    }
     }
 
 @media screen and (max-width: 430px) {
@@ -1046,6 +1051,9 @@ video {
     }
     .wishlist-img {
         min-width: 240px;
+    }
+    .footer-inv-logo {
+        width: 50%;
     }
     .irish-logo-container {
         width: 100%;
