@@ -754,6 +754,11 @@ video {
     text-align: left;
 }
 
+.wishlist-link {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
 /* **** Hire Page **** */
 
 .hire-container {

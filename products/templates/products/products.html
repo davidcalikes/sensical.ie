@@ -5,31 +5,39 @@
 
 {% block content %}
 
+<!-- All Products Page -->
+
 <div class="products-bg container">
     <div class="row">
         <div class="col text-center mt-3">
             {% if ',' in request.get_full_path %}
-                <h2 class="mb-4 text-left">All products in current category</h2>
+            <h2 class="mb-4 text-left">All products in current category</h2>
             {% else %}
-                {% if current_categories %}
-                    {% for category in current_categories %}
-                        <h2 class="mb-4 text-left">{{ category.friendly_name }}</h2>
-                    {% endfor %}
-                {% else %}    
-                    <h2 class="mb-4 text-left">All products</h2>
-                {% endif %}
+            {% if current_categories %}
+            {% for category in current_categories %}
+            <h2 class="mb-4 text-left">{{ category.friendly_name }}</h2>
+            {% endfor %}
+            {% else %}
+            <h2 class="mb-4 text-left">All products</h2>
+            {% endif %}
             {% endif %}
         </div>
     </div>
 
+    <!-- Sort Selector -->
+
     <div class="row">
         <div class="col-sm-12 col-md-6 products-query-strap">
             <div class="products-sort-selector">
-                <select id="sort-selector" class="custom-select {% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                <select id="sort-selector"
+                    class="custom-select {% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                     <option value='reset' {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by..</option>
-                    <option value='name_asc' {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                    <option value='price_asc' {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Ascending</option>
-                    <option value='price_desc' {% if current_sorting == 'price_desc' %}selected{% endif %}>Price Descending</option>
+                    <option value='name_asc' {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)
+                    </option>
+                    <option value='price_asc' {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Ascending
+                    </option>
+                    <option value='price_desc' {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                        Descending</option>
                 </select>
             </div>
             <input type="checkbox" id="hide-no-stock">
@@ -44,14 +52,14 @@
                 {% if ',' in request.get_full_path %}
                 {{ products|length }} Products in current category.
                 {% else %}
-                    {% if products|length|stringformat:'s' != '1' %}
-                    {{ products|length }} Products{% if search_term %} found for "{{ search_term }}"{% endif %}
-                    {% endif %}
-                    {% if current_categories %}
-                    {% for category in current_categories %}
-                    in {{ category.friendly_name }}
-                    {% endfor %}
-                    {% endif %}
+                {% if products|length|stringformat:'s' != '1' %}
+                {{ products|length }} Products{% if search_term %} found for "{{ search_term }}"{% endif %}
+                {% endif %}
+                {% if current_categories %}
+                {% for category in current_categories %}
+                in {{ category.friendly_name }}
+                {% endfor %}
+                {% endif %}
                 {% endif %}
 
                 {% if 'category' not in request.get_full_path %}
@@ -60,190 +68,217 @@
             </p>
         </div>
     </div>
-    
+
+    <!-- Product Card -->
+
     <div class="row">
         {% if products %}
         {% for product in products %}
         {% if product.in_stock %}
         <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 in-stock">
-        {% else %}
-        <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 out-of-stock">
-        {% endif %}
-                <a href="{% url 'product_detail' product.id %}">
-            <div class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
-                <a href="{% url 'product_detail' product.id %}">
-                    <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}" src="{{ product.image.url }}" alt="{{ product.name }}">
-                </a>
-                
+            {% else %}
+            <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 out-of-stock">
+                {% endif %}
+                <div
+                    class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
+                        alt="{{ product.name }}" src="{{ product.image.url }}">
+                    </a>
+
                     <div class="row">
                         {% if product.in_stock %}
                         <div class=" col-12 text-left">
-                            <h5 class="dark-text title-col-in-stock text-center" >{{ product.name }}</h5>
+                            <h5 class="dark-text title-col-in-stock text-center">{{ product.name }}</h5>
                         </div>
                         {% endif %}
                         {% if product.in_stock == False %}
                         <div class=" col-12 text-left">
-                            <h5 class="dark-text title-col-no-stock text-center" >{{ product.name }}</h5>
+                            <h5 class="dark-text title-col-no-stock text-center">{{ product.name }}</h5>
                         </div>
                         {% endif %}
                     </div>
                     <div class="container">
-                    <div class="row">
-                        <div class="col-6 card-body text-center">
-                            {% if product.in_stock %}
-                            <h4 class="text-center text-light">€{{ product.price }}</h4>
-                            <small class="text-center text-light availability">In Stock 
-                            <i class="fa-solid fa-circle-check text-success"></i>
-                            </small>
-                            {% endif %}
-                            {% if product.in_stock == False %}
-                            <h4 class="text-center text-light">€{{ product.price }}</h4>
-                            <small class="text-center text-light availability">Out Of Stock 
-                                <i class="fa-solid fa-circle-xmark text-danger"></i>
-                            </small>
-                            {% endif %}
-                        </div>
-                        <div class="col-6 card-body text-center">
-                            {% if user.is_authenticated %}
-                                    {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %} 
-                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center text-light">
-                                        <h4><i class="fa-solid fa-heart-circle-minus"></i></h4>
-                                        <small>Remove from wishlist</small></a>&nbsp;
-                                    {% else %}
-                                    <a href="{% url 'add_to_wishlist' product.id %}" class="text-center text-light">
-                                    <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
-                                    <small class="text-light">Add to Wishlist</small></a>&nbsp;
-                                    {% endif %}
-                            {% else %}
-                            <a href="{% url 'account_login' %}" class="text-center text-light">
-                            <h4><i class="fa-solid fa-heart-circle-plus"></i></h4>
-                            <small class="text-light">Add to Wishlist</small></a>&nbsp;
-                            {% endif %}
+                        <div class="row">
+                            <div class="col-6 card-body text-center">
+                                {% if product.in_stock %}
+                                <h4 class="text-center text-light">€{{ product.price }}</h4>
+                                <small class="text-center text-light availability">In Stock
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                </small>
+                                {% endif %}
+                                {% if product.in_stock == False %}
+                                <h4 class="text-center text-light">€{{ product.price }}</h4>
+                                <small class="text-center text-light availability">Out Of Stock
+                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                </small>
+                                {% endif %}
+                            </div>
+                            <div class="col-6 card-body text-center">
+                                {% if user.is_authenticated %}
+                                {% if product.name|stringformat:'s' in users_wishlist|stringformat:'s' %}
+                                <a href="{% url 'add_to_wishlist' product.id %}" class="text-center text-light">
+                                    <div class="wishlist-link"><i class="p-2 fa-solid fa-heart-circle-minus fa-xl"></i></div>
+                                    <small class="p-2 text-light">Remove from wishlist</small>
+                                </a>
+                                {% else %}
+                                <a href="{% url 'add_to_wishlist' product.id %}" class="text-center text-light">
+                                    <div class="wishlist-link"><i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></div>
+                                    <small class="p-2 text-light">Add to Wishlist</small>
+                                </a>
+                                {% endif %}
+                                {% else %}
+                                <a href="{% url 'account_login' %}" class="text-center text-light">
+                                    <div class="wishlist-link"><i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></div>
+                                    <small class="p-2 text-light">Add to Wishlist</small>
+                                </a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="row button-row text-center"> 
-                    <div class="col-12 text-center">
-                        <div  class="text-center">
-                            <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            <div class="col-12 d-none">
-                                <p class="mt-2"><strong>Quantity:</strong></p>
-                                <div class="form-group w-50">
-                                    <div class="input-group-selector">
-                                        <select class="form-control custom-select"
-                                        name="quantity">
-                                            <option>1</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            {% if product.in_stock %}
-                            <div class="col-12">
-                                <input class="fa-input products-button text-center text-uppercase mt-2" min="1" max="1" type="submit" value="&#xf291; Add To Basket">
-                            </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            {% else %}
-                            <div class="col-12 text-center">
-                                <div>
-                                    <div class="text-center products-button products-button-no-stock d-block mt-2"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp Out Of Stock</div>
-                                </div>
-                            </div>
-                            {% endif %}
-                        </div>
-                    </form>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center">
-                        <div>
-                            <a class="text-center products-button d-block" href="{% url 'product_detail' product.id %}"><i class="fa-solid fa-circle-info"></i> Item Details</a>
-                        </div>
-                    </div>
-                </div>
-                {% if request.user.is_superuser %}
-                <div class="rating-container">
-                    <a href="{% url 'edit_product' product.id %}" class="text-center text-light pb-4"><small><i class="fa-solid fa-pen-to-square"></i></i>&nbspedit</small></a>&nbsp;
-                    &nbsp<small class="text-light"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    &nbsp<a href="{% url 'delete_product' product.id %}" class="text-center text-light pb-4" onclick="return confirm('Are you sure you want to delete this product?');"><small><i class="fa-solid fa-trash-can"></i>&nbspdelete</small></a>
-                </div>
-                {% else %}
-                <div class="rating-container">
-                    
-                <small class="text-light" ><i class="fas fa-star mr-1 pb-4"></i>{{ product.rating }} / 5</small>
-                    
-                </div>
-                {% endif %}
-            </div>
-        </div>
-        {% endfor %}
-        {% else %}
-        <h5 class="pl-3 mt-4">No Products are currently available in this category. Please choose a different category above or return to <a class="text-light" href="{% url 'products' %}"><u>All Products</u></a></h5> 
-        {% endif %}
-    </div>
-</div>
-{% if request.user.is_superuser %}
-<div class="col-12 text-center my-3">
-    <a class="sensical-button" href="{% url 'add_product' %}"><i class="fa-solid fa-circle-plus"></i> Add Product</a>
-</div>
-{% endif %}
-{% endblock content %}
 
-{% block postloadjs %}
-{{ block.super }}
+                    <div class="row button-row text-center">
+                        <div class="col-12 text-center">
+                            <div class="text-center">
+                                <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
+                                    {% csrf_token %}
+                                    <div class="form-row">
+                                        <div class="col-12 d-none">
+                                            <div class="form-group w-50">
+                                                <div class="input-group-selector">
+                                                    <select class="form-control custom-select" name="quantity">
+                                                        <option>1</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% if product.in_stock %}
+                                        <div class="col-12">
+                                            <input class="fa-input products-button text-center text-uppercase mt-2"
+                                             type="submit" value="&#xf291; Add To Basket">
+                                        </div>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                        {% else %}
+                                        <div class="col-12 text-center">
+                                            <div>
+                                                <div
+                                                    class="text-center products-button products-button-no-stock d-block mt-2">
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Out Of
+                                                    Stock</div>
+                                            </div>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div>
+                                <a class="text-center products-button d-block"
+                                    href="{% url 'product_detail' product.id %}"><i
+                                        class="fa-solid fa-circle-info"></i> Item Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if request.user.is_superuser %}
+                    <div class="rating-container">
+                        <a href="{% url 'edit_product' product.id %}" class="text-center text-light pb-4"><small><i
+                                    class="fa-solid fa-pen-to-square"></i>&nbsp;edit</small></a>&nbsp;
+                        &nbsp;<small class="text-light"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                            5</small>
+                        &nbsp;<a href="{% url 'delete_product' product.id %}" class="text-center text-light pb-4"
+                            onclick="return confirm('Are you sure you want to delete this product?');"><small><i
+                                    class="fa-solid fa-trash-can"></i>&nbsp;delete</small></a>
+                    </div>
+                    {% else %}
+                    <div class="rating-container">
+
+                        <small class="text-light"><i class="fas fa-star mr-1 pb-4"></i>{{ product.rating }} /
+                            5</small>
+
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- If no Products in Category -->
+
+            {% else %}
+            <h5 class="pl-3 mt-4">No Products are currently available in this category. Please choose a different
+                category above or return to <a class="text-light" href="{% url 'products' %}"><u>All Products</u></a>
+            </h5>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Admin can add a Product -->
+
+    {% if request.user.is_superuser %}
+    <div class="col-12 text-center my-3">
+        <a class="sensical-button" href="{% url 'add_product' %}"><i class="fa-solid fa-circle-plus"></i> Add
+            Product</a>
+    </div>
+    {% endif %}
+    {% endblock content %}
+
+    {% block postloadjs %}
+    {{ block.super }}
+
+    <!-- Script for Availability Toggle Selector -->
 
     <script>
-        function availabilityToggleState(){
+        function availabilityToggleState() {
             const stockFunction = document.getElementsByClassName("out-of-stock")
             const hideNoStock = document.querySelector('#hide-no-stock');
             let toggleIs = localStorage.getItem("checkbox");
             console.log(toggleIs)
-            if(toggleIs == "true"){
+            if (toggleIs == "true") {
                 hideNoStock.click();
                 console.log("toggle click has fired")
-                }
             }
+        }
 
         const stockFunction = document.getElementsByClassName("out-of-stock")
         const hideNoStock = document.querySelector('#hide-no-stock');
-        hideNoStock.addEventListener('change', function(e){
-        if(hideNoStock.checked){
-            localStorage.setItem("checkbox", true);
-            for (let i=0;i<stockFunction.length;i+=1){
-            stockFunction[i].style.display = 'none';{
+        hideNoStock.addEventListener('change', function (e) {
+            if (hideNoStock.checked) {
+                localStorage.setItem("checkbox", true);
+                for (let i = 0; i < stockFunction.length; i += 1) {
+                    stockFunction[i].style.display = 'none'; {}
+                }
+            } else {
+                localStorage.setItem("checkbox", false);
+                for (let i = 0; i < stockFunction.length; i += 1) {
+                    stockFunction[i].style.display = 'block';
+                }
             }
-        }
-        } else {
-            localStorage.setItem("checkbox", false);
-            for (let i=0;i<stockFunction.length;i+=1){
-            stockFunction[i].style.display = 'block';
-            }
-        }    
         })
     </script>
 
+    <!-- Script for Sort Selector -->
+
     <script>
-    $('#sort-selector').change(function () {
-        var selector = $(this);
-        var currentUrl = new URL(window.location);
+        $('#sort-selector').change(function () {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
 
-        var selectedVal = selector.val();
-        if (selectedVal != "reset") {
-            var sort = selectedVal.split("_")[0];
-            var direction = selectedVal.split("_")[1];
+            var selectedVal = selector.val();
+            if (selectedVal != "reset") {
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
 
-            currentUrl.searchParams.set("sort", sort);
-            currentUrl.searchParams.set("direction", direction);
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
 
-            window.location.replace(currentUrl);
-        } else {
-            currentUrl.searchParams.delete("sort");
-            currentUrl.searchParams.delete("direction");
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
 
-            window.location.replace(currentUrl);
-        }
-    })
+                window.location.replace(currentUrl);
+            }
+        })
     </script>
 
-{% endblock %}
+    {% endblock %}
