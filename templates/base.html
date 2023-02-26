@@ -1,4 +1,5 @@
 {% load static %}
+{% load products_filters %}
 
 <!doctype html>
 <html lang="en">
@@ -59,7 +60,7 @@
 
 </head>
 
-{% if "products" in request.path %}
+{% if "products" in request.path and not request.path|contains:"add" and not request.path|contains:"edit" %}
 
 <body onload="availabilityToggleState();">
     {% else %}

@@ -208,10 +208,76 @@ _WCAG Validator Testing Screenshot_
 
 The Product Detail Page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/lighthouse_4.png"><br>
+<img src="../docs/testing_images/lighthouse_6.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/lighthouse_5.png"><br>
+<img src="../docs/testing_images/lighthouse_7.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+In future versions of the app I hope to significantly improve mobile performance.
+<br>
+</details>
+
+<br>
+
+<details>
+
+<summary>
+Product Management Pages Testing</summary><br>
+
+The HTML Templates associated with the products page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* add_product.html
+* edit_product.html
+* footer.html
+
+Each of the Product Management Form pages were tested and was marked 'pass' when the following expected behaviour was produced.
+
+* Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
+
+* Product Management Access -- Product Management is only available to Admin users.
+
+* Form Validation -- The form returned validation error message if form was invalid
+
+* Cancel -- The User can cancel the action and return to products page.
+
+* Message Success -- User is notified when a product is added.
+
+* Message Info -- User is notified when a editing a product.
+
+<br>
+
+| Auth Status     | Can Access | Form Validation | Is Notified (Success) | Is Notified (Info) | Back to Products |
+|-----------------|------------|-----------------|-----------------------|--------------------|------------------|
+| Admin           | yes/pass   | yes/pass        | yes/pass              | yes/pass           | yes/pass         |
+| Registered User | no/pass    | n/a             | n/a                   | n/a                | n/a              |
+| Anonymous User  | no/pass    | n/a             | n/a                   | n/a                | n/a              |
+<br>
+
+Product Management pages validator testing.
+
+The Product Management pages were passed through the W3C HTML Validator and returned no warnings
+
+<img src="../docs/testing_images/w3_products_management_add.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/w3_product_management_edit.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+The Products page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+
+<img src="../docs/testing_images/product_detail_wcag.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The Product Detail Page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/lighthouse_6.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/lighthouse_7.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
 In future versions of the app I hope to significantly improve mobile performance.
