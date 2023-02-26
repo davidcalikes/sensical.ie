@@ -89,18 +89,18 @@
                     <div class="row">
                         {% if product.in_stock %}
                         <div class=" col-12 text-left">
-                            <h5 class="dark-text title-col-in-stock text-center">{{ product.name }}</h5>
+                            <h3 class="dark-text product-heading font title-col-in-stock text-center">{{ product.name }}</h3>
                         </div>
                         {% endif %}
                         {% if product.in_stock == False %}
                         <div class=" col-12 text-left">
-                            <h5 class="dark-text title-col-no-stock text-center">{{ product.name }}</h5>
+                            <h3 class="dark-text title-col-no-stock text-center">{{ product.name }}</h3>
                         </div>
                         {% endif %}
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-6 card-body text-center">
+                            <div class="col-6 product-heading card-body text-center">
                                 {% if product.in_stock %}
                                 <h4 class="text-center text-light">€{{ product.price }}</h4>
                                 <small class="text-center text-light availability">In Stock

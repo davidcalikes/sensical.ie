@@ -522,11 +522,13 @@ video {
 .title-col-no-stock {
     min-height: 40px;
     background-color: #ffadef;
+    font-size: larger;
 }
 
 .title-col-in-stock {
     min-height: 40px;
     background-color: #6ef4ce;
+    font-size: larger;
 }
 
 #hidden-stock-status {
