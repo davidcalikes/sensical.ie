@@ -313,11 +313,11 @@ The Shopping Basket page was tested and was marked 'pass' when the following exp
 
 <br>
 
-| Auth Status     | Can Access | Form Validation | Is Notified (Success) | Is Notified (Info) | Back to Products |
-|-----------------|------------|-----------------|-----------------------|--------------------|------------------|
-| Admin           | yes/pass   | yes/pass        | yes/pass              | yes/pass           | yes/pass         |
-| Registered User | no/pass    | n/a             | n/a                   | n/a                | n/a              |
-| Anonymous User  | no/pass    | n/a             | n/a                   | n/a                | n/a              |
+| Auth Status     | Update Qyt | Delete Product | Back To Shopping | Messages | Go To Checkout |
+|-----------------|------------|----------------|------------------|----------|----------------|
+| Admin           | yes/pass   | yes/pass       | yes/pass         | yes/pass | yes/pass       |
+| Registered User | yes/pass   | yes/pass       | yes/pass         | yes/pass | yes/pass       |
+| Anonymous User  | yes/pass   | yes/pass       | yes/pass         | yes/pass | yes/pass       |
 <br>
 
 Shopping Basket page validator testing.
@@ -360,30 +360,30 @@ The HTML Templates associated with the products page are:
 * checkout.html
 * footer.html
 
-The Shopping Basket page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Checkout page was tested and was marked 'pass' when the following expected behaviour was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
-* Update Quantity -- The User can update the quantity of a given product from their basket.
+* Delivery Details -- Form displays saved delivery details of registered users.
 
-* Remove Product -- The User can remove a given product from their basket.
+* Back To Shopping -- The User can return to basket page via the back to basket button.
 
-* Back To Shopping -- The User can return to products page via the back to shopping button.
+* Form Error Handling -- The user is informed if the form is invalid. 
 
 * Messages -- User is notified when an action is submitted or there are no products in their basket.
 
-* Go to checkout -- User can go to the checkout page via the Secure Checkout button.
+* Submit order -- The User can submit an order.
 
 <br>
 
-| Auth Status     | Can Access | Form Validation | Is Notified (Success) | Is Notified (Info) | Back to Products |
-|-----------------|------------|-----------------|-----------------------|--------------------|------------------|
-| Admin           | yes/pass   | yes/pass        | yes/pass              | yes/pass           | yes/pass         |
-| Registered User | no/pass    | n/a             | n/a                   | n/a                | n/a              |
-| Anonymous User  | no/pass    | n/a             | n/a                   | n/a                | n/a              |
+| Auth Status     | Details Saved | Form Error Handling | Back To basket | Messages | Submit Order |
+|-----------------|---------------|---------------------|----------------|----------|--------------|
+| Admin           | yes/pass      | yes/pass            | yes/pass       | yes/pass | yes/pass     |
+| Registered User | yes/pass      | yes/pass            | yes/pass       | yes/pass | yes/pass     |
+| Anonymous User  | no/pass       | yes/pass            | yes/pass       | yes/pass | yes/pass     |
 <br>
 
-Shopping Basket page validator testing.
+Checkout page validator testing.
 
 The Shopping Basket page was passed through the W3C HTML Validator and returned just one justifiable warning.
 
