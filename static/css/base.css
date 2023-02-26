@@ -726,6 +726,10 @@ video {
     object-fit: cover;
 }
 
+.basket-heading {
+    font-size: larger;
+}
+
 .basket-checkout {
     width: 100%;
 }

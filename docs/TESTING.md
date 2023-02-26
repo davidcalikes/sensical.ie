@@ -301,15 +301,15 @@ The Shopping Basket page was tested and was marked 'pass' when the following exp
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
-* Product Management Access -- Product Management is only available to Admin users.
+* Update Quantity -- The User can update the quantity of a given product from their basket.
 
-* Form Validation -- The form returned validation error message if form was invalid
+* Remove Product -- The User can remove a given product from their basket.
 
-* Cancel -- The User can cancel the action and return to products page.
+* Back To Shopping -- The User can return to products page via the back to shopping button.
 
-* Message Success -- User is notified when a product is added.
+* Messages -- User is notified when an action is submitted or there are no products in their basket.
 
-* Message Info -- User is notified when a editing a product.
+* Go to checkout -- User can go to the checkout page via the Secure Checkout button.
 
 <br>
 
