@@ -374,6 +374,10 @@ video {
     margin-top: 6rem;
 }
 
+.related-links  {
+    height: 100%;
+}
+
 .related-links a {
     color: white !important;
 }
@@ -381,7 +385,6 @@ video {
 
 .footer-container-bg {
     text-align: center;
-    /* max-width: 1800px; */
 }
 
 .lower-footer {
@@ -440,26 +443,40 @@ video {
     padding-right: 0.5rem;
 }
 
+.irish-logo-container {
+    width: 100%;
+}
+
 .footer-irish-logo {
-    width: 200px;
-    margin-top: 1rem;
+    width: 70%;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .iwa-logo {
-    width: 100px;
+    width: 70%;
+    height: auto;
 }
 
 .hse-logo {
-    width: 50px;
+    width: 70%;
+    height: auto;
 }
 
 .autism-logo {
-    width: 150px;
+    width: 80%;
+    height: auto;
     background-color: white;
 }
 
 .adhd-logo {
-    width: 100px;
+    width: 70%;
+    height: auto;
 }
 
 .footer-disclaimer {
@@ -783,6 +800,7 @@ video {
     video {
         height: 330px;
     }
+    }
 
 @media (min-width: 1200px) {
     .container {
@@ -793,6 +811,10 @@ video {
 @media screen and (max-width: 991px) {
     .navbar {
         width: 100%;
+    }
+
+    #nav-logo {
+        display: none;
     }
 
     #home-hero {
@@ -877,6 +899,12 @@ video {
     .footer-info-text {
         padding-right: 0;
     }
+
+    .irish-logo-container {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
     
     .footer-socials {
         padding: 0;
@@ -934,6 +962,10 @@ video {
     }
     .wishlist-container {
         margin-top: 150px;
+    }
+    .irish-logo-container {
+        width: 75%;
+        margin-left: 12.5%;
     }
     }
 
@@ -1007,6 +1039,10 @@ video {
     }
     .wishlist-img {
         min-width: 240px;
+    }
+    .irish-logo-container {
+        width: 100%;
+        margin-left: 0;
     }
     }
 
