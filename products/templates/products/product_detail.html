@@ -11,6 +11,9 @@
             <h2 class="mb-4 text-center">{{ product.name }}</h2>
         </div>
     </div>
+
+    <input type="checkbox" class="hide-toggle" id="hide-no-stock">
+    <label class="mb-3 hide-toggle" for="hide-no-stock">Available Products Only</label>
     
     <div class="row mt-4">
         <div class="col-sm-12 col-md-6">
@@ -31,22 +34,22 @@
 
                     <p class="pl-2"> {{ product.description }} <p>
                         {% if 'ADHD' in product.for_sensory_needs|stringformat:'s' %}
-                        <i class="icon pl-2 fa-solid fa-eye"></i>&nbsp
+                        <i class="icon pl-2 fa-solid fa-eye"></i>&nbsp;
                         {% endif %}
                         {% if 'ASD' in product.for_sensory_needs|stringformat:'s' %}
-                        <i class="icon pl-2 fa-solid fa-rainbow"></i>&nbsp
+                        <i class="icon pl-2 fa-solid fa-rainbow"></i>&nbsp;
                         {% endif %}
                         {% if 'TOUCH' in product.for_sensory_needs|stringformat:'s' or 'TACTILE' in product.for_sensory_needs|stringformat:'s' %}
-                        <i class=" icon pl-2 fa-solid fa-hands"></i>&nbsp
+                        <i class=" icon pl-2 fa-solid fa-hands"></i>&nbsp;
                         {% endif %}
                         {% if 'SOUND' in product.for_sensory_needs|stringformat:'s' %}
-                        <i class="icon pl-2 fa-solid fa-headphones"></i>&nbsp
+                        <i class="icon pl-2 fa-solid fa-headphones"></i>&nbsp;
                         {% endif %}
                         {% if 'RELAX' in product.for_sensory_needs|stringformat:'s' %}
-                        <i class="icon pl-2 fa-solid fa-moon"></i>&nbsp
+                        <i class="icon pl-2 fa-solid fa-moon"></i>&nbsp;
                         {% endif %}
                         {% if 'LIGHT' in product.for_sensory_needs|stringformat:'s' %}
-                        <i class="icon pl-2 fa-regular fa-lightbulb"></i>&nbsp
+                        <i class="icon pl-2 fa-regular fa-lightbulb"></i>&nbsp;
                         {% endif %}
                     <p class="mb-0"><small class="pl-2">SKU: {{ product.sku }} </small></p>
                     <small class="pl-2"> Product Rating: <i class="fas fa-star mr-1"></i> {{ product.rating }} /5</small>
@@ -90,7 +93,7 @@
                             </div>
                             {% if product.in_stock %}
                             <div class="col-12 my-2">
-                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" min="1" max="10" type="submit" value="&#xf291; Add To Basket">
+                                <input class="fa-input sensical-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% else %}
@@ -127,6 +130,34 @@
             </div>
         </div>
     </div>
-</div>
+
+<!-- Script for Availability Toggle Selector -->
+
+<script>
+    function availabilityToggleState() {
+        const stockFunction = document.getElementsByClassName("out-of-stock")
+        const hideNoStock = document.querySelector('#hide-no-stock');
+        let toggleIs = localStorage.getItem("checkbox");
+        if (toggleIs == "true") {
+            hideNoStock.click();
+        }
+    }
+
+    const stockFunction = document.getElementsByClassName("out-of-stock")
+    const hideNoStock = document.querySelector('#hide-no-stock');
+    hideNoStock.addEventListener('change', function (e) {
+        if (hideNoStock.checked) {
+            localStorage.setItem("checkbox", true);
+            for (let i = 0; i < stockFunction.length; i += 1) {
+                stockFunction[i].style.display = 'none'; {}
+            }
+        } else {
+            localStorage.setItem("checkbox", false);
+            for (let i = 0; i < stockFunction.length; i += 1) {
+                stockFunction[i].style.display = 'block';
+            }
+        }
+    })
+</script>
 
 {% endblock content %}

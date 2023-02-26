@@ -496,6 +496,12 @@ video {
     width: 180px;
 }
 
+.hide-toggle {
+    display: none;
+}
+
+
+
 .count-align {
     align-items: end;
     justify-content: end;

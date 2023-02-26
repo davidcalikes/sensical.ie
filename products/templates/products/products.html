@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <!-- Sort Selector -->
+    <!-- Sort Selector & Availability Toggle -->
 
     <div class="row">
         <div class="col-sm-12 col-md-6 products-query-strap">
@@ -232,10 +232,8 @@
             const stockFunction = document.getElementsByClassName("out-of-stock")
             const hideNoStock = document.querySelector('#hide-no-stock');
             let toggleIs = localStorage.getItem("checkbox");
-            console.log(toggleIs)
             if (toggleIs == "true") {
                 hideNoStock.click();
-                console.log("toggle click has fired")
             }
         }
 
