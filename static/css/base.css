@@ -139,7 +139,8 @@ a {
 /* **** Nav Elements **** */
 
 #nav-logo {
-    height: 76px;
+    width: 56%;
+    height: auto;
 }
 
 .mobile-nav {
@@ -408,7 +409,8 @@ video {
 }
 
 .footer-inv-logo {
-    width: 180px;
+    width: 70%;
+    height: auto;
 }
 
 .footer-contact-text {
@@ -793,6 +795,11 @@ video {
 
 #mc_embed_signup input {
     border-radius: 0;
+}
+
+.chimp-logo {
+    width: 100%;
+    height: auto;
 }
 /* **** MEDIA QUERIES **** */
 
