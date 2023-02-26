@@ -350,7 +350,7 @@ The SEO Score was low here because the basket is included in the robots.txt file
 <details>
 
 <summary>
-Checkout Page Testing</summary><br>
+Checkout Pages Testing</summary><br>
 
 The HTML Templates associated with the products page are:
 
@@ -358,6 +358,7 @@ The HTML Templates associated with the products page are:
 * main-nav.html
 * mobile-top-header.html
 * checkout.html
+* checkout_success.html
 * footer.html
 
 The Checkout page was tested and was marked 'pass' when the following expected behaviour was produced.
@@ -404,7 +405,13 @@ _Desktop Lighthouse Performance Testing Screenshot_
 <img src="../docs/testing_images/lighthouse_9.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-In future versions of the app I hope to significantly improve mobile performance.
+The Checkout Success page was also tested in W3 and is fully functional.
+
+<img src="../docs/testing_images/w3_checkout_success.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/auth_checkout.png"><br>
+_Checkout Success Testing Screenshot_ 
 <br>
 </details>
 

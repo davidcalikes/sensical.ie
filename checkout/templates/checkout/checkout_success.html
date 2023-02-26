@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+<!-- Checkout Success Page -->
+
 {% block extra_title %} - Order Complete{% endblock %}
 
 {% block content %}
@@ -12,7 +14,7 @@
     
     <div class="row">
         <div class="col-12 text-center mt-3">
-            <h1><i class="fa-solid fa-circle-check"></i></h1>
+            <h1 class="text-center"><span class="sr-only">Check Icon</span><i class="fa-solid fa-circle-check"></i></h1>
             <h2>Order Complete!</h2>
             <p> A confirmation email has been sent to {{ order.email }}
             </p>

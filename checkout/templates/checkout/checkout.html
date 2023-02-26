@@ -3,7 +3,7 @@
 {% load basket_tools %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 <!-- Checkout Page -->
@@ -19,10 +19,13 @@
     <div class="loading-spinner">
         <div class="text-center p-3">
             <div>
-                <img class="spinner" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676126779/ezgif.com-apng-to-gif_2_qq88g5.gif" alt="">
+                <img class="spinner"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676126779/ezgif.com-apng-to-gif_2_qq88g5.gif"
+                    alt="">
             </div>
             <H2>Processing Payment... Please Wait!</H2>
-            <h4 class="mt-4 text-center  d-flex justify-content-center align-items-center">Powered by &nbsp; <i class="fa-brands fa-2x fa-cc-stripe"></i></h4>
+            <h4 class="mt-4 text-center  d-flex justify-content-center align-items-center">Powered by &nbsp; <i
+                    class="fa-brands fa-2x fa-cc-stripe"></i></h4>
         </div>
     </div>
 </div>
@@ -35,7 +38,8 @@
             <h2>Checkout</h2>
         </div>
         <div class="col-12 text-center mb-4">
-            <p class="mb-0 item-count-header mt-2">Order Summary: {{ item_count }} items totalling €{{ grand_total|floatformat:2 }} (includes delivery)
+            <p class="mb-0 item-count-header mt-2">Order Summary: {{ item_count }} items totalling
+                €{{ grand_total|floatformat:2 }} (includes delivery)
         </div>
     </div>
 
@@ -44,32 +48,33 @@
     <div class="row mt-4">
         <div class="col-12 col-lg-6 text-center mt-3">
             {% for item in basket_items %}
-                <div class="container-fluid checkout-item-container mb-3"> 
-                    <div class="row">
-                        <div class="col-12 col-md-4 mb-1 d-flex justify-content-center">
-                            <a href="{% url 'product_detail' item.product.id %}">
-                                {% if item.product.image %}
-                                <div class="checkout-image-container">
-                                    <img class="checkout-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                                </div>
-                                {% endif %}
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-4 text-center checkout-item-details">
-                            <div>
+            <div class="container-fluid checkout-item-container mb-3">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-1 d-flex justify-content-center">
+                        <a href="{% url 'product_detail' item.product.id %}">
+                            {% if item.product.image %}
+                            <div class="checkout-image-container">
+                                <img class="checkout-img" src="{{ item.product.image.url }}"
+                                    alt="{{ item.product.name }}">
+                            </div>
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center checkout-item-details">
+                        <div>
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            </div>
-                            
                         </div>
-                        <div class="col-12 col-md-4 text-center checkout-item-details mb-4">
-                            <div>
-                                <p class="my-1">Qty: {{ item.quantity }}</p>
-                                <p class="my-1">Price: €{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                            </div>
+
+                    </div>
+                    <div class="col-12 col-md-4 text-center checkout-item-details mb-4">
+                        <div>
+                            <p class="my-1">Qty: {{ item.quantity }}</p>
+                            <p class="my-1">Price: €{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+            </div>
+            {% endfor %}
         </div>
 
         <!-- Payment Form -->
@@ -78,7 +83,8 @@
             <div class="panel-group" id="checkout-accordian">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details <span><i class="ml-3 fa-solid fa-circle-arrow-down text-right"></i></span> </p>
+                        <p class="panel-title p-3" data-target="#panel-1" data-toggle="collapse">Your Delivery Details
+                            <span><i class="ml-3 fa-solid fa-circle-arrow-down text-right"></i></span> </p>
                     </div>
                     <div class="panel-collapse collapse show" id="panel-1">
                         <div class="panel-body">
@@ -100,32 +106,36 @@
                                     {{ order_form.eircode | as_crispy_field }}
                                     <div class="form-check form-check-inline float-right mr-0">
                                         {% if user.is_authenticated %}
-                                            <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
-                                            <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                                        <label class="form-check-label" for="id-save-info">Save this delivery
+                                            information to my profile</label>
+                                        <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info"
+                                            name="save-info" checked>
                                         {% else %}
-                                            <label class="form-check-label" for="id-save-info">
-                                                <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                                <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
-                                            </label>
+                                        <label class="form-check-label" for="id-save-info">
+                                            <a class="text-info" href="{% url 'account_signup' %}">Create an account</a>
+                                            or
+                                            <a class="text-info" href="{% url 'account_login' %}">login</a> to save this
+                                            information
+                                        </label>
                                         {% endif %}
                                     </div>
                                 </fieldset>
                             </form>
-                            </div>
                         </div>
                     </div>
-                    <p>Enter your card details and press 'Submit Order' to complete your order...</p>
+                </div>
+                <p>Enter your card details and press 'Submit Order' to complete your order...</p>
                 <fieldset class="payment-strip mb-4 px-3">
                     <legend class="fieldset-label d-none small">Card Details</legend>
                     <div class="mb-3" id="card-element"></div>
                     <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-        
+
                     <input form="payment-form" type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
                 <div class="text-center text-lg-right my-2">
                     <button form="payment-form" id="submit-button" class="sensical-button">
-                        <span><i class="fas fa-lock"></i> Submit Order</span>                    
+                        <span><i class="fas fa-lock"></i> Submit Order</span>
                     </button>
                 </div>
                 <div class="text-center text-lg-right my-2">
@@ -134,12 +144,13 @@
                         <span class="text-uppercase">Back to Basket</span>
                     </a>
                 </div>
-                <div class="text-center text-lg-right my-3">                    
+                <div class="text-center text-lg-right my-3">
                     <p class="small text-warning mr-2">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span>Your credit/debit card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
+                        <span>Your credit/debit card will be charged
+                            <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
                 <div class="mt-1 checkout-card-icons">
@@ -149,20 +160,22 @@
                     <i class="fa-brands fa-2x fa-cc-amex mr-1"></i>
                 </div>
                 <div>
-                    <p class="mt-4 small text-center text-lg-right"><a class="text-light" href="https://res.cloudinary.com/djck2eqxo/image/upload/v1676718400/sensical/sensical-terms-and-conditions_axz5zk.pdf" target="_blank">Terms & Conditions</a></p>
+                    <p class="mt-4 small text-center text-lg-right"><a class="text-light"
+                            href="https://res.cloudinary.com/djck2eqxo/image/upload/v1676718400/sensical/sensical-terms-and-conditions_axz5zk.pdf"
+                            target="_blank">Terms & Conditions</a></p>
                 </div>
-                            
+
             </div>
-        </div>    
+        </div>
     </div>
 </div>
 {% endblock content %}
 
- <!-- Stripe JS -->
+<!-- Stripe JS -->
 
 {% block postloadjs %}
-    {{ block.super }}
-    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ client_secret|json_script:"id_client_secret" }}
-    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock postloadjs %}
