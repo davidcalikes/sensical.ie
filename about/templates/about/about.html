@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- About Page -->
+
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+<link rel="stylesheet" href="{% static 'about/css/about.css' %}">
 {% endblock %}
 
 {% block extra_title %} - About Us{% endblock %}
@@ -11,12 +13,14 @@
 <div class="replace-about-heading">
     <h2 class="col-12 text-center mb-4">About Us</h2>
 </div>
+
+<!-- Video For Small Mobiles -->
+
 <hr class="message-rule replace-about-rule">
 <div class="mobile-video-box">
     <div class="video-container">
         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jom2VcYoUN0?autoplay=1&mute=1&texttrack=on"
-            title="YouTube video player" frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
             allowfullscreen>
         </iframe>
     </div>
@@ -26,27 +30,37 @@
         <h2 class="col-12 text-center mb-4 main-about-heading">About Us</h2>
     </div>
 
+    <!-- Video -->
+
     <hr class="message-rule main-about-rule">
     <div class="row">
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width video-box">
                 <div class="video-container">
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jom2VcYoUN0?autoplay=1&mute=1&texttrack=on"
-                        title="YouTube video player" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-                        allowfullscreen>
+                    <iframe class="responsive-iframe"
+                        src="https://www.youtube.com/embed/jom2VcYoUN0?autoplay=1&mute=1&texttrack=on"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
                     </iframe>
                 </div>
             </div>
         </div>
+
+        <!-- About page text & media content -->
+
         <div class="col-12 col-lg-6 main-about-blurb text-center">
             <div class="about-text pt-1">
-                <img class="about-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677334571/sensical/sensical_webp/sensical_mobile_inverted_nav_gsdlry_pnqifa.webp" alt="About page hero image">
+                <img class="about-logo"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677334571/sensical/sensical_webp/sensical_mobile_inverted_nav_gsdlry_pnqifa.webp"
+                    alt="About page hero image">
                 <hr class="about-logo-rule">
-                <p>Sensical Multi-Sensory Solutions, is a Sensory equipment provision service operating in the North East of Ireland.</p>
-                <p>Sensical, can create a pop-up style sensory room in virtually any small to medium sized space in a matter of minutes.</p>
-                <p>Our Irish-owned, family-run, business has been in operation since 2018. As the company continues to grow, 2023 will see further expansion with the introduction of our sensory equipment webstore.</p>
-                
+                <p>Sensical Multi-Sensory Solutions, is a Sensory equipment provision service operating in the North
+                    East of Ireland.</p>
+                <p>Sensical, can create a pop-up style sensory room in virtually any small to medium sized space in a
+                    matter of minutes.</p>
+                <p>Our Irish-owned, family-run, business has been in operation since 2018. As the company continues to
+                    grow, 2023 will see further expansion with the introduction of our sensory equipment webstore.</p>
+
             </div>
         </div>
     </div>
@@ -56,21 +70,27 @@
                 <i class="fa-solid fa-basket-shopping"></i>
                 <h3>Webstore</h3>
                 <hr class="about-logo-rule">
-                <p class="mt-5">Our new e-commerce webstore will allow our existing customer base, as well as new service users to purchase supplementary products
-                    which can be used to enhance the users experience in any existing sensory space, or alongside our Mobile Sensory Environments service.</p>
+                <p class="mt-5">Our new e-commerce webstore will allow our existing customer base, as well as new
+                    service users to purchase supplementary products
+                    which can be used to enhance the users experience in any existing sensory space, or alongside our
+                    Mobile Sensory Environments service.</p>
                 <p class="mt-4">Keep reading below to find out about hiring our equipment </p>
             </div>
         </div>
         <div class="col-12 col-lg-6 my-4 order-lg-4 text-center d-flex align-items-center">
             <div class="media-width p-2">
-                <img class="about-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676816007/sensical/IMG_7957_yplk6m.jpg" alt="A screenshot of the sensical.ie webstore">
+                <img class="about-img"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676816007/sensical/IMG_7957_yplk6m.jpg"
+                    alt="A screenshot of the sensical.ie webstore">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width p-2">
-                <img class="about-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676815990/sensical/Screen_Shot_2023-02-19_at_14.10.08_xli0w3.png" alt="An image of sensory equpiment">
+                <img class="about-img"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676815990/sensical/Screen_Shot_2023-02-19_at_14.10.08_xli0w3.png"
+                    alt="An image of sensory equpiment">
             </div>
         </div>
         <div class="col-12 col-lg-6 my-4 text-center">
@@ -78,20 +98,32 @@
                 <i class="fa-solid fa-truck-ramp-box"></i>
                 <h3>Equipment Hire</h3>
                 <hr class="about-logo-rule">
-                <p class="mt-5">The cornerstone of our business and the foundation for everything we do here at Sensical, Our Mobile Sensory Environments service 
-                    provides our customers with access to industry standard sensory equipment at a reasonable price. Our Compact, portable systems can create stunning, atmospheric, sensory environments in almost any small to medium sized space.</p>
-                <p class="mt-4">But don't just take our word for it. Read the testimonials of some of our satisfied customers below. </p>
+                <p class="mt-5">The cornerstone of our business and the foundation for everything we do here at
+                    Sensical, Our Mobile Sensory Environments service
+                    provides our customers with access to industry standard sensory equipment at a reasonable price. Our
+                    Compact, portable systems can create stunning, atmospheric, sensory environments in almost any small
+                    to medium sized space.</p>
+                <p class="mt-4">But don't just take our word for it. Read the testimonials of some of our satisfied
+                    customers below. </p>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Contact Links -->
+
 <div class="col-12 about-socials d-flex align-items-center justify-content-center">
-    <a class="about-social-icon" href="https://www.facebook.com/sensicalMSE" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
-    <a class="about-social-icon" href="https://twitter.com/" target="_blank" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
-    <img class="contacts-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673384957/sensical/mobile_nav_xs_p86xyq.png" alt="sensical logo">
-    <a class="about-social-icon" href="mailto:info@sensical.ie" target="_blank" aria-label="email"><i class="fa-solid fa-envelope"></i></a>
-    <a class="about-social-icon" href="tel:+4733378901" target="_blank" aria-label="phone"><i class="fa-solid fa-square-phone"></i></a>
+    <a class="about-social-icon" href="https://www.facebook.com/sensicalMSE" target="_blank" aria-label="facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+    <a class="about-social-icon" href="https://twitter.com/" target="_blank" aria-label="twitter"><i
+            class="fa-brands fa-twitter"></i></a>
+    <img class="contacts-logo"
+        src="https://res.cloudinary.com/djck2eqxo/image/upload/v1673384957/sensical/mobile_nav_xs_p86xyq.png"
+        alt="sensical logo">
+    <a class="about-social-icon" href="mailto:info@sensical.ie" target="_blank" aria-label="email"><i
+            class="fa-solid fa-envelope"></i></a>
+    <a class="about-social-icon" href="tel:+4733378901" target="_blank" aria-label="phone"><i
+            class="fa-solid fa-square-phone"></i></a>
 </div>
 
 <div class="text-center my-4">
@@ -99,6 +131,8 @@
 </div>
 
 <hr class="message-rule">
+
+<!-- Testimonials Carousel -->
 
 <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -110,29 +144,35 @@
         <div class="carousel-inner">
             {% for testimonial in testimonials %}
             {% if testimonial.id == 1 %}
-                <div class="carousel-item carousel-item-text text-center active">                    
-                    <img class="img-fluid carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg" alt="First Slide">
-                    <div class="carousel-caption d-md-block">
-                        <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
-                        <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
-                    </div>
+            <div class="carousel-item carousel-item-text text-center active">
+                <img class="img-fluid carousel-item-img"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg"
+                    alt="First Slide">
+                <div class="carousel-caption d-md-block">
+                    <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
+                    <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
                 </div>
+            </div>
             {% elif testimonial.id == 2 %}
-                <div class="carousel-item carousel-item-text text-center">
-                    <img class="carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676417286/sensical/pexels-amar-preciado-10196786_myqnmd.jpg" alt="Second Slide">                   
-                    <div class="carousel-caption d-md-block">
-                        <h3 class="my-4 testimonial-heading" >{{ testimonial.name }}</h3>
-                        <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
-                    </div>
+            <div class="carousel-item carousel-item-text text-center">
+                <img class="carousel-item-img"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676417286/sensical/pexels-amar-preciado-10196786_myqnmd.jpg"
+                    alt="Second Slide">
+                <div class="carousel-caption d-md-block">
+                    <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
+                    <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
                 </div>
+            </div>
             {% elif testimonial.id == 7 %}
-                <div class="carousel-item carousel-item-text text-center">
-                    <img class="carousel-item-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676412887/sensical/pexels-anthony-_-794495_k3us9t.jpg" alt="Second Slide">                   
-                    <div class="carousel-caption d-md-block">
-                        <h3 class="my-4 testimonial-heading" >{{ testimonial.name }}</h3>
-                        <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
-                    </div>
+            <div class="carousel-item carousel-item-text text-center">
+                <img class="carousel-item-img"
+                    src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676412887/sensical/pexels-anthony-_-794495_k3us9t.jpg"
+                    alt="Second Slide">
+                <div class="carousel-caption d-md-block">
+                    <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
+                    <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
                 </div>
+            </div>
             {% endif %}
             {% endfor %}
             <a class="carousel-control-prev " href="#testimonialsCarousel" role="button" data-slide="prev">
@@ -152,12 +192,11 @@
         </div>
     </div>
 </div>
-        
-    
+
+<!-- Links to all Testimonials -->
+
 <div class="col-12 test-link text-center">
-    <a class="sensical-button" href="{% url 'testimonials' %}">View All Testimonials</a> 
+    <a class="sensical-button" href="{% url 'testimonials' %}">View All Testimonials</a>
 </div>
-
-
 
 {% endblock content %}

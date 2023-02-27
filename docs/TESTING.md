@@ -8,7 +8,7 @@ I have used dropdown menus for each page to make the documentation more human re
 <summary>
 Home Page Testing</summary><br>
 
-The HTML Templates associated with the home page are:
+The HTML Templates associated with the Home page are:
 
 * base.html
 * main-nav.html
@@ -155,7 +155,7 @@ In future versions of the app I hope to significantly improve mobile performance
 <summary>
 Product Detail Page Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Product Detail page are:
 
 * base.html
 * main-nav.html
@@ -224,7 +224,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Product Management Pages Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Product Management pages are:
 
 * base.html
 * main-nav.html
@@ -289,7 +289,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Shopping Basket Page Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Shopping Basket page are:
 
 * base.html
 * main-nav.html
@@ -352,7 +352,7 @@ The SEO Score was low here because the basket is included in the robots.txt file
 <summary>
 Checkout Pages Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Chackout page are:
 
 * base.html
 * main-nav.html
@@ -479,7 +479,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Wishlist Page Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Wishlist page are:
 
 * base.html
 * main-nav.html
@@ -538,7 +538,7 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <summary>
 Packages Pages Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Packages page are:
 
 * base.html
 * main-nav.html
@@ -668,7 +668,7 @@ The Testimonials page was passed through the W3C HTML Validator and returned no 
 _W3C HTML Validator Testing Screenshot_ 
 
 <br>
-The Shopping Basket page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+The Testimonials page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
 <img src="../docs/testing_images/wcag_testimonials.png"><br>
 _WCAG Validator Testing Screenshot_
@@ -693,6 +693,64 @@ The Form Page was also tested in lighthouse.
 
 <img src="../docs/testing_images/lighthouse_23.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
+
+<br>
+</details>
+
+<br>
+
+<details>
+
+<summary>
+About Page Testing</summary><br>
+
+The HTML Templates associated with the About page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* About
+* footer.html
+
+The About page was tested and was marked 'pass' when the following expected behaviour was produced.
+
+* Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
+
+* Contact Links -- The User can access the contact links banner, each link functions and opens in a new tab. (Where relevant)
+
+* Testimonials Carousel -- The User operate the Testimonials Carousel using the arrow buttons provided
+
+* View All Testimonials -- User can access the testimonials page from the link provided.
+
+<br>
+
+| Auth Status     | Contact Links | Carousel | Access Testimonials |
+|-----------------|---------------|----------|---------------------|
+| Admin           | yes/pass      | yes/pass | yes/pass            |
+| Registered User | yes/pass      | yes/pass | yes/pass            |
+| Anonymous User  | yes/pass      | yes/pass | yes/pass            |
+<br>
+
+About page validator testing.
+
+The About page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/w3_about.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<br>
+The About page was passed through the WCAG Color contrast checker and returned some errors. The first two errors seen in the supporting image is from a table row in the WCAG table itself so could be safely ignored. I also ignored the third issue as the WCAG software thought the grey of the Carousel indicator was not visible against the background. having cycled through the images of the feature, I concluded that there are no contrast issues whatsoever and the background carousel images have good contrast with the slide indicator. 
+
+<img src="../docs/testing_images/wcag_about.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The About page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/lighthouse_24.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/lighthouse_25.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
 
 <br>
 </details>

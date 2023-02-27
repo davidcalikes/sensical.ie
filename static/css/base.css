@@ -262,6 +262,10 @@ a.nav-link {
     margin-top: 180px;
 }
 
+.responsive-iframe {
+    border: 0 !important;
+}
+
 video {
     position: absolute;
     display: block;
