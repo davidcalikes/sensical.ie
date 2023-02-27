@@ -813,5 +813,35 @@ _Mobile Lighthouse Performance Testing Screenshot_
 <br>
 </details>
 
+<br>
+
+<details>
+
+<summary>
+Other Templates</summary><br>
+
+The Remaining Templates I Tested Are:
+
+(Allauth Templates)
+
+* login.html
+* logout.html
+* signup.html
+
+Screenshots from allauth templates:
+
+<img src="../docs/testing_images/w3_login.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/w3_logout.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/w3_signup.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<br>
+</details>
+
+
 
 

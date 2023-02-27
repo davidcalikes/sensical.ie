@@ -1,7 +1,7 @@
 {% extends "account/base.html" %}
-
 {% load i18n %}
-{% load account socialaccount %}
+
+<!-- login -->
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
@@ -9,14 +9,15 @@
 
 <div class="col-12 d-flex justify-content-center">
   <div class="auth-container text-center">
-    <h1 class="text-center"><i class="fa-solid fa-right-to-bracket"></i></h1>
+    <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-right-to-bracket"></i></h1>
+    
 
 
     <h2>{% trans "Sign In" %}</h2>
 
-      <div class="login-or">{% trans 'or' %}</div>
+    <div class="login-or">{% trans 'or' %}</div>
 
-      <p>{% blocktrans %}If you have not created an account yet, then please
+    <p>{% blocktrans %}If you have not created an account yet, then please
       <a class="text-light font-italic" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 
     <form class="login text-center" method="POST" action="{% url 'account_login' %}">
@@ -25,11 +26,10 @@
       {% if redirect_field_value %}
       <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
       {% endif %}
-      <a class="button text-light secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-      <button class="primaryAction sensical-button" type="submit"><i class="fa-solid fa-right-to-bracket"></i> {% trans "Sign In" %}</button>
+      <button class="primaryAction sensical-button" type="submit"><i class="fa-solid fa-right-to-bracket"></i>
+        {% trans "Sign In" %}</button>
     </form>
   </div>
 </div>
-
 
 {% endblock %}
