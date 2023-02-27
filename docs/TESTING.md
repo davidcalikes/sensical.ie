@@ -597,8 +597,10 @@ _Desktop Lighthouse Performance Testing Screenshot_
 <img src="../docs/testing_images/lighthouse_19.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/lighthouse_19.png"><br>
-_Mobile Lighthouse Performance Testing Screenshot_
+The Custom Packages Page was also tested...
+
+<img src="../docs/testing_images/lighthouse_20.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
 
 <img src="../docs/testing_images/w3_packages_form.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
@@ -624,59 +626,74 @@ _W3C HTML Validator Testing Screenshot_
 <summary>
 Testimonials Pages Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the testimonials page are:
 
 * base.html
 * main-nav.html
 * mobile-top-header.html
-* shopping-basket.html
+* testimonials.html
+* testimonials_form.html
+* clienttestimonial_confirm_delete.html
 * footer.html
 
-The Shopping Basket page was tested and was marked 'pass' when the following expected behaviour was produced.
+In this section, I tested the main Testimonials page first and in the interest of brevity, I tested it and the other templates
+and features running lighthouse in the local server.
+
+The Testimonials page was tested and was marked 'pass' when the following expected behaviour was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
-* Update Quantity -- The User can update the quantity of a given product from their basket.
+* Facebook Links -- The User can access the Facebook Page to make an enquiry.
 
-* Remove Product -- The User can remove a given product from their basket.
+* About Page -- The User can go to the about page via the link provided.
 
-* Back To Shopping -- The User can return to products page via the back to shopping button.
+* Add/Update Testimonial -- Admin user can add, update and delete a testimonial.
 
-* Messages -- User is notified when an action is submitted or there are no products in their basket.
-
-* Go to checkout -- User can go to the checkout page via the Secure Checkout button.
+* Messages -- User is notified when an action is submitted.
 
 <br>
 
-| Auth Status     | Update Qyt | Delete Product | Back To Shopping | Messages | Go To Checkout |
-|-----------------|------------|----------------|------------------|----------|----------------|
-| Admin           | yes/pass   | yes/pass       | yes/pass         | yes/pass | yes/pass       |
-| Registered User | yes/pass   | yes/pass       | yes/pass         | yes/pass | yes/pass       |
-| Anonymous User  | yes/pass   | yes/pass       | yes/pass         | yes/pass | yes/pass       |
+| Auth Status     | About Link | Facebook Link | Add Testimonial | Update/Delete Testimonial |
+|-----------------|------------|---------------|-----------------|---------------------------|
+| Admin           | yes/pass   | no/pass       | yes/pass        | yes/pass                  |
+| Registered User | yes/pass   | yes/pass      | no/pass         | no/pass                   |
+| Anonymous User  | yes/pass   | yes/pass      | no/pass         | no/pass                   |
 <br>
 
-Shopping Basket page validator testing.
+Testimonials page validator testing.
 
-The Shopping Basket page was passed through the W3C HTML Validator and returned just one justifiable warning.
+The Testimonials page was passed through the W3C HTML Validator and returned no errors
 
-<img src="../docs/testing_images/w3_shopping_basket.png"><br>
+<img src="../docs/testing_images/w3_testimonials.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
 <br>
 The Shopping Basket page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
-<img src="../docs/testing_images/wcag_basket.png"><br>
+<img src="../docs/testing_images/wcag_testimonials.png"><br>
 _WCAG Validator Testing Screenshot_
 
-The Shopping Basket page was passed through Lighthouse and returned the following performance results:
+The Testimonials page was passed through Lighthouse and returned the following performance results:
 
-<img src="../docs/testing_images/lighthouse_10.png"><br>
+<img src="../docs/testing_images/lighthouse_21.png"><br>
 _Desktop Lighthouse Performance Testing Screenshot_
 
-<img src="../docs/testing_images/lighthouse_11.png"><br>
+<img src="../docs/testing_images/lighthouse_22.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
-The SEO Score was low here because the basket is included in the robots.txt file.
+Other Testimonials Templates
+
+<img src="../docs/testing_images/w3_testimonials.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/w3_delete_testimonial.png"><br>
+_W3C HTML Validator Testing Screenshot_
+
+The Form Page was also tested in lighthouse.
+
+<img src="../docs/testing_images/lighthouse_23.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
 <br>
 </details>
 

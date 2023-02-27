@@ -3,21 +3,31 @@
 
 {% block extra_title %} - Testimonials{% endblock %}
 
+<!-- Testimonials Page -->
+
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
+<link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
 {% endblock %}
 
 {% block content %}
 <div class="testimonials-container">
-        
+
     <div class="text-center">
         <h2 class="col-12 text-center mb-4">All Testimonials</h2>
     </div>
+
+    <!-- Admin can add a testimonial -->
+
     {% if user.is_superuser %}
     <div class="col-12 text-center my-2">
-        <a class="sensical-button" href="{% url 'add_testimonial' %}"><i class="fa-solid fa-comment-medical"></i> Add Testimonial</a>
+        <a class="sensical-button" href="{% url 'add_testimonial' %}"><i class="fa-solid fa-comment-medical"></i> 
+            Add Testimonial
+        </a>
     </div>
     {% endif %}
+
+    <!-- Testimonials -->
+
     <hr class="message-rule">
     {% if all_testimonials_list %}
     {% for testimonial in all_testimonials_list %}
@@ -32,10 +42,18 @@
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
-                        <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
+                        <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i
+                                class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
                     </div>
                     <div class="col-12 my-2">
-                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i
+                                class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="row">
+                    <div class="col-12 text-center my-3">
+                        <a class="sensical-button my-2" href="https://www.facebook.com/sensicalMSE" target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                     </div>
                 </div>
                 {% endif %}
@@ -43,14 +61,16 @@
         </div>
         <div class="col-12 col-lg-4 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
             <div class="media-width">
-                <img class="testimonial-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
+                <img class="testimonial-img" src="{{ testimonial.photo_url }}"
+                    alt="A screenshot of a customer testimonial">
             </div>
         </div>
-        
+
         {% else %}
         <div class="col-12 col-lg-4 my-4 text-center d-flex align-items-center">
             <div class="media-width">
-                <img class="testimonial-img" src="{{ testimonial.photo_url }}" alt="A screengrab of a customer testimonial" alt="A screenshot of a customer testimonial">
+                <img class="testimonial-img" src="{{ testimonial.photo_url }}"
+                    alt="A screenshot of a customer testimonial">
             </div>
         </div>
         <div class="col-12 col-lg-8 my-4 text-center">
@@ -62,10 +82,18 @@
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
-                        <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
+                        <a class="sensical-button" href="{% url 'update_testimonial' testimonial.id %}"><i
+                                class="fa-solid fa-pen-to-square"></i> Update Testimonial</a>
                     </div>
                     <div class="col-12 my-2">
-                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                        <a class="sensical-button" href="{% url 'delete_testimonial' testimonial.id %}"><i
+                                class="fa-solid fa-trash"></i> Delete Testimonial</a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="row">
+                    <div class="col-12 text-center my-3">
+                        <a class="sensical-button my-2" href="https://www.facebook.com/sensicalMSE" target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                     </div>
                 </div>
                 {% endif %}
@@ -73,15 +101,18 @@
         </div>
         {% endif %}
     </div>
-        {% endfor %}
-        {% else %}
-        <h4 class="text-center">There are currently no testimonials to display</h4>
-        {% endif %}
-        <div class="row">
-            <div class="col-12 mt-4 text-center">
-                <a class="sensical-button" href="{% url 'about' %}">Back to about page</a> 
-            </div>
+    {% endfor %}
+    {% else %}
+
+    <!-- If no Testimonials Exist -->
+
+    <h4 class="text-center">There are currently no testimonials to display</h4>
+    {% endif %}
+    <div class="row">
+        <div class="col-12 mt-4 text-center">
+            <a class="sensical-button" href="{% url 'about' %}">Back to about page</a>
         </div>
+    </div>
 </div>
 
 {% endblock content %}
