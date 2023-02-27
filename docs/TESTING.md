@@ -709,7 +709,7 @@ The HTML Templates associated with the About page are:
 * base.html
 * main-nav.html
 * mobile-top-header.html
-* About
+* about.html
 * footer.html
 
 The About page was tested and was marked 'pass' when the following expected behaviour was produced.
@@ -750,6 +750,64 @@ The About page was passed through Lighthouse and returned the following performa
 _Desktop Lighthouse Performance Testing Screenshot_
 
 <img src="../docs/testing_images/lighthouse_25.png"><br>
+_Mobile Lighthouse Performance Testing Screenshot_
+
+<br>
+</details>
+
+<br>
+
+<details>
+
+<summary>
+Profile Page Testing</summary><br>
+
+The HTML Templates associated with the Profile page are:
+
+* base.html
+* main-nav.html
+* mobile-top-header.html
+* profile.html
+* footer.html
+
+The Profile page was tested and was marked 'pass' when the following expected behaviour was produced.
+
+* Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
+
+* Delivery Details Accordion -- The user can access their stored delivery details.
+
+* Order History Accordion -- The user can access their order history.
+
+* Products link -- User can access the products page from the link provided.
+
+<br>
+
+| Auth Status     | Delivery Accordion | Order History | Products Link |
+|-----------------|--------------------|---------------|---------------|
+| Admin           | yes/pass           | yes/pass      | yes/pass      |
+| Registered User | yes/pass           | yes/pass      | yes/pass      |
+| Anonymous User  | no/pass            | no/pass       | no/pass       |
+<br>
+
+Profile page validator testing.
+
+The Profile page was passed through the W3C HTML Validator and returned no errors
+
+<img src="../docs/testing_images/w3_profile.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<br>
+The Profile page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
+
+<img src="../docs/testing_images/wcag_profile.png"><br>
+_WCAG Validator Testing Screenshot_
+
+The About page was passed through Lighthouse and returned the following performance results:
+
+<img src="../docs/testing_images/lighthouse_26.png"><br>
+_Desktop Lighthouse Performance Testing Screenshot_
+
+<img src="../docs/testing_images/lighthouse_27.png"><br>
 _Mobile Lighthouse Performance Testing Screenshot_
 
 <br>

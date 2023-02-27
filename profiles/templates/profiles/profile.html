@@ -1,79 +1,88 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Profile Page  -->
+
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block extra_title %} - User Profile{% endblock %}
 
 
 {% block content %}
-    <div class="auth-container container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1><i class="fa-solid fa-user"></i></h1>
-                <h2>My Profile</h2>
-                
-                <p> Username: {{ user.username }}</p> 
-                <hr class="section-rule">
-            </div>
-            
+<div class="auth-container container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-user"></i></h1>
+            <h2>My Profile</h2>
+            <p> Username: {{ user.username }}</p>
+            <hr class="section-rule">
         </div>
 
-        <div class="panel-group" id="profile-accordian">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <p class="panel-title p-3 text-center" data-target="#panel-1"  data-toggle="collapse">Saved Delivery Details <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span></p>
-                </div>
-                <div class="panel-collapse collapse" data-parent="#profile-accordian" id="panel-1">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <p class="text-light">Default Delivery Information</p>
-                                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
-                                    {% csrf_token %}
-                                    {{ form|crispy }}
-                                    <button class="sensical-button float-right">Update Information</button>
-                                </form>
-                            </div>
+    </div>
+
+    <!-- Delivery Info -->
+
+    <div class="panel-group" id="profile-accordian">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <p class="panel-title p-3 text-center" data-target="#panel-1" data-toggle="collapse">Saved Delivery
+                    Details <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span></p>
+            </div>
+            <div class="panel-collapse collapse" data-parent="#profile-accordian" id="panel-1">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="text-light">Default Delivery Information</p>
+                            <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                                {% csrf_token %}
+                                {{ form|crispy }}
+                                <button class="sensical-button float-right">Update Information</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <p class="panel-title p-3 text-center" data-target="#panel-2" data-toggle="collapse">Order History <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span><p>
-                </div>
-                <div class="panel-collapse collapse" data-parent="#profile-accordian" id="panel-2">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <div class="order-history table-responsive">
-                                    <table class="table text-light table-sm table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th>Order Number</th>
-                                                <th>Date</th>
-                                                <th>Order Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {% for order in orders %}
-                                                <tr>
-                                                    <td>
-                                                        <a class="text-light" href="{% url 'order_history' order.order_number %}"
-                                                        title="{{ order.order_number }}">
-                                                            {{ order.order_number|truncatechars:6 }}
-                                                        </a>
-                                                    </td>
-                                                    <td>{{ order.date }}</td>
-                                                    <td>€{{ order.grand_total }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
-                                </div>
+        </div>
+
+        <!-- Order History  -->
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <p class="panel-title p-3 text-center" data-target="#panel-2" data-toggle="collapse">Order History
+                    <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span>
+                    <p>
+            </div>
+            <div class="panel-collapse collapse" data-parent="#profile-accordian" id="panel-2">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="order-history table-responsive">
+                                <table class="table text-light table-sm table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th>Order Number</th>
+                                            <th>Date</th>
+                                            <th>Order Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for order in orders %}
+                                        <tr>
+                                            <td>
+                                                <a class="text-light"
+                                                    href="{% url 'order_history' order.order_number %}"
+                                                    title="{{ order.order_number }}">
+                                                    {{ order.order_number|truncatechars:6 }}
+                                                </a>
+                                            </td>
+                                            <td>{{ order.date }}</td>
+                                            <td>€{{ order.grand_total }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -81,8 +90,15 @@
             </div>
         </div>
     </div>
-    
-        
+
+    <!-- Products Link -->
+
+    <a href="{% url 'products' %}">
+        <div class="basket-back-button basket-button text-center"><i class="icon fa-solid fa-circle-arrow-left"></i>back
+            to shopping</div>
+    </a>
+</div>
+
 {% endblock %}
 
         
