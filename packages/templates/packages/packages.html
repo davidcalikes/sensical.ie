@@ -2,6 +2,8 @@
 {% load static %}
 {% load package_filters %}
 
+<!-- Packages Page -->
+
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'packages/css/packages.css' %}">
 {% endblock %}
@@ -14,6 +16,9 @@
     <div class="text-center">
         <h2 class="col-12 text-center mb-4">All packages</h2>
     </div>
+
+    <!-- Admin user can add packages -->
+
     {% if user.is_superuser %}
     <div class="col-12 text-center my-2">
         <a class="sensical-button" href="{% url 'add_package' %}"><i class="fa-solid fa-box-open"></i> Add Package</a>
@@ -23,6 +28,9 @@
     </div>
     {% endif %}
     <hr class="message-rule">
+
+    <!-- Current Packages -->
+
     {% if all_packages_list %}
     {% for package in all_packages_list %}
     <div class="row">
@@ -32,13 +40,13 @@
                 <i class="fa-solid fa-box-open"></i>
                 <h3>{{ package.package_name }}</h3>
                 <hr class="message-rule">
-                <h5>EQUIPMENT PROVIDED</h5>
+                <h4>EQUIPMENT PROVIDED</h4>
                 <ul class="equip" >
                     {% for sentence in package.equipment|split:"|" %}
                       <li>{{ sentence }}</li>
                     {% endfor %}
                 </ul>
-                <h5>SENSORY ITEMS PROVIDED</h5>
+                <h4>SENSORY ITEMS PROVIDED</h4>
                 <ul class="items">
                     {% for item in package.sensory_items_type|split:"|" %}
                       <li>{{ item }}</li>
@@ -86,7 +94,7 @@
                 <i class="fa-solid fa-box-open"></i>
                 <h3>{{ package.package_name }}</h3>
                 <hr class="message-rule">
-                <h5>EQUIPMENT PROVIDED</h5>
+                <h4>EQUIPMENT PROVIDED</h4>
                 
                 <ul class="equip">
                     {% for sentence in package.equipment|split:"|" %}
@@ -94,7 +102,7 @@
                     {% endfor %}
                 </ul>
 
-                <h5>SENSORY ITEMS PROVIDED</h5>
+                <h4>SENSORY ITEMS PROVIDED</h4>
                 <ul class="items">
                     {% for item in package.sensory_items_type|split:"|" %}
                       <li>{{ item }}</li>
@@ -128,6 +136,9 @@
     </div>
         {% endfor %}
         {% else %}
+
+        <!-- If no packages -->
+
         <h4 class="text-center">There are currently no packages to display</h4>
         {% endif %}
         <div class="row">
