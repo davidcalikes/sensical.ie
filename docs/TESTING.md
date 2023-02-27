@@ -893,14 +893,11 @@ _JShint Validator Testing Screenshot_
 
 <br>
 
-The availability toggle script in the products.html page was tested and returned two unused variable errors.
-I removed one of these errors by using the exported directive at the top of the linter. but it would not remove the
-stockFunction variable.
+The availability toggle script in the products.html page was tested and returns no errors if the function called
+from the dom is handled using the 'exported' directive at the top of the linter.
 
-<img src="../docs/testing_images/jshint_availability_toggle.png"><br>
+<img src="../docs/testing_images/jshint_toggle.png"><br>
 _JShint Validator Testing Screenshot_ 
-
-I ignored this, as it was not a critical error.
 
 <br>
 
@@ -910,6 +907,14 @@ The mailchimp script in the base.html page also returns errors that cannot be ch
 _JShint Validator Testing Screenshot_ 
 
 The errors were not critical warnings so I felt they could be safely ignored.
+
+<br>
+
+# Flake8 Python Testing Validation
+
+
+
+
 
 
 

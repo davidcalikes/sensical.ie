@@ -1,7 +1,4 @@
-from django.shortcuts import get_object_or_404
 from products.models import Product
-from django.contrib.auth.models import User
-from django.contrib.auth.decorators import login_required
 
 
 def get_wishlist_status(request):

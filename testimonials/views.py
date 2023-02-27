@@ -1,10 +1,8 @@
 from django.views.generic.base import TemplateView
 from django.views import generic
-from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-
 from .models import clientTestimonial
 from .forms import testimonialForm
 

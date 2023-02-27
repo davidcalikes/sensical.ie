@@ -227,17 +227,14 @@
     <!-- Script for Availability Toggle Selector -->
 
     <script>
-        function availabilityToggleState() {
-            const stockFunction = document.getElementsByClassName("out-of-stock");
-            const hideNoStock = document.querySelector('#hide-no-stock');
-            let toggleIs = localStorage.getItem("checkbox");
-            if (toggleIs == "true") {
-                hideNoStock.click();
-            }
-        }
-
-        const stockFunction = document.getElementsByClassName("out-of-stock");
+    function availabilityToggleState() {
         const hideNoStock = document.querySelector('#hide-no-stock');
+        let toggleIs = localStorage.getItem("checkbox");
+        if (toggleIs == "true") {
+            hideNoStock.click();
+        }
+    
+        const stockFunction = document.getElementsByClassName("out-of-stock");
         hideNoStock.addEventListener('change', function (e) {
             if (hideNoStock.checked) {
                 localStorage.setItem("checkbox", true);
@@ -251,6 +248,7 @@
                 }
             }
         });
+    }
     </script>
 
     <!-- Script for Sort Selector -->

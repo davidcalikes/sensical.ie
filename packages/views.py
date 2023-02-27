@@ -1,4 +1,4 @@
-from django.views.generic.base import TemplateView, View
+from django.views.generic.base import TemplateView
 from django.views import generic
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
@@ -96,7 +96,8 @@ def PackageRequest(request):
             form = CustomPackageForm(initial={'email': request.user.email})
         else:
             form = CustomPackageForm()
-    return render(request, 'packages/package_request_form.html', {'form': form})
+    return render(request,
+                  'packages/package_request_form.html', {'form': form})
 
 
 class PackageRequestList(LoginRequiredMixin, generic.ListView):
@@ -114,7 +115,8 @@ class PackageRequestList(LoginRequiredMixin, generic.ListView):
 
 def DeletePackageRequest(request, package_request_id):
     """Admin User can delete a Package Request """
-    package_request_instance = get_object_or_404(CustomPackage, pk=package_request_id)
+    package_request_instance = get_object_or_404(CustomPackage,
+                                                 pk=package_request_id)
 
     package_request_instance.delete()
     messages.success(request, 'Package request deleted!')
