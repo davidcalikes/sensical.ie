@@ -228,7 +228,7 @@
 
     <script>
         function availabilityToggleState() {
-            const stockFunction = document.getElementsByClassName("out-of-stock")
+            const stockFunction = document.getElementsByClassName("out-of-stock");
             const hideNoStock = document.querySelector('#hide-no-stock');
             let toggleIs = localStorage.getItem("checkbox");
             if (toggleIs == "true") {
@@ -236,7 +236,7 @@
             }
         }
 
-        const stockFunction = document.getElementsByClassName("out-of-stock")
+        const stockFunction = document.getElementsByClassName("out-of-stock");
         const hideNoStock = document.querySelector('#hide-no-stock');
         hideNoStock.addEventListener('change', function (e) {
             if (hideNoStock.checked) {
@@ -250,7 +250,7 @@
                     stockFunction[i].style.display = 'block';
                 }
             }
-        })
+        });
     </script>
 
     <!-- Script for Sort Selector -->
@@ -275,7 +275,7 @@
 
                 window.location.replace(currentUrl);
             }
-        })
+        });
     </script>
 
     {% endblock %}

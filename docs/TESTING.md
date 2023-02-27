@@ -839,8 +839,81 @@ _W3C HTML Validator Testing Screenshot_
 <img src="../docs/testing_images/w3_signup.png"><br>
 _W3C HTML Validator Testing Screenshot_ 
 
+Error Page Templates
+
+<img src="../docs/testing_images/w3_404.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/w3_500.png"><br>
+_W3C HTML Validator Testing Screenshot_ 
+
 <br>
 </details>
+
+# Jigsaw CSS Validation
+
+The 6 CSS stylesheets were passed through the Jigsaw Validator by direct input and returned no errors.
+
+<img src="../docs/testing_images/jigsaw_about.png"><br>
+_W3C Jigsaw about.css Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/jigsaw_checkout.png"><br>
+_W3C Jigsaw chseckout.css Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/jigsaw_packages.png"><br>
+_W3C Jigsaw packages.css Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/jigsaw_profiles.png"><br>
+_W3C Jigsaw profile.css Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/jigsaw_base.png"><br>
+_W3C Jigsaw base.css Validator Testing Screenshot_ 
+
+<img src="../docs/testing_images/jigsaw_testimonials.png"><br>
+_W3C Jigsaw testimonials.css Validator Testing Screenshot_ 
+
+JShint JavaScript Testing
+
+The JavaScript pages were tested with JShint and returned non-critical errors.
+
+<img src="../docs/testing_images/jshint_stripe_elements.png"><br>
+_JShint Validator Testing Screenshot_ 
+
+The stripe_elements.js file returns an undefined variable error that cannot be changed
+due to it belonging to the external Stripe API.
+
+This was not a critical warning so I felt it could be safely ignored.
+
+There were no other errors with this script.
+
+<img src="../docs/testing_images/jshint_sort_selector.png"><br>
+_JShint Validator Testing Screenshot_ 
+
+The sort_selector script in the products.html page was tested and returns no errors.
+
+<img src="../docs/testing_images/jshint_availability_toggle.png"><br>
+_JShint Validator Testing Screenshot_ 
+
+The availability toggle script in the products.html page was tested and returned two unused variable errors.
+I removed one of these errors by using the exported directive at the top of the linter. but it would not remove the
+stockFunction variable.
+
+I ignored this, as it was not a critical error.
+
+<img src="../docs/testing_images/jshint_mailchimp.png"><br>
+_JShint Validator Testing Screenshot_ 
+
+The mailchimp script in the base.html page also returns errors that cannot be changed
+due to it belonging to the external API.
+
+The errors were not critical warnings so I felt they could be safely ignored.
+
+
+
+
+
+
+
 
 
 
