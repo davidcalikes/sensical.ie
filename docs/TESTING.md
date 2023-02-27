@@ -874,37 +874,40 @@ _W3C Jigsaw testimonials.css Validator Testing Screenshot_
 
 JShint JavaScript Testing
 
-The JavaScript pages were tested with JShint and returned non-critical errors.
+The stripe_elements.js JavaScript file was tested with JShint and returned non-critical errors.
 
 <img src="../docs/testing_images/jshint_stripe_elements.png"><br>
 _JShint Validator Testing Screenshot_ 
 
-The stripe_elements.js file returns an undefined variable error that cannot be changed
-due to it belonging to the external Stripe API.
+The stripe_elements.js file returns an undefined variable error that cannot be changed due to it belonging to the external Stripe API.
 
 This was not a critical warning so I felt it could be safely ignored.
 
 There were no other errors with this script.
 
+<br>
+
+The sort_selector script in the products.html page was tested and returns no errors.
 <img src="../docs/testing_images/jshint_sort_selector.png"><br>
 _JShint Validator Testing Screenshot_ 
 
-The sort_selector script in the products.html page was tested and returns no errors.
-
-<img src="../docs/testing_images/jshint_availability_toggle.png"><br>
-_JShint Validator Testing Screenshot_ 
+<br>
 
 The availability toggle script in the products.html page was tested and returned two unused variable errors.
 I removed one of these errors by using the exported directive at the top of the linter. but it would not remove the
 stockFunction variable.
 
+<img src="../docs/testing_images/jshint_availability_toggle.png"><br>
+_JShint Validator Testing Screenshot_ 
+
 I ignored this, as it was not a critical error.
+
+<br>
+
+The mailchimp script in the base.html page also returns errors that cannot be changed due to it belonging to the external API.
 
 <img src="../docs/testing_images/jshint_mailchimp.png"><br>
 _JShint Validator Testing Screenshot_ 
-
-The mailchimp script in the base.html page also returns errors that cannot be changed
-due to it belonging to the external API.
 
 The errors were not critical warnings so I felt they could be safely ignored.
 

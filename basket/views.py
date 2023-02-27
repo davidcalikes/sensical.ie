@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.http import HttpResponse
 from products.models import Product
 
 
@@ -28,7 +27,10 @@ def add_to_basket(request, item_id):
         if basket[item_id] + quantity > 10:
             messages.error(
                 request,
-                "Customers are restricted to a maximum of 10 items per transaction",
+                """
+                Customers are restricted to a
+                maximum of 10 items per transaction
+                """,
             )
         else:
             basket[item_id] += quantity
