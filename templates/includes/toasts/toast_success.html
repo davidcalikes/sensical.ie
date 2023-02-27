@@ -8,19 +8,21 @@
     <div class="d-flex justify-content-center mb-2">
         <h5>SUCCESS!</h5>
     </div>
-    <hr class="message-rule" >
+    <hr class="message-rule">
     <div class="d-flex m-2 p-2 d-flex justify-content-center">
         <div>
-        <h6>{{ message }}</h6>
+            <h6>{{ message }}</h6>
         </div>
     </div>
 
+    <!-- If toast is wishlist related -->
+
     {% for message in messages %}
-        {% if 'wishlist'  in message|stringformat:'s' %}
-        <div class="text-left pl-3 mb-2"> 
-            <p>Current Wishlist:</p>
-        </div>
-        <div class="toast-scroll-contain">
+    {% if 'wishlist'  in message|stringformat:'s' %}
+    <div class="text-left pl-3 mb-2">
+        <p>Current Wishlist:</p>
+    </div>
+    <div class="toast-scroll-contain">
         {% for item in users_wishlist %}
 
         <div class="message-item px-2 rounded-0">
@@ -35,60 +37,65 @@
             </div>
         </div>
         {% endfor %}
-        </div>
-        <div class="rounded-0 text-light mt-4">
-            <a href="{% url 'user_wishlist' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
-                <span class="icon">
-                    <i class="fa-solid fa-heart"></i>
-                </span>
-                <span class="text-uppercase sensical-text">View Wishlist</span>
-            </a>
-        </div>
-        {% elif 'Package' in message|stringformat:'s' or 'Testimonial'  in message|stringformat:'s' %}
-        
-        <p class="text-center">...</p>
+    </div>
+    <div class="rounded-0 text-light mt-4">
+        <a href="{% url 'user_wishlist' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
+            <span class="icon">
+                <i class="fa-solid fa-heart"></i>
+            </span>
+            <span class="text-uppercase sensical-text">View Wishlist</span>
+        </a>
+    </div>
 
-        {% else %}
-        
-            {% if grand_total and not on_profile_page %}
-            <p class="py-1 px-2 m-2">Your Basket ({{ item_count }})</p>
-            <div class="toast-scroll-contain">
-                {% for item in basket_items %}
-                <div class="message-item px-2 rounded-0">
-                    <div class="row">
-                        <div class="col-3">
-                            <img class="w-100" src="{{ item.product.image.url }}">
-                        </div>
-                        <div class="col-9">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Qty: {{ item.quantity }}</p>
-                            <p class="my-0 small">Price per item: {{ item.product.price }}</p>
-                        </div>
-                    </div>
+    <!-- If toast is Packages related -->
+
+    {% elif 'Package' in message|stringformat:'s' or 'Testimonial'  in message|stringformat:'s' %}
+
+    <p class="text-center">...</p>
+
+    {% else %}
+
+    {% if grand_total and not on_profile_page %}
+    <p class="py-1 px-2 m-2">Your Basket ({{ item_count }})</p>
+    <div class="toast-scroll-contain">
+        {% for item in basket_items %}
+        <div class="message-item px-2 rounded-0">
+            <div class="row">
+                <div class="col-3">
+                    <img class="w-100" src="{{ item.product.image.url }}">
                 </div>
-                {% endfor %}
-            </div>
-            <div>
-                <div>
-                    <div class="px-2 my-4 rounded-0 text-light">
-                        <strong><p class="m-2">
-                            Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
-                            <span class="float-right">€{{ total|floatformat:2 }}</span>
-                        </p></strong>
-                    </div>
-                    <div class="rounded-0 text-light">
-                        <a href="{% url 'checkout' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
-                            <span class="icon">
-                                <i class="fas fa-lock"></i>
-                            </span>
-                            <span class="text-uppercase sensical-text">Secure Checkout</span>
-                        </a>
-                    </div>
+                <div class="col-9">
+                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                    <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                    <p class="my-0 small">Price per item: {{ item.product.price }}</p>
                 </div>
             </div>
-            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <div>
+        <div>
+            <div class="px-2 my-4 rounded-0 text-light">
+                <strong>
+                    <p class="m-2">
+                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                        <span class="float-right">€{{ total|floatformat:2 }}</span>
+                    </p>
+                </strong>
+            </div>
+            <div class="rounded-0 text-light">
+                <a href="{% url 'checkout' %}" class="btn sensical-text btn-light btn-block rounded-0 w-100">
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <span class="text-uppercase sensical-text">Secure Checkout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 
-        {% endif %}
+    {% endif %}
     {% endfor %}
 </div>
 

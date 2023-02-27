@@ -1,3 +1,125 @@
+# Testing
+
+
+## Tests during development
+
+### User Story Tests
+
+I tested each user story by adding acceptance criteria to every card of each of the four 'sprint' boards I created as part of the [AGILE](../docs/AGILE.md) planning process. 
+
+No story could move to the 'done' column of each Kanban board unless all tasks had been completed and the criteria had been met.
+
+<img src="../docs/agile_images/us1.png"><br>
+_User Story Screenshot_ 
+
+<img src="../docs/agile_images/agile2.png"><br>
+_Kanban Board Screenshot_ 
+
+All of the user story acceptance criteria can be inspected via the eight KANBAN boards I have linked to in the [AGILE](../docs/AGILE.md) document.
+
+<br>
+
+## Examples of Errors found during development
+
+Below are a few problems I encountered during development. I didn't catalogue every typo or syntax error, but I included these errors to provide an overview of the main types of issue. The Webhooks issue I encountered below was by far the most difficult issue I had during the development of Sensical.ie
+
+One of the first errors I encountered was a simple syntax error:
+
+<img src="../docs/testing_images/testing_syntax_err1.png"><br>
+_Syntax Error Testing Screenshot_
+
+I located the error and realised my mistake.
+
+<img src="../docs/testing_images/testing_syntax_err2.png"><br>
+_Syntax Error Testing Screenshot_
+
+By Adding the correct url '' syntax I corrected the issue.
+
+<img src="../docs/testing_images/testing_syntax_err3.png"><br>
+_Syntax Error Testing Screenshot_
+
+And the page displayed correctly.
+
+<img src="../docs/testing_images/testing_syntax_err4.png"><br>
+_Syntax Error Testing Screenshot_
+
+<br>
+
+I used the console log in Google Developer Tools to test any JavaScript functions during development.
+
+<img src="../docs/testing_images/testing_console_test.png"><br>
+_Console Testing Screenshot_
+
+During a test, I encountered an Issue with the availability toggle.
+
+<img src="../docs/testing_images/testing_console_err.png"><br>
+_Console Error Screenshot_
+
+I corrected this issue by adding Django template logic to base.html.
+
+<img src="../docs/testing_images/testing_console_fix.png"><br>
+_Console Error Screenshot_
+
+<img src="../docs/testing_images/testing_console_fix2.png"><br>
+_Console Error Screenshot_
+
+<br>
+
+When creating the checkout functionality, Django returned the following error:
+
+<img src="../docs/testing_images/testing_eircode_err.png"><br>
+_Typo Error Screenshot_
+
+When I inspected the code I realised I had made an error capitalising the E in Eircode
+
+<img src="../docs/testing_images/testing_eircode_err2.png"><br>
+_Typo Error Screenshot_
+
+I fixed this by making the E lowercase.
+
+When setting up webhooks and returning confirmation emails I recieved a Stripe payment intent error.
+
+<img src="../docs/testing_images/testing_webhooks_err.png"><br>
+_Webhooks Error Screenshot_
+
+I used the application logs and print statements to try and locate the problem.
+
+<img src="../docs/testing_images/testing_webhooks_err1.png"><br>
+_Webhooks Error Screenshot_
+
+I couldn't find an issue with the source code so I checked heroku environment variables and the cause of the issue
+was a typo in the EMAIL_HOST_USER email address. (hyphen instead of a period)
+
+<img src="../docs/testing_images/testing_webhooks_err2.png"><br>
+_Webhooks Error Screenshot_
+
+Correcting the typo solved the issue.
+
+<br>
+
+I noticed the price per item was not displaying correctly in the wishlist success message modal.
+
+<img src="../docs/testing_images/testing_wishlist_err.png"><br>
+_Wishlist Message Error Screenshot_
+
+I examined the code and dicovered the following:
+
+<img src="../docs/testing_images/testing_wishlist_err2.png"><br>
+_Wishlist Message Error Screenshot_
+
+The price was being called incorrectly using the product prefix instead of item.
+
+<img src="../docs/testing_images/testing_wishlist_err3.png"><br>
+_Wishlist Message Error Screenshot_
+
+The functionality returned when i corrected the error.
+
+<img src="../docs/testing_images/testing_wishlist_err4.png"><br>
+_Wishlist Message Error Screenshot_
+
+
+<br>
+
 ## Manual Testing
 
 Each page, feature and link of the application has been tested.
@@ -910,7 +1032,38 @@ The errors were not critical warnings so I felt they could be safely ignored.
 
 <br>
 
-# Flake8 Python Testing Validation
+# Flake8 Python Validation
+
+I validated the Python codebase using the command "python3 -m flake8" from the Gitpod terminal to run the python linter.  
+
+<img src="../docs/testing_images/flake8_err1.png"><br>
+_Flake8 Validator Testing Screenshot_
+
+There were lots of errors and warnings initially.
+
+<img src="../docs/testing_images/flake8_err2.png"><br>
+_Flake8 Validator Testing Screenshot_
+
+Most of the errors were "line too long" or whitespace errors". I corrected all of these errors in the 
+Sensical.ie code, however some remained embedded in migration files and Django settings etc.
+
+<img src="../docs/testing_images/flake8_err2.png"><br>
+_Flake8 Validator Testing Screenshot_
+
+There are 6 "line too long" errors in the settings.py file that are a known issue with Django.
+
+<img src="../docs/testing_images/flake8_fix.png"><br>
+_Flake8 Validator Testing Screenshot_
+
+Some other import errors also remain but I left these as they were automatically created by Django.
+
+<img src="../docs/testing_images/flake8_fix2.png"><br>
+_Flake8 Validator Testing Screenshot_
+
+The final image shows the code is free of any warnings or errors from the code I created.
+
+
+
 
 
 
