@@ -1099,7 +1099,7 @@ about, hire, testimonial, basket and checkout pages.
 <img src="../docs/testing_images/testing_mobile_admin2.png"><br>
 _Mobile Testing Screenshot_
 
-* Admin users can make purchases and save their delivery information to their user profile
+* Admin users can make purchases and save their delivery information to their user profile.
 
 <br>
 
@@ -1152,7 +1152,7 @@ about, hire, testimonial, basket and checkout pages.
 <img src="../docs/testing_images/testing_mobile_user2.png"><br>
 _Mobile Testing Screenshot_
 
-* Authenticated users can make purchases and save their delivery information to their user profile
+* Authenticated users can make purchases and save their delivery information to their user profile.
 
 <br>
 
@@ -1185,7 +1185,7 @@ about, hire, testimonial, basket and checkout pages.
 <img src="../docs/testing_images/testing_tablet_admin2.png"><br>
 _Tablet Testing Screenshot_
 
-* Admin users can make purchases and save their delivery information to their user profile
+* Admin users can make purchases and save their delivery information to their user profile.
 
 <br>
 
@@ -1238,13 +1238,14 @@ _Tablet Testing Screenshot_
 
 * Authenticated user can make package requests. 
 
-* Authenticated users can make purchases and save their delivery information to their user profile
+* Authenticated users can make purchases and save their delivery information to their user profile.
 
 <br>
 
 ### Desktop Testing -- Macbook Pro & HP Deskpro (OSX & Windows 10):
 
-<img src="../docs/testing_images/testing_mobile.png">
+<img src="../docs/testing_images/testing_desktop.png"><br>
+_Desktop Testing Screenshot_
 
 <br>
 
@@ -1257,6 +1258,9 @@ _Tablet Testing Screenshot_
 
 * Admin user can login and out successfully on mobile.
 
+<img src="../docs/testing_images/testing_desktop_admin1.png"><br>
+_Desktop Testing Screenshot_
+
 * Admin user can access the home, products, product detail, wishlist, product management, user profile, 
 about, hire, testimonial, basket and checkout pages.
 
@@ -1264,7 +1268,10 @@ about, hire, testimonial, basket and checkout pages.
 
 * Admin user can manage products and testimonials with full CRUD functionality. They can also view and delete package requests. 
 
-* Admin users can make purchases and save their delivery information to their user profile
+<img src="../docs/testing_images/testing_desktop_admin2.png"><br>
+_Desktop Testing Screenshot_
+
+* Admin users can make purchases and save their delivery information to their user profile.
 
 <br>
 
@@ -1277,10 +1284,16 @@ about, hire, testimonial, basket and checkout pages.
 
 * Unregistered user can register, then login and out successfully on mobile.
 
+<img src="../docs/testing_images/testing_desktop_unauth1.png"><br>
+_Desktop Testing Screenshot_
+
 * Unregistered user can access the home, products, product detail, 
 about, hire, testimonial, basket and checkout pages.
 
-* Unregistered user cannot access the wishlist. 
+* Unregistered user cannot access the wishlist.
+
+<img src="../docs/testing_images/testing_desktop_unauth2.png"><br>
+_Desktop Testing Screenshot_
 
 * Unregistered user can make package requests. 
 
@@ -1297,14 +1310,74 @@ about, hire, testimonial, basket and checkout pages.
 
 * Authenticated user can login and out successfully on mobile.
 
+<img src="../docs/testing_images/testing_desktop_user1.png"><br>
+_Desktop Testing Screenshot_
+
 * Authenticated user can access the home, products, product detail, wishlist, user profile, 
 about, hire, testimonial, basket and checkout pages.
+
+<img src="../docs/testing_images/testing_desktop_user2.png"><br>
+_Desktop Testing Screenshot_
 
 * Authenticated user can add and remove items from their wishlist. 
 
 * Authenticated user can make package requests. 
 
-* Authenticated users can make purchases and save their delivery information to their user profile
+* Authenticated users can make purchases and save their delivery information to their user profile.
+
+## Responsivity Testing
+
+In addition to testing the site accross multiple physical devices, I also tested the responsivity of the
+site using Google Developer tools. I set the minimum acceptable width to 300px.
+
+The site responded well during the initial testing although there were some small issues that required attention to 
+improve the user experience.
+
+### Issue caused by SEO optimisation.
+
+<img src="../docs/testing_images/testing_resp1.png"><br>
+_Responsivness Testing Screenshot_
+
+By updating the text from 'hire' to 'sensory equipment hire' to improve Search Engine Optimisation,
+an error occurred where the height of the first card would expand to accomodate the extra text. 
+
+<img src="../docs/testing_images/testing_resp2.png"><br>
+_Responsivness Testing Screenshot_
+
+Obviously there was more than one way to fix this issue, but I felt that the 'Equipment' part of the title wasn't
+actually required and due to the fairly unique concept of the business 'sensory hire' would be a sufficient title in this case
+and solve the problem.
+
+<br>
+
+I also noticed the mobile dropdown menu extended to the edge of the page on one side.
+
+<img src="../docs/testing_images/testing_resp3.png"><br>
+_Responsivness Testing Screenshot_
+
+I corrected this by overiding the default bootstrap class.
+
+<img src="../docs/testing_images/testing_resp4.png"><br>
+_Responsivness Testing Screenshot_
+
+<br>
+
+<img src="../docs/testing_images/testing_resp5.png"><br>
+_Responsivness Testing Screenshot_
+
+There was another error when the test from the request a package would wrap inside the container.
+I corrected this by expanding the container width and adding a media query style rule to the element.
+
+<img src="../docs/testing_images/testing_resp6.png"><br>
+_Responsivness Testing Screenshot_
+
+
+
+
+
+
+
+
 
 
 
