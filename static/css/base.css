@@ -24,6 +24,10 @@ form a {
     width: 60%;
 }
 
+.auth-buffer {
+    margin-top: 220px;
+}
+
 .sensical-text {
     color: #0c2d6c;
 }
@@ -161,6 +165,9 @@ form a {
     height: auto;
 }
 
+.dropdown-menu.show {
+    width: 97.5%;
+}
 
 #mobile-nav-logo {
     width: 100%;

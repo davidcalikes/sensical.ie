@@ -64,3 +64,15 @@
         margin-right: 0 !important;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .packages-container {
+        width: 96%; 
+    }
+    .packages-text {
+        padding: 1rem;
+    }
+    .request-button {
+        font-size: 2.6vw;
+    }
+}

@@ -980,7 +980,7 @@ The 6 CSS stylesheets were passed through the Jigsaw Validator by direct input a
 _W3C Jigsaw about.css Validator Testing Screenshot_ 
 
 <img src="../docs/testing_images/jigsaw_checkout.png"><br>
-_W3C Jigsaw chseckout.css Validator Testing Screenshot_ 
+_W3C Jigsaw checkout.css Validator Testing Screenshot_ 
 
 <img src="../docs/testing_images/jigsaw_packages.png"><br>
 _W3C Jigsaw packages.css Validator Testing Screenshot_ 
@@ -1062,6 +1062,7 @@ _Flake8 Validator Testing Screenshot_
 
 The final image shows the code is free of any warnings or errors from the code I created.
 
+<br>
 
 # Practical Testing
 
@@ -1153,6 +1154,7 @@ _Mobile Testing Screenshot_
 
 * Authenticated users can make purchases and save their delivery information to their user profile
 
+<br>
 
 ### Tablet Testing -- Ipad Mini 5 (IOS):
 
@@ -1180,7 +1182,7 @@ about, hire, testimonial, basket and checkout pages.
 
 * Admin user can manage products and testimonials with full CRUD functionality. They can also view and delete package requests.
 
-<img src="../docs/testing_images/testing_tablet_admin12.png"><br>
+<img src="../docs/testing_images/testing_tablet_admin2.png"><br>
 _Tablet Testing Screenshot_
 
 * Admin users can make purchases and save their delivery information to their user profile
@@ -1229,7 +1231,7 @@ _Tablet Testing Screenshot_
 * Authenticated user can access the home, products, product detail, wishlist, user profile, 
 about, hire, testimonial, basket and checkout pages.
 
-<img src="../docs/testing_images/testing_tablet_user1.png"><br>
+<img src="../docs/testing_images/testing_tablet_user2.png"><br>
 _Tablet Testing Screenshot_
 
 * Authenticated user can add and remove items from their wishlist. 
@@ -1238,6 +1240,7 @@ _Tablet Testing Screenshot_
 
 * Authenticated users can make purchases and save their delivery information to their user profile
 
+<br>
 
 ### Desktop Testing -- Macbook Pro & HP Deskpro (OSX & Windows 10):
 
