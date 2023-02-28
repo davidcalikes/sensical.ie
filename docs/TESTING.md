@@ -1063,12 +1063,245 @@ _Flake8 Validator Testing Screenshot_
 The final image shows the code is free of any warnings or errors from the code I created.
 
 
+# Practical Testing
+
+Every Function of Sensical.ie was tested for practical use across multiple devices.
+
+### Mobile Testing -- Huawei P20 Pro (Android):
+
+<img src="../docs/testing_images/testing_mobile.png"><br>
+_Mobile Testing Screenshot_
+
+<br>
+
+### Admin user tests:
+<br>
+
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Admin user can login and out successfully on mobile.
+
+<img src="../docs/testing_images/testing_mobile_admin1.png"><br>
+_Mobile Testing Screenshot_
+
+* Admin user can access the home, products, product detail, wishlist, product management, user profile, 
+about, hire, testimonial, basket and checkout pages.
+
+* Admin user can add and remove items from their wishlist. 
+
+* Admin user can manage products and testimonials with full CRUD functionality. They can also view and delete package requests.
+
+<img src="../docs/testing_images/testing_mobile_admin2.png"><br>
+_Mobile Testing Screenshot_
+
+* Admin users can make purchases and save their delivery information to their user profile
+
+<br>
+
+### Unregistered user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Unregistered user can register, then login and out successfully on mobile.
+
+<img src="../docs/testing_images/testing_mobile_unauth2.png"><br>
+_Mobile Testing Screenshot_
+
+* Unregistered user can access the home, products, product detail, 
+about, hire, testimonial, basket and checkout pages.
+
+* Unregistered user cannot access the wishlist. 
+
+<img src="../docs/testing_images/testing_mobile_unauth1.png"><br>
+_Mobile Testing Screenshot_
+
+* Unregistered user can make package requests. 
+
+* Unregistered users can make purchases.
+
+<br>
+
+### Authenticated user tests:
+<br>
 
 
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Authenticated user can login and out successfully on mobile.
+
+<img src="../docs/testing_images/testing_mobile_user1.png"><br>
+_Mobile Testing Screenshot_
+
+* Authenticated user can access the home, products, product detail, wishlist, user profile, 
+about, hire, testimonial, basket and checkout pages.
+
+* Authenticated user can add and remove items from their wishlist. 
+
+* Authenticated user can make package requests. 
+
+<img src="../docs/testing_images/testing_mobile_user2.png"><br>
+_Mobile Testing Screenshot_
+
+* Authenticated users can make purchases and save their delivery information to their user profile
 
 
+### Tablet Testing -- Ipad Mini 5 (IOS):
+
+<img src="../docs/testing_images/testing_tablet.png"><br>
+_Tablet Testing Screenshot_
+
+<br>
+
+### Admin user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Admin user can login and out successfully on tablet.
+
+<img src="../docs/testing_images/testing_tablet_admin1.png"><br>
+_Tablet Testing Screenshot_
+
+* Admin user can access the home, products, product detail, wishlist, product management, user profile, 
+about, hire, testimonial, basket and checkout pages.
+
+* Admin user can add and remove items from their wishlist. 
+
+* Admin user can manage products and testimonials with full CRUD functionality. They can also view and delete package requests.
+
+<img src="../docs/testing_images/testing_tablet_admin12.png"><br>
+_Tablet Testing Screenshot_
+
+* Admin users can make purchases and save their delivery information to their user profile
+
+<br>
+
+### Unregistered user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Unregistered user can register, then login and out successfully on tablet.
+
+<img src="../docs/testing_images/testing_tablet_unauth1.png"><br>
+_Tablet Testing Screenshot_
+
+* Unregistered user can access the home, products, product detail, 
+about, hire, testimonial, basket and checkout pages.
+
+<img src="../docs/testing_images/testing_tablet_unauth2.png"><br>
+_Tablet Testing Screenshot_
+
+* Unregistered user cannot access the wishlist. 
+
+* Unregistered user can make package requests.
+
+* Unregistered users can make purchases.
 
 
+<br>
+
+### Authenticated user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Authenticated user can login and out successfully on tablet.
+
+<img src="../docs/testing_images/testing_tablet_user1.png"><br>
+_Tablet Testing Screenshot_
+
+* Authenticated user can access the home, products, product detail, wishlist, user profile, 
+about, hire, testimonial, basket and checkout pages.
+
+<img src="../docs/testing_images/testing_tablet_user1.png"><br>
+_Tablet Testing Screenshot_
+
+* Authenticated user can add and remove items from their wishlist. 
+
+* Authenticated user can make package requests. 
+
+* Authenticated users can make purchases and save their delivery information to their user profile
+
+
+### Desktop Testing -- Macbook Pro & HP Deskpro (OSX & Windows 10):
+
+<img src="../docs/testing_images/testing_mobile.png">
+
+<br>
+
+### Admin user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Admin user can login and out successfully on mobile.
+
+* Admin user can access the home, products, product detail, wishlist, product management, user profile, 
+about, hire, testimonial, basket and checkout pages.
+
+* Admin user can add and remove items from their wishlist. 
+
+* Admin user can manage products and testimonials with full CRUD functionality. They can also view and delete package requests. 
+
+* Admin users can make purchases and save their delivery information to their user profile
+
+<br>
+
+### Unregistered user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Unregistered user can register, then login and out successfully on mobile.
+
+* Unregistered user can access the home, products, product detail, 
+about, hire, testimonial, basket and checkout pages.
+
+* Unregistered user cannot access the wishlist. 
+
+* Unregistered user can make package requests. 
+
+* Unregistered users can make purchases.
+
+<br>
+
+### Authenticated user tests:
+<br>
+
+* All pages displayed correctly with all information available to the user.
+
+* All downloads links were tested and function correctly.
+
+* Authenticated user can login and out successfully on mobile.
+
+* Authenticated user can access the home, products, product detail, wishlist, user profile, 
+about, hire, testimonial, basket and checkout pages.
+
+* Authenticated user can add and remove items from their wishlist. 
+
+* Authenticated user can make package requests. 
+
+* Authenticated users can make purchases and save their delivery information to their user profile
 
 
 
