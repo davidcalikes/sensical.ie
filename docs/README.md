@@ -390,6 +390,11 @@ Sensical.ie was developed using the Agile Development Methodology. A detailed ov
 
 <br>
 
+# Testing
+
+The app was conscientiously tested during and post development.
+The testing results for MyPSE.ie are available [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/TESTING.md)
+
 
 
 

@@ -1371,11 +1371,40 @@ I corrected this by expanding the container width and adding a media query style
 <img src="../docs/testing_images/testing_resp6.png"><br>
 _Responsivness Testing Screenshot_
 
+# Bugs
+
+I found some minor bugs in the about page iframe were the Youtube video wouldn't render the controls section properly on android mobile devices.
+
+<img src="../docs/testing_images/testing_bugs1.png"><br>
+_Bugs Testing Screenshot_
+
+I searched google and stack overflow for posts on how to solve this issue but none were forthcoming. The problem seems to have corrected itself, and now displays correctly accross all screen widths.
+
+<br>
+
+Another problem with the about page iFrame was the volume control on the video would disappear on the smallest screen widths. 
+
+<img src="../docs/testing_images/testing_bugs2.png"><br>
+_Bugs Testing Screenshot_
+
+The solution to this issue was rather more complex. If I expanded the container width and removed all padding, it would negatively impact the rest of the elements in the container. Instead I added a set of style rules to a media query that hides the display of the original iframe and replaces it with another outside of the container. I felt this was a practical comprimise given time constraints and the importance of accessibility for all users.
+
+<img src="../docs/testing_images/testing_bugs2_fix.png"><br>
+_Bugs Testing Screenshot_
 
 
+Outstanding Bugs
+
+<img src="../docs/testing_images/testing_bugs_landscape_.png"><br>
+_Bugs Testing Screenshot_
+
+The site does not work on mobile devices in landscape mode. This is because the nav menu extends beyond the bottom edge of the screen due to the significantly reduced 
+screen height. I have not yet found a solution to this problem but I will continue to look for ways to solve the problem as the project develops.
 
 
+<br>
 
+Return to main [README](https://github.com/davidcalikes/sensical.ie#testing) document.
 
 
 
