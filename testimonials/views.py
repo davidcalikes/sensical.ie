@@ -5,6 +5,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from .models import clientTestimonial
 from .forms import testimonialForm
+import cloudinary.uploader
 
 
 class AllTestimonials(TemplateView):
@@ -40,7 +41,15 @@ class AddTestimonial(SuccessMessageMixin, generic.CreateView):
         Auto applies foreign key and auto generated settings.
         """
         form.instance.created_by = self.request.user
-        return super(AddTestimonial, self).form_valid(form)
+
+        image = self.request.FILES.get('image')
+
+        result = cloudinary.uploader.upload(image)
+        image_url = result.get('url')
+
+        form.instance.photo_url = image_url
+
+        return super().form_valid(form)
 
     def form_invalid(self, form):
         """If the form is invalid, render the invalid form."""
@@ -51,13 +60,24 @@ class AddTestimonial(SuccessMessageMixin, generic.CreateView):
 
 class UpdateTestimonial(SuccessMessageMixin, generic.edit.UpdateView):
     """
-    Superuser can update enrolled an existing testimonial
+    Superuser can update an existing testimonial
     """
     model = clientTestimonial
     form_class = testimonialForm
     template_name = 'testimonials/testimonial_form.html'
     success_url = reverse_lazy('testimonials')
     success_message = "Testimonial updated successfully!"
+
+    def form_valid(self, form):
+        image = self.request.FILES.get('image')
+
+        if image:
+            result = cloudinary.uploader.upload(image)
+            image_url = result.get('url')
+
+            self.object.photo_url = image_url
+
+        return super().form_valid(form)
 
     def form_invalid(self, form):
         """If the form is invalid, render the invalid form."""

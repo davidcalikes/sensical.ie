@@ -165,10 +165,6 @@ form a {
     height: auto;
 }
 
-.dropdown-menu.show {
-    width: 97.5%;
-}
-
 #mobile-nav-logo {
     width: 100%;
     height: auto;
@@ -183,7 +179,8 @@ form a {
 .navbar {
     padding: 0;
     width: 96%;
-    margin-left: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 nav a {
@@ -196,6 +193,11 @@ nav a:hover {
 
 a.nav-link {
     padding: 0.5rem;
+}
+
+.dropdown-menu.show {
+    border-radius: 0;
+    border: 1px solid #0c2d6c !important;
 }
 
 .item-counter {
@@ -214,7 +216,7 @@ a.nav-link {
     border: 1px solid white;
     width: 50px;
     height: 40px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .navbar-toggler-icon {
@@ -871,6 +873,10 @@ video {
 
     .navbar-nav {
         border-bottom: 2px solid #75e6ff;
+    }
+
+    .dropdown-menu.show {
+        margin-bottom: 1rem;
     }
 
     .lower-nav-border {

@@ -61,16 +61,26 @@
         </div>
         <div class="col-12 col-lg-4 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
             <div class="media-width">
+                {% if testimonial.photo_url %}
                 <img class="testimonial-img" src="{{ testimonial.photo_url }}"
                     alt="A screenshot of a customer testimonial">
+                {% else %}
+                <img class="testimonial-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677626157/alt_test_image_n8agfr.png"
+                    alt="A placeholder for a customer testimonial">
+                {% endif %}
             </div>
         </div>
 
         {% else %}
         <div class="col-12 col-lg-4 my-4 text-center d-flex align-items-center">
             <div class="media-width">
+                {% if testimonial.photo_url %}
                 <img class="testimonial-img" src="{{ testimonial.photo_url }}"
                     alt="A screenshot of a customer testimonial">
+                {% else %}
+                <img class="testimonial-img" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677626157/alt_test_image_n8agfr.png"
+                    alt="A placeholder for a customer testimonial">
+                {% endif %}
             </div>
         </div>
         <div class="col-12 col-lg-8 my-4 text-center">

@@ -1395,11 +1395,11 @@ _Bugs Testing Screenshot_
 
 Outstanding Bugs
 
-<img src="../docs/testing_images/testing_bugs_landscape_.png"><br>
+<img src="../docs/testing_images/testing_bugs_landscape.png"><br>
 _Bugs Testing Screenshot_
 
 The site does not work on mobile devices in landscape mode. This is because the nav menu extends beyond the bottom edge of the screen due to the significantly reduced 
-screen height. I have not yet found a solution to this problem but I will continue to look for ways to solve the problem as the project develops.
+screen height. I have not yet found a solution to this problem but I will continue to look for ways to solve the problem in future releases
 
 
 <br>

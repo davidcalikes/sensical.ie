@@ -1,6 +1,6 @@
 from django import forms
-
 from .models import Packages, CustomPackage
+import textwrap
 
 
 class PackageForm(forms.ModelForm):
@@ -25,5 +25,21 @@ class CustomPackageForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        for field in self.fields:
-            self.fields[field].widget.attrs.update({'class': 'form-control'})
+
+        self.fields['name'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Enter your name'
+        })
+
+        self.fields['email'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Enter your email address'
+        })
+
+        self.fields['package_requirements'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': textwrap.dedent('''\
+                Enter your package requirements here, length of session,
+                sensory needs, size of room etc...
+                ''')
+        })
