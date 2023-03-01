@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
+import cloudinary.uploader
 
 
 def all_products(request):
@@ -80,7 +81,15 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            product = form.save()
+            # Upload image to Cloudinary
+            image = form.cleaned_data['image']
+            image_data = cloudinary.uploader.upload(image)['secure_url']
+
+            # Save product with Cloudinary image URL
+            product = form.save(commit=False)
+            product.image = image_data
+            product.save()
+
             messages.success(request, 'Successfully added product!',)
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -107,7 +116,15 @@ def edit_product(request, product_id):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
-            form.save()
+            # Upload image to Cloudinary
+            image = form.cleaned_data['image']
+            image_data = cloudinary.uploader.upload(image)['secure_url']
+
+            # Save product with Cloudinary image URL
+            product = form.save(commit=False)
+            product.image = image_data
+            product.save()
+
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:

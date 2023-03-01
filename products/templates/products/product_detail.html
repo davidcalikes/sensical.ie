@@ -24,8 +24,13 @@
         <div class="col-sm-12 col-md-6">
             <div class="product-detail-img-container">
                 <a href="{{ product.image.url }}" target="_blank">
+                    {% if product.image %}
                     <img class="{% if product.in_stock %} product-detail-img {% else %} product-detail-img product-detail-img-no-stock {% endif %}"
                         src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% else %}
+                    <img class="{% if product.in_stock %} product-detail-img {% else %} product-detail-img product-detail-img-no-stock {% endif %}"
+                        src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677628467/image_placeholder_orgaeh.png" alt="{{ product.name }}">
+                    {% endif %}
                 </a>
             </div>
         </div>

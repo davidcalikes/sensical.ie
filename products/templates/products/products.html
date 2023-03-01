@@ -81,8 +81,13 @@
                 <div
                     class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
                     <a href="{% url 'product_detail' product.id %}">
+                        {% if product.image %}
                         <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
                         alt="{{ product.name }}" src="{{ product.image.url }}">
+                        {% else %}
+                        <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
+                        alt="{{ product.name }}" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1677628467/image_placeholder_orgaeh.png">
+                        {% endif %}
                     </a>
 
                     <div class="row">
