@@ -371,7 +371,9 @@ A unique feature of the product model is the for_sensory_needs data point, where
 
 The Product Wishlist Data is also stored in this model. I stored this data point here as it seemed the simplest and less verbose way of coding the wishlist functionality. 
 
-The Client Testimonial & Packages Models are for administrative users(site owner) only and facilitate the creation and maintainance of content Testimonial and Packages within the site. 
+The Client Testimonial, Packages are for administrative users(site owners) only and facilitate the creation and maintainance of Testimonials and Packages within the site. 
+
+The Package Request model allows users to submit a request for a custom sensory hire package through a simple contact form.
 
 <br>
 
@@ -395,6 +397,79 @@ Sensical.ie was developed using the Agile Development Methodology. A detailed ov
 The app was conscientiously tested during and post development.
 The testing results for MyPSE.ie are available [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/TESTING.md)
 
+
+# Visual Design
+
+## Wireframes
+
+I designed wireframes for reference as I began to develop the application. They are instructive as to how I wanted the app to display across multiple device widths. I deviated slightly from the original designs as the overall style became more refined. For example, to give the site a more dynamic look on some of the information pages I staggered the order of the elements using Bootstraps order classes.
+
+
+<img src="../docs/readme_images/visual_design1.png"><br>
+_Staggered Elements_
+
+Here are the wireframes:
+
+<br>
+
+<img src="../docs/readme_images/wireframes_home.png"><br>
+_Home Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_products.png"><br>
+_Products Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_product_detail.png"><br>
+_Product Detail Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_basket.png"><br>
+_Basket Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_checkout.png"><br>
+_Checkout Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_about.png"><br>
+_About Page Wireframe_
+
+<img src="../docs/readme_images/wireframes_packages.png"><br>
+_Packages Wireframe_
+
+<img src="../docs/readme_images/wireframes_testimonials.png"><br>
+_Testimonials Wireframe_
+
+<img src="../docs/readme_images/wireframes_add_passport.png"><br>
+_Wishlist Wireframe_
+
+<img src="../docs/readme_images/wireframes_passport.png"><br>
+_Hire Wireframe_
+
+Due to the scope of this application and how similar many of the pages are, I thought it unnecessary to include every single page here. Like the auth pages for example.
+
+
+## Color Scheme
+
+<img src="../docs/readme_images/visual_colors.png"><br>
+_Sensical.ie Color Scheme_
+ 
+
+The color scheme of the site was derived from marketing material submitted by the business owner. The Mobile Sensory Environments side of the business still had an excess of flyers, posters and leaflets remaining so it seemed prudent to continue with the original color scheme used throughout most of the business's promotional media.
+
+
+<img src="../docs/readme_images/visual_design2.png"><br>
+_Sensical.ie Color Scheme_
+
+<br>
+
+## Typography
+
+*  There are two fonts used throughout the application.
+
+    * Assistant: A strong, elegant font for heading elements adopted from the business's promotional media.
+   
+    * Helvetica: A clear, familiar and accessible font is used in paragraph text.
+
+    The fonts were imported to the project head element.
+
+<br>
 
 
 

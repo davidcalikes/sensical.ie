@@ -40,7 +40,7 @@ class Product(models.Model):
     image_url = models.URLField(
         max_length=1024, null=True, blank=True)
     image = CloudinaryField(
-        "Product Image", default='placeholder')
+        "Product Image", default='')
     users_wishlist = models.ManyToManyField(
         User, related_name='user_wishlist', blank=True)
 
