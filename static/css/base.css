@@ -722,7 +722,7 @@ video {
 
 .basket-button:hover {
     background-color: #6ef4ce; 
-    text-decoration: none;
+    text-decoration: none !important;
     color:#0c2d6c;
     border: solid 1px #fff;
 }
@@ -745,6 +745,10 @@ video {
 
 .basket-checkout {
     width: 100%;
+}
+
+.basket-checkout a:hover {
+    text-decoration: none;
 }
 
 .checkout-heading {
