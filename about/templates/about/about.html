@@ -142,39 +142,37 @@
     </ol>
     <div id="testimonials-slider">
         <div class="carousel-inner">
-            {% for testimonial in testimonials %}
-            {% if testimonial.id == 1 %}
+            {% if all_testimonials_list %}
             <div class="carousel-item carousel-item-text text-center active">
                 <img class="img-fluid carousel-item-img"
                     src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676404604/sensical/pexels-rebecca-diack-1154723_pd0roo.jpg"
                     alt="First Slide">
                 <div class="carousel-caption d-md-block">
-                    <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
-                    <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
+                    <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.0.name }}</h3>
+                    <p class="testimonial-text">"{{ all_testimonials_list.0.testimonial }}"</p>
                 </div>
             </div>
-            {% elif testimonial.id == 2 %}
+
             <div class="carousel-item carousel-item-text text-center">
                 <img class="carousel-item-img"
                     src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676417286/sensical/pexels-amar-preciado-10196786_myqnmd.jpg"
                     alt="Second Slide">
                 <div class="carousel-caption d-md-block">
-                    <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
-                    <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
+                    <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.1.name }}</h3>
+                    <p class="testimonial-text">"{{ all_testimonials_list.1.testimonial }}"</p>
                 </div>
             </div>
-            {% elif testimonial.id == 7 %}
+
             <div class="carousel-item carousel-item-text text-center">
                 <img class="carousel-item-img"
                     src="https://res.cloudinary.com/djck2eqxo/image/upload/v1676412887/sensical/pexels-anthony-_-794495_k3us9t.jpg"
                     alt="Second Slide">
                 <div class="carousel-caption d-md-block">
-                    <h3 class="my-4 testimonial-heading">{{ testimonial.name }}</h3>
-                    <p class="testimonial-text">"{{ testimonial.testimonial }}"</p>
+                    <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.2.name }}</h3>
+                    <p class="testimonial-text">"{{ all_testimonials_list.2.testimonial }}"</p>
                 </div>
             </div>
             {% endif %}
-            {% endfor %}
             <a class="carousel-control-prev " href="#testimonialsCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon sensical-text " aria-hidden="true">
                 </span>

@@ -477,8 +477,6 @@ After some consideration for users who may have light sensitivity issues, I used
 <br>
 
 
-<br>
-
 # Features
 
 ## Existing Features
@@ -572,20 +570,64 @@ When the delivery threshold has been met by the user the banner changes to the f
 <img src="../docs/readme_images/feat_delivery_banner3.png"><br>
 _Delivery Banner_
 
-I only includer the Delivery Banner on pages related to the e-Commerce side of the site a I felt it could free up a useable section of screen real estate for the information pages.
+I included the Delivery Banner only on pages related to the e-Commerce side of the site a I felt it could free up a useable section of screen real estate for the information pages.
+
+<br>
 
 ## The Footer
 
 <img src="../docs/readme_images/feat_footer.png"><br>
 _Sensical.ie Footer_
 
-The Footer section hugs the bottom of each page of the site and contains Copyright and Developer information including social links that open in a new tab.
+The fully responsive footer is present across all pages of the site and contains two main sections.
+
+### Upper Footer
+
+The Upper Footer section contains the following features:
+
+### Footer Contacts
+
+Located in the upper left section of the footer and centering on medium and small sized screens. The footer contact area contains the business contact information, responsive links and social media links. Each link opens in a new tab.
+
+<img src="../docs/readme_images/feat_footer_contacts.png"><br>
+_Sensical.ie Footer Contacts_
 
 <br>
+
+### Footer Subscibe form and Useful Links
+
+Located in the upper-middle section of the footer and wrapping beneath the contact information links on smaller devices, the Footer Subscription Form and Useful Links section contains a mailchip subscription form and useful links that may be of some benefit to the user. External links enhance the Search Engine Optimisation of Sensical.ie and each link opens in a new tab.
+
+<img src="../docs/readme_images/feat_footer_subscribe.png"><br>
+_Sensical.ie Footer Subscription Form and Useful Links_
+
+<br>
+
+### Footer Nav
+
+The Footer nav is located on the right side of the upper footer, centering on medium and small sized screens. The Footer nav contains links to the most prominant areas of the site as well as downloadable links to the privacy and terms & conditions policy documents of the company.
+
+<img src="../docs/readme_images/feat_footer_nav.png"><br>
+_Sensical.ie Footer Nav_
+
+<br>
+
+### Lower Footer
+
+
+The lower Footer section hugs the bottom of each page of the site and contains a disclaimer and subtle color gradient that is evocative of LED strip lighting effect. Beneath the disclaimer is the Copyright and Developer information including social links that open in a new tab.
+
+<br>
+
+<img src="../docs/readme_images/feat_lower_footer.png"><br>
+_Sensical.ie Lower Footer_
+
 
 ## Existing Features (cont)
 
 ### Individual Pages
+
+
 
 
 
