@@ -88,6 +88,7 @@ def add_product(request):
             # Save product with Cloudinary image URL
             product = form.save(commit=False)
             product.image = image_data
+            product.image_url = image_data
             product.save()
 
             messages.success(request, 'Successfully added product!',)

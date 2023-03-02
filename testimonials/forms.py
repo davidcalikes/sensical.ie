@@ -13,4 +13,4 @@ class testimonialForm(forms.ModelForm):
         """
         model = clientTestimonial
         fields = ('name', 'testimonial',
-                  'photo_url', 'image')
+                  'image')

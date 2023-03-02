@@ -9,7 +9,7 @@ class ProductForm(forms.ModelForm):
         fields = (
                   'category', 'name', 'sku', 'price',
                   'rating', 'in_stock', 'description',
-                  'for_sensory_needs', 'image', 'image_url',
+                  'for_sensory_needs', 'image',
                    )
 
     def __init__(self, *args, **kwargs):

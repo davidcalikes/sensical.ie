@@ -394,12 +394,19 @@ video {
 
 .related-links  {
     height: 100%;
+    background-color: #081D46;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-form-submit {
+    background-color: #081D46;
 }
 
 .related-links a {
     color: white !important;
 }
-
 
 .footer-container-bg {
     text-align: center;
@@ -428,7 +435,7 @@ video {
 .footer-inv-logo {
     width: 60%;
     height: auto;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .footer-contact-text {
@@ -463,13 +470,9 @@ video {
     padding-right: 0.5rem;
 }
 
-.irish-logo-container {
-    width: 100%;
-}
 
-.footer-irish-logo {
-    width: 70%;
-    height: auto;
+.link-row {
+    width: 100%;
 }
 
 .footer-links {
@@ -479,28 +482,32 @@ video {
 }
 
 .iwa-logo {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
 .hse-logo {
-    width: 70%;
+    width: 40%;
     height: auto;
 }
 
 .autism-logo {
-    width: 80%;
+    width: 90%;
     height: auto;
     background-color: white;
 }
 
 .adhd-logo {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
 .footer-disclaimer {
     font-weight: bold;
+    background-color: #081D46;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-bottom: 2px solid #75e6ff;
 }
 
 .footer-info-box i {
@@ -834,10 +841,15 @@ video {
     width: 500px;
     height: fit-content;
     align-items: center;
+    margin-top: 3rem;
 }
 
 #mc_embed_signup input {
     border-radius: 0;
+}
+
+#mc_embed_signup h2 {
+    color: #081D46;
 }
 
 /* **** MEDIA QUERIES **** */
@@ -951,13 +963,6 @@ video {
     .footer-info-text {
         padding-right: 0;
     }
-
-    .irish-logo-container {
-        width: 50%;
-        margin-left: 25%;
-    }
-    
-    
     .footer-socials {
         padding: 0;
         padding-top: 0;
@@ -1000,6 +1005,28 @@ video {
     .basket-col {
         margin-right: 0;
     }
+    .iwa-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .hse-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .autism-logo {
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .adhd-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
     }
     
 @media screen and (max-width: 600px) {
@@ -1014,10 +1041,6 @@ video {
     }
     .wishlist-container {
         margin-top: 150px;
-    }
-    .irish-logo-container {
-        width: 75%;
-        margin-left: 12.5%;
     }
     }
 
@@ -1100,10 +1123,6 @@ video {
     }
     .footer-inv-logo {
         width: 50%;
-    }
-    .irish-logo-container {
-        width: 100%;
-        margin-left: 0;
     }
     }
 
