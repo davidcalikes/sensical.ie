@@ -436,10 +436,10 @@ _Packages Wireframe_
 <img src="../docs/readme_images/wireframes_testimonials.png"><br>
 _Testimonials Wireframe_
 
-<img src="../docs/readme_images/wireframes_add_passport.png"><br>
+<img src="../docs/readme_images/wireframes_wishlist.png"><br>
 _Wishlist Wireframe_
 
-<img src="../docs/readme_images/wireframes_passport.png"><br>
+<img src="../docs/readme_images/wireframes_hire.png"><br>
 _Hire Wireframe_
 
 Due to the scope of this application and how similar many of the pages are, I thought it unnecessary to include every single page here. Like the auth pages for example.
@@ -459,6 +459,11 @@ _Sensical.ie Color Scheme_
 
 <br>
 
+
+After some consideration for users who may have light sensitivity issues, I used a dark blue background almost as a default "dark mode" for most of the site. The general tone of the color scheme is almost medical, and this is reflected in the pastel green and pink shades used to indicate stock status by framing the borders of product cards. I feel the color scheme works well. It reflects the purpose of the business and looks professional enough without taking itself too seriously.
+
+<br>
+
 ## Typography
 
 *  There are two fonts used throughout the application.
@@ -470,6 +475,117 @@ _Sensical.ie Color Scheme_
     The fonts were imported to the project head element.
 
 <br>
+
+
+<br>
+
+# Features
+
+## Existing Features
+
+### Features present across all pages
+
+<br>
+
+## The Navbar
+
+### Upper Nav
+
+The navbar is present across all pages of the app and sticks to the top of the page as a user scrolls downwards, providing an optimal navigational experience.
+
+<img src="../docs/readme_images/feat_nav_bar.png"><br>
+_Sensical.ie Nav Bar_
+
+<br>
+
+The navbar contains the business logo which links back to the homepage when clicked. There is also a Search bar that allows users to query the products database. There are three icon links in the upper right of the navbar that link to the user wishlist, user profile/ account management and shopping basket features. 
+
+<br>
+
+<img src="../docs/readme_images/feat_nav_logo.png"><br>
+_Sensical.ie Nav Logo_
+
+<br>
+
+<img src="../docs/readme_images/feat_nav_search_bar.png"><br>
+_Sensical.ie Nav Search Bar_
+
+<br>
+
+<img src="../docs/readme_images/feat_nav_links.png"><br>
+_Sensical.ie Nav Links_
+
+<br>
+
+## Link Icon Features
+
+The Menu Links icons have different behaviors that offer user feedback. 
+
+The My Wishlist Icon becomes animated when a user adds an item in their wishlist and stays animated as long as the wishlist has at least one item contained within it.
+
+<img src="../docs/readme_images/feat_wishlist_icon.png"><br>
+_Sensical.ie Wishlist icon_
+
+<br>
+
+The Basket icon has similar functionality, and displays a red number when a user adds and item or items to their shopping basket.
+
+<img src="../docs/readme_images/feat_basket_icon.png"><br>
+_Sensical.ie BAsket icon_
+
+The totaliser beneath the icon also informs the user of the total cost of their basket items.
+
+## Lower Nav
+
+The lower nav 
+
+<img src="../docs/readme_images/feat_main_nav_menu.png"><br>
+_Sensical.ie Main Nav Menu_
+
+The Menu Contains links to the Home, About, Hire, Packages and Testimonials pages as well as the Products page and product Categorisation.
+
+## Collapsed Menu
+
+At smaller screen widths, the nav bar collapses into a burger style dropdown menu to enhance user experience on mobile and tablet devices.
+
+<img src="../docs/readme_images/feat_nav_collapsed.png"><br>
+_Sensical.ie Collapsible Menu_
+
+<br>
+
+## The Delivery Banner
+
+Although the delivery banner is not technically available across every page of the site, I've included it here as it felt like it belonged to the nav section of the project. 
+
+The Delivery Banner provides dynamic visual feedback to purchasing customers regarding a free delivery offer when users spend more than €50.
+
+<img src="../docs/readme_images/feat_delivery_banner1.png"><br>
+_Delivery Banner_
+
+If a user adds a product to their basket the Delivery Banner Updates.
+
+<img src="../docs/readme_images/feat_delivery_banner2.png"><br>
+_Delivery Banner_
+
+When the delivery threshold has been met by the user the banner changes to the following.
+
+<img src="../docs/readme_images/feat_delivery_banner3.png"><br>
+_Delivery Banner_
+
+I only includer the Delivery Banner on pages related to the e-Commerce side of the site a I felt it could free up a useable section of screen real estate for the information pages.
+
+## The Footer
+
+<img src="../docs/readme_images/feat_footer.png"><br>
+_Sensical.ie Footer_
+
+The Footer section hugs the bottom of each page of the site and contains Copyright and Developer information including social links that open in a new tab.
+
+<br>
+
+## Existing Features (cont)
+
+### Individual Pages
 
 
 
