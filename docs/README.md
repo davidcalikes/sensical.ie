@@ -627,6 +627,159 @@ _Sensical.ie Lower Footer_
 
 ### Individual Pages
 
+<br>
+
+<img src="../docs/readme_images/feat_home.png"><br>
+_Sensical.ie Home Page_
+
+<details>
+
+<summary>
+Home Page</summary><br>
+
+* The Home page contains a high quality hero video with a clever H1 heading that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really ledgible, however the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically places to allow some content to show from the base of the page, encouraging users to scroll further. 
+
+<img src="../docs/readme_images/feat_home_hero.png"><br>
+_Sensical.ie Hero Video & CTA Buttons_
+
+* The call to action buttons provide the user with instant access to the two main data streams of the site. The first button, SHOP leads to the e-Commerce side of the application where the second button leads to the Hiring/Information side.
+
+<img src="../docs/readme_images/feat_cta_buttons.png"><br>
+_Sensical.ie Hero Video & CTA Buttons_
+
+* There are three 'Home Cards' That provide the user with information regarding the purpose and functionality of both the site and the business. The home cards are elegantly designed and contain images and links to the three main site areas.
+
+<img src="../docs/readme_images/feat_home_cards.png"><br>
+_Sensical.ie Home Cards_
+
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_products.png"><br>
+_Sensical.ie Products Page_
+
+<details>
+
+<summary>
+Products Page</summary><br>
+
+* The features of the page
+
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_product_detail.png"><br>
+_Sensical.ie Product Detail Page_
+
+<details>
+
+<summary>
+Product Detail Page</summary><br>
+
+* The features of the page
+
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_wishlist.png"><br>
+_Sensical.ie Wishlist Page_
+
+<details>
+
+<summary>
+Wishlist Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_shopping_basket.png"><br>
+_Sensical.ie Shopping Basket Page_
+
+<details>
+
+<summary>
+Shopping Basket Page</summary><br>
+
+* The features of the page
+
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_checkout.png"><br>
+_Sensical.ie Checkout Page_
+
+<details>
+
+<summary>
+Checkout Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_hire.png"><br>
+_Sensical.ie hire Page_
+
+<details>
+
+<summary>
+Hire Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_packages.png"><br>
+_Sensical.ie Packages Page_
+
+<details>
+
+<summary>
+Packages Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_about.png"><br>
+_Sensical.ie About Page_
+
+<details>
+
+About Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_testimonials.png"><br>
+_Sensical.ie Testimonials Page_
+
+<details>
+
+<summary>
+Testimonials Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+<img src="../docs/readme_images/feat_user_profile.png"><br>
+_Sensical.ie User Profile Page_
+
+<details>
+
+<summary>
+User Profile Page</summary><br>
+
+* The features of the page
+</details>
+<br>
+
+
+
+## Other Notable Features
 
 
 
