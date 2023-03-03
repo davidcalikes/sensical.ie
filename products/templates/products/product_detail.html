@@ -46,26 +46,26 @@
                 <p class="pl-2" tabindex=0> {{ product.description }} <p>
                         {% if 'ADHD' in product.for_sensory_needs|stringformat:'s' %}
                         <i class="icon pl-2 fa-solid fa-eye"></i>&nbsp;
-                        <span class="sr-only" tabindex=0>This product can help people living with A D D</span>
+                        <span class="sr-only" title="Good for ADHD" tabindex=0>This product can help people living with A D D</span>
                         {% endif %}
                         {% if 'ASD' in product.for_sensory_needs|stringformat:'s' %}
-                        <span class="sr-only" tabindex=0>This product can help people living with Autistic Spectrum Disorder</span>
+                        <span class="sr-only" title="Good for Autism" tabindex=0>This product can help people living with Autistic Spectrum Disorder</span>
                         <i class="icon pl-2 fa-solid fa-rainbow"></i>&nbsp;
                         {% endif %}
                         {% if 'TOUCH' in product.for_sensory_needs|stringformat:'s' or 'TACTILE' in product.for_sensory_needs|stringformat:'s' %}
-                        <span class="sr-only" tabindex=0>This product can help people living with tactile sensory needs</span>
+                        <span class="sr-only" title="Good for Feeling" tabindex=0>This product can help people living with tactile sensory needs</span>
                         <i class=" icon pl-2 fa-solid fa-hands"></i>&nbsp;
                         {% endif %}
                         {% if 'SOUND' in product.for_sensory_needs|stringformat:'s' %}
-                        <span class="sr-only" tabindex=0>This product can help people living with auditory sensory needs</span>
+                        <span class="sr-only" title="Good for auditory needs" tabindex=0>This product can help people living with auditory sensory needs</span>
                         <i class="icon pl-2 fa-solid fa-headphones"></i>&nbsp;
                         {% endif %}
                         {% if 'RELAX' in product.for_sensory_needs|stringformat:'s' %}
-                        <span class="sr-only" tabindex=0>This product can help people to relieve anxiety</span>
+                        <span class="sr-only" title="Good for relaxing" tabindex=0>This product can help people to relieve anxiety</span>
                         <i class="icon pl-2 fa-solid fa-moon"></i>&nbsp;
                         {% endif %}
                         {% if 'LIGHT' in product.for_sensory_needs|stringformat:'s' %}
-                        <span class="sr-only" tabindex=0>This product may not be suitable for people with photo-sensitive epilepsy</span>
+                        <span class="sr-only" title="Photosensitivity Warning" tabindex=0>This product may not be suitable for people with photo-sensitive epilepsy</span>
                         <i class="icon pl-2 fa-regular fa-lightbulb"></i>&nbsp;
                         {% endif %}
                         <p class="mb-0"><small class="pl-2">SKU: {{ product.sku }} </small></p>

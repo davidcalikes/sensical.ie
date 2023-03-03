@@ -652,6 +652,12 @@ _Sensical.ie Hero Video & CTA Buttons_
 <img src="../docs/readme_images/feat_home_cards.png"><br>
 _Sensical.ie Home Cards_
 
+The Home Page is fully responsive across multiple device widths.
+
+<img src="../docs/readme_images/feat_home_resp.png"><br>
+_Sensical.ie Home Mobile_
+
+
 </details>
 <br>
 
@@ -663,7 +669,32 @@ _Sensical.ie Products Page_
 <summary>
 Products Page</summary><br>
 
-* The features of the page
+* The Products Page features a sort selector at the top left of the page with a toggle switch that hides/displays unavailable products for the convenience of the user. Users cn sort products by alphabetical order or by price.
+
+<img src="../docs/readme_images/feat_sort_selector.png"><br>
+_Sensical.ie Products Page Sort Selector_
+
+* The Products page contains product cards that have a border color depending on the stock status of the item. If the product is in stock, the border color is a pastel green and this changes to a pastel pink if the product is unavailable.
+
+<img src="../docs/readme_images/feat_product_cards.png"><br>
+_Sensical.ie Products Page Cards_
+
+* Each card contains an image inside an anchor element, that links to the product detail view of the item. There is a generous heading with the product name. The also contain the price of the item and the stock status to further inform the user. A stylised link with herat shaped fontawesome icon is available for users to add or remove items from their wishlist. The wish list link redirects to the login page for anonymous users. There are also two button elements on each card, one for adding an item directly to the users shopping basket and another for accessing the product detail page. Each button has a style consistent with other clickable elements of the site and has an informative fontawesome basket or info icon. 
+
+<img src="../docs/readme_images/feat_lower_card.png"><br>
+_Sensical.ie Products Lower Card_
+
+* The lower part of each card contains links for Site Admin users to edit or delete the product, either side of the product rating, which provides feedback to the user about the overall customer satisfaction rating of the product.
+
+<img src="../docs/readme_images/feat_product_add.png"><br>
+_Sensical.ie Product Add_
+
+* At the base of the products page there is a button that links to the product management page, which allows Admin Users to add new products. This button is not available to non-admin users.
+
+<img src="../docs/readme_images/feat_products_management.png"><br>
+_Sensical.ie Product Management Form_
+
+* Admin users can add a product to sell via the store. The form will return errors if filled incorrectly and a placeholder image will be used for the product if an image is not uploaded.
 
 </details>
 <br>
@@ -676,7 +707,45 @@ _Sensical.ie Product Detail Page_
 <summary>
 Product Detail Page</summary><br>
 
-* The features of the page
+* The Product Detail Page contains more information about the product. In addition to its price and stock status larger image is available plus a sensory needs indicator feature.
+
+<img src="../docs/readme_images/feat_sensory_needs_indicator.png"><br>
+_Sensical.ie Sensory Needs Indicator_
+
+* This row of icons contains visual feedback to the user regarding the suitability of each item. The key for the feature is as follows: 
+
+* The RAINBOW icon denotes this item may help people living with autistic spectrum disorder.
+* The HANDS icon denotes this item may help people living with Tactile sensory needs.
+* The EYE icon denotes this item may help people living with ADHD.
+* The HEADPHONES icon denotes this item may help people Auditory Sensory Needs.
+* The MOON icon denotes this item may help people living with Anxiety.
+* The LIGHTBULB icon denotes this item may not be suitable for people with photo sensitive epilepsy.
+
+The Site Administrator can attach each Icon to a product using the following keywords in the For Sensory Needs Form Field.
+
+* ADHD for ADHD
+* ASD for ASD
+* TOUCH for Tactile sensory issues.
+* AUDIO for Auditory sensory issues
+* RELAX for anxiety issues.
+* LIGHT for Photosensitivity issues.
+
+* The next noteworthy feature is the product quantity selector. This will allow users to add up to 10 of any given items at a time to the their shopping basket.
+
+<img src="../docs/readme_images/feat_qty_select.png"><br>
+_Sensical.ie Quantity Selector_
+
+* As the business is carries an extremely small inventory at afforable prices, it was important to the business owners to limit bulk purchases in this way, in order to properly grow their busness, the company wished to reach as many different customers as possible rather than wholesale to just a few bulk buyers. This feature will be atapted in future iterations of the site, where the selector will feature only the amount of products available in stock at any given time providing feedback for the user and managing stock level issues at the point of sale.
+
+At the base of the page the consistently styled Product Detail Buttons allow users to continue shopping or add the current product to their basket or wishlist.
+
+<img src="../docs/readme_images/feat_detail_buttons.png"><br>
+_Sensical.ie Product Detail Buttons_
+
+The Product Detail Page is fully responsive across multiple screen widths.
+
+<img src="../docs/readme_images/feat_detail_resp.png"><br>
+_Sensical.ie Product Detail Responsivness_
 
 </details>
 <br>
@@ -701,7 +770,20 @@ _Sensical.ie Shopping Basket Page_
 <summary>
 Shopping Basket Page</summary><br>
 
-* The features of the page
+<img src="../docs/readme_images/basket_items.png"><br>
+_Sensical.ie Shopping Basket Items_
+
+* The basket items section contains horizontal product cards each displaying a thumbnail image, name, price and quantity of each basket item. Every card has its own sort selector and update button allowing users to modify their basket without having to return to the products page. There is also a feature that allows the user to remove the entire quantity of an item from the basket if they desire. I think this page justifies the intentional design choice to have a darker background, as the colorful products really pop out in contrast to the neutral backdrop.
+
+<img src="../docs/readme_images/basket_summary.png"><br>
+_Sensical.ie Shopping Basket Summary_
+
+* The shopping basket summary section contains an efficient overview of the cost of the users basket items. The summary section allows users to return to the products page or continue to the checkout to complete their purchases.
+
+<img src="../docs/readme_images/basket_resp.png"><br>
+_Sensical.ie Shopping Basket Responsivness_
+
+The Shopping Basket Page is fully responsive across multiple screen widths.
 
 </details>
 <br>
@@ -714,7 +796,40 @@ _Sensical.ie Checkout Page_
 <summary>
 Checkout Page</summary><br>
 
-* The features of the page
+<img src="../docs/readme_images/checkout_heading_summary.png"><br>
+_Sensical.ie Checkout Page Summary_
+
+* The Checkout Page has a heading summary that carries the total cost information over from the basket page.
+
+<img src="../docs/readme_images/checkout_items.png"><br>
+_Sensical.ie Checkout Page Items_
+
+* The Checkout page also has a similar items list to the basket page, but with truncated features. This was purposely designed to not only differentiate the Checkout Page from the Shopping Basket Page but to also discourage users from changing their minds and removing items from their basket at the last minute.
+
+<img src="../docs/readme_images/checkout_delivery_acc.png"><br>
+_Sensical.ie Checkout Delivery Accordian_
+
+The Checkout Delivery Accordian contains a users delivery information in a handy dropdown accordian. 
+
+The delivery information is prepopulated in the form if a user has it saved to their profile. There is also the option for registered users to save their information to their profile if they have not already done so.
+
+<img src="../docs/readme_images/checkout_payment_details.png"><br>
+_Sensical.ie Checkout Payment Details Section_
+
+At the base of the checkout page, there is a form input for a user to enter their credit/debit card. The area contains a field for the users card number, a submit order button for users to complete the order and a back to basket button for users to return to the shopping basket without submitting the order. There us some warning text that provides feedback for the user regarding how much their card will be charged. I have included some out size fontawsome card icons here. I think the globally recognised financial institutions would inspire customer confidence in the site and promote multiple visits and purchases. 
+
+Also included in this section is a link to the terms and conditions of the sites use to protect the business against contingent liabilities.
+
+<img src="../docs/readme_images/checkout_loading.png"><br>
+_Sensical.ie Checkout Loading Modal_
+
+When a payment is submitted a spinning logo and feedback message fills the page as the request is being processed by the Stripe API. The modal is important as it prevents the user from interacting with the site diring the paymemt process whilst keeping them informed that the payment is being processed.
+
+<img src="../docs/readme_images/checkout_success.png"><br>
+_Sensical.ie Checkout Success Page_
+
+If an order is successfully completed, the user is notified, and returned to the checkout success page. This page provides the user details of their purchase and is backed u to their user profile if they have one. There is a link to return to the users profile page if they are registered users and a link back to the home page if they are not.
+
 </details>
 <br>
 
