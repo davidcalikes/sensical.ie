@@ -758,7 +758,23 @@ _Sensical.ie Wishlist Page_
 <summary>
 Wishlist Page</summary><br>
 
-* The features of the page
+
+<img src="../docs/readme_images/wishlist_success.png"><br>
+_Sensical.ie Wishlist Success_
+
+* Whenever a registered user adds a product to their wishlist, they are informed by a success message. If the wishlist contains many items the wishlist messages container allow the user to scroll through the items on the message container itself. Users can also directly access the wishlist from the message container. A users wishlist, and the items within it are saved for the users convenience even if they log out or refresh their browser.
+
+<img src="../docs/readme_images/wishlist_items.png"><br>
+_Sensical.ie Wishlist Items_
+
+The Wishlist Page itself is elegant in its simplicity and maintains many of the design features consistent with the rest of the site. Including the pleasing contrast between the vibrant foreground images and the background and the familiar looking 'Find More Products' 'Add to Basket' and 'Remove Form Wishlist buttons. The Move to Basket feature is designed to maximise convenience for user. Adding a product to the basket from the wishlist does not remove it from the wishlist. This is entirely intentional, as the business owners insist that many users will be clients or the carers or parents of clients that will often have to re-order products because of damage or wear from overuse, so having all your favorite products in the one place will be of maximum benefit to users in these situations. 
+
+<img src="../docs/readme_images/wishlist_resp.png"><br>
+_Sensical.ie Wishlist Responsiveness_
+
+The Wishlist Page has been tested across many screen widths and is fully responsive.
+
+
 </details>
 <br>
 
@@ -830,6 +846,12 @@ _Sensical.ie Checkout Success Page_
 
 If an order is successfully completed, the user is notified, and returned to the checkout success page. This page provides the user details of their purchase and is backed u to their user profile if they have one. There is a link to return to the users profile page if they are registered users and a link back to the home page if they are not.
 
+
+<img src="../docs/readme_images/checkout_resp.png"><br>
+_Sensical.ie Checkout Responsivity_
+
+Like the rest of the site, the checkout page is fully responsive across many device widths.
+
 </details>
 <br>
 
@@ -841,7 +863,15 @@ _Sensical.ie hire Page_
 <summary>
 Hire Page</summary><br>
 
-* The features of the page
+* The Hire page is a static page within the site that links to information and resources users require to make a booking.
+The hire side of the business, known as "Mobile Sensory Environments" is managed via the busines owners Facebook business page.
+
+* There are links to the Facebook page from the Hire Page that open in a separate tab. There is also a link that redirects the user to the packages page, where they can learn more about the hire packages on offer.
+
+<img src="../docs/readme_images/feat_resp.png"><br>
+_Sensical.ie Hire Page_
+
+* The Hire Page of Sensical.ie is fully responsive across all devices and is consistent in its design.
 </details>
 <br>
 
@@ -853,7 +883,18 @@ _Sensical.ie Packages Page_
 <summary>
 Packages Page</summary><br>
 
-* The features of the page
+<img src="../docs/readme_images/packages_management.png"><br>
+_Sensical.ie Packages Page_
+
+* Package Management Options
+
+At the top of the Packages Page there are links to the 'Add Packages Page' and the 'Package Requests Page'
+
+These options are only available to Site Admin users.
+
+
+
+
 </details>
 <br>
 

@@ -18,7 +18,9 @@ class Packages(models.Model):
     sensory_items_type = models.TextField(blank=True, null=True)
     image_url = models.URLField(max_length=1024, blank=True, null=True)
     image = CloudinaryField(
-        "Package Image", default='placeholder')
+        "Package Image", default='https://res.cloudinary.com/'
+                                 'djck2eqxo/image/upload/v1677807568/'
+                                 'no_package_image_mskcnk.webp')
     discount_voucher = models.DecimalField(max_digits=3, decimal_places=1)
     price = models.DecimalField(max_digits=8,
                                 decimal_places=2, blank=True,  null=True)

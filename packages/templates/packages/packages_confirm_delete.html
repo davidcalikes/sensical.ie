@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - **WARNING**{% endblock %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Ensures page has not been accessed directly by URL -->
+
+{% if "sensical" in request.META.HTTP_REFERER %}
+
+<!-- Package delete page warning logo and text content -->
+
+<div class="warning-container">
+    <div>&nbsp;
+        <div class="row">
+            <div class="text-center">
+                <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+            </div>
+
+            <!-- Package delete form -->
+            
+            <div class="col-12">
+                <div class="text-center">
+                    <h3>***WARNING***</h3>
+                    <form method="POST" action="#">
+                        {% csrf_token %}
+                        <br>
+                        <p>You are about to delete this Testimonial!</p>
+                        <a href="{{request.META.HTTP_REFERER}}" class="sensical-button">Go Back</a>
+                        <input type="submit" value="Delete" class="sensical-button">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- If the page has been accessed via direct URL input show this instead! -->
+
+{% else %}
+
+<!-- Unauthorised access warning logo and text content -->
+
+<div class="warning-container">
+    <div class="text-center">
+        <img class="warning-logo" src="https://res.cloudinary.com/djck2eqxo/image/upload/v1668002468/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg.png" alt="Warning Logo">
+    </div>
+
+    <div class="text-center">
+        <h3>***WARNING***</h3>
+        <p class="mb-2">Warning! 
+            You are unauthorised to view this page! 
+            You have navigated to this page from an unauthorised url
+        </p>
+            <br>
+            
+        
+        <p>Please login or <a href="{% url 'home' %}" class="sensical-button">Click Here</a> to visit the Sensical.ie Home page</p>     
+    </div>
+</div>
+
+{% endif %} 
+
+{% endblock %} 

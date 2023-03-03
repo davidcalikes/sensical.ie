@@ -78,15 +78,21 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
-            
+            {% if package.image_url %}
             <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
-            
+            {% else %}
+            <img class="packages-img" src="{{ package.image }}" alt="An image of a hire package">
+            {% endif %}
         </div>
         
         {% else %}
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width">
+                {% if package.image_url %}
                 <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
+                {% else %}
+                <img class="packages-img" src="{{ package.image }}" alt="An image of a hire package">
+                {% endif %}
             </div>
         </div>
         <div class="col-12 col-lg-6 my-4 text-center">
