@@ -390,12 +390,6 @@ Sensical.ie was developed using the Agile Development Methodology. A detailed ov
 
 <br>
 
-# Testing
-
-The app was conscientiously tested during and post development.
-The testing results for MyPSE.ie are available [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/TESTING.md)
-
-
 # Visual Design
 
 ## Wireframes
@@ -1023,6 +1017,282 @@ Once they have registered, users can login and out of the site to enjoy extra be
 
 <img src="../docs/readme_images/feat_toasts2.png"><br>
 _Sensical.ie Authentication_
+
+<br>
+
+# Testing
+
+The app was conscientiously tested during and post development.
+The testing results for Sensical.ie are available [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/TESTING.md)
+
+<br>
+
+# Deployment
+
+Sensical.ie was deployed to heroku during the early stages of development. I wanted to make sure the database and static files were all accessible from the beginning of the project so I wouldn't have to worry about deployment issues closer to releasing the app.
+
+The live site can be viewed [here:](https://sensical-ireland.herokuapp.com/)
+
+<img src="../docs/readme_images/deploy_early.png"><br>
+_Early Deployment Screenshot_
+
+<br>
+
+## Database
+
+### ElephantSQL
+
+To create a managed postgres datasbase go to [ElephantSQL](https://www.elephantsql.com/) and Signup/Signin to your account.
+
+* Click on 'Create New Instance'.
+
+<img src="../docs/readme_images/deploy_elephant1.png"><br>
+_ElephantSQL_
+
+* Name your database, choose the 'Tiny Turtle' payment plan and click 'Select Region'.
+
+* Choose your region and then create the database. instance.
+
+* In the instances page, click the name of your chosen database.
+
+* In the details section of the following page copy the postgres url.
+
+<img src="../docs/readme_images/deploy_elephant_3.png"><br>
+_ElephantSQL_
+
+You can now use this URL when linking the database to the project's GitHub repository.
+
+<br>
+
+## Deploying to Heroku
+
+* Signup/Signin to Heroku.
+
+* Create a new app from the Heroku dashboard.
+
+<img src="../docs/readme_images/deploy_heroku1.png"><br>
+_Heroku Deployment_
+
+* Give the app a unique name and enter the region of operation then click 'create app'.
+
+* From your newly created app choose the settings tab and navigate to 'Reveal Config Vars'.
+
+* Paste the ElephantSQL Database url into the DATABASE_URL environment variable.
+
+* Create an env.py file in the root directory of your Django project. (At the same directory level as requirements.txt and manage.py)
+
+The file should look like the image below, with the os library imported at the top of the file.
+
+<img src="../docs/readme_images/deploy_env1.png"><br>
+_env.py_
+
+* Paste the ElephantSQL url for the DATABASE_URL value.
+
+* Add the following libraries to the settings.py file: Import Path from pathlib, dj_database_url and os.
+
+* Create a secret key to replace the insecure SECRET_KEY variable in the settings.py file. Link the secure key in env.py to the settings.py SECRET_KEY variable with the following code: SECRET_KEY = os.environ.get('SECRET_KEY')
+
+* Add your secret key to HEROKU Config Vars.
+
+* Link the DATABASES value to the env.py file with the following code: DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+
+* You can now migrate the app models to the new database using the command: "python3 manage.py makemigrations" then Python3 manage.py migrate.
+
+
+The final part of setting up the env.py file concerns static files. To manage the static files for the project execute the following steps:
+
+* Signup/Signin to [Cloudinary](https://cloudinary.com/)
+
+* Copy the 'cloudinary url' from your account dashboard and paste it as the CLOUDINARY_URL value in env.py.
+
+* Add the CLOUDINARY_URL to the Config Vars in Heroku.
+
+* Also Add the DISABLE_COLLECTSTATIC Key with the value of 1
+
+* Change the static file settings in Django by altering the following.
+
+ * The STATIC_URL
+ * STATICFILES_STORAGE
+ * STATICFILES_DIRS
+ * STATIC_ROOT
+ * MEDIA URL
+ * DEFAULT_FILE_STORAGE
+
+ The STATIC section of settings.py should resemble the following image:
+
+ <img src="../docs/readme_images/deploy_env3.png"><br>
+_STATIC settings.
+
+* Change the TEMPLATES 'DIRS' Setting in Settings.py to [TEMPLATES_DIR] TEMPLATES configuration for the project should resemble the following image:
+
+ <img src="../docs/readme_images/deploy_env4.png"><br>
+_TEMPLATES Setting in settings.py
+
+* Create 3 new folders for static files, media files and HTML templates. (At the same directory level as requirements.txt and manage.py.)
+
+* Create a Procfile(capital P) and add the following: web: gunicorn NAME_OF_THE_APP_GOES_HERE.wsgi 
+
+* Add the app name and herokuapp.com to the list of ALLOWED_HOSTS.
+
+* Add and commit the changes to GitHub.
+
+* Remove DISABLE_COLLECTSTATIC from Heroku Config Vars
+
+* Deploy via the 'Deploy Main Branch' button in the Deployment page of HEROKU.
+
+* If you receive an success message, you can click the link provided to view the app in the web browser.
+
+<br>
+
+## Forking the GitHub Repository
+
+If you want to make an independent copy of the Sensical.ie GitHub repository please follow these steps:
+
+* Signup/Signin to GitHub.
+
+* Follow this link to the Sensical.ie repository: https://github.com/davidcalikes/sensical.ie
+
+* Click on the 'Fork' button at the top-right of the page.
+
+<img src="../docs/readme_images/deploy_1.png"><br>
+_Forking the repo_
+
+* A copy of the sensical.ie repository should now be available in your list of GitHub repositories.
+
+Forking the GitHub repo will not affect the original codebase. 
+
+<br>
+
+## Cloning the GitHub Repository
+
+If you want to contribute to the Sensical.ie project, You can clone the Sensical.ie repo. A clone creates a linked copy of the repository that will run on a local machine which can then be synchronized with the original repo. To clone Sensical.ie please follow these steps:
+
+* Signup/Signin to GitHub.
+
+* Follow this link to the Sensical.ie repository: https://github.com/davidcalikes/sensical.ie
+
+* Click on the <> Code button near the top-right of the page.
+
+* Access the 'Code' menu from above the main directory window and choose a preferred cloning option by selecting either HTTPS or GitHub CLI. An SSH key is required should you prefer that option. 
+
+* Press the overlapping squares icon to copy the link to the repository.
+
+<img src="../docs/readme_images/deploy_2.png"><br>
+_Cloning the repo_
+
+* Open the code editor of your choice.
+
+* Create a new working directory for the cloned repo.
+
+* Use the 'git clone command and paste in the copied link.
+
+* Press enter and the repo will be cloned locally to your machine.
+
+* Setup and activate your local development environment.
+
+* Install the project requirements using the command -- pip3 install -r requirements.txt
+
+* Create a Heroku app for your Clone and add the appropriate Config Vars using the [aforementioned instructions](https://github.com/davidcalikes/sensical.ie#deploying-to-heroku).
+
+* Create an env.py file that includes the appropriate DATABSE_URL, SECRET_KEY and CLOUDINARY_URL settings.
+
+* Add 'localhost' to ALLOWED_HOSTS in settings.py
+
+* Use the command -- python3 manage.py makemigrations followed by -- python3 manage.py migrate to setup a local copy of the project database.
+
+* Use the command python3 manage.py runserver to run the app on a development server.
+
+# Technologies
+
+Sensical.ie was developed using the following languages, frameworks and dependencies.
+
+* Python (Version 3.8.11) The requirements.txt file contains all of the projects Python packages.
+
+* Django was the main python framework used while developing Sensical.ie.
+
+* Django AllAuth was used for user account management/authentication.
+
+* Bootstrap (Version 5.01) was used to rapidly develop the layout, responsivity and core frontend elements of Sensical.ie.
+
+* ElephantSQL was implemented as the postgres, database management system for Sensical.ie
+
+* HTML was used in developing the templates for Senscial.ie.
+
+* CSS was used to add custom styling to the site, overriding many of Bootstrap's core style rules.
+
+* JavaScript was used to implement interactivity and manipulatethe DOM from the front end.
+
+* Font Awesome Instructive icons were used to provide visual feedback in many areas. 
+
+* Heroku. Sensical.ie was deployed to the cloud-based hosting service Heroku.
+
+* Stripe API. Sensical.ie utilised Stripe to manage secure payments
+
+<br>
+
+## Software
+
+### Gitpod
+
+Gitpod was used as the primary development environment for this application. As the scope of this project was considerable from the beginning of development, I thought it would be wise to have a system in place that supporting devs could access remotely.
+
+
+### Git & GitHub
+
+The version control and storage system used for Sensical.ie is Git and GitHub respectively. 
+
+### Lucidchart
+
+I created a flowchart during the planning of Sensical.ie using Lucidchart.
+
+
+### DrawSQL
+
+I used DrawSQL to create the database schema during the planning stages of the project.
+
+
+### Adobe Photoshop CS6
+
+I am moderately skilled at using Photoshop and created many of the graphics, page-heading images and logo's on display throughout the site.
+
+
+### Tiny PNG
+
+For resizing larger image files
+
+
+### WebP Converter
+
+For converting images to nextgen web formats.
+
+
+### Balsamiq
+
+I used Balsamiq to create wireframes for the project.
+
+
+
+### Other Notable Resources
+
+* Diffchecker -- To compare code in a web browser when searching for bugs and subtle changes.
+
+* Grammarly -- To check the spelling and grammar of the text content of Sensical.ie and its documentation.
+
+* Apple Pages -- To create PDF User Guides.
+
+<br>
+
+# Media
+
+The following images, of which I personally hold the copyright, were taken at my current place of work, with permission. 
+
+The warning logo used was downloaded from: https://www.subpng.com/png-v5sg3x/download.html
+
+All other images used throughout the development of this site were downloaded from [Pexels.com](https://www.pexels.com/photo/photo-of-woman-teaching-935943/) and are free to use.
+
+<br>
 
 
 
