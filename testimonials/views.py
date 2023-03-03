@@ -44,18 +44,15 @@ class AddTestimonial(SuccessMessageMixin, generic.CreateView):
 
         image = self.request.FILES.get('image')
 
-        result = cloudinary.uploader.upload(image)
-        image_url = result.get('url')
+        if image:
+            result = cloudinary.uploader.upload(image)
+            image_url = result.get('url')
+        else:
+            image_url = clientTestimonial.photo_url.field.default
 
         form.instance.photo_url = image_url
 
         return super().form_valid(form)
-
-    def form_invalid(self, form):
-        """If the form is invalid, render the invalid form."""
-        messages.add_message(self.request, messages.ERROR,
-                             "Invalid form input... See errors below")
-        return self.render_to_response(self.get_context_data(form=form))
 
 
 class UpdateTestimonial(SuccessMessageMixin, generic.edit.UpdateView):

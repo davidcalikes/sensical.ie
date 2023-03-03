@@ -41,8 +41,8 @@ class Product(models.Model):
         max_length=1024, null=True, blank=True)
     image = CloudinaryField(
         "Product Image", default=('https://res.cloudinary.com/'
-                                  'djck2eqxo/image/upload/'
-                                  'v1677797932/no_product_image_cku69i.webp'))
+                                  'djck2eqxo/image/upload/v1677845573/'
+                                  'placeholder_products_p9btop.webp'))
     users_wishlist = models.ManyToManyField(
         User, related_name='user_wishlist', blank=True)
 
