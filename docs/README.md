@@ -34,8 +34,6 @@ I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the bu
 
 ## Prior Business Model
 
-
-
 <br>
 
 ### Primary Target Audience:
@@ -637,7 +635,7 @@ _Sensical.ie Home Page_
 <summary>
 Home Page</summary><br>
 
-* The Home page contains a high quality hero video with a clever H1 heading that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really ledgible, however the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically places to allow some content to show from the base of the page, encouraging users to scroll further. 
+* The Home page contains a high quality hero video with clever heading text that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really ledgible, however the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically placed to allow some content to show from the base of the page, encouraging users to scroll further. 
 
 <img src="../docs/readme_images/feat_home_hero.png"><br>
 _Sensical.ie Hero Video & CTA Buttons_
@@ -846,7 +844,6 @@ _Sensical.ie Checkout Success Page_
 
 If an order is successfully completed, the user is notified, and returned to the checkout success page. This page provides the user details of their purchase and is backed u to their user profile if they have one. There is a link to return to the users profile page if they are registered users and a link back to the home page if they are not.
 
-
 <img src="../docs/readme_images/checkout_resp.png"><br>
 _Sensical.ie Checkout Responsivity_
 
@@ -868,7 +865,7 @@ The hire side of the business, known as "Mobile Sensory Environments" is managed
 
 * There are links to the Facebook page from the Hire Page that open in a separate tab. There is also a link that redirects the user to the packages page, where they can learn more about the hire packages on offer.
 
-<img src="../docs/readme_images/feat_resp.png"><br>
+<img src="../docs/readme_images/hire_resp.png"><br>
 _Sensical.ie Hire Page_
 
 * The Hire Page of Sensical.ie is fully responsive across all devices and is consistent in its design.
@@ -884,16 +881,42 @@ _Sensical.ie Packages Page_
 Packages Page</summary><br>
 
 <img src="../docs/readme_images/packages_management.png"><br>
-_Sensical.ie Packages Page_
+_Sensical.ie Package Manegment Options_
 
 * Package Management Options
+At the top of the Packages Page there are links to the 'Add Packages Page' and the 'Package Requests Page'.
+These options are only available to Admin users.
 
-At the top of the Packages Page there are links to the 'Add Packages Page' and the 'Package Requests Page'
+<img src="../docs/readme_images/package_card.png"><br>
+_Sensical.ie Package Card_
 
-These options are only available to Site Admin users.
+* Beneath the Package Managment Options Buttons the current packages offered by the Equipment Hire Business are displayed. Any packages added by Admin Users will be displayed here. Each Package has a bordered image and a Package Detail Card that contains onformation regarding the equipment and items provided, as well as the session duration and price. There is a discount banner that displays a percentage discount available to first time package customers above the package card buttons. If the user has Admin level authoristation, the buttons will allow the Admin to either update, or delete the package. If the user is a non-admin refgistered user or an unauthenticated user, the card will display a button that externally links to the Sensical Facebook Business Page. There is also a button to 'Request a Custom Package'. Each Package Card and image are staggered using the Bootstrap 'order' class to make the page appear more interesting and dynamic. 
+
+<img src="../docs/readme_images/packages_back_button.png"><br>
+_Sensical.ie Package Back Button_
+
+* Beaneath the stylish Hire Packages is a button that allows the user to link 'Back to About Page'
+
+<img src="../docs/readme_images/package_add.png"><br>
+_Sensical.ie Add Package Form_
+
+* Admin users can add a new Hiring Package via the aforementioned 'Package Management' section at the top of the page. The Admin can submit the form and will be returned to the packages page if the form is valid. If an image is not provided within the upload, a placeholder image will be used instead. The placeholder can be replaced with an image at a later time or date.
 
 
+<img src="../docs/readme_images/package_request_form.png"><br>
+_Sensical.ie Package Request Form_
 
+* Non admin users can request a quote from the business via a Package Request Form. The form has instructive placeholder text providing feedback for the user on how to use the form. The user submits the form with by adding their Name, Email Address and Package Requirements. They are then informed that the business will be in touch with a quote in due course.
+
+<img src="../docs/readme_images/package_request_success.png"><br>
+_Sensical.ie Package Request Success_
+
+* Site administrator users can view a list of any package requests via the Package Managment 'view package requests' button at the top of the Package Requests Page.
+
+<img src="../docs/readme_images/packages_resp.png"><br>
+_Sensical.ie Packages Responsivness_
+
+The Packages pages are fully responsive across most device widths.
 
 </details>
 <br>
@@ -903,9 +926,42 @@ _Sensical.ie About Page_
 
 <details>
 
+<summary>
 About Page</summary><br>
 
-* The features of the page
+<img src="../docs/readme_images/about_video.png"><br>
+_Sensical.ie About Video_
+
+* The upper about page features a demonstration video that informs the user about the equipment hire side of the business. The video is framed inside a white border and plays automatically when the page loads.(Autoplays on desktop only) Accompanying the video is a text box featuring more information about the history and direction of the business.
+
+<img src="../docs/readme_images/about_webstore.png"><br>
+_Sensical.ie About Webstore_
+
+* Underneath the about video, is an image and info card providing information to the user about the business's new e-Commerce webstore.
+
+<img src="../docs/readme_images/about_hire.png"><br>
+_Sensical.ie About Hire_
+
+* Further on down the page there is an image and more information about the equipment hire side of the business.
+
+<img src="../docs/readme_images/about_contacts_banner.png"><br>
+_Sensical.ie About Contact Banner_
+
+Below the about video, images and informations cards, there is a 
+page-width bannner element that contains extra large fontawesome social media, email and phone logos. Each logo contains a link for users to contact the business, with all external resources opening in a new tab.
+
+<img src="../docs/readme_images/about_carousel.png"><br>
+_Sensical.ie About Testimonials Carousel_
+
+* The last feature of the about page is an attractive carousel, that contains three testimonial text elements which cycle automatically. A user can control the carousel using the intuitively placed left and right arrow buttons provided. A position indicator strip is also available to provide visual user feedback. 
+
+* Below the Carousel is a button that allows the user to view all of the tesimonials of the site, not just the first three.
+
+<img src="../docs/readme_images/about_resp.png"><br>
+_Sensical.ie About Responsivness_
+
+The about page is fully responsive across most device widths.
+
 </details>
 <br>
 
@@ -917,25 +973,62 @@ _Sensical.ie Testimonials Page_
 <summary>
 Testimonials Page</summary><br>
 
-* The features of the page
+<img src="../docs/readme_images/testimonials_cards.png"><br>
+_Sensical.ie Testimonials Page_
+
+* The Testimonials page displays a sylised list of testimonials for to inform the users hiring decisions. The top of the page contains a button available to Admin users only to add a testimonial to the list. Each testimonial consists of information in the form of quoted text, that provides a positive appraisal of the business and a supporting image. The testimonial text and images are staggered in a similar way to the about and packages pages, maintaining a consistent site-wide design. Each text card contains links for Admin users to Update or Delete a testimonial. If the user is not an Admin user, a 'Make Enquiry' button is displayed that relays the user to the external Facebook business page, which opens in a new tab.
+
+<img src="../docs/readme_images/testimonials_cards.png"><br>
+_Sensical.ie Testimonials Page_
+
+* Beneath the last card in the list is a button to returns users 'Back To (the) About Page' when clicked.
+
 </details>
 <br>
+
+## Other Notable Features
+
+### User Profile
 
 <img src="../docs/readme_images/feat_user_profile.png"><br>
 _Sensical.ie User Profile Page_
 
-<details>
+* The user profile page contains the saved delivery information and order history of a logged in user or admin. The Information is neatly arranged in a classy Bootstrap accordian element that closes one section when the other is opened. Users can open delivery data form and edit their stored data. The page also contains a button that allows users to return to the products page. 
 
-<summary>
-User Profile Page</summary><br>
-
-* The features of the page
-</details>
 <br>
 
+### Toast Messages
+
+<img src="../docs/readme_images/feat_toasts.png"><br>
+_Sensical.ie Toast Messages_
+
+* Toast messages are used to inform the user as they interact with the site. Toast messages appear on the top right of the screen and are customised to show information relevant to each action or submission by the user. 
+
+<img src="../docs/readme_images/feat_toasts2.png"><br>
+_Sensical.ie Toast Messages_
+
+<br>
+
+### User Authentication
+
+<img src="../docs/readme_images/auth1.png"><br>
+_Sensical.ie Authentication_
+
+* Sensical.ie's user authorisation features allow users to sign up for an account if they can provide a valid, varifiable, email address.
+
+<img src="../docs/readme_images/feat_toasts2.png"><br>
+_Sensical.ie Authentication_
+
+Once they have registered, users can login and out of the site to enjoy extra benefits, such as user wishlist access and the ability to store delivery information to their user profile.
+
+<img src="../docs/readme_images/feat_toasts2.png"><br>
+_Sensical.ie Authentication_
 
 
-## Other Notable Features
+
+
+
+
 
 
 

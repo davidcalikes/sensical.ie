@@ -669,6 +669,10 @@ video {
     justify-content: space-evenly;
 }
 
+.detail-no-stock {
+    text-align: left;
+}
+
 /* **** Shopping Basket **** */
 
 .custom-select {
@@ -1004,6 +1008,9 @@ video {
     .detail-form-selector {
         width: 50%;
         margin-left: 25%;
+    }
+    .detail-no-stock {
+        text-align: center;
     }
     .basket-col {
         margin-right: 0;

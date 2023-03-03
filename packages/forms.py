@@ -14,7 +14,7 @@ class PackageForm(forms.ModelForm):
         model = Packages
         fields = ('package_name', 'equipment',
                   'duration', 'sensory_items_included',
-                  'sensory_items_type', 'image_url',
+                  'sensory_items_type',
                   'image', 'discount_voucher', 'price')
 
 
