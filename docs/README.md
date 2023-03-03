@@ -16,11 +16,14 @@ Originally called Sensical 'Mobile Sensory Environments', the business was estab
 
 In an attempt to protect the venture from future existential threats, the business owner developed a new growth-through-diversification strategy for the enterprise.
 
-The Sensical.ie, e-Commerce Webstore offers, affordable, high quality, sensory products that enhance the sensory experience of sensory therapy service users, either alongside or abstract from the 'Mobile Sensory Environments' (Equipment Hire) branch of the business.
+Offering affordable, high quality, sensory products that enhance the sensory experience of sensory therapy service users, The Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the site owners whilst develop a more robust synergetic business strategy when coupled with the 'Mobile Sensory Environments' (Equipment Hire) branch of the Sensical enterprise.
 
-Utilising the Django Full Stack Web Framework, Bootstrap and Stripe API for secure payments, the Sensical.ie Webstore offers it's customers an effortless, logical and rewarding user experience.
+Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure payments, and underwritten by the principles of User Experience design and Search Engine Optimisation, the Sensical.ie Webstore offers it's customers an effortless, logical and rewarding user experience.
 
 <br>
+
+<img src="../docs/readme_images/hall.webp"><br>
+_Senso~1 Portable Lighting System in 2018_
 
 ## Background Information
 
@@ -42,7 +45,7 @@ I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the bu
 
 Having witnessed first hand the scale and impact of sweeping [deinstitutionalisation](https://en.wikipedia.org/wiki/Deinstitutionalisation) reforms within Irish state-run healthcare facilities, the business owner noticed an opportunity to provide patients and service users with affordable, sensory experiences.
 
-Whilst agreeing that the rights and dignity of residential service users should always be paramount, there are [many issues](https://journals.sagepub.com/doi/full/10.1177/1468017318793620) that arise when deinstitutionalisation occurs.
+Whilst wholeheartedly agreeing that the rights and dignity of residential service users should always be paramount, there are [many issues](https://journals.sagepub.com/doi/full/10.1177/1468017318793620) that arise when deinstitutionalisation occurs.
 
 <img src="../docs/readme_images/business1.png">
 
@@ -68,9 +71,7 @@ This is achieved by the following.
 
 * Supplying supplementary tactile items to enhance the service users enjoyment.
 
-
 Benefits of the service include:
-
 
 * Continuity of service. Users can enjoy the familiarity of having a recognisible service even if they move house or use the service in different areas like day care or school.
 
@@ -1010,15 +1011,32 @@ _Sensical.ie Authentication_
 
 * Sensical.ie's user authorisation features allow users to sign up for an account if they can provide a valid, varifiable, email address.
 
-<img src="../docs/readme_images/feat_toasts2.png"><br>
+<img src="../docs/readme_images/auth2.png"><br>
 _Sensical.ie Authentication_
 
 Once they have registered, users can login and out of the site to enjoy extra benefits, such as user wishlist access and the ability to store delivery information to their user profile.
 
-<img src="../docs/readme_images/feat_toasts2.png"><br>
+<img src="../docs/readme_images/auth3.png"><br>
 _Sensical.ie Authentication_
 
 <br>
+
+## Future Features
+
+The Sensical application has been designed with one eye on the next several iterations of the site.
+
+### Stock Level Selector
+
+The future-proof design of the site will allow the future development of Stock Level Quantity Selectors. This feature will become more useful as the business grows and was unnecessary for the first MVP version of Sensical.ie, especially as the Webstore has such a small inventory, but in the future the current Quantity selectors present in the product detail and shopping basket pages can be adapted to only display the qty of each item available to the user at any given moment. An example of this functionality can be seen at the checkout page of [this](https://www.fields.ie/) website.
+
+### Products Packages based on user needs
+
+Another cool feature to mirror the Package Request option of the current site would be to include a number of custom product packages where users can take a short survey of their needs and be directed to a suitable package within their budget that includes a choice of products included in the promotion. The resulting product packages would provide better monatary and emotional value for the user.  
+
+### Expand the Hire app to manage online bookings though the website.
+
+To manage the hiring side of the business in the same place as the Webstore would result in much more efficient business practices further synergising the e-Commerce and Equipment Hire ends of the business. Creating a fully synergetic approach here, where the company can sell products and hire equipment from the same place to the same, captured audience at the same time would be truly optimal for the growth and expansion of the enterprise.  
+
 
 # Testing
 
@@ -1099,7 +1117,6 @@ _env.py_
     }
 
 * You can now migrate the app models to the new database using the command: "python3 manage.py makemigrations" then Python3 manage.py migrate.
-
 
 The final part of setting up the env.py file concerns static files. To manage the static files for the project execute the following steps:
 
@@ -1204,6 +1221,8 @@ _Cloning the repo_
 
 * Use the command python3 manage.py runserver to run the app on a development server.
 
+<br>
+
 # Technologies
 
 Sensical.ie was developed using the following languages, frameworks and dependencies.
@@ -1214,7 +1233,7 @@ Sensical.ie was developed using the following languages, frameworks and dependen
 
 * Django AllAuth was used for user account management/authentication.
 
-* Bootstrap (Version 5.01) was used to rapidly develop the layout, responsivity and core frontend elements of Sensical.ie.
+* Bootstrap (Version 4.6.2) was used to rapidly develop the layout, responsivity and core frontend elements of Sensical.ie.
 
 * ElephantSQL was implemented as the postgres, database management system for Sensical.ie
 
@@ -1257,6 +1276,9 @@ I used DrawSQL to create the database schema during the planning stages of the p
 
 I am moderately skilled at using Photoshop and created many of the graphics, page-heading images and logo's on display throughout the site.
 
+<img src="../docs/readme_images/software_photoshopcs6.png"><br>
+_Forking the repo_
+
 
 ### Tiny PNG
 
@@ -1267,12 +1289,18 @@ For resizing larger image files
 
 For converting images to nextgen web formats.
 
+### RedKetchup Batch Image Converter
+
+For batch converting product images. https://redketchup.io/bulk-image-resizer
+
 
 ### Balsamiq
 
 I used Balsamiq to create wireframes for the project.
 
+### Favicon
 
+I used [Favicon](https://favicon.io/favicon-converter/) generator to make the sensical.ie favicon
 
 ### Other Notable Resources
 
@@ -1286,13 +1314,121 @@ I used Balsamiq to create wireframes for the project.
 
 # Media
 
-The following images, of which I personally hold the copyright, were taken at my current place of work, with permission. 
+The following are images, to which I personally hold the copyright.
+
+<img src="../docs/readme_images/creds1.png"><br>
+_Sensical.ie Image_
+
+<img src="../docs/readme_images/creds2.png"><br>
+_Sensical.ie Image_
+
+<img src="../docs/readme_images/creds3.png"><br>
+_Sensical.ie Image_
+
+<img src="../docs/readme_images/creds4.png"><br>
+_Sensical.ie Image_
+
+The error page image was downloaded from Adobe: Credit: teerapon - stock.adobe.com: Copyright: ©teerapon - stock.adobe.com
+
+All product images are from Amazon.com: This site will never be developed into a site for commercial use, and is only for assessment purposes.
 
 The warning logo used was downloaded from: https://www.subpng.com/png-v5sg3x/download.html
 
 All other images used throughout the development of this site were downloaded from [Pexels.com](https://www.pexels.com/photo/photo-of-woman-teaching-935943/) and are free to use.
 
 <br>
+
+# Credits
+
+### Shopping Basket Item counter
+
+The principles of design for the Shopping Basket Item Counter is loosely base was from this [Youtube](https://www.youtube.com/watch?v=3xQRJqxdgK4
+) video.
+
+<br>
+
+### Shopping Basket Item counter
+
+I was inspired by both this [Article](https://www.youtube.com/watch?v=3xQRJqxdgK4) on Stack Overflow and this [Youtube](https://www.youtube.com/watch?v=D-sSNQfz_1s) video when designing the Availability Toggle Feature.
+
+<br>
+
+### Submit button outside form
+
+This page helped me move the submit button outside the form element.
+https://davidwalsh.name/submit-button-outside-form
+
+<br>
+
+### Video element
+
+When converting the Hero Gif image to video I referenced this article from [Codepen](https://codepen.io/remersonc/pen/JXyvbZ)
+
+<br>
+
+### Icons in form submit
+
+To Maintain a consistent style, I referenced this [article](https://medium.com/@woraperth/bootstrap-how-to-use-font-awesome-in-form-submit-button-969000a9c7dd
+https://medium.com/@woraperth/bootstrap-how-to-use-font-awesome-in-form-submit-button-969000a9c7dd) when learning how to use fontawesome icons in form submit buttons.
+
+
+### Wishlist
+
+I followed this excellent wishlist [tutorial](https://www.google.com/search?q=easiest+django+wishlist&rlz=1C5CHFA_enIE874IE875&sxsrf=AJOqlzWO2EJ2F4aBPmJPcQFIh0L2yLdNeg:1675522806587&source=lnms&tbm=vid&sa=X&ved=2ahUKEwjlmMztkPz8AhWKJ8AKHYarDd8Q_AUoAnoECAEQBA&biw=1700&bih=661&dpr=0.9#fpstate=ive&vld=cid:5d7de03e,vid:OgA0TTKAtqQ) when adding the wishlist feature to the e-Commerce webstore.
+
+<br>
+
+
+### Getting cloudinary image urls from the view.
+
+The referenced the following articles when using cloudinary's backend uploader feature. 
+
+* https://cloudinary.com/documentation/django_image_and_video_upload#uploading_images_to_cloudinary_with_python
+
+* https://cloudinary.com/documentation/django_image_and_video_upload#server_side_upload
+
+* https://stackoverflow.com/questions/46236810/how-to-let-a-user-upload-an-image-in-django/46237099#46237099
+
+* https://alphacoder.xyz/image-upload-with-django-and-cloudinary/
+
+<img src="../docs/readme_images/uploader_1.png"><br>
+_Sensical.ie Cloudinary Documentation_
+
+<img src="../docs/readme_images/uploader_2.png"><br>
+_Sensical.ie Cloudinary Documentation_
+
+
+<br>
+
+# Thanks
+
+### Michelle Calikes
+
+I am hugely thankful for the time my wife has afforded me to work on this project and the course overall. Thank you Michelle! (It's Done... YAAAS!)
+
+<br>
+
+### Saoirse & Lochlainn Calikes
+
+Having a Dad who is studying cannot be fun. I am fully aware we have a whole years worth of Monkey Islanding and Football and walks to catch up on. 
+
+<br>
+
+### Irene Neville: Code Institute Cohort Facilitator.
+
+I'd like to thank Irene for facilitating the Code Institute Cohort during this project.
+
+<br>
+
+### Kasia Boguka: Code Institute Facilitator.
+
+Thank you Kasia for all of your guidance and wisdom, not just during this project but throughout my time studying with CI.
+
+<br>
+
+### Richard Wells: Code Institute Mentor.
+
+There's a point in the Joseph Campbell Monomyth "The Hero's Journey" called 'Meeting with the mentor', where the hero of a given quest, (Harry Potter, Frodo, Luke Skywalker etc) meets a mentor figure (Dumbledore, Gandalf, Obi Wan) and recieves sage wisdom and 'supernatural aid' that helps them set about their adventures. 'Supernatural aid' really is the only true way I can think of describing the staggering amount of support and mentorship Richard has afforded me throught the duration of this course. You really went above and beyond mate. Thanks for everything. 
 
 
 
