@@ -16,7 +16,7 @@ Originally called Sensical 'Mobile Sensory Environments', the business was estab
 
 In an attempt to protect the venture from future existential threats, the business owner developed a new growth-through-diversification strategy for the enterprise.
 
-Offering affordable, high quality, sensory products that enhance the sensory experience of sensory therapy service users, The Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the site owners whilst develop a more robust synergetic business strategy when coupled with the 'Mobile Sensory Environments' (Equipment Hire) branch of the Sensical enterprise.
+Offering affordable, high quality, sensory products that enhance the experience of sensory therapy service users, the Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the business owners whilst developing a more robust, synergetic business strategyt with the 'Mobile Sensory Environments' (Equipment Hire) branch of the Sensical enterprise.
 
 Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure payments, and underwritten by the principles of User Experience design and Search Engine Optimisation, the Sensical.ie Webstore offers it's customers an effortless, logical and rewarding user experience.
 
@@ -1455,8 +1455,9 @@ When converting the Hero Gif image to video I referenced this article from [Code
 
 ### Icons in form submit
 
-To Maintain a consistent style, I referenced this [article](https://medium.com/@woraperth/bootstrap-how-to-use-font-awesome-in-form-submit-button-969000a9c7dd
-https://medium.com/@woraperth/bootstrap-how-to-use-font-awesome-in-form-submit-button-969000a9c7dd) when learning how to use fontawesome icons in form submit buttons.
+To Maintain a consistent style, I referenced this [article](https://medium.com/@woraperth/bootstrap-how-to-use-font-awesome-in-form-submit-button-969000a9c7dd) when learning how to use fontawesome icons in form submit buttons.
+
+<br>
 
 
 ### Wishlist
