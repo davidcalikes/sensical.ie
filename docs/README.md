@@ -1034,7 +1034,7 @@ _Sensical.ie About Testimonials Carousel_
 
 * The last feature of the about page is an attractive carousel, that contains three testimonial text elements which cycle automatically. A user can control the carousel using the intuitively placed left and right arrow buttons provided. A position indicator strip is also available to provide visual user feedback. 
 
-* Below the Carousel is a button that allows the user to view all the tesimonials of the site, not just the first three.
+* Below the Carousel is a button that allows the user to view all the testimonials of the site, not just the first three.
 
 <img src="../docs/readme_images/about_resp.png"><br>
 _Sensical.ie About Responsiveness_

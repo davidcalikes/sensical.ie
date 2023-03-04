@@ -325,7 +325,7 @@ _W3C HTML Validator Testing Screenshot_
 
 The Product Detail page was passed through the WCAG Color contrast checker and returned no contrast errors. (The error seen in the supporting image is from a table row in the WCAG table itself)
 
-<img src="../docs/testing_images/product_detail_wcag.png"><br>
+<img src="../docs/testing_images/wcag_product_detail.png"><br>
 _WCAG Validator Testing Screenshot_
 
 The Product Detail Page was passed through Lighthouse and returned the following performance results:
@@ -972,6 +972,8 @@ _W3C HTML Validator Testing Screenshot_
 <br>
 </details>
 
+<br>
+
 # Jigsaw CSS Validation
 
 The 6 CSS stylesheets were passed through the Jigsaw Validator by direct input and returned no errors.
@@ -1023,7 +1025,7 @@ _JShint Validator Testing Screenshot_
 
 <br>
 
-The mailchimp script in the base.html page also returns errors that cannot be changed due to it belonging to the external API.
+The Mailchimp script in the base.html page also returns errors that cannot be changed due to it belonging to the external API.
 
 <img src="../docs/testing_images/jshint_mailchimp.png"><br>
 _JShint Validator Testing Screenshot_ 

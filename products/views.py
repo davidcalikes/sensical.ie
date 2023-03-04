@@ -83,11 +83,9 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            # Upload image to Cloudinary
             image = form.cleaned_data['image']
             image_data = cloudinary.uploader.upload(image)['secure_url']
 
-            # Save product with Cloudinary image URL
             product = form.save(commit=False)
             product.image = image_data
             product.image_url = image_data

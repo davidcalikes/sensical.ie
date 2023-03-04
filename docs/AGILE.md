@@ -22,16 +22,16 @@ I doubled the amount of sprints to more effectively separate and manage the unit
 
 * Using a waterfall approach when creating Epics
 
-As I will explain, during the first Agile project I managed, I made the mistake of slipping into the traditional 'Waterfall' project management method the further I progressed into the project. I attributed this to the fact that the Agile process is usually followed by a team of people, enfusing multiple work units together simultaniously.
+As I will explain, during the first Agile project I managed, I made the mistake of slipping into the traditional 'Waterfall' project management method the further I progressed into the project. I attributed this to the fact that the Agile process is usually followed by a team of people, infusing multiple work units together simultaneously.
 
-With this project, I decided not to worry too much on the sequence of the process and instead embrace a psuedo-waterfall approach, as by working alone some sort of linear pattern to the development was always going to manifest itself. I am aware that this is not what will happen in real world situations, and that the reason agile cycles, meetings and backlogs etc are essential to modern development, is the ability to adapt and change the project quickly and efficiently from any rigid plan or structure.
+With this project, I decided not to worry too much on the sequence of the process and instead embrace a pseudo waterfall approach, as by working alone some sort of linear pattern to the development was always going to manifest itself. I am aware that this is not what will happen in real world situations, and that the reason agile cycles, meetings and backlogs etc. are essential to modern development, is the ability to adapt and change the project quickly and efficiently from any rigid plan or structure.
 
 So the Epics I created were designed using a linear approach and organised in order of the importance of the features they contributed to the project.
 
 * Add more user stories during development
 
 In essence, using the Agile tool when working alone on a project of this size is far more beneficial than not, regardless of its real-world, practical use.
-One of the absolutely essential benefits of creating Epics, User Stories and boards is the ability to focus soley on one particualar area of the project code at a time. During the last project however, I was too rigid in my approach to adding and removing user stories as the project started to develop.
+One of the absolutely essential benefits of creating Epics, User Stories and boards is the ability to focus solely on one particular area of the project code at a time. During the last project however, I was too rigid in my approach to adding and removing user stories as the project started to develop.
 
 During this project, I was much more forthright in my actions and pushed many items from each cycle to the project backlog and added user stories to add value to the project as I went along. I felt like this was a truer reflection of the Agile approach.
 
@@ -42,7 +42,7 @@ During this project, I was much more forthright in my actions and pushed many it
 
 <img src="../docs/agile_images/agile2.png">
 
-When utilising MoSCow prioritisation I felt I had a good mix of 'Must Have', 'Should Have', 'Could Have' and 'Wont Have This Time' cards. I re-organised many of the 'Could Have' priority cards by creating time and space to address the project backlog in the final development cycle.
+When utilising MoSCow prioritisation I felt I had a good mix of 'Must Have', 'Should Have', 'Could Have' and 'Won't Have This Time' cards. I reorganized many of the 'Could Have' priority cards by creating time and space to address the project backlog in the final development cycle.
 
 <br>
 
@@ -66,7 +66,7 @@ This Epic contains the initial development tasks including setting up the dev en
 
 2. [Sensical Epic 2: Add Login/registration functionality utilising Django AllAuth](https://github.com/davidcalikes/sensical.ie/milestone/2)
 
-This Epic helps users to login/register to use the app and recieve benefits, such as the ability to save their purchase history and delivery details and also access the user wishlist feature. 
+This Epic helps users to login/register to use the app and receive benefits, such as the ability to save their purchase history and delivery details and also access the user wishlist feature. 
 
 <img src="../docs/agile_images/agile4.png">
 
@@ -159,11 +159,11 @@ The full list of issues for the project is available [here](https://github.com/d
 
 ### Sprints Duration
 
-Although I had a little experience working with the Agile methodology and Django as a framework from my previous project, I still felt I had few reference points that could inform my decision making when it came to allowing sufficient time for each sprint, whilst setting a realistic, achievable deadlines. Tackling unfamiliar API's like Stripe and Mailchimp meant that timeboxing for this project was always going to be more fluid than it would be for a more experienced developer or development team. 
+Although I had a little experience working with the Agile methodology and Django as a framework from my previous project, I still felt I had few reference points that could inform my decision-making when it came to allowing sufficient time for each sprint, whilst setting a realistic, achievable deadlines. Tackling unfamiliar API's like Stripe and Mailchimp meant that timeboxing for this project was always going to be more fluid than it would be for a more experienced developer or development team. 
 
 ### [Sensical.ie Sprint 1 -- Overview](https://github.com/users/davidcalikes/projects/12/views/1)
 
-Learning from my last encounter with the Agile process I attributed significant amount of time just to get my development environment set up and th proper packages installed. This Sprint was very short and I included parts of project planning and creating the referance wireframes during this cycle.
+Learning from my last encounter with the Agile process I attributed significant amount of time just to get my development environment set up and th proper packages installed. This Sprint was very short, and I included parts of project planning and creating the reference wireframes during this cycle.
 
 <br>
 
@@ -182,7 +182,7 @@ Learning from my last encounter with the Agile process I attributed significant 
 
 Development time -- 3 days.
 
-Sprint one was relatively straight forward as mentioned befor, I used time attributed to this cycle to plan outside of the development environment. 
+Sprint one was relatively straight forward as mentioned before, I used time attributed to this cycle to plan outside the development environment. 
 
 <br>
 
@@ -207,7 +207,7 @@ Sprint 2 focused on adding Django Allauth user authentication functionality.
 
 Development time -- 2 days.
 
-The Second sprint was completed quickly and I found that my relative lack of experience in using both Django and Agile had caused me to create sprints with less work units than required. I think this was a reaction to my last project using Django where I tended to add too many user stories and tasks to each sprint. I compensated here by increasing the level of work units in sprint three.
+The Second sprint was completed quickly, and I found that my relative lack of experience in using both Django and Agile had caused me to create sprints with less work units than required. I think this was a reaction to my last project using Django where I tended to add too many user stories and tasks to each sprint. I compensated here by increasing the level of work units in sprint three.
 
 <br>
 
@@ -238,13 +238,13 @@ Sprint 3 focused on creating the skeleton structure for the front-end of the app
 
 Development time -- 5 days.
 
-The third sprint was completed on schedule and again I found following each issue in turn to be extremely productive. This sprint focused on the creating the basic site structure and implimenting all of the main navigation functionality. I feel the amount of user stories and tasks in this sprint was close to optimal for a project of this scope.
+The third sprint was completed on schedule, and again I found following each issue in turn to be extremely productive. This sprint focused on the creating the basic site structure and implementing all the main navigation functionality. I feel the amount of user stories and tasks in this sprint was close to optimal for a project of this scope.
 
 <br>
 
 ### [Sensical.ie Sprint 4 -- Overview](https://github.com/users/davidcalikes/projects/16)
 
-Sprint 4 focused on developing the products app functionality which creates stores and displays products for sale in the e-Commerce Webstore. 
+Sprint 4 focused on developing the Products app functionality which creates stores and displays products for sale in the e-Commerce Webstore. 
 
 <br>
 
@@ -297,7 +297,7 @@ The user stories in this sprint created the search and sort functionality that a
 
 Development time -- 5 days.
 
-Sprint five was proved more difficult than I anticipated and adding a javascript availabilty toggle during the development was probably not a good idea although I feel the project overall does benefit from this feature.
+Sprint five was proved more difficult than I anticipated and adding a JavaScript availability toggle during the development was probably not a good idea, although I feel the project overall does benefit from this feature.
 
 <br>
 
@@ -336,7 +336,7 @@ This sprint took much more time as the code base began to grow significantly and
 
 ### [Sensical.ie Sprint 7 -- Overview](https://github.com/users/davidcalikes/projects/21)
 
-Sprint 7 was the most important cycle of all of the 8 sprints. This cycle contained the core functionality of any e-Commerce Webstore by implimenting secure payments via an Payment Processing API. (Stripe)
+Sprint 7 was the most important cycle of all of the 8 sprints. This cycle contained the core functionality of any e-Commerce Webstore by implementing secure payments via a Payment Processing API. (Stripe)
 
 <br>
 
@@ -371,13 +371,13 @@ Sprint 7 was the most important cycle of all of the 8 sprints. This cycle contai
 
 Development time -- 11 days.
 
-The integration of the Stripe payments API with this project made Sprint 7 the most challenging and time consuming part of developing the Sensical.ie site. I was pleased to complete the work units associated with this cycle in what I consider to be a respectable amount of time. I certainly benefited from the encouragement and guidance of Richard Wells, with whom I have developed a solid Junior Developer - Senior Developer working relationship.  
+The integration of the Stripe payments API with this project made Sprint 7 the most challenging and time-consuming part of developing the Sensical.ie site. I was pleased to complete the work units associated with this cycle in what I consider to be a respectable amount of time. I certainly benefited from the encouragement and guidance of Richard Wells, with whom I have developed a solid Junior Developer - Senior Developer working relationship.  
 
 <br>
 
 ### [Sensical.ie Sprint 8 -- Overview](https://github.com/users/davidcalikes/projects/15)
 
-The final Sprint of the Project cleared the project management board of outstanding backlogged user stories and added tiertiary features that to the site that were not associated with the core e-commerce functionality such as Client Testimonials and Hire Packages
+The final Sprint of the Project cleared the project management board of outstanding backlogged user stories and added tertiary features that to the site that were not associated with the core e-commerce functionality such as Client Testimonials and Hire Packages
 
 <br>
 
@@ -425,7 +425,7 @@ I was aware of this as I progressed through the development and I will certainly
 
 ### User Stories Not Completed
 
-The following issues were marked as 'wont have' and moved to the 'Future Features' column on the Sprint 8 Kanban board.
+The following issues were marked as 'Won't have' and moved to the 'Future Features' column on the Sprint 8 Kanban board.
 
 * [User Story: Add Social Media Account Verification Functionality](https://github.com/davidcalikes/sensical.ie/issues/6)
 
@@ -437,7 +437,7 @@ The following issues were marked as 'wont have' and moved to the 'Future Feature
 
 ## Agile Summary
 
-Using Agile, I effectively managed the development of the of Sensical.ie Webstore, resulting in an efficient and sylish minimum viable product. Using simple organisation and prioritisation techniques, I could easily focus and was rewarded with a continuous feeling of improvement and tangible progress moving through the tasks.
+Using Agile, I effectively managed the development of the of Sensical.ie Webstore, resulting in an efficient and stylish minimum viable product. Using simple organisation and prioritisation techniques, I could easily focus and was rewarded with a continuous feeling of improvement and tangible progress moving through the tasks.
 
 * As mentioned above, my ability to better predict the time it will take to complete tasks is something I will continue to improve as I continue my studies as a Junior Developer.
 

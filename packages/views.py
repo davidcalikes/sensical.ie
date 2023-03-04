@@ -53,7 +53,7 @@ class AddPackage(SuccessMessageMixin, generic.CreateView):
 
 class UpdatePackage(SuccessMessageMixin, generic.edit.UpdateView):
     """
-    Superuser can update enrolled an existing package
+    Superuser can update an existing package
     """
     model = Packages
     form_class = PackageForm
@@ -83,6 +83,9 @@ class DeletePackage(SuccessMessageMixin, generic.DeleteView):
 
 
 def PackageRequest(request):
+    """
+    User can request a custom package
+    """
     if request.method == 'POST':
         form = CustomPackageForm(request.POST)
         if form.is_valid():

@@ -5,7 +5,9 @@ from products.models import Product
 
 
 def basket_contents(request):
-
+    """
+    Allows other apps to access basket app data
+    """
     basket_items = []
     total = 0
     item_count = 0
