@@ -22,14 +22,85 @@ Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure 
 
 <br>
 
-<img src="../docs/readme_images/hall.webp"><br>
-_Senso~1 Portable Lighting System in 2018_
+
 
 ## Background Information
 
 I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole tradership. Throughout the rest of this project's documentation including the README, AGILE and TESTING.md files, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a software developer and as the owner-operator of the Sensical enterprise.
 
 'Sensical MSE' was borne out of the real world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of disability care-provision in Ireland.
+
+<br>
+
+<img src="../docs/readme_images/hall.webp"><br>
+_Senso~1 Portable Lighting System in 2018_
+
+<br>
+
+[Live project: Sensical.ie](https://sensical-ireland.herokuapp.com/)
+
+<br>
+
+# Contents
+
+* [Planning & Research](https://github.com/davidcalikes/sensical.ie#planning--research)
+    * [Prior Business Model](https://github.com/davidcalikes/sensical.ie#prior-business-model)
+    * [Primary Audience](https://github.com/davidcalikes/sensical.ie#primary-target-audience)
+    * [Secondary Audience](https://github.com/davidcalikes/sensical.ie#secondary-target-audience)
+    * [Drawbacks](https://github.com/davidcalikes/sensical.ie#drawbacks)
+    * [New Business Model](https://github.com/davidcalikes/sensical.ie#new-business-model)
+    * [Problem Statement](https://github.com/davidcalikes/sensical.ie#project-problem-statement)
+    * [User Experience Design](https://github.com/davidcalikes/sensical.ie#user-experience-design)
+    * [User Stories](https://github.com/davidcalikes/sensical.ie#user-stories)
+    * [Database Schema](https://github.com/davidcalikes/sensical.ie#database-schema)
+    * [Data Flow](https://github.com/davidcalikes/sensical.ie#data-flow)
+
+* [Agile](https://github.com/davidcalikes/sensical.ie#agile)
+
+* [Visual Design](https://github.com/davidcalikes/sensical.ie#visual-design)
+    * [Wireframes](https://github.com/davidcalikes/sensical.ie#wireframes)
+    * [Color Scheme](https://github.com/davidcalikes/sensical.ie#color-scheme)
+    * [Typography](https://github.com/davidcalikes/sensical.ie#typography)
+
+* [Features](https://github.com/davidcalikes/sensical.ie#features)
+    * [Existing Features](https://github.com/davidcalikes/sensical.ie#existing-features)
+        * [Features present across all pages](https://github.com/davidcalikes/sensical.ie#features-present-across-all-pages)
+            * [The Navbar](https://github.com/davidcalikes/sensical.ie#the-navbar)
+            * [The Delivery Banner](https://github.com/davidcalikes/sensical.ie#the-delivery-banner)
+            * [Footer](https://github.com/davidcalikes/sensical.ie#the-footer)
+
+        * [Individual Pages](https://github.com/davidcalikes/sensical.ie#individual-pages)
+            * [Home Page](https://github.com/davidcalikes/sensical.ie#home-page)
+            * [About Page](https://github.com/davidcalikes/mypse.ie#about-page)
+            * [Learn More](https://github.com/davidcalikes/mypse.ie#learn-more-page)
+        * [User Guides](https://github.com/davidcalikes/mypse.ie#user-guides)
+        * [Sample Passports](https://github.com/davidcalikes/mypse.ie#sample-passports)
+        * [Feedback Messages](https://github.com/davidcalikes/mypse.ie#feedback-messages)
+        * [User Authentication](https://github.com/davidcalikes/mypse.ie#registration-page)
+        * [Pupil Enrolment System](https://github.com/davidcalikes/mypse.ie#pupil-list-page)
+        * [Passport Creation System](https://github.com/davidcalikes/mypse.ie#passport-list-page)
+        * [Loading Modal](https://github.com/davidcalikes/mypse.ie#loading-modal)
+        * [Teacher Passport Access](https://github.com/davidcalikes/mypse.ie#teacher-pupil-list-page)
+        * [Admin Panel](https://github.com/davidcalikes/mypse.ie#admin-panel)
+        * [Security](https://github.com/davidcalikes/mypse.ie#added-url-security-feature)
+
+    * [Future Features](https://github.com/davidcalikes/mypse.ie#future-features)
+
+* [Testing](https://github.com/davidcalikes/mypse.ie#testing)
+* [Deployment](https://github.com/davidcalikes/mypse.ie#deployment)
+    * [Database](https://github.com/davidcalikes/mypse.ie#database)
+    * [Deploying to Heroku](https://github.com/davidcalikes/mypse.ie#deploying-to-heroku)
+    * [Forking MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
+    * [Cloning MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
+
+* [Technologies](https://github.com/davidcalikes/mypse.ie#technologies)
+    * [Software](https://github.com/davidcalikes/mypse.ie#software)
+
+* [Media](https://github.com/davidcalikes/mypse.ie#media)
+
+* [Credits](https://github.com/davidcalikes/mypse.ie#credits)
+
+* [Thanks](https://github.com/davidcalikes/mypse.ie#thanks)
 
 <br>
 
@@ -622,6 +693,8 @@ _Sensical.ie Lower Footer_
 
 <br>
 
+## Home Page
+
 <img src="../docs/readme_images/feat_home.png"><br>
 _Sensical.ie Home Page_
 
@@ -630,7 +703,9 @@ _Sensical.ie Home Page_
 <summary>
 Home Page</summary><br>
 
-* The Home page contains a high quality hero video with clever heading text that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really ledgible, however the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically placed to allow some content to show from the base of the page, encouraging users to scroll further. 
+* The Home page contains a high quality hero video with clever heading text that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really ledgible, however the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically placed to allow some content to show from the base of the page, encouraging users to scroll further.
+
+<br>
 
 <img src="../docs/readme_images/feat_home_hero.png"><br>
 _Sensical.ie Hero Video & CTA Buttons_
@@ -650,9 +725,10 @@ The Home Page is fully responsive across multiple device widths.
 <img src="../docs/readme_images/feat_home_resp.png"><br>
 _Sensical.ie Home Mobile_
 
-
 </details>
 <br>
+
+## Products Page
 
 <img src="../docs/readme_images/feat_products.png"><br>
 _Sensical.ie Products Page_
@@ -691,6 +767,8 @@ _Sensical.ie Product Management Form_
 
 </details>
 <br>
+
+## Product Detail Page
 
 <img src="../docs/readme_images/feat_product_detail.png"><br>
 _Sensical.ie Product Detail Page_
@@ -743,6 +821,8 @@ _Sensical.ie Product Detail Responsivness_
 </details>
 <br>
 
+## Wishlist Page
+
 <img src="../docs/readme_images/feat_wishlist.png"><br>
 _Sensical.ie Wishlist Page_
 
@@ -771,6 +851,8 @@ The Wishlist Page has been tested across many screen widths and is fully respons
 </details>
 <br>
 
+Shopping Basket Page
+
 <img src="../docs/readme_images/feat_shopping_basket.png"><br>
 _Sensical.ie Shopping Basket Page_
 
@@ -796,6 +878,8 @@ The Shopping Basket Page is fully responsive across multiple screen widths.
 
 </details>
 <br>
+
+## Checkout Page
 
 <img src="../docs/readme_images/feat_checkout.png"><br>
 _Sensical.ie Checkout Page_
@@ -847,6 +931,8 @@ Like the rest of the site, the checkout page is fully responsive across many dev
 </details>
 <br>
 
+## Hire Page
+
 <img src="../docs/readme_images/feat_hire.png"><br>
 _Sensical.ie hire Page_
 
@@ -867,6 +953,7 @@ _Sensical.ie Hire Page_
 </details>
 <br>
 
+## Packages Page
 <img src="../docs/readme_images/feat_packages.png"><br>
 _Sensical.ie Packages Page_
 
@@ -916,6 +1003,8 @@ The Packages pages are fully responsive across most device widths.
 </details>
 <br>
 
+## About Page
+
 <img src="../docs/readme_images/feat_about.png"><br>
 _Sensical.ie About Page_
 
@@ -959,6 +1048,8 @@ The about page is fully responsive across most device widths.
 
 </details>
 <br>
+
+## Testimonials Page
 
 <img src="../docs/readme_images/feat_testimonials.png"><br>
 _Sensical.ie Testimonials Page_
