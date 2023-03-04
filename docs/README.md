@@ -20,6 +20,18 @@ Offering affordable, high-quality, sensory products that enhance the experience 
 
 Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure payments, and underwritten by the principles of User Experience design and Search Engine Optimisation, the Sensical.ie Webstore offers its customers an effortless, logical, and rewarding user experience.
 
+Please use the link below to view the deployed project. If you wish to make a mock purchase, you can use the following details: 
+
+* Card Number: 4242424242424242
+* Exp Date: Any (future) date using the format MM/YY
+* CVN = any 3 digit number
+* Postcode = any 5 numerals
+
+Any payments made using an actual payment card will fail and the card will not be charged. No orders made will be fulfilled.
+
+
+[Live project: Sensical.ie](https://sensical-ireland.herokuapp.com/)
+
 <br>
 
 
@@ -34,10 +46,6 @@ I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the bu
 
 <img src="../docs/readme_images/hall.webp"><br>
 _Senso~1 Portable Lighting System in 2018_
-
-<br>
-
-[Live project: Sensical.ie](https://sensical-ireland.herokuapp.com/)
 
 <br>
 
@@ -1250,6 +1258,58 @@ _TEMPLATES Setting in settings.py
 
 <br>
 
+## Google Mail
+* Create a google email account with a name relevant to you project. After you login, navigate to accounts settings, then click on Other Google Account Settings
+
+* Navigate to accounts then import and click on other account settings
+
+* In the signing into Google section, activate 2-step verification.
+
+* Once verified click on app passwords, select Other as the app and give the password a name, for example Django
+
+* Click create and a 16 digit password will be generated, copy this 16 digit password
+
+* Add the following Email settings to the settings.py file
+
+* <img src="../docs/readme_images/deploy_email.png"><br>
+_Email Settings_
+
+* Add EMAIL_HOST_PASS and EMAIL_HOST_USER variable, password and email address to your Heroku Config Vars
+
+<br>
+
+## Stripe
+
+* Open a [Stripe](https://dashboard.stripe.com/register) Account
+
+* Log in and click on 'Developers
+
+* <img src="../docs/readme_images/deploy_stripe_1.png"><br>
+_Stripe _
+
+* Navigate to API keys
+
+* Copy the the publishable and secret keys
+
+* <img src="../docs/readme_images/deploy_stripe2.png"><br>
+_Stripe _
+
+* Add the following in Settings.py
+
+* <img src="../docs/readme_images/deploy_stripe3.png"><br>
+_Stripe _
+
+Back in the Developers section on Stripe stripe navigate to webhooks and click create endpoint.
+
+Create a webhook for all events in Stripe and save the key
+
+<img src="../docs/readme_images/deploy_stripe4.png"><br>
+_Stripe _
+
+* Add the webhook key to your environment variables and test using the Stripe events log.
+
+<br>
+
 ## Forking the GitHub Repository
 
 If you want to make an independent copy of the Sensical.ie GitHub repository please follow these steps:
@@ -1300,7 +1360,8 @@ _Cloning the repo_
 
 * Create a Heroku app for your Clone and add the appropriate Config Vars using the [aforementioned instructions](https://github.com/davidcalikes/sensical.ie#deploying-to-heroku).
 
-* Create an env.py file that includes the appropriate DATABSE_URL, SECRET_KEY and CLOUDINARY_URL settings.
+* Create an env.py file that includes the appropriate DATABSE_URL, SECRET_KEY and CLOUDINARY_URL settings. You will also need to include the STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, 
+STRIPE_WH_SECRET, EMAIL_HOST_USER and EMAIL_HOST_PASS variables.
 
 * Add 'localhost' to ALLOWED_HOSTS in settings.py
 
