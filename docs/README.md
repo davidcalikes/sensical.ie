@@ -12,13 +12,13 @@ When it comes to creating multi-sensory environments, a custom built, dedicated 
 
 Where this is not possible, Sensical Multi-Sensory Solutions can provide a pop-up style multi-sensory experience at an affordable price.
 
-Originally called Sensical 'Mobile Sensory Environments', the business was established in 2018, operating as a business-to-client sole-tradership. Like most small enterprises the project was severely impacted by the global COVID-19 pandemic.
+Originally called Sensical 'Mobile Sensory Environments', the business was established in 2018, operating as a business-to-client sole-trader. Like most small enterprises the project was severely impacted by the global COVID-19 pandemic.
 
 In an attempt to protect the venture from future existential threats, the business owner developed a new growth-through-diversification strategy for the enterprise.
 
-Offering affordable, high quality, sensory products that enhance the experience of sensory therapy service users, the Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the business owners whilst developing a more robust, synergetic business strategyt with the 'Mobile Sensory Environments' (Equipment Hire) branch of the Sensical enterprise.
+Offering affordable, high-quality, sensory products that enhance the experience of sensory therapy service users, the Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the business owners whilst developing a more robust, synergetic business strategy with the 'Mobile Sensory Environments' (Equipment Hire) branch of the Sensical enterprise.
 
-Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure payments, and underwritten by the principles of User Experience design and Search Engine Optimisation, the Sensical.ie Webstore offers it's customers an effortless, logical and rewarding user experience.
+Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure payments, and underwritten by the principles of User Experience design and Search Engine Optimisation, the Sensical.ie Webstore offers its customers an effortless, logical, and rewarding user experience.
 
 <br>
 
@@ -26,9 +26,9 @@ Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure 
 
 ## Background Information
 
-I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole tradership. Throughout the rest of this project's documentation including the README, AGILE and TESTING.md files, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a software developer and as the owner-operator of the Sensical enterprise.
+I established Sensical 'Mobile-Sensory Environments' in 2018 and operated the business as a sole trader. Throughout the rest of this project's documentation including the README, AGILE and TESTING.md files, I will refer to "The Business Owner" or "Site Owner" in an attempt to make the distinction between myself as a software developer and as the owner-operator of the Sensical enterprise.
 
-'Sensical MSE' was borne out of the real world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of disability care-provision in Ireland.
+'Sensical MSE' was borne out of the real-world need for low-cost multi-sensory rooms/experiences in the ever-changing landscape of disability care provision in Ireland.
 
 <br>
 
@@ -109,7 +109,7 @@ _Senso~1 Portable Lighting System in 2018_
 
 <br>
 
-Having witnessed first hand the scale and impact of sweeping [deinstitutionalisation](https://en.wikipedia.org/wiki/Deinstitutionalisation) reforms within Irish state-run healthcare facilities, the business owner noticed an opportunity to provide patients and service users with affordable, sensory experiences.
+Having witnessed first-hand the scale and impact of sweeping [deinstitutionalisation](https://en.wikipedia.org/wiki/Deinstitutionalisation) reforms within Irish state-run healthcare facilities, the business owner noticed an opportunity to provide patients and service users with affordable, sensory experiences.
 
 Whilst wholeheartedly agreeing that the rights and dignity of residential service users should always be paramount, there are [many issues](https://journals.sagepub.com/doi/full/10.1177/1468017318793620) that arise when deinstitutionalisation occurs.
 
@@ -121,11 +121,11 @@ There are two key negative consequences that affect the provision of Multi-Senso
 
 * Lack of funding for therapeutic activites due to increased cost of living
 
-As mentioned above, there is no substitute for a purpose-built, well-maintained, fully stocked Multi-Sensory Room. Many residential care centers(institutions) would offer residents scheduled access to such a facility on a regular basis. Situated on campus grounds, the MSR would be wheelchair accessable and just a short distance from a place of residence. Moving service users into community housing severly removes or inhibits this access due to remote housing locations and trasportation issues.
+As mentioned above, there is no substitute for a purpose-built, well-maintained, fully stocked Multi-Sensory Room. Many residential care centers(institutions) would offer residents scheduled access to such a facility on a regular basis. Situated on campus grounds, the MSR would be wheelchair accessable and just a short distance from a place of residence. Moving service users into community housing severely removes or obstructs this access due to remote housing locations and transportation issues.
 
 There are also issues with finding the funds, physical space, and expertise to build and maintain a high-quality, sensory room within community housing.
 
-This is where Sensical Mobile-Sensory Environments comes in. For a nominal fee, the pop-up sensory service can transform almost any room into a viable sensory space. 
+This is where Sensical Mobile-Sensory Environments can help. For a nominal fee, the pop-up sensory service can transform almost any room into a viable sensory space. 
 
 This is achieved by the following. 
 
@@ -141,7 +141,7 @@ Benefits of the service include:
 
 * Continuity of service. Users can enjoy the familiarity of having a recognisible service even if they move house or use the service in different areas like day care or school.
 
-* No maintainence costs or storage issues. Sensical maintains its own equipment to the highest standard and removes it when you are finished.
+* No maintenance costs or storage issues. Sensical maintains its own equipment to the highest standard and removes it when you are finished.
 
 * No travel or dedicated space required. Sensical systems are set up within minutes.
 
@@ -150,7 +150,7 @@ Benefits of the service include:
 
 ### Secondary Target Audience
 
-The original business was also aimed at customers who needed sensory services in their own private residences. The service proved popular with parents and children with autistic spectrum disorder and learning disabilites. Another way customers utilised the service was block-booking sensory equipment for private residential birthday parties, where one or more of the attendees could avail of a relaxing space should they become overstimulated. 
+The original business was also aimed at customers who needed sensory services in their own private residences. The service proved popular with parents and children with autistic spectrum disorder and learning disabilities. Another way customers utilised the service was block-booking sensory equipment for private residential birthday parties, where one or more of the attendees could avail of a relaxing space should they become overstimulated. 
 
 <br>
 
@@ -161,15 +161,15 @@ The original business was also aimed at customers who needed sensory services in
 
 There are of course drawbacks to any business plan and Sensical is no different.
 
-Firstly, the business model is, in essence, part of what many dub 'the gig economy'. This means that the business will not produce revenue unless it is consistently finding new customers and providing the service on a regular basis.
+Firstly, the business model is, in essence, part of what many call 'the gig economy'. This means that the business will not produce revenue unless it is consistently finding new customers and providing the service on a regular basis.
 
-Initially, this was not an immediate problem, as the business owner was higly motivated, technically minded and had a huge wealth of knowledge and transferable skills from many years working as a successful touring musician.
+Initially, this was not an immediate problem, as the business owner was highly motivated, technically minded, and had a huge wealth of knowledge and transferable skills from many years working as a successful touring musician.
 
-Unfortunately, like every other small enterprise, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidlines, and the closure of schools and day centers, the project ground to a halt in 2020.
+Unfortunately, like every other small enterprise, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidelines, and the closure of schools and day centers, the project ground to a halt in 2020.
 
 As with many other startup owners during Covid, the year 2020 proved to be a time of reflection and creative restructuring for the owner operator of Sensical Mobile Sensory Environments.
 
-I have outlined in the sections below the owner's new vision for the re-imagined company, and the role they hope this e-commerce website will have in making the new business comercially successful.
+I have outlined in the sections below the owner's new vision for the re-imagined company, and the role they hope this e-commerce website will have in making the new business commercially successful.
 
 <br>
 
@@ -214,7 +214,7 @@ In order to mitigate against this, the Sensical.ie Webstore will only stock supp
 
 As [this article](https://www.ctvnews.ca/health/coronavirus/parents-are-not-ok-after-3-years-of-covid-and-a-brutal-winter-of-children-s-respiratory-illness-1.6231476) from January 2023 demonstrates, many parents and care providers are still wary of COVID (and other respiratory ilnesses) community spread.
 
-The Sensical.ie Webstore will allow customers to purchase their own sensory items, musical instruments, accessories and more, ensuring peace of mind that all items are sanitary. This also significantly reduces the hire services maintainence and cleaning budget.
+The Sensical.ie Webstore will allow customers to purchase their own sensory items, musical instruments, accessories and more, ensuring peace of mind that all items are sanitary. This also significantly reduces the hire services maintenance and cleaning budget.
 
 The site should make it as simple as possible for the user to identify products they wish to purchase, identify their availability, suitablity, and aspect and also seemlessly complete payment of products they have added to their shopping basket via a checkout feature.
 
@@ -287,7 +287,7 @@ I developed the following problem statement to refer to during development.
 
 "To help facilitate the provision of sensory services and products via the most synergetic approach possible, for the mutual benefit of both the customer and business".
 
-I'm aware that problem statements like this shouldn't really incorporate the wellbeing of the business, but I have decided to include it here due to the simple fact that it is the only business of it's kind in Ireland and the experiences and benefits it can offer to its service users and customers depends entirely on its commercial success.
+I'm aware that problem statements like this shouldn't really incorporate the well-being of the business, but I have decided to include it here due to the simple fact that it is the only business of its kind in Ireland and the experiences and benefits it can offer to its service users and customers depends entirely on its commercial success.
 
 <br>
 
@@ -295,7 +295,7 @@ I'm aware that problem statements like this shouldn't really incorporate the wel
 
 ### Target Audience
 
-Sensical.ie is aimed at providing existing service-users of Sensical Multi-Sensory Solutions and new customers with the ability to purchase supplimentary sensory items to enhance the customers enjoyment of any sensory environment. The website is specifically aimed at users who have recently moved from residential care homes to comunity houses where there is a deficit of therapy provision due to the lack of centralised resources.
+Sensical.ie is aimed at providing existing service-users of Sensical Multi-Sensory Solutions and new customers with the ability to purchase supplementary sensory items to enhance the customer's enjoyment of any sensory environment. The website is specifically aimed at users who have recently moved from residential care homes to community houses where there is a deficit of therapy provision due to the lack of centralised resources.
 <br>
 
 ### Target Audience summary
@@ -436,7 +436,7 @@ A unique feature of the product model is the for_sensory_needs data point, where
 
 The Product Wishlist Data is also stored in this model. I stored this data point here as it seemed the simplest and less verbose way of coding the wishlist functionality. 
 
-The Client Testimonial, Packages are for administrative users(site owners) only and facilitate the creation and maintainance of Testimonials and Packages within the site. 
+The Client Testimonial, Packages are for administrative users(site owners) only and facilitate the creation and maintenance of Testimonials and Packages within the site. 
 
 The Package Request model allows users to submit a request for a custom sensory hire package through a simple contact form.
 
@@ -447,13 +447,13 @@ The Package Request model allows users to submit a request for a custom sensory 
 <img src="../docs/readme_images/business5.png"> _Sensical.ie Data Flow._
 
 
-The above example is a simplistic overview of how the website works. The ability for visiting/unregistered users to make purchases is important so the flow is unrestricted in that respect. The storage of delivery information and purchase history to a registered users profile however should encourage future visits and make the checkout process even simpler. The wishlist functionality will also encourage future transactions, affording users the chance to save desired out of stock items for a later date. The site owners will benefit from the ability to promote the Equipment Hire side of the business by adding and editing heartfelt testimonials and tempting package deals.
+The above example is a simplistic overview of how the website works. The ability for visiting/unregistered users to make purchases is important so the flow is unrestricted in that respect. The storage of delivery information and purchase history to a registered user's profile however should encourage future visits and make the checkout process even simpler. The wishlist functionality will also encourage future transactions, affording users the chance to save desired out-of-stock items for a later date. The site owners will benefit from the ability to promote the Equipment Hire side of the business by adding and editing heartfelt testimonials and tempting package deals.
 
 <br>
 
 # Agile
 
-Sensical.ie was developed using the Agile Development Methodology. A detailed overview of the Agile process is availiable [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/AGILE.md)
+Sensical.ie was developed using the Agile Development Methodology. A detailed overview of the Agile process is available [here.](https://github.com/davidcalikes/sensical.ie/blob/main/docs/AGILE.md)
 
 <br>
 
@@ -555,7 +555,7 @@ _Sensical.ie Nav Bar_
 
 <br>
 
-The navbar contains the business logo which links back to the homepage when clicked. There is also a Search bar that allows users to query the products database. There are three icon links in the upper right of the navbar that link to the user wishlist, user profile/ account management and shopping basket features. 
+The navbar contains the business logo which links back to the homepage when clicked. There is also a Search bar that allows users to query the products database. There are three icon links in the upper right of the navbar that link to the user wishlist, user profile/ account management, and shopping basket features. 
 
 <br>
 
@@ -585,7 +585,7 @@ _Sensical.ie Wishlist icon_
 
 <br>
 
-The Basket icon has similar functionality, and displays a red number when a user adds and item or items to their shopping basket.
+The Basket icon has similar functionality and displays a red number when a user adds and item or items to their shopping basket.
 
 <img src="../docs/readme_images/feat_basket_icon.png"><br>
 _Sensical.ie BAsket icon_
@@ -599,11 +599,11 @@ The lower nav
 <img src="../docs/readme_images/feat_main_nav_menu.png"><br>
 _Sensical.ie Main Nav Menu_
 
-The Menu Contains links to the Home, About, Hire, Packages and Testimonials pages as well as the Products page and product Categorisation.
+The Menu Contains links to the Home, About, Hire, Packages, and Testimonials pages as well as the Products page and product Categorisation.
 
 ## Collapsed Menu
 
-At smaller screen widths, the nav bar collapses into a burger style dropdown menu to enhance user experience on mobile and tablet devices.
+At smaller screen widths, the nav bar collapses into a burger-style dropdown menu to enhance user experience on mobile and tablet devices.
 
 <img src="../docs/readme_images/feat_nav_collapsed.png"><br>
 _Sensical.ie Collapsible Menu_
@@ -629,7 +629,7 @@ When the delivery threshold has been met by the user the banner changes to the f
 <img src="../docs/readme_images/feat_delivery_banner3.png"><br>
 _Delivery Banner_
 
-I included the Delivery Banner only on pages related to the e-Commerce side of the site a I felt it could free up a useable section of screen real estate for the information pages.
+I included the Delivery Banner only on pages related to the e-Commerce side of the site a I felt it could free up a usable section of screen real estate for the information pages.
 
 <br>
 
@@ -646,7 +646,7 @@ The Upper Footer section contains the following features:
 
 ### Footer Contacts
 
-Located in the upper left section of the footer and centering on medium and small sized screens. The footer contact area contains the business contact information, responsive links and social media links. Each link opens in a new tab.
+Located in the upper left section of the footer and centered on medium and small-sized screens. The footer contact area contains the business contact information, responsive links, and social media links. Each link opens in a new tab.
 
 <img src="../docs/readme_images/feat_footer_contacts.png"><br>
 _Sensical.ie Footer Contacts_
@@ -655,7 +655,7 @@ _Sensical.ie Footer Contacts_
 
 ### Footer Subscibe form and Useful Links
 
-Located in the upper-middle section of the footer and wrapping beneath the contact information links on smaller devices, the Footer Subscription Form and Useful Links section contains a mailchip subscription form and useful links that may be of some benefit to the user. External links enhance the Search Engine Optimisation of Sensical.ie and each link opens in a new tab.
+Located in the upper-middle section of the footer and wrapping beneath the contact information links on smaller devices, the Footer Subscription Form and Useful Links section contains a Mailchimp subscription form and useful links that may be of some benefit to the user. External links enhance the Search Engine Optimisation of Sensical.ie and each link opens in a new tab.
 
 <img src="../docs/readme_images/feat_footer_subscribe.png"><br>
 _Sensical.ie Footer Subscription Form and Useful Links_
@@ -664,7 +664,7 @@ _Sensical.ie Footer Subscription Form and Useful Links_
 
 ### Footer Nav
 
-The Footer nav is located on the right side of the upper footer, centering on medium and small sized screens. The Footer nav contains links to the most prominant areas of the site as well as downloadable links to the privacy and terms & conditions policy documents of the company.
+The Footer nav is located on the right side of the upper footer, centering on medium and small sized screens. The Footer nav contains links to the most prominent areas of the site as well as downloadable links to the privacy and terms & conditions policy documents of the company.
 
 <img src="../docs/readme_images/feat_footer_nav.png"><br>
 _Sensical.ie Footer Nav_
@@ -698,14 +698,14 @@ _Sensical.ie Home Page_
 <summary>
 Home Page</summary><br>
 
-* The Home page contains a high quality hero video with clever heading text that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really ledgible, however the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically placed to allow some content to show from the base of the page, encouraging users to scroll further.
+* The Home page contains a high-quality hero video with clever heading text that is relevant to the business and informative to the user. The heading text has a shadow quality that allows it to maintain readability despite the dynamic background. I thought about using a nice blur filter here to make the text really legible, however, the business owner wanted the background to be clearly recognisable as a classroom, so potential customers would recognise the transformative power of the sensory equipment hire business. The hero video is strategically placed to allow some content to show from the base of the page, encouraging users to scroll further.
 
 <br>
 
 <img src="../docs/readme_images/feat_home_hero.png"><br>
 _Sensical.ie Hero Video & CTA Buttons_
 
-* The call to action buttons provide the user with instant access to the two main data streams of the site. The first button, SHOP leads to the e-Commerce side of the application where the second button leads to the Hiring/Information side.
+* The call-to-action buttons provides the user with instant access to the two main data streams of the site. The first button, SHOP leads to the e-Commerce side of the application where the second button leads to the Hiring/Information side.
 
 <img src="../docs/readme_images/feat_cta_buttons.png"><br>
 _Sensical.ie Hero Video & CTA Buttons_
@@ -733,17 +733,17 @@ _Sensical.ie Products Page_
 <summary>
 Products Page</summary><br>
 
-* The Products Page features a sort selector at the top left of the page with a toggle switch that hides/displays unavailable products for the convenience of the user. Users cn sort products by alphabetical order or by price.
+* The Products Page features a sort selector at the top left of the page with a toggle switch that hides/displays unavailable products for the convenience of the user. Users can sort products by alphabetical order or by price.
 
 <img src="../docs/readme_images/feat_sort_selector.png"><br>
 _Sensical.ie Products Page Sort Selector_
 
-* The Products page contains product cards that have a border color depending on the stock status of the item. If the product is in stock, the border color is a pastel green and this changes to a pastel pink if the product is unavailable.
+* The Products page contains product cards that have a border color depending on the stock status of the item. If the product is in stock, the border color is a pastel green, and this changes to a pastel pink if the product is unavailable.
 
 <img src="../docs/readme_images/feat_product_cards.png"><br>
 _Sensical.ie Products Page Cards_
 
-* Each card contains an image inside an anchor element, that links to the product detail view of the item. There is a generous heading with the product name. The also contain the price of the item and the stock status to further inform the user. A stylised link with herat shaped fontawesome icon is available for users to add or remove items from their wishlist. The wish list link redirects to the login page for anonymous users. There are also two button elements on each card, one for adding an item directly to the users shopping basket and another for accessing the product detail page. Each button has a style consistent with other clickable elements of the site and has an informative fontawesome basket or info icon. 
+* Each card contains an image inside an anchor element, that links to the product detail view of the item. There is a generous heading with the product name. The also contain the price of the item and the stock status to further inform the user. A stylised link with heart shaped fontawesome icon is available for users to add or remove items from their wishlist. The wish list link redirects to the login page for anonymous users. There are also two button elements on each card, one for adding an item directly to the user's shopping basket and another for accessing the product detail page. Each button has a style consistent with other clickable elements of the site and has an informative fontawesome basket or info icon. 
 
 <img src="../docs/readme_images/feat_lower_card.png"><br>
 _Sensical.ie Products Lower Card_
@@ -753,7 +753,7 @@ _Sensical.ie Products Lower Card_
 <img src="../docs/readme_images/feat_product_add.png"><br>
 _Sensical.ie Product Add_
 
-* At the base of the products page there is a button that links to the product management page, which allows Admin Users to add new products. This button is not available to non-admin users.
+* At the base of the products page, there is a button that links to the product management page, which allows Admin Users to add new products. This button is not available to non-admin users.
 
 <img src="../docs/readme_images/feat_products_management.png"><br>
 _Sensical.ie Product Management Form_
@@ -773,19 +773,19 @@ _Sensical.ie Product Detail Page_
 <summary>
 Product Detail Page</summary><br>
 
-* The Product Detail Page contains more information about the product. In addition to its price and stock status larger image is available plus a sensory needs indicator feature.
+* The Product Detail Page contains more information about the product. In addition to its price and stock status, a larger image is available plus a sensory needs indicator feature.
 
 <img src="../docs/readme_images/feat_sensory_needs_indicator.png"><br>
 _Sensical.ie Sensory Needs Indicator_
 
 * This row of icons contains visual feedback to the user regarding the suitability of each item. The key for the feature is as follows: 
 
-* The RAINBOW icon denotes this item may help people living with autistic spectrum disorder.
+* The RAINBOW icon denotes this item may help people living with an autistic spectrum disorder.
 * The HANDS icon denotes this item may help people living with Tactile sensory needs.
 * The EYE icon denotes this item may help people living with ADHD.
-* The HEADPHONES icon denotes this item may help people Auditory Sensory Needs.
+* The HEADPHONES icon denotes this item may help people with Auditory Sensory Needs.
 * The MOON icon denotes this item may help people living with Anxiety.
-* The LIGHTBULB icon denotes this item may not be suitable for people with photo sensitive epilepsy.
+* The LIGHTBULB icon denotes this item may not be suitable for people with photo-sensitive epilepsy.
 
 The Site Administrator can attach each Icon to a product using the following keywords in the For Sensory Needs Form Field.
 
@@ -796,12 +796,12 @@ The Site Administrator can attach each Icon to a product using the following key
 * RELAX for anxiety issues.
 * LIGHT for Photosensitivity issues.
 
-* The next noteworthy feature is the product quantity selector. This will allow users to add up to 10 of any given items at a time to the their shopping basket.
+* The next noteworthy feature is the product quantity selector. This will allow users to add up to 10 of any given items at a time to their shopping basket.
 
 <img src="../docs/readme_images/feat_qty_select.png"><br>
 _Sensical.ie Quantity Selector_
 
-* As the business is carries an extremely small inventory at afforable prices, it was important to the business owners to limit bulk purchases in this way, in order to properly grow their busness, the company wished to reach as many different customers as possible rather than wholesale to just a few bulk buyers. This feature will be atapted in future iterations of the site, where the selector will feature only the amount of products available in stock at any given time providing feedback for the user and managing stock level issues at the point of sale.
+* As the business carries an extremely small inventory at affordable prices, it was important to the business owners to limit bulk purchases in this way, in order to properly expand, the company wished to reach as many different customers as possible rather than wholesale to just a few bulk buyers. This feature will be adapted in future iterations of the site, where the selector will feature only the amount of products available in stock at any given time providing feedback for the user and managing stock level issues at the point of sale.
 
 At the base of the page the consistently styled Product Detail Buttons allow users to continue shopping or add the current product to their basket or wishlist.
 
@@ -1426,6 +1426,10 @@ All other images used throughout the development of this site were downloaded fr
 <br>
 
 # Credits
+
+### Boutique Ado
+
+Many elements of the the e-commerce part of this project have been adapted from the Code Institute's "Boutique Ado" Codethrough Project.
 
 ### Shopping Basket Item counter
 
