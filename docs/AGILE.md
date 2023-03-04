@@ -1,11 +1,22 @@
 
 # Agile
+<img src="../docs/agile_images/agile_placeholder.png">
+
+<br>
+
+- [Agile](#agile)
+  * [Overview](#overview)
+  * [MoSCoW](#moscow)
+  * [Epics](#epics)
+  * [Agile User Stories](#agile-user-stories)
+  * [Sprints](#sprints)
+  * [Agile Summary](#agile-summary)
+
+<br>
 
 ## Overview
 
 The Agile planning methodology was used during the development of Sensical.ie. GitHub Projects, Boards, Milestones and Issues were utilised to organise the development into Sprints, Kanban Boards, Epics, and User Stories respectively.
-
-<img src="../docs/agile_images/agile_placeholder.png">
 
 <br>
 

@@ -1,5 +1,48 @@
 # Testing
 
+- [Testing](#testing)
+  * [Tests during development](#tests-during-development)
+    + [User Story Tests](#user-story-tests)
+  * [Examples of Errors found during development](#examples-of-errors-found-during-development)
++ [Manual Testing](#manual-testing)
+    - [Home](#home)
+    - [Products](#products)
+    - [Product Detail](#product-detail)
+    - [Product Management](#product-management)
+    - [Shopping Basket](#shopping-basket)
+    - [Checkout](#checkout)
+    - [Hire](#hire)
+    - [Wishlist](#wishlis)
+    - [Packages](#packages)
+    - [Testimonials](#testimonials)
+    - [About](#about)
+    - [Profile](#profile)
+    - [Other Templates](#other-templates)
+
+- [Jigsaw CSS Validation](#jigsaw-css-validation)
+- [Flake8 Python Validation](#flake8-python-validation)
+- [Practical Testing](#practical-testing)
+- [Mobile Testing -- Huawei P20 Pro (Android):](#mobile-testing----huawei-p20-pro--android--)
+    + [Admin user tests:](#admin-user-tests-)
+    + [Unregistered user tests:](#unregistered-user-tests-)
+    + [Authenticated user tests:](#authenticated-user-tests-)
+
+- [Tablet Testing -- Ipad Mini 5 (IOS):](#tablet-testing----ipad-mini-5--ios--)
+    + [Admin user tests:](#admin-user-tests--1)
+    + [Unregistered user tests:](#unregistered-user-tests--1)
+    + [Authenticated user tests:](#authenticated-user-tests--1)
+- [Desktop Testing -- Macbook Pro & HP Deskpro (OSX & Windows 10):](#desktop-testing----macbook-pro---hp-deskpro--osx---windows-10--)
+    + [Admin user tests:](#admin-user-tests--2)
+    + [Unregistered user tests:](#unregistered-user-tests--2)
+    + [Authenticated user tests:](#authenticated-user-tests--2)
+
+  * [Responsivity Testing](#responsivity-testing)
+    + [Issue caused by SEO optimisation.](#issue-caused-by-seo-optimisation)
+
+- [Bugs](#bugs)
+- [Peer Code Review](#peer-code-review)
+
+<br>
 
 ## Tests during development
 
@@ -125,6 +168,8 @@ _Wishlist Message Error Screenshot_
 Each page, feature and link of the application has been tested.
 I have used dropdown menus for each page to make the documentation more human-readable.
 
+## Home
+
 <details>
 
 <summary>
@@ -195,6 +240,8 @@ In future versions of the app I hope to significantly improve mobile performance
 </details>
 
 <br>
+
+## Products
 
 <details>
 
@@ -272,6 +319,8 @@ In future versions of the app I hope to significantly improve mobile performance
 
 <br>
 
+## Product Detail
+
 <details>
 
 <summary>
@@ -341,6 +390,8 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 <br>
 
+## Product Management
+
 <details>
 
 <summary>
@@ -406,6 +457,8 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 <br>
 
+## Shopping Basket
+
 <details>
 
 <summary>
@@ -468,6 +521,8 @@ The SEO Score was low here because the basket is included in the robots.txt file
 </details>
 
 <br>
+
+## Checkout
 
 <details>
 
@@ -539,6 +594,8 @@ _Checkout Success Testing Screenshot_
 
 <br>
 
+## Hire
+
 <details>
 
 <summary>
@@ -595,6 +652,8 @@ _Mobile Lighthouse Performance Testing Screenshot_
 </details>
 
 <br>
+
+## Wishlist
 
 <details>
 
@@ -654,6 +713,8 @@ _Mobile Lighthouse Performance Testing Screenshot_
 </details>
 
 <br>
+
+## Packages
 
 <details>
 
@@ -743,6 +804,8 @@ _W3C HTML Validator Testing Screenshot_
 
 <br>
 
+## Testimonials
+
 <details>
 
 <summary>
@@ -821,6 +884,8 @@ _Desktop Lighthouse Performance Testing Screenshot_
 
 <br>
 
+## About
+
 <details>
 
 <summary>
@@ -879,6 +944,8 @@ _Mobile Lighthouse Performance Testing Screenshot_
 
 <br>
 
+## Profile
+
 <details>
 
 <summary>
@@ -936,6 +1003,8 @@ _Mobile Lighthouse Performance Testing Screenshot_
 </details>
 
 <br>
+
+## Other Templates
 
 <details>
 
