@@ -15,7 +15,7 @@ _User Story Screenshot_
 <img src="../docs/agile_images/agile2.png"><br>
 _Kanban Board Screenshot_ 
 
-All of the user story acceptance criteria can be inspected via the eight KANBAN boards I have linked to in the [AGILE](../docs/AGILE.md) document.
+All the user story acceptance criteria can be inspected via the eight KANBAN boards I have linked to in the [AGILE](../docs/AGILE.md) document.
 
 <br>
 
@@ -33,7 +33,7 @@ I located the error and realised my mistake.
 <img src="../docs/testing_images/testing_syntax_err2.png"><br>
 _Syntax Error Testing Screenshot_
 
-By Adding the correct url '' syntax I corrected the issue.
+By Adding the correct URL '' syntax I corrected the issue.
 
 <img src="../docs/testing_images/testing_syntax_err3.png"><br>
 _Syntax Error Testing Screenshot_
@@ -77,7 +77,7 @@ _Typo Error Screenshot_
 
 I fixed this by making the E lowercase.
 
-When setting up webhooks and returning confirmation emails I recieved a Stripe payment intent error.
+When setting up webhooks and returning confirmation emails I received a Stripe payment intent error.
 
 <img src="../docs/testing_images/testing_webhooks_err.png"><br>
 _Webhooks Error Screenshot_
@@ -87,7 +87,7 @@ I used the application logs and print statements to try and locate the problem.
 <img src="../docs/testing_images/testing_webhooks_err1.png"><br>
 _Webhooks Error Screenshot_
 
-I couldn't find an issue with the source code so I checked heroku environment variables and the cause of the issue
+I couldn't find an issue with the source code so I checked Heroku environment variables and the cause of the issue
 was a typo in the EMAIL_HOST_USER email address. (hyphen instead of a period)
 
 <img src="../docs/testing_images/testing_webhooks_err2.png"><br>
@@ -102,7 +102,7 @@ I noticed the price per item was not displaying correctly in the wishlist succes
 <img src="../docs/testing_images/testing_wishlist_err.png"><br>
 _Wishlist Message Error Screenshot_
 
-I examined the code and dicovered the following:
+I examined the code and discovered the following:
 
 <img src="../docs/testing_images/testing_wishlist_err2.png"><br>
 _Wishlist Message Error Screenshot_
@@ -123,7 +123,7 @@ _Wishlist Message Error Screenshot_
 ## Manual Testing
 
 Each page, feature and link of the application has been tested.
-I have used dropdown menus for each page to make the documentation more human readable.
+I have used dropdown menus for each page to make the documentation more human-readable.
 
 <details>
 
@@ -139,25 +139,25 @@ The HTML Templates associated with the Home page are:
 * home-cards.html
 * footer.html
 
-Each link of the Home page was tested and was marked 'pass' when the following expected behaviour was produced.
+Each link of the Home page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs. 
 
-* Login Redirect -- The user is directed to the correct page depending on the users authentication status upon login or when the login links in the homepage cards are clicked.
+* Login Redirect -- The user is directed to the correct page depending on the user's authentication status upon login or when the login links in the homepage cards are clicked.
 
-* Can Access Products Page From Hero GIF -- The user can access the Products page from the home page hero GIF.
+* Can Access Products Page From Hero GIF -- The user can access the 'Products' page from the home page hero GIF.
 
-* Can Access Hire Page -- The user can access the HIRE page from the home page hero GIF.
+* Can Access Hire Page -- The user can access the 'Hire' page from the home page hero GIF.
 
-* Can Access Hire Page -- The user can access the Products page via the Product & Services Cards.
+* Can Access Hire Page -- The user can access the 'Hire' page via the Product & Services Cards.
 
-* Can Access Products Page -- The user can access the Products page via the Product & Services Cards.
+* Can Access Products Page -- The user can access the 'Products' page via the Product & Services Cards.
 
-* Can Access About Page -- The user can access the Products page via the Product & Services Cards.
+* Can Access About Page -- The user can access the 'About' page via the Product & Services Cards.
 
 <br>
 
-| Auth Status     | Can Register | Can Login | Can Logout | Products Links | Hire Links | Nav/Footer Links | Profile Access | Product Manaagement Access | Wishlist Access |
+| Auth Status     | Can Register | Can Login | Can Logout | Products Links | Hire Links | Nav/Footer Links | Profile Access | Product Management Access | Wishlist Access |
 |-----------------|--------------|-----------|------------|----------------|------------|------------------|----------------|----------------------------|-----------------|
 | Admin           | no/pass      | no/pass   | yes/pass   | yes/pass       | yes/pass   | yes/pass         | yes/pass       | yes/pass                   | yes/pass        |
 | Registered User | no/pass      | no/pass   | yes/pass   | yes/pass       | yes/pass   | yes/pass         | yes/pass       | no/pass                    | yes/pass        |

@@ -8,7 +8,7 @@ Sensical.ie is a full stack, E-commerce, web application offering affordable, mu
 
 <br>
 
-When it comes to creating multi-sensory environments, a custom built, dedicated multi sensory space is always the optimal solution. 
+When it comes to creating multi-sensory environments, a custom-built, dedicated multi sensory space is always the optimal solution. 
 
 Where this is not possible, Sensical Multi-Sensory Solutions can provide a pop-up style multi-sensory experience at an affordable price.
 
@@ -165,7 +165,7 @@ Firstly, the business model is, in essence, part of what many call 'the gig econ
 
 Initially, this was not an immediate problem, as the business owner was highly motivated, technically minded, and had a huge wealth of knowledge and transferable skills from many years working as a successful touring musician.
 
-Unfortunately, like every other small enterprise, Sensical MSE was badly affected by the COVID 19 pandemic. Due to restrictions on movement, entering residences, social distancing guidelines, and the closure of schools and day centers, the project ground to a halt in 2020.
+Unfortunately, like every other small enterprise, Sensical MSE was badly affected by the COVID-19 pandemic. Due to restrictions on movement, entering residences, social distancing guidelines, and the closure of schools and day centers, the project ground to a halt in 2020.
 
 As with many other startup owners during Covid, the year 2020 proved to be a time of reflection and creative restructuring for the owner operator of Sensical Mobile Sensory Environments.
 
@@ -198,7 +198,7 @@ Such loss can occur when:
 
 * The Mobile Sensory Hire Equipment is under repair.
 
-The purpose of selling good quality, carefully selected, supplementary, products is to provide hygenic, affordable enhancements to a customers multi-sensory experience, without the risk of making our 'Mobile Sensory Environments' equipment hire service redundant.
+The purpose of selling good quality, carefully selected, supplementary, products is to provide hygenic, affordable enhancements to a customer's multi-sensory experience, without the risk of making our 'Mobile Sensory Environments' equipment hire service redundant.
 
 </details>
 <br>
@@ -210,9 +210,9 @@ e-Commerce Strategy</summary><br>
 
 As referenced above, the business owner does not want the 'Equipment Hire' side of the business to suffer as a result of sales from the e-Commerce store. 
 
-In order to mitigate against this, the Sensical.ie Webstore will only stock supplimentary products that can enhance a customers enjoyment during a sensory session, but can in no way recreate the unique sensory experience of a custom Mobile Sensory Environment, when used in isolation.
+In order to mitigate against this, the Sensical.ie Webstore will only stock supplementary products that can enhance a customers enjoyment during a sensory session, but can in no way recreate the unique sensory experience of a custom Mobile Sensory Environment, when used in isolation.
 
-As [this article](https://www.ctvnews.ca/health/coronavirus/parents-are-not-ok-after-3-years-of-covid-and-a-brutal-winter-of-children-s-respiratory-illness-1.6231476) from January 2023 demonstrates, many parents and care providers are still wary of COVID (and other respiratory ilnesses) community spread.
+As [this article](https://www.ctvnews.ca/health/coronavirus/parents-are-not-ok-after-3-years-of-covid-and-a-brutal-winter-of-children-s-respiratory-illness-1.6231476) from January 2023 demonstrates, many parents and care providers are still wary of COVID (and other respiratory illnesses) community spread.
 
 The Sensical.ie Webstore will allow customers to purchase their own sensory items, musical instruments, accessories and more, ensuring peace of mind that all items are sanitary. This also significantly reduces the hire services maintenance and cleaning budget.
 
@@ -222,7 +222,7 @@ The Webstore should encourage users to create and account in order to make retur
 
 The Webstore should be easy to navigate and offer the user the ability to see products from specific categories, subcategories and availability.
 
-The Website (outwith the Webstore) should also include information about the Equipment Hire side of the business, and provide links to the already established Facebook Business Page to encourage purchasing customers to also make a booking. This would increas the sites rating on popular search engines like Google and Bing by underlining the legitimacy of the site, its content and subject matter. See below for how the business owner hopes the Webstore will synergise with the hire business and help maximise profitability.
+The Website (outwith the Webstore) should also include information about the Equipment Hire side of the business, and provide links to the already established Facebook Business Page to encourage purchasing customers to also make a booking. This would increase the sites rating on popular search engines like Google and Bing by underlining the legitimacy of the site, its content and subject-matter. See below for how the business owner hopes the Webstore will synergise with the hire business and help maximise profitability.
 
 </details>
 <br>
@@ -232,7 +232,7 @@ The Website (outwith the Webstore) should also include information about the Equ
 <summary>
 Synergetic Approach</summary><br>
 
-Whilst diversification for it's own sake may prove enough of a reason for the introduction of the e-Commerce Webstore, there are other benefits that may also be advantageous. To demonstrate how this might work I have created the following persona:
+Whilst diversification for its own sake may prove enough of a reason for the introduction of the e-Commerce Webstore, there are other benefits that may also be advantageous. To demonstrate how this might work I have created the following persona:
  
 Persona Name: 
 * Emma Kearns.
@@ -248,21 +248,21 @@ Status:
 
 Other Information:
 * Highly Functioning Autistic School Pupil.
-* Loves water, marine life and the sea side.
+* Loves water, marine life and the seaside.
 * Struggles with concentration due to anxiety.
 * Both parents are separated.
-* Lives with Mum and stays sometimes with Dad.
+* Lives with Mum and sometimes stays with Dad.
 
 Goals:
-* To eleviate anxiety/stress
+* To alleviate anxiety/stress
 * To relax enough to think and perform tasks
 * To enjoy my spare time.
 
 Pain Point/Concerns:
-* I love my Mum, She understands me more than anyone but she never has time to take me to the beach or swimming anymore.
-* I love my Dad but I feel like there's no relaxing space for me when Mum is on nights and I stay over at his house.
-* I wish I could take my water basin with me when I visit the sensory room at the solas centre but I'm not allowed.
-* I love listening to the sea in sea shells I find at the beach but mum says they're too dirty to bring home.
+* I love my Mum, She understands me more than anyone, but she never has time to take me to the beach or swimming anymore.
+* I love my Dad, but I feel like there's no relaxing space for me when Mum is on nights and I stay over at his house.
+* I wish I could take my water basin with me when I visit the sensory room at the solas centre, but I'm not allowed.
+* I love listening to the sea in seashells I find at the beach, but mum says they're too dirty to bring home.
 
 Likes/Dislikes
 
@@ -271,13 +271,13 @@ Likes/Dislikes
 * I dislike loud noises and have a phobia of spiders.
 
 
-Sensical Multi-Sensory Solutions could, hypothetically, provide Emma with a relaxing, yet stimulating underwater-themed sensory experience whether she stays with her Mum or Dad. When liasing with hiring customers, the business owner will conduct a thorough interview and determine which elements of their technical inventory would be best suited to create the perfect sensory environment.
+Sensical Multi-Sensory Solutions could, hypothetically, provide Emma with a relaxing, yet stimulating underwater-themed sensory experience whether she stays with her Mum or Dad. When liaising with hiring customers, the business owner will conduct a thorough interview and determine which elements of their technical inventory would be best suited to create the perfect sensory environment.
 
-It is at this stage however, that this particular customer and her parents could be directed towards the Sensical.ie Webstore. Emma likes to listen to the sound of the ocean but Mum is worried about hygeine? Well the Webstore currently have an 'Ocean Drum' in stock. An 'Ocean Drum' is a traditional percussion instrument that replicates the sound of the ocean in the palm of your hand... and it has a wipe-clean hygenic surface.
+It is at this stage however, that this particular customer and her parents could be directed towards the Sensical.ie Webstore. Emma likes to listen to the sound of the ocean, but Mum is worried about hygiene? Well the Webstore currently have an 'Ocean Drum' in stock. An 'Ocean Drum' is a traditional percussion instrument that replicates the sound of the ocean in the palm of your hand... and it has a wipe-clean hygienic surface.
 
-Should the Kearns family purchase such an item, plus say perhaps a bubble-tube lighting fixture and a heavy duty blackout blind, then not only will the Webstore generate revenue in the short term, but the Hire service will no longer have to load those items the next visit during setup, saving the customer time and providing better value for money. (Less time filling and emptying bubble tubes means more time enjoying the Sensory Environment)
+Should the Kearns family purchase such an item, plus say perhaps a bubble-tube lighting fixture and a heavy-duty blackout blind, then not only will the Webstore generate revenue in the short term, but the Hire service will no longer have to load those items the next visit during setup, saving the customer time and providing better value for money. (Less time filling and emptying bubble tubes means more time enjoying the Sensory Environment)
 
-When developing real-world business relationships like this, it will inform the business owners descisions when purchasing future products to sell in the Webstore. A business plan with its own in-built market research strategy.
+When developing real-world business relationships like this, it will inform the business owners decisions when purchasing future products to sell in the Webstore. A business plan with its own in-built market research strategy.
 </details>
 <br>
 
@@ -305,13 +305,13 @@ holistic therapies.
 
 * Users who are relatives of people with disabilities who live in community housing and have no access to holistic therapies.
 
-* Users who are parents of children with autistic spectrum disorder or intellectiual disabilities.
+* Users who are parents of children with autistic spectrum disorder or intellectual disabilities.
 
-* Private residential users who wish to use Sensical Multi-Sensory Solutions equpiment hire services for a special event or party.
+* Private residential users who wish to use Sensical Multi-Sensory Solutions equipment hire services for a special event or party.
 
 * Users who are existing customers of Sensical Multi-Sensory Solutions equipment hire service.
 
-* Users who wish to purchase products annonymously.
+* Users who wish to purchase products anonymously.
 
 * Users who wish to learn more about Sensical Multi-Sensory Solutions.
 
@@ -345,15 +345,15 @@ holistic therapies.
 
 * As a Purchasing Customer, I want to view my shopping basket items on the checkout page prior to payment, and add or remove items from the checkout page.
 
-* As a Purchasing Customer User, I want to create a user account so I can make and manage my purchases and view a list of previous purchases.
+* As a Purchasing Customer User, I want to create a user account, so I can make and manage my purchases and view a list of previous purchases.
 
-* As a Purchasing Customer User, I want to verify my user account via social media so I can log register my account more easily.
+* As a Purchasing Customer User, I want to verify my user account via social media, so I can log register my account more easily.
 
 * As a Purchasing Customer User, I want to verify my account by email in order to improve the security of my account and receive feedback that the registration process was successful.
 
 * As a Purchasing Customer user, I want my payment to be handled safely and securely in order to protect my personal information.
 
-* As a Purchasing Customer User, I want to access a virtual shopping basket so I review items before I purchase them.
+* As a Purchasing Customer User, I want to access a virtual shopping basket, so I review items before I purchase them.
 
 * As a Purchasing Customer User, I want to add items to a virtual shopping basket.
 
@@ -365,7 +365,7 @@ holistic therapies.
 
 * As a Hiring Customer User, I want to easily access the hiring section of the site.
 
-* As a Hiring Customer User, I want to access an external booking page so I can enquire about a booking.
+* As a Hiring Customer User, I want to access an external booking page, so I can inquire about a booking.
 
 * As a Hiring Customer User, I want to access information about the 'Mobile Sensory Environments Service.
 
@@ -375,9 +375,9 @@ holistic therapies.
 
 #### __User Stories Site Owner__:
 
-* As a Site Owner, I want to provide the user with the ability to access the Facebook business page to enquire about hiring our Mobile Sensory Equipment.
+* As a Site Owner, I want to provide the user with the ability to access the Facebook business page to inquire about hiring our Mobile Sensory Equipment.
 
-* As a Site Owner, I want to upload a items for sale via the site’s online store.
+* As a Site Owner, I want to upload items for sale via the site’s online store.
 
 * As a Site owner I want to upload testimonials that relay positive customer experiences that will encourage future customers.
 
@@ -432,7 +432,7 @@ The above image shows the Data Schema for the Sensical.ie project and the relati
 
 The e-Commerce store has 4 main models, 2 product related and 2 purchase related.
 
-A unique feature of the product model is the for_sensory_needs data point, where the site owner can add prescriptive phrases that will result in the displaying of informative text icons in the DOM. (Rainbow for Autism ect)
+A unique feature of the product model is the for_sensory_needs data point, where the site owner can add prescriptive phrases that will result in the displaying of informative text icons in the DOM. (Rainbow for Autism etc)
 
 The Product Wishlist Data is also stored in this model. I stored this data point here as it seemed the simplest and less verbose way of coding the wishlist functionality. 
 
@@ -447,7 +447,7 @@ The Package Request model allows users to submit a request for a custom sensory 
 <img src="../docs/readme_images/business5.png"> _Sensical.ie Data Flow._
 
 
-The above example is a simplistic overview of how the website works. The ability for visiting/unregistered users to make purchases is important so the flow is unrestricted in that respect. The storage of delivery information and purchase history to a registered user's profile however should encourage future visits and make the checkout process even simpler. The wishlist functionality will also encourage future transactions, affording users the chance to save desired out-of-stock items for a later date. The site owners will benefit from the ability to promote the Equipment Hire side of the business by adding and editing heartfelt testimonials and tempting package deals.
+The above example is a simplistic overview of how the website works. The ability for visiting/unregistered users to make purchases is important, so the flow is unrestricted in that respect. The storage of delivery information and purchase history to a registered user's profile however should encourage future visits and make the checkout process even simpler. The wishlist functionality will also encourage future transactions, affording users the chance to save desired out-of-stock items for a later date. The site owners will benefit from the ability to promote the Equipment Hire side of the business by adding and editing heartfelt testimonials and tempting package deals.
 
 <br>
 
@@ -501,7 +501,7 @@ _Wishlist Wireframe_
 <img src="../docs/readme_images/wireframes_hire.png"><br>
 _Hire Wireframe_
 
-Due to the scope of this application and how similar many of the pages are, I thought it unnecessary to include every single page here. Like the auth pages for example.
+Due to the scope of this application and how similar many of the pages are, I thought it was unnecessary to include every single page here. Like the auth pages for example.
 
 
 ## Color Scheme
@@ -555,7 +555,7 @@ _Sensical.ie Nav Bar_
 
 <br>
 
-The navbar contains the business logo which links back to the homepage when clicked. There is also a Search bar that allows users to query the products database. There are three icon links in the upper right of the navbar that link to the user wishlist, user profile/ account management, and shopping basket features. 
+The navbar contains the business logo which links back to the homepage when clicked. There is also a Search bar that allows users to query the 'products' database. There are three icon links in the upper right of the navbar that link to the user wishlist, user profile/ account management, and shopping basket features. 
 
 <br>
 
@@ -629,7 +629,7 @@ When the delivery threshold has been met by the user the banner changes to the f
 <img src="../docs/readme_images/feat_delivery_banner3.png"><br>
 _Delivery Banner_
 
-I included the Delivery Banner only on pages related to the e-Commerce side of the site a I felt it could free up a usable section of screen real estate for the information pages.
+I included the Delivery Banner only on pages related to the e-Commerce side of the site as I felt it could free up a usable section of screen real estate for the information pages.
 
 <br>
 
@@ -743,7 +743,7 @@ _Sensical.ie Products Page Sort Selector_
 <img src="../docs/readme_images/feat_product_cards.png"><br>
 _Sensical.ie Products Page Cards_
 
-* Each card contains an image inside an anchor element, that links to the product detail view of the item. There is a generous heading with the product name. The also contain the price of the item and the stock status to further inform the user. A stylised link with heart shaped fontawesome icon is available for users to add or remove items from their wishlist. The wish list link redirects to the login page for anonymous users. There are also two button elements on each card, one for adding an item directly to the user's shopping basket and another for accessing the product detail page. Each button has a style consistent with other clickable elements of the site and has an informative fontawesome basket or info icon. 
+* Each card contains an image inside an anchor element, that links to the product detail view of the item. There is a generous heading with the product name. They also contain the price of the item and the stock status to further inform the user. A stylised link with heart shaped fontawesome icon is available for users to add or remove items from their wishlist. The wish list link redirects to the login page for anonymous users. There are also two button elements on each card, one for adding an item directly to the user's shopping basket and another for accessing the product detail page. Each button has a style consistent with other clickable elements of the site and has an informative fontawesome basket or info icon. 
 
 <img src="../docs/readme_images/feat_lower_card.png"><br>
 _Sensical.ie Products Lower Card_
@@ -773,7 +773,7 @@ _Sensical.ie Product Detail Page_
 <summary>
 Product Detail Page</summary><br>
 
-* The Product Detail Page contains more information about the product. In addition to its price and stock status, a larger image is available plus a sensory needs indicator feature.
+* The Product Detail Page contains more information about the product. In addition to its price and stock status, a larger image is available plus a sensory-needs indicator feature.
 
 <img src="../docs/readme_images/feat_sensory_needs_indicator.png"><br>
 _Sensical.ie Sensory Needs Indicator_
@@ -801,7 +801,7 @@ The Site Administrator can attach each Icon to a product using the following key
 <img src="../docs/readme_images/feat_qty_select.png"><br>
 _Sensical.ie Quantity Selector_
 
-* As the business carries an extremely small inventory at affordable prices, it was important to the business owners to limit bulk purchases in this way, in order to properly expand, the company wished to reach as many different customers as possible rather than wholesale to just a few bulk buyers. This feature will be adapted in future iterations of the site, where the selector will feature only the amount of products available in stock at any given time providing feedback for the user and managing stock level issues at the point of sale.
+* As the business carries a very small inventory at affordable prices, it was important to the business owners to limit bulk purchases in this way, in order to properly expand, the company wished to reach as many different customers as possible rather than wholesale to just a few bulk buyers. This feature will be adapted in future iterations of the site, where the selector will feature only the amount of products available in stock at any given time providing feedback for the user and managing stock level issues at the point of sale.
 
 At the base of the page the consistently styled Product Detail Buttons allow users to continue shopping or add the current product to their basket or wishlist.
 
@@ -811,7 +811,7 @@ _Sensical.ie Product Detail Buttons_
 The Product Detail Page is fully responsive across multiple screen widths.
 
 <img src="../docs/readme_images/feat_detail_resp.png"><br>
-_Sensical.ie Product Detail Responsivness_
+_Sensical.ie Product Detail Responsiveness_
 
 </details>
 <br>
@@ -864,10 +864,10 @@ _Sensical.ie Shopping Basket Items_
 <img src="../docs/readme_images/basket_summary.png"><br>
 _Sensical.ie Shopping Basket Summary_
 
-* The shopping basket summary section contains an efficient overview of the cost of the users basket items. The summary section allows users to return to the products page or continue to the checkout to complete their purchases.
+* The shopping basket summary section contains an efficient overview of the cost of the user's basket items. The summary section allows users to return to the products page or continue to the checkout to complete their purchases.
 
 <img src="../docs/readme_images/basket_resp.png"><br>
-_Sensical.ie Shopping Basket Responsivness_
+_Sensical.ie Shopping Basket Responsiveness_
 
 The Shopping Basket Page is fully responsive across multiple screen widths.
 
@@ -895,23 +895,23 @@ _Sensical.ie Checkout Page Items_
 * The Checkout page also has a similar items list to the basket page, but with truncated features. This was purposely designed to not only differentiate the Checkout Page from the Shopping Basket Page but to also discourage users from changing their minds and removing items from their basket at the last minute.
 
 <img src="../docs/readme_images/checkout_delivery_acc.png"><br>
-_Sensical.ie Checkout Delivery Accordian_
+_Sensical.ie Checkout Delivery Accordion_
 
-The Checkout Delivery Accordian contains a users delivery information in a handy dropdown accordian. 
+The Checkout Delivery Accordion contains a user's delivery information in a handy dropdown accordion. 
 
 The delivery information is prepopulated in the form if a user has it saved to their profile. There is also the option for registered users to save their information to their profile if they have not already done so.
 
 <img src="../docs/readme_images/checkout_payment_details.png"><br>
 _Sensical.ie Checkout Payment Details Section_
 
-At the base of the checkout page, there is a form input for a user to enter their credit/debit card. The area contains a field for the users card number, a submit order button for users to complete the order and a back to basket button for users to return to the shopping basket without submitting the order. There us some warning text that provides feedback for the user regarding how much their card will be charged. I have included some out size fontawsome card icons here. I think the globally recognised financial institutions would inspire customer confidence in the site and promote multiple visits and purchases. 
+At the base of the checkout page, there is a form input for a user to enter their credit/debit card. The area contains a field for the users card number, a 'submit order' button for users to complete the order and a back to basket button for users to return to the shopping basket without submitting the order. There us some warning text that provides feedback for the user regarding how much their card will be charged. I have included some out size fontawsome card icons here. I think the globally recognised financial institutions would inspire customer confidence in the site and promote multiple visits and purchases. 
 
-Also included in this section is a link to the terms and conditions of the sites use to protect the business against contingent liabilities.
+Also included in this section is a link to the terms and conditions of the site, to protect the business against contingent liabilities.
 
 <img src="../docs/readme_images/checkout_loading.png"><br>
 _Sensical.ie Checkout Loading Modal_
 
-When a payment is submitted a spinning logo and feedback message fills the page as the request is being processed by the Stripe API. The modal is important as it prevents the user from interacting with the site diring the paymemt process whilst keeping them informed that the payment is being processed.
+When a payment is submitted a spinning logo and feedback message fills the page as the request is being processed by the Stripe API. The modal is important as it prevents the user from interacting with the site during the payment process whilst keeping them informed that the payment is being processed.
 
 <img src="../docs/readme_images/checkout_success.png"><br>
 _Sensical.ie Checkout Success Page_
@@ -919,7 +919,7 @@ _Sensical.ie Checkout Success Page_
 If an order is successfully completed, the user is notified, and returned to the checkout success page. This page provides the user details of their purchase and is backed u to their user profile if they have one. There is a link to return to the users profile page if they are registered users and a link back to the home page if they are not.
 
 <img src="../docs/readme_images/checkout_resp.png"><br>
-_Sensical.ie Checkout Responsivity_
+_Sensical.ie Checkout Responsiveness_
 
 Like the rest of the site, the checkout page is fully responsive across many device widths.
 
@@ -937,7 +937,7 @@ _Sensical.ie hire Page_
 Hire Page</summary><br>
 
 * The Hire page is a static page within the site that links to information and resources users require to make a booking.
-The hire side of the business, known as "Mobile Sensory Environments" is managed via the busines owners Facebook business page.
+The hire side of the business, known as "Mobile Sensory Environments" is managed via the business owners Facebook business page.
 
 * There are links to the Facebook page from the Hire Page that open in a separate tab. There is also a link that redirects the user to the packages page, where they can learn more about the hire packages on offer.
 
@@ -967,7 +967,7 @@ These options are only available to Admin users.
 <img src="../docs/readme_images/package_card.png"><br>
 _Sensical.ie Package Card_
 
-* Beneath the Package Managment Options Buttons the current packages offered by the Equipment Hire Business are displayed. Any packages added by Admin Users will be displayed here. Each Package has a bordered image and a Package Detail Card that contains onformation regarding the equipment and items provided, as well as the session duration and price. There is a discount banner that displays a percentage discount available to first time package customers above the package card buttons. If the user has Admin level authoristation, the buttons will allow the Admin to either update, or delete the package. If the user is a non-admin refgistered user or an unauthenticated user, the card will display a button that externally links to the Sensical Facebook Business Page. There is also a button to 'Request a Custom Package'. Each Package Card and image are staggered using the Bootstrap 'order' class to make the page appear more interesting and dynamic. 
+* Beneath the Package Management Options Buttons the current packages offered by the Equipment Hire Business are displayed. Any packages added by Admin Users will be displayed here. Each Package has a bordered image and a Package Detail Card that contains information regarding the equipment and items provided, as well as the session duration and price. There is a discount banner that displays a percentage discount available to first time package customers above the package card buttons. If the user has Admin level authoristation, the buttons will allow the Admin to either update, or delete the package. If the user is a non-admin registered user or an unauthenticated user, the card will display a button that externally links to the Sensical Facebook Business Page. There is also a button to 'Request a Custom Package'. Each Package Card and image are staggered using the Bootstrap 'order' class to make the page appear more interesting and dynamic. 
 
 <img src="../docs/readme_images/packages_back_button.png"><br>
 _Sensical.ie Package Back Button_
@@ -988,10 +988,10 @@ _Sensical.ie Package Request Form_
 <img src="../docs/readme_images/package_request_success.png"><br>
 _Sensical.ie Package Request Success_
 
-* Site administrator users can view a list of any package requests via the Package Managment 'view package requests' button at the top of the Package Requests Page.
+* Site administrator users can view a list of any package requests via the Package Management 'view package requests' button at the top of the Package Requests Page.
 
 <img src="../docs/readme_images/packages_resp.png"><br>
-_Sensical.ie Packages Responsivness_
+_Sensical.ie Packages Responsiveness_
 
 The Packages pages are fully responsive across most device widths.
 
@@ -1026,18 +1026,18 @@ _Sensical.ie About Hire_
 <img src="../docs/readme_images/about_contacts_banner.png"><br>
 _Sensical.ie About Contact Banner_
 
-Below the about video, images and informations cards, there is a 
-page-width bannner element that contains extra large fontawesome social media, email and phone logos. Each logo contains a link for users to contact the business, with all external resources opening in a new tab.
+Below the about video, images and information cards, there is a 
+page-width banner element that contains extra large fontawesome social media, email and phone logos. Each logo contains a link for users to contact the business, with all external resources opening in a new tab.
 
 <img src="../docs/readme_images/about_carousel.png"><br>
 _Sensical.ie About Testimonials Carousel_
 
 * The last feature of the about page is an attractive carousel, that contains three testimonial text elements which cycle automatically. A user can control the carousel using the intuitively placed left and right arrow buttons provided. A position indicator strip is also available to provide visual user feedback. 
 
-* Below the Carousel is a button that allows the user to view all of the tesimonials of the site, not just the first three.
+* Below the Carousel is a button that allows the user to view all the tesimonials of the site, not just the first three.
 
 <img src="../docs/readme_images/about_resp.png"><br>
-_Sensical.ie About Responsivness_
+_Sensical.ie About Responsiveness_
 
 The about page is fully responsive across most device widths.
 
@@ -1074,7 +1074,7 @@ _Sensical.ie Testimonials Page_
 <img src="../docs/readme_images/feat_user_profile.png"><br>
 _Sensical.ie User Profile Page_
 
-* The user profile page contains the saved delivery information and order history of a logged in user or admin. The Information is neatly arranged in a classy Bootstrap accordian element that closes one section when the other is opened. Users can open delivery data form and edit their stored data. The page also contains a button that allows users to return to the products page. 
+* The user profile page contains the saved delivery information and order history of a logged-in user or admin. The Information is neatly arranged in a classy Bootstrap accordion element that closes one section when the other is opened. Users can open delivery data form and edit their stored data. The page also contains a button that allows users to return to the products page. 
 
 <br>
 
@@ -1095,12 +1095,12 @@ _Sensical.ie Toast Messages_
 <img src="../docs/readme_images/auth1.png"><br>
 _Sensical.ie Authentication_
 
-* Sensical.ie's user authorisation features allow users to sign up for an account if they can provide a valid, varifiable, email address.
+* Sensical.ie's user authorisation features allow users to sign up for an account if they can provide a valid, verifiable, email address.
 
 <img src="../docs/readme_images/auth2.png"><br>
 _Sensical.ie Authentication_
 
-Once they have registered, users can login and out of the site to enjoy extra benefits, such as user wishlist access and the ability to store delivery information to their user profile.
+Once they have registered, users can log in and out of the site to enjoy extra benefits, such as user wishlist access and the ability to store delivery information to their user profile.
 
 <img src="../docs/readme_images/auth3.png"><br>
 _Sensical.ie Authentication_
@@ -1117,7 +1117,7 @@ The future-proof design of the site will allow the future development of Stock L
 
 ### Products Packages based on user needs
 
-Another cool feature to mirror the Package Request option of the current site would be to include a number of custom product packages where users can take a short survey of their needs and be directed to a suitable package within their budget that includes a choice of products included in the promotion. The resulting product packages would provide better monatary and emotional value for the user.  
+Another cool feature to mirror the Package Request option of the current site would be to include a number of custom product packages where users can take a short survey of their needs and be directed to a suitable package within their budget that includes a choice of products included in the promotion. The resulting product packages would provide better monetary and emotional value for the user.  
 
 ### Expand the Hire app to manage online bookings through the website.
 
@@ -1134,7 +1134,7 @@ The testing results for Sensical.ie are available [here.](https://github.com/dav
 
 # Deployment
 
-Sensical.ie was deployed to heroku during the early stages of development. I wanted to make sure the database and static files were all accessible from the beginning of the project so I wouldn't have to worry about deployment issues closer to releasing the app.
+Sensical.ie was deployed to Heroku during the early stages of development. I wanted to make sure the database and static files were all accessible from the beginning of the project, so I wouldn't have to worry about deployment issues closer to releasing the app.
 
 The live site can be viewed [here:](https://sensical-ireland.herokuapp.com/)
 
@@ -1147,7 +1147,7 @@ _Early Deployment Screenshot_
 
 ### ElephantSQL
 
-To create a managed postgres datasbase go to [ElephantSQL](https://www.elephantsql.com/) and Signup/Signin to your account.
+To create a managed Postgres database go to [ElephantSQL](https://www.elephantsql.com/) and Signup/Signin to your account.
 
 * Click on 'Create New Instance'.
 
@@ -1156,11 +1156,11 @@ _ElephantSQL_
 
 * Name your database, choose the 'Tiny Turtle' payment plan and click 'Select Region'.
 
-* Choose your region and then create the database. instance.
+* Choose your region and then create the database.
 
 * In the instances page, click the name of your chosen database.
 
-* In the details section of the following page copy the postgres url.
+* In the 'details' section of the following page copy the Postgres url.
 
 <img src="../docs/readme_images/deploy_elephant_3.png"><br>
 _ElephantSQL_
@@ -1182,7 +1182,7 @@ _Heroku Deployment_
 
 * From your newly created app choose the settings tab and navigate to 'Reveal Config Vars'.
 
-* Paste the ElephantSQL Database url into the DATABASE_URL environment variable.
+* Paste the ElephantSQL Database URL into the DATABASE_URL environment variable.
 
 * Create an env.py file in the root directory of your Django project. (At the same directory level as requirements.txt and manage.py)
 
@@ -1263,7 +1263,7 @@ If you want to make an independent copy of the Sensical.ie GitHub repository ple
 <img src="../docs/readme_images/deploy_1.png"><br>
 _Forking the repo_
 
-* A copy of the sensical.ie repository should now be available in your list of GitHub repositories.
+* A copy of the Sensical.ie repository should now be available in your list of GitHub repositories.
 
 Forking the GitHub repo will not affect the original codebase. 
 
@@ -1314,15 +1314,15 @@ _Cloning the repo_
 
 Sensical.ie was developed using the following languages, frameworks and dependencies.
 
-* Python (Version 3.8.11) The requirements.txt file contains all of the projects Python packages.
+* Python (Version 3.8.11) The requirements.txt file contains all the projects Python packages.
 
 * Django was the main python framework used while developing Sensical.ie.
 
 * Django AllAuth was used for user account management/authentication.
 
-* Bootstrap (Version 4.6.2) was used to rapidly develop the layout, responsivity and core frontend elements of Sensical.ie.
+* Bootstrap (Version 4.6.2) was used to rapidly develop the layout, responsiveness and core frontend elements of Sensical.ie.
 
-* ElephantSQL was implemented as the postgres, database management system for Sensical.ie
+* ElephantSQL was implemented as the Postgres, database management system for Sensical.ie
 
 * HTML was used in developing the templates for Senscial.ie.
 
@@ -1387,7 +1387,7 @@ I used Balsamiq to create wireframes for the project.
 
 ### Favicon
 
-I used [Favicon](https://favicon.io/favicon-converter/) generator to make the sensical.ie favicon
+I used [Favicon](https://favicon.io/favicon-converter/) generator to make the Sensical.ie favicon
 
 ### Other Notable Resources
 
@@ -1429,7 +1429,7 @@ All other images used throughout the development of this site were downloaded fr
 
 ### Boutique Ado
 
-Many elements of the the e-commerce part of this project have been adapted from the Code Institute's "Boutique Ado" Codethrough Project.
+Many elements of the the e-commerce part of this project have been adapted from the Code Institute's "Boutique Ado" Code-through Project.
 
 ### Shopping Basket Item counter
 
@@ -1496,13 +1496,13 @@ _Sensical.ie Cloudinary Documentation_
 
 ### Michelle Calikes
 
-I am hugely thankful for the time my wife has afforded me to work on this project and the course overall. Thank you Michelle! (It's Done... YAAAS!)
+I am hugely thankful for the time my wife has afforded me to work on this project and the course overall. Thank you, Michelle! (It's Done... YAAAS!)
 
 <br>
 
 ### Saoirse & Lochlainn Calikes
 
-Having a Dad who is studying cannot be fun. I am fully aware we have a whole years worth of Monkey Islanding and Football and walks to catch up on. 
+Having a Dad who is studying cannot be fun. I am fully aware we have a whole year of Monkey Islanding and Football and walks to catch up on. 
 
 <br>
 
@@ -1514,13 +1514,13 @@ I'd like to thank Irene for facilitating the Code Institute Cohort during this p
 
 ### Kasia Boguka: Code Institute Facilitator.
 
-Thank you Kasia for all of your guidance and wisdom, not just during this project but throughout my time studying with CI.
+Thank you, Kasia, for all of your guidance and wisdom throughout my time studying with CI.
 
 <br>
 
 ### Richard Wells: Code Institute Mentor.
 
-There's a point in the Joseph Campbell Monomyth "The Hero's Journey" called 'Meeting with the mentor', where the hero of a given quest, (Harry Potter, Frodo, Luke Skywalker etc) meets a mentor figure (Dumbledore, Gandalf, Obi Wan) and recieves sage wisdom and 'supernatural aid' that helps them set about their adventures. 'Supernatural aid' really is the only true way I can think of describing the staggering amount of support and mentorship Richard has afforded me throught the duration of this course. You really went above and beyond mate. Thanks for everything. 
+There's a point in the Joseph Campbell Monomyth "The Hero's Journey" called 'Meeting with the mentor', where the hero of a given quest, (Harry Potter, Frodo, Luke Skywalker etc.) meets a mentor figure (Dumbledore, Gandalf, Obi Wan) and receives sage wisdom and 'supernatural aid' that helps them set about their adventures. 'Supernatural aid' really is the only true way I can think of describing the staggering amount of support and mentorship Richard has afforded me throughout the duration of this course. You really went above and beyond mate. Thanks for everything. 
 
 
 
