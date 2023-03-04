@@ -201,7 +201,7 @@ In future versions of the app I hope to significantly improve mobile performance
 <summary>
 Products Page Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Products page are:
 
 * base.html
 * main-nav.html
@@ -209,7 +209,7 @@ The HTML Templates associated with the products page are:
 * products
 * footer.html
 
-Each link of the Products page was tested and was marked 'pass' when the following expected behaviour was produced.
+Each link of the Products page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs. 
 
@@ -229,7 +229,7 @@ Each link of the Products page was tested and was marked 'pass' when the followi
 
 * Can Delete Product -- An authenticated Admin user can delete an existing product.
 
-* Can Add or Remove item to wishlist -- An authenticated user can add/remove an item from the wishlist. Unathenticated users are redirected to login.
+* Can Add or Remove item to wishlist -- An authenticated user can add/remove an item from the wishlist. Unauthenticated users are redirected to login.
 
 
 <br>
@@ -285,7 +285,7 @@ The HTML Templates associated with the Product Detail page are:
 * product-detail.html
 * footer.html
 
-Each link of the Product Detail page was tested and was marked 'pass' when the following expected behaviour was produced.
+Each link of the Product Detail page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs. 
 
@@ -299,7 +299,7 @@ Each link of the Product Detail page was tested and was marked 'pass' when the f
 
 * Back to Products -- The user can return to the Products page from the Product Detail Page.
 
-* Can Add or Remove item to wishlist -- An authenticated user can add/remove an item from the wishlist. Unathenticated users are redirected to login.
+* Can Add or Remove item to wishlist -- An authenticated user can add/remove an item from the wishlist. Unauthenticated users are redirected to login.
 
 
 <br>
@@ -355,7 +355,7 @@ The HTML Templates associated with the Product Management pages are:
 * edit_product.html
 * footer.html
 
-Each of the Product Management Form pages were tested and was marked 'pass' when the following expected behaviour was produced.
+Each of the Product Management Form pages were tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -419,7 +419,7 @@ The HTML Templates associated with the Shopping Basket page are:
 * shopping-basket.html
 * footer.html
 
-The Shopping Basket page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Shopping Basket page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -483,7 +483,7 @@ The HTML Templates associated with the Chackout page are:
 * checkout_success.html
 * footer.html
 
-The Checkout page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Checkout page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -544,7 +544,7 @@ _Checkout Success Testing Screenshot_
 <summary>
 Hire Page Testing</summary><br>
 
-The HTML Templates associated with the products page are:
+The HTML Templates associated with the Hire page are:
 
 * base.html
 * main-nav.html
@@ -552,7 +552,7 @@ The HTML Templates associated with the products page are:
 * hire.html
 * footer.html
 
-The Hire page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Hire page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -609,7 +609,7 @@ The HTML Templates associated with the Wishlist page are:
 * wishlist.html
 * footer.html
 
-The Wishlist page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Wishlist page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -676,7 +676,7 @@ The HTML Templates associated with the Packages page are:
 In this section, I tested the main package page first and in the interest of brevity, I tested all the packages pages
 and features running lighthouse in the local server.
 
-The Packages page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Packages page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -748,7 +748,7 @@ _W3C HTML Validator Testing Screenshot_
 <summary>
 Testimonials Pages Testing</summary><br>
 
-The HTML Templates associated with the testimonials page are:
+The HTML Templates associated with the Testimonials page are:
 
 * base.html
 * main-nav.html
@@ -761,7 +761,7 @@ The HTML Templates associated with the testimonials page are:
 In this section, I tested the main Testimonials page first and in the interest of brevity, I tested it and the other templates
 and features running lighthouse in the local server.
 
-The Testimonials page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Testimonials page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -834,7 +834,7 @@ The HTML Templates associated with the About page are:
 * about.html
 * footer.html
 
-The About page was tested and was marked 'pass' when the following expected behaviour was produced.
+The About page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -892,7 +892,7 @@ The HTML Templates associated with the Profile page are:
 * profile.html
 * footer.html
 
-The Profile page was tested and was marked 'pass' when the following expected behaviour was produced.
+The Profile page was tested and was marked 'pass' when the following expected behavior was produced.
 
 * Base Template and Footer Links -- All links direct to the correct URL and external links open in new tabs.
 
@@ -900,7 +900,7 @@ The Profile page was tested and was marked 'pass' when the following expected be
 
 * Order History Accordion -- The user can access their order history.
 
-* Products link -- User can access the products page from the link provided.
+* Products link -- User can access the Products page from the link provided.
 
 <br>
 
@@ -1327,22 +1327,22 @@ _Desktop Testing Screenshot_
 
 ## Responsivity Testing
 
-In addition to testing the site accross multiple physical devices, I also tested the responsivity of the
+In addition to testing the site across multiple physical devices, I also tested the responsiveness of the
 site using Google Developer tools. I set the minimum acceptable width to 300px.
 
-The site responded well during the initial testing although there were some small issues that required attention to 
+The site responded well during the initial testing, although there were some small issues that required attention to 
 improve the user experience.
 
 ### Issue caused by SEO optimisation.
 
 <img src="../docs/testing_images/testing_resp1.png"><br>
-_Responsivness Testing Screenshot_
+_Responsiveness Testing Screenshot_
 
 By updating the text from 'hire' to 'sensory equipment hire' to improve Search Engine Optimisation,
-an error occurred where the height of the first card would expand to accomodate the extra text. 
+an error occurred where the height of the first card would expand to accommodate the extra text. 
 
-<img src="../docs/testing_images/testing_resp2.png"><br>
-_Responsivness Testing Screenshot_
+<img src="../docs/testing_images/testing_resp_2.png"><br>
+_Responsiveness Testing Screenshot_
 
 Obviously there was more than one way to fix this issue, but I felt that the 'Equipment' part of the title wasn't
 actually required and due to the fairly unique concept of the business 'sensory hire' would be a sufficient title in this case
@@ -1352,24 +1352,24 @@ and solve the problem.
 
 I also noticed the mobile dropdown menu extended to the edge of the page on one side.
 
-<img src="../docs/testing_images/testing_resp3.png"><br>
-_Responsivness Testing Screenshot_
+<img src="../docs/testing_images/testing_resp_3.png"><br>
+_Responsiveness Testing Screenshot_
 
-I corrected this by overiding the default bootstrap class.
+I corrected this by overriding the default bootstrap class.
 
-<img src="../docs/testing_images/testing_resp4.png"><br>
-_Responsivness Testing Screenshot_
+<img src="../docs/testing_images/testing_resp_4.png"><br>
+_Responsiveness Testing Screenshot_
 
 <br>
 
 <img src="../docs/testing_images/testing_resp5.png"><br>
-_Responsivness Testing Screenshot_
+_Responsiveness Testing Screenshot_
 
 There was another error when the test from the request a package would wrap inside the container.
 I corrected this by expanding the container width and adding a media query style rule to the element.
 
 <img src="../docs/testing_images/testing_resp6.png"><br>
-_Responsivness Testing Screenshot_
+_Responsiveness Testing Screenshot_
 
 # Bugs
 
@@ -1378,7 +1378,7 @@ I found some minor bugs in the about page iframe were the Youtube video wouldn't
 <img src="../docs/testing_images/testing_bugs_iframe1.png"><br>
 _Bugs Testing Screenshot_
 
-I searched google and stack overflow for posts on how to solve this issue but none were forthcoming. The problem seems to have corrected itself, and now displays correctly accross all screen widths.
+I searched google and stack overflow for posts on how to solve this issue, but none were forthcoming. The problem seems to have corrected itself, and now displays correctly across all screen widths.
 
 <br>
 
@@ -1387,12 +1387,12 @@ Another problem with the about page iFrame was the volume control on the video w
 <img src="../docs/testing_images/testing_bugs_iframe2.png"><br>
 _Bugs Testing Screenshot_
 
-The solution to this issue was rather more complex. If I expanded the container width and removed all padding, it would negatively impact the rest of the elements in the container. Instead I added a set of style rules to a media query that hides the display of the original iframe and replaces it with another outside of the container. I felt this was a practical comprimise given time constraints and the importance of accessibility for all users.
+The solution to this issue was rather more complex. If I expanded the container width and removed all padding, it would negatively impact the rest of the elements in the container. Instead I added a set of style rules to a media query that hides the display of the original iframe and replaces it with another outside of the container. I felt this was a practical compromise given time constraints and the importance of accessibility for all users.
 
 <img src="../docs/testing_images/testing_bugs2_fix.png"><br>
 _Bugs Testing Screenshot_
 
-To complete the hat-trick of video related bugs, another issue I noticed was the Youtube video does not automatically load on mobile devices. This is a known issue with using an iFrame and a possible solution to this might be to use a standard video element in the future.
+To complete the hat-trick of video related bugs, another issue I noticed was the YouTube video does not automatically load on mobile devices. This is a known issue with using an iFrame and a possible solution to this might be to use a standard video element in the future.
 
 Outstanding Bugs
 
@@ -1400,7 +1400,7 @@ Outstanding Bugs
 _Bugs Testing Screenshot_
 
 The site does not work on mobile devices in landscape mode. This is because the nav menu extends beyond the bottom edge of the screen due to the significantly reduced 
-screen height. I have not yet found a solution to this problem but I will continue to look for ways to solve the problem in future releases
+screen height. I have not yet found a solution to this problem, but I will continue to look for ways to solve the problem in future releases
 
 
 <br>
@@ -1414,7 +1414,7 @@ _Peer Code Review Request Testing Screenshot_
 
 I was thrilled to recieve constructive feedback from fellow CI student [Karolis Petrauskas](https://github.com/kpetrauskas92/).
 
-<img src="../docs/testing_images/testing_pcr"><br>
+<img src="../docs/testing_images/testing_pcr.png"><br>
 _Feedback from Karolis_
 
 Karolis found a display error and recommended I make some changes to improve User Experience and readability.
@@ -1425,10 +1425,10 @@ The changes I made as a result of this feedback were as follows:
 
 * The IWA logo was converted from an SVG graphic to a Webp Image.
 
-<img src="../docs/testing_images/testing_svg_bug"><br>
+<img src="../docs/testing_images/testing_svg_bug.png"><br>
 _SVG bug_
 
-<img src="../docs/testing_images/testing_svg_fix"><br>
+<img src="../docs/testing_images/testing_svg_fix.png"><br>
 _SVG Fix_
 
 * The Useful Links section of the footer was enveloped into the Mailchimp form container leading to a less cluttered footer layout.
@@ -1437,15 +1437,15 @@ _SVG Fix_
 
 <br>
 
-Other suggestions I considered but did not impliment were:
+Other suggestions I considered but did not implement were:
 
-* The suggestion to impliment a white background in the products page. I understand and appreciated this feedback but as I have explained in the Visual Design section of the README document, the darker background is a consious design choice for users with light sensitivity issues, a 'dark-mode by proxy' if you will.
+* The suggestion to implement a white background in the products page. I understand and appreciated this feedback but as I have explained in the Visual Design section of the README document, the darker background is a conscious design choice for users with light sensitivity issues, a 'dark-mode by proxy' if you will.
 
 * The hero video is aligned with the container width of the entire document. I feel to remove it out of alignment from the rest of the grid would cause a jarring, unorganised effect.
 
 * The final change I considered but rejected was to add a blur filter to the Hero Video. This was at the request of the business owner who wanted the detail of the background to inform the user that the space was a converted, space (Classroom) rather than a dedicated sensory room. This information is key to understanding the function of the Equipment Hire side of the business.
 
-<img src="../docs/testing_images/testing_pcr_blur"><br>
+<img src="../docs/testing_images/testing_pcr_blur.png"><br>
 _Extra Feedback_
 
 Overall I want to reiterate my profound thanks to Karolis for taking the time to help me make my site better. The changes I made due to his recommendations were logical, useful and improved the site.
