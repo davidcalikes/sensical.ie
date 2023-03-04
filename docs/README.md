@@ -71,36 +71,31 @@ _Senso~1 Portable Lighting System in 2018_
 
         * [Individual Pages](https://github.com/davidcalikes/sensical.ie#individual-pages)
             * [Home Page](https://github.com/davidcalikes/sensical.ie#home-page)
-            * [About Page](https://github.com/davidcalikes/mypse.ie#about-page)
-            * [Learn More](https://github.com/davidcalikes/mypse.ie#learn-more-page)
-        * [User Guides](https://github.com/davidcalikes/mypse.ie#user-guides)
-        * [Sample Passports](https://github.com/davidcalikes/mypse.ie#sample-passports)
-        * [Feedback Messages](https://github.com/davidcalikes/mypse.ie#feedback-messages)
-        * [User Authentication](https://github.com/davidcalikes/mypse.ie#registration-page)
-        * [Pupil Enrolment System](https://github.com/davidcalikes/mypse.ie#pupil-list-page)
-        * [Passport Creation System](https://github.com/davidcalikes/mypse.ie#passport-list-page)
-        * [Loading Modal](https://github.com/davidcalikes/mypse.ie#loading-modal)
-        * [Teacher Passport Access](https://github.com/davidcalikes/mypse.ie#teacher-pupil-list-page)
-        * [Admin Panel](https://github.com/davidcalikes/mypse.ie#admin-panel)
-        * [Security](https://github.com/davidcalikes/mypse.ie#added-url-security-feature)
+            * [Products Page](https://github.com/davidcalikes/sensical.ie#products-page)
+            * [Product Detail Page](https://github.com/davidcalikes/sensical.ie#product-detail-page)
+            * [Wishlist Page](https://github.com/davidcalikes/sensical.ie#wishlist-page)
+            * [Checkout Page](https://github.com/davidcalikes/sensical.ie#checkout-page)
+            * [Hire Page](https://github.com/davidcalikes/sensical.ie#hire-page)
+            * [Packages Page](https://github.com/davidcalikes/sensical.ie#packages-page)
+            * [Testimonials Page](https://github.com/davidcalikes/sensical.ie#testimonials-page)
+            * [Other Features](https://github.com/davidcalikes/sensical.ie#other-notable-features)
+            * [Future Features](https://github.com/davidcalikes/sensical.ie#future-features)
 
-    * [Future Features](https://github.com/davidcalikes/mypse.ie#future-features)
+* [Testing](https://github.com/davidcalikes/sensical.ie#testing)
+* [Deployment](https://github.com/davidcalikes/sensical.ie#deployment)
+    * [Database](https://github.com/davidcalikes/sensical.ie#database)
+    * [Deploying to Heroku](https://github.com/davidcalikes/sensical.ie#deploying-to-heroku)
+    * [Forking Sensical.ie](https://github.com/davidcalikes/sensical.ie#forking-the-github-repository)
+    * [Cloning Sensical.ie](https://github.com/davidcalikes/sensical.ie#forking-the-github-repository)
 
-* [Testing](https://github.com/davidcalikes/mypse.ie#testing)
-* [Deployment](https://github.com/davidcalikes/mypse.ie#deployment)
-    * [Database](https://github.com/davidcalikes/mypse.ie#database)
-    * [Deploying to Heroku](https://github.com/davidcalikes/mypse.ie#deploying-to-heroku)
-    * [Forking MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
-    * [Cloning MyPSE.ie](https://github.com/davidcalikes/mypse.ie#forking-the-github-repository)
+* [Technologies](https://github.com/davidcalikes/sensical.ie#technologies)
+    * [Software](https://github.com/davidcalikes/sensical.ie#software)
 
-* [Technologies](https://github.com/davidcalikes/mypse.ie#technologies)
-    * [Software](https://github.com/davidcalikes/mypse.ie#software)
+* [Media](https://github.com/davidcalikes/sesnical.ie#media)
 
-* [Media](https://github.com/davidcalikes/mypse.ie#media)
+* [Credits](https://github.com/davidcalikes/sensical.ie#credits)
 
-* [Credits](https://github.com/davidcalikes/mypse.ie#credits)
-
-* [Thanks](https://github.com/davidcalikes/mypse.ie#thanks)
+* [Thanks](https://github.com/davidcalikes/sensical.ie#thanks)
 
 <br>
 
@@ -1124,10 +1119,11 @@ The future-proof design of the site will allow the future development of Stock L
 
 Another cool feature to mirror the Package Request option of the current site would be to include a number of custom product packages where users can take a short survey of their needs and be directed to a suitable package within their budget that includes a choice of products included in the promotion. The resulting product packages would provide better monatary and emotional value for the user.  
 
-### Expand the Hire app to manage online bookings though the website.
+### Expand the Hire app to manage online bookings through the website.
 
 To manage the hiring side of the business in the same place as the Webstore would result in much more efficient business practices further synergising the e-Commerce and Equipment Hire ends of the business. Creating a fully synergetic approach here, where the company can sell products and hire equipment from the same place to the same, captured audience at the same time would be truly optimal for the growth and expansion of the enterprise.  
 
+<br>
 
 # Testing
 
