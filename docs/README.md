@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sensical.ie is a full stack, e-Commerce, web application offering affordable, multi-sensory products & solutions to a growing and diverse target audience.
+Sensical.ie is a full stack, E-commerce, web application offering affordable, multi-sensory products and solutions to a growing and diverse target audience.
 
 <img src="../docs/readme_images/mockup.png">
 
@@ -1395,7 +1395,7 @@ I used [Favicon](https://favicon.io/favicon-converter/) generator to make the se
 
 * Grammarly -- To check the spelling and grammar of the text content of Sensical.ie and its documentation.
 
-* Apple Pages -- To create PDF User Guides.
+* [Policymaker.io](https://policymaker.io/) -- To create policy documents for the site.
 
 <br>
 

@@ -5,7 +5,7 @@
 
 ### User Story Tests
 
-I tested each user story by adding acceptance criteria to every card of each of the four 'sprint' boards I created as part of the [AGILE](../docs/AGILE.md) planning process. 
+I tested each user story by adding acceptance criteria to every card of each of the eight 'sprint' boards I created as part of the [AGILE](../docs/AGILE.md) planning process. 
 
 No story could move to the 'done' column of each Kanban board unless all tasks had been completed and the criteria had been met.
 
@@ -1402,6 +1402,53 @@ _Bugs Testing Screenshot_
 The site does not work on mobile devices in landscape mode. This is because the nav menu extends beyond the bottom edge of the screen due to the significantly reduced 
 screen height. I have not yet found a solution to this problem but I will continue to look for ways to solve the problem in future releases
 
+
+<br>
+
+### Peer Code Review
+
+I submitted the project via the Peer Code Review Submissions form in the Code Institute's Slack Channel.
+
+<img src="../docs/testing_images/testing_pcr_request.png"><br>
+_Peer Code Review Request Testing Screenshot_
+
+I was thrilled to recieve constructive feedback from fellow CI student [Karolis Petrauskas](https://github.com/kpetrauskas92/).
+
+<img src="../docs/testing_images/testing_pcr"><br>
+_Feedback from Karolis_
+
+Karolis found a display error and recommended I make some changes to improve User Experience and readability.
+
+The changes I made as a result of this feedback were as follows:
+
+* The Call to action buttons were given a makeover, including a new font, background color gradient and contrasting border.
+
+* The IWA logo was converted from an SVG graphic to a Webp Image.
+
+<img src="../docs/testing_images/testing_svg_bug"><br>
+_SVG bug_
+
+<img src="../docs/testing_images/testing_svg_fix"><br>
+_SVG Fix_
+
+* The Useful Links section of the footer was enveloped into the Mailchimp form container leading to a less cluttered footer layout.
+
+* I removed the Guaranteed Irish Logo as it was taking up too much real estate and wasn't providing much in the way of functionality or feedback to the user.
+
+<br>
+
+Other suggestions I considered but did not impliment were:
+
+* The suggestion to impliment a white background in the products page. I understand and appreciated this feedback but as I have explained in the Visual Design section of the README document, the darker background is a consious design choice for users with light sensitivity issues, a 'dark-mode by proxy' if you will.
+
+* The hero video is aligned with the container width of the entire document. I feel to remove it out of alignment from the rest of the grid would cause a jarring, unorganised effect.
+
+* The final change I considered but rejected was to add a blur filter to the Hero Video. This was at the request of the business owner who wanted the detail of the background to inform the user that the space was a converted, space (Classroom) rather than a dedicated sensory room. This information is key to understanding the function of the Equipment Hire side of the business.
+
+<img src="../docs/testing_images/testing_pcr_blur"><br>
+_Extra Feedback_
+
+Overall I want to reiterate my profound thanks to Karolis for taking the time to help me make my site better. The changes I made due to his recommendations were logical, useful and improved the site.
 
 <br>
 
