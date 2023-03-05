@@ -1471,7 +1471,15 @@ Outstanding Bugs
 _Bugs Testing Screenshot_
 
 The site does not work on mobile devices in landscape mode. This is because the nav menu extends beyond the bottom edge of the screen due to the significantly reduced 
-screen height. I have not yet found a solution to this problem, but I will continue to look for ways to solve the problem in future releases
+screen height. I have not yet found a solution to this problem, but I will continue to look for ways to solve the problem in future releases.
+
+<br>
+
+<img src="../docs/testing_images/testing_bugs_ipad.png"><br>
+_Bugs Testing iPad_
+
+There is a problem with the scaling of fontawesome icons on the iPad. This was not detected on any other tablet, computer or
+android phone I tested. I tested the issue in chrome, firefox and safari on the device and the icons did not display correctly on either of the three browsers. I will continue to look for a solution to this bug but for the time being, due to the generous spacing between the icons the functionality of the icons remains practicaly usable. 
 
 
 <br>

@@ -720,7 +720,7 @@ video {
     text-decoration: none;
     letter-spacing: 2.5px;
     color: #fff;
-    background-color:#0c2d6c ;
+    background-color:#0c2d6c;
     border: none;
     cursor: pointer;
     outline: none;
@@ -728,7 +728,7 @@ video {
 }
 
 .basket-back-button:hover {
-    background-color: #75e6ff !important; ;
+    background-color: #75e6ff !important;
     text-decoration: none;
     color: #0c2d6c;
     border: solid 1px #fff;

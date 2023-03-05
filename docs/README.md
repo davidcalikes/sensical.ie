@@ -16,7 +16,7 @@ Originally called Sensical 'Mobile Sensory Environments', the business was estab
 
 In an attempt to protect the venture from future existential threats, the business owner developed a new growth-through-diversification strategy for the enterprise.
 
-Offering affordable, high-quality, sensory products that enhance the experience of sensory therapy service users, the Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the business owners whilst developing a more robust, synergetic business strategy with the 'Mobile Sensory Environments' (Equipment Hire) branch of the Sensical enterprise.
+Offering affordable, high-quality, sensory products that enhance the experience of sensory therapy service users, the Sensical.ie, e-Commerce Webstore will create a vital second revenue stream, for the business owners, as part of a more robust, synergetic business strategy.
 
 Utilising the Django Full Stack Web Framework, Bootstrap, Stripe API for secure payments, and underwritten by the principles of User Experience design and Search Engine Optimisation, the Sensical.ie Webstore offers its customers an effortless, logical, and rewarding user experience.
 

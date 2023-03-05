@@ -92,11 +92,12 @@
     </div>
 
     <!-- Products Link -->
-
-    <a href="{% url 'products' %}">
-        <div class="basket-back-button basket-button text-center"><i class="icon fa-solid fa-circle-arrow-left"></i>back
-            to shopping</div>
-    </a>
+    <div class="basket-checkout">
+        <a href="{% url 'products' %}">
+            <div class="basket-back-button basket-button text-center"><i class="icon fa-solid fa-circle-arrow-left"></i>back
+                to shopping</div>
+        </a>
+    </div>
 </div>
 
 {% endblock %}
